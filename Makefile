@@ -1,0 +1,2 @@
+build:
+	./utils/build.sh
