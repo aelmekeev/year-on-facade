@@ -23,5 +23,4 @@ jobs:
         run: |
           git config --global user.name 'Aleksandr Elmekeev'
           git config --global user.email 'donamok@gmail.com'
-          git commit -am "make build"
-          git push
+          git diff --exit-code || git commit -am "make build" && git push
