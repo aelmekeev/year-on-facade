@@ -6,11 +6,20 @@ function parseCoordinatesString(coordinatesString) {
 }
 
 function initMap() {
-  const cityData = data.London;
+  var url = new URL(window.location.href);
+  var city = url.searchParams.get("city");
+  const cityData = data[city] || data.London;
 
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: cityData.config.zoom,
     center: parseCoordinatesString(cityData.config.center),
+    clickableIcons: false,
+    mapTypeControlOptions: {
+      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+    },
+    restriction: {
+      latLngBounds: cityData.config.borders
+    }
   });
 
 

@@ -4,10 +4,10 @@ const data = {
       "zoom": 11,
       "center": "51.507200,-0.127600",
       "borders": {
-        "minLat": 51.27986,
-        "maxLat": 51.692042,
-        "minLng": -0.524924,
-        "maxLng": 0.32377
+        "south": 51.27986,
+        "north": 51.692042,
+        "west": -0.524924,
+        "east": 0.32377
       }
     },
     "points": {

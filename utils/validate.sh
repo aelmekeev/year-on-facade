@@ -9,7 +9,7 @@ echo $(cat ./js/data.js | sed 's/const data = //') >$temp
 jq '. as $data |
   $data | keys[] | . as $city |
   $data[$city].config.borders as $borders |
-  $borders.minLat as $minLat | $borders.maxLat as $maxLat | $borders.minLng as $minLng | $borders.maxLng as $maxLng |
+  $borders.south as $minLat | $borders.north as $maxLat | $borders.west as $minLng | $borders.east as $maxLng |
   $data[$city].points[] | split(",") as [$lat, $lng] |
   ($lat | tonumber > $minLat) and ($lat | tonumber < $maxLat) and ($lng | tonumber > $minLng) and ($lng | tonumber) < $maxLng
   ' $temp | jq -se '. | all' &>/dev/null ||
