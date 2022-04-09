@@ -8,7 +8,6 @@ function parseCoordinatesString(coordinatesString) {
 function initMap() {
   const cityData = data.London;
 
-  console.log(cityData.config.zoom)
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: cityData.config.zoom,
     center: parseCoordinatesString(cityData.config.center),
