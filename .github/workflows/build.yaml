@@ -2,13 +2,14 @@ name: Build
 
 on:
   push:
-    branches: 
-      - '**'    # matches every branch
-      - '!main' # excludes main
+    branches:
+      - "**" # matches every branch
+      - "!main" # excludes main
 
 jobs:
-  Build:
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -18,7 +19,7 @@ jobs:
         run: make build
       - name: Validate
         run: make validate
-     - name: Commit changes
+      - name: Commit changes
         run: |
           git config --global user.name 'Aleksandr Elmekeev'
           git config --global user.email 'donamok@gmail.com'
