@@ -17,3 +17,14 @@ In order to be added to collection the location needs to meet the following requ
 ## Contribution
 
 Simply raise a pull request with a change in the correct file in `csv` folder.
+
+**Note:** it's better to use web UI of Google Maps to keep coordinates precision consistent.
+
+If you want to you can also run `make build` and `make validate` locally if you have `jq` installed, otherwise they will be executed as part of pull request pipelines.
+
+### Adding new city
+
+* add `./csv/<city name>.csv`
+* add configuration for the city in `./utils/configs.json`
+
+**Note:** please use underscores instead of spaces in the city name, e.g. `New_York`.
