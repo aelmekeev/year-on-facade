@@ -1,7 +1,7 @@
 {
   "London": {
     "config": {
-      "zoom": 11,
+      "zoom": 12,
       "center": "51.507200,-0.127600",
       "borders": {
         "south": 51.279860,
@@ -13,7 +13,7 @@
   },
   "Copenhagen": {
     "config": {
-      "zoom": 11,
+      "zoom": 13,
       "center": "55.6722309,12.4896549",
       "borders": {
         "south": 55.614929,
