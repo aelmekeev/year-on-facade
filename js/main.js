@@ -6,9 +6,16 @@ function parseCoordinatesString(coordinatesString) {
 }
 
 function initMap() {
+  var url = new URL(window.location.href);
+  var year = url.searchParams.get("year");
+  var points = year ? { [year]: data.points[year] } : data.points;
+
+  var zoom = year ? 18 : data.config.zoom;
+  var center = parseCoordinatesString(year ? points[year] : data.config.center);
+
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: data.config.zoom,
-    center: parseCoordinatesString(data.config.center),
+    zoom,
+    center,
     clickableIcons: false,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
@@ -18,10 +25,9 @@ function initMap() {
     }
   });
 
-
-  for (const year in data.points) {
+  for (const year in points) {
     new google.maps.Marker({
-      position: parseCoordinatesString(data.points[year]),
+      position: parseCoordinatesString(points[year]),
       map,
       title: year,
       label: {
