@@ -5,8 +5,14 @@
   <title>Year on Facade</title>
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <meta name="viewport" content="width=device-width" />
-  <script src="./js/data.js"></script>
   <script src="./js/main.js"></script>
+  <script>
+    var script = document.createElement('script');
+    var url = new URL(window.location.href);
+    var city = url.searchParams.get("city");
+    script.src = './js/' + (city || 'London') + '.js';
+    document.head.appendChild(script);
+  </script>
 </head>
 
 <body>
