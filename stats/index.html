@@ -2,27 +2,37 @@
 <html>
 
 <head>
-  <title>Year on Facade</title>
+  <title>Year on Facade | Stats</title>
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <meta name="viewport" content="width=device-width" />
   <script>
     var dataScript = document.createElement('script');
     var url = new URL(window.location.href);
     var city = url.searchParams.get("city");
-    dataScript.src = './js/' + (city || 'London') + '.js';
+    dataScript.src = '../js/' + (city || 'London') + '.js';
     document.head.appendChild(dataScript);
 
     var mainScript = document.createElement('script');
-    mainScript.src = './js/main.js'
+    mainScript.src = '../js/stats.js'
     document.head.appendChild(mainScript);
   </script>
 </head>
 
 <body>
-  <div id="map"></div>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoiKEmUCSlurpp6Qs5aCLt1O5x4WnKWKw&callback=initMap&v=weekly"
-    async></script>
+  <h1></h1>
+
+  <div id="range" class="stat">
+    <div class="label">Range:</div>
+    <div class="value"></div>
+  </div>
+
+  <div id="total" class="stat">
+    <div class="label">Total:</div>
+    <div class="value"></div>
+  </div>
+
+  <div id="table"></div>
+
 </body>
 
 </html>

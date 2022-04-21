@@ -8,3 +8,23 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.control {
+  margin-left: 10px
+}
+
+.control-ui {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.3);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.control-text {
+  font-size: 16px;
+  line-height: 36px;
+  padding-left: 7px;
+  padding-right: 7px;
+}

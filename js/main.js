@@ -5,10 +5,40 @@ function parseCoordinatesString(coordinatesString) {
   }
 }
 
+function StatsControl(controlDiv) {
+  controlDiv.classList.add("control");
+
+  const controlUI = document.createElement("div");
+  controlUI.classList.add("control-ui")
+  controlUI.title = "Click to open the statistics";
+  controlDiv.appendChild(controlUI);
+
+  const controlText = document.createElement("div");
+  controlText.classList.add("control-text");
+  controlText.innerHTML = "Statistics";
+  controlUI.appendChild(controlText);
+
+  controlUI.addEventListener("click", () => {
+    var currentUrl = window.location.href;
+    window.location.href = currentUrl
+      .replace("year-on-facade/", "year-on-facade/stats/")
+      .replace(/&year=\d+/g, "")
+      .replace(/\?year=\d+$/g, "")
+      .replace(/\?year=\d+&/g, "?");
+  });
+}
+
 function initMap() {
+  var url = new URL(window.location.href);
+  var year = url.searchParams.get("year");
+  var points = data.points;
+
+  var zoom = year ? 18 : data.config.zoom;
+  var center = parseCoordinatesString(year ? points[year] : data.config.center);
+
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: data.config.zoom,
-    center: parseCoordinatesString(data.config.center),
+    zoom,
+    center,
     clickableIcons: false,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
@@ -18,10 +48,13 @@ function initMap() {
     }
   });
 
+  const statsControlDiv = document.createElement("div");
+  StatsControl(statsControlDiv);
+  map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(statsControlDiv);
 
-  for (const year in data.points) {
+  for (const year in points) {
     new google.maps.Marker({
-      position: parseCoordinatesString(data.points[year]),
+      position: parseCoordinatesString(points[year]),
       map,
       title: year,
       label: {

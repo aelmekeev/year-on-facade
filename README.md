@@ -14,6 +14,11 @@ In order to be added to collection the location needs to meet the following requ
 2. The building must be located in administrative boundaries of particular city.
 3. Be verifiable via Google Street View.
 
+It is OK to replace existing points in case the replacement:
+
+1. either represent some landmark / building with interesting history
+2. or makes distribution of the points on the map nicer (i.e. less crowdy)
+
 ## Contribution
 
 Simply raise a pull request with a change in the correct file in `csv` folder.
