@@ -38,6 +38,9 @@ function updateTable() {
         year.classList.add('found');
         year.onclick = redirectToExactPoint(currentYear);
       }
+      if (c == 0 || c % 5 == 0) {
+        year.innerText = currentYear;
+      }
       year.title = currentYear;
       row.appendChild(year);
     }
