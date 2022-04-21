@@ -5,20 +5,13 @@
   <title>Year on Facade | Stats</title>
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <meta name="viewport" content="width=device-width" />
+  <script src="../js/stats.js"></script>
   <script>
     var dataScript = document.createElement('script');
     var url = new URL(window.location.href);
     var city = url.searchParams.get("city");
     dataScript.src = '../js/' + (city || 'London') + '.js';
-    dataScript.async = false;
-    dataScript.defer = true;
     document.head.appendChild(dataScript);
-
-    var mainScript = document.createElement('script');
-    mainScript.src = '../js/stats.js'
-    mainScript.async = false;
-    mainScript.defer = true;
-    document.head.appendChild(mainScript);
   </script>
 </head>
 
