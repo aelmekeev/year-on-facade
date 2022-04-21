@@ -15,10 +15,14 @@
 }
 
 .year {
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   background-color: #A3BFF4;
   border: 0.5px solid white;
+  line-height: 34px;
+  text-align: center;
+  font-size: 13px;
+  color: #37383a
 }
 
 .found {
