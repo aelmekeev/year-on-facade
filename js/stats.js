@@ -8,7 +8,7 @@ function updateRange() {
   var years = Object.keys(data.points).map(y => parseInt(y));
   var min = Math.min(...years);
   var max = Math.max(...years);
-  document.querySelector("#range .value").innerHTML = `${min} &mdash; ${max} (${max - min})`;
+  document.querySelector("#range .value").innerHTML = `${min} &mdash; ${max} (${max - min} years)`;
 }
 
 function redirectToExactPoint(year) {
@@ -36,9 +36,9 @@ function updateTable() {
       var currentYear = r * yearsInLine + c;
       if (years.includes(currentYear)) {
         year.classList.add('found');
+        year.onclick = redirectToExactPoint(currentYear);
       }
       year.title = currentYear;
-      year.onclick = redirectToExactPoint(currentYear);
       row.appendChild(year);
     }
     parent.appendChild(row);
@@ -54,7 +54,11 @@ function updateTotal() {
   document.querySelector("#total .value").innerHTML = `${years.length} (${coverage}%)`;
 }
 
-updateHeader()
-updateRange()
-updateTable()
-updateTotal()
+function updateStats() {
+  updateHeader()
+  updateRange()
+  updateTable()
+  updateTotal()
+}
+
+window.onload = updateStats

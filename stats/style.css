@@ -17,9 +17,11 @@
 .year {
   width: 30px;
   height: 30px;
-  background-color: grey;
+  background-color: #A3BFF4;
+  border: 0.5px solid white;
 }
 
 .found {
-  background-color: green;
+  background-color: #C8E3C2;
+  cursor: pointer;
 }
