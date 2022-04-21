@@ -10,10 +10,14 @@
     var url = new URL(window.location.href);
     var city = url.searchParams.get("city");
     dataScript.src = '../js/' + (city || 'London') + '.js';
+    dataScript.async = false;
+    dataScript.defer = true;
     document.head.appendChild(dataScript);
 
     var mainScript = document.createElement('script');
     mainScript.src = '../js/stats.js'
+    mainScript.async = false;
+    mainScript.defer = true;
     document.head.appendChild(mainScript);
   </script>
 </head>
