@@ -6,15 +6,16 @@
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <meta name="viewport" content="width=device-width" />
   <script>
-    var dataScript = document.createElement('script');
-    var url = new URL(window.location.href);
-    var city = url.searchParams.get("city");
-    dataScript.src = '../js/' + (city || 'London') + '.js';
+    const dataScript = document.createElement('script');
+    const url = new URL(window.location.href);
+    dataScript.src = '../js/_generated/' + (url.searchParams.get("city") || 'London') + '.js';
+    dataScript.defer = true;
     document.head.appendChild(dataScript);
 
-    var mainScript = document.createElement('script');
-    mainScript.src = '../js/stats.js'
-    document.head.appendChild(mainScript);
+    const statsScript = document.createElement('script');
+    statsScript.src = '../js/stats.js'
+    statsScript.defer = true;
+    document.head.appendChild(statsScript);
   </script>
 </head>
 
@@ -32,7 +33,6 @@
   </div>
 
   <div id="table"></div>
-
 </body>
 
 </html>

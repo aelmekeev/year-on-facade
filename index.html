@@ -6,23 +6,26 @@
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <meta name="viewport" content="width=device-width" />
   <script>
-    var dataScript = document.createElement('script');
-    var url = new URL(window.location.href);
-    var city = url.searchParams.get("city");
-    dataScript.src = './js/' + (city || 'London') + '.js';
+    const dataScript = document.createElement('script');
+    const url = new URL(window.location.href);
+    dataScript.src = './js/_generated/' + (url.searchParams.get("city") || 'London') + '.js';
+    dataScript.defer = true;
     document.head.appendChild(dataScript);
 
-    var mainScript = document.createElement('script');
+    const mainScript = document.createElement('script');
     mainScript.src = './js/main.js'
+    mainScript.defer = true;
     document.head.appendChild(mainScript);
-  </script>
+
+    const mapScript = document.createElement('script');
+    mapScript.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCoiKEmUCSlurpp6Qs5aCLt1O5x4WnKWKw&callback=initMap&v=weekly'
+    mapScript.defer = true;
+    document.head.appendChild(mapScript);
+</script>
 </head>
 
 <body>
   <div id="map"></div>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoiKEmUCSlurpp6Qs5aCLt1O5x4WnKWKw&callback=initMap&v=weekly"
-    async></script>
 </body>
 
 </html>
