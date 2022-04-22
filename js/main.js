@@ -28,8 +28,6 @@ function StatsControl(controlDiv) {
   });
 }
 
-var map;
-
 function initMap() {
   const url = new URL(window.location.href);
   const year = url.searchParams.get("year");
@@ -38,7 +36,7 @@ function initMap() {
   const zoom = year ? 18 : data.config.zoom;
   const center = parseCoordinatesString(year ? points[year] : data.config.center);
 
-  map = new google.maps.Map(document.getElementById("map"), {
+  const map = new google.maps.Map(document.getElementById("map"), {
     zoom,
     center,
     clickableIcons: false,
@@ -53,10 +51,6 @@ function initMap() {
   const statsControlDiv = document.createElement("div");
   StatsControl(statsControlDiv);
   map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(statsControlDiv);
-}
-
-window.onload = function () {
-  var points = data.points;
 
   for (const year in points) {
     new google.maps.Marker({
