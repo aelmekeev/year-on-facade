@@ -19,7 +19,7 @@ function StatsControl(controlDiv) {
   controlUI.appendChild(controlText);
 
   controlUI.addEventListener("click", () => {
-    var currentUrl = window.location.href;
+    const currentUrl = window.location.href;
     window.location.href = currentUrl
       .replace("year-on-facade/", "year-on-facade/stats/")
       .replace(/&year=\d+/g, "")

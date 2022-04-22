@@ -6,13 +6,13 @@
   <link rel="stylesheet" type="text/css" href="./style.css" />
   <meta name="viewport" content="width=device-width" />
   <script>
-    var dataScript = document.createElement('script');
-    var url = new URL(window.location.href);
+    const dataScript = document.createElement('script');
+    const url = new URL(window.location.href);
     dataScript.src = '../js/_generated/' + (url.searchParams.get("city") || 'London') + '.js';
     dataScript.defer = true;
     document.head.appendChild(dataScript);
 
-    var statsScript = document.createElement('script');
+    const statsScript = document.createElement('script');
     statsScript.src = '../js/stats.js'
     statsScript.defer = true;
     document.head.appendChild(statsScript);
