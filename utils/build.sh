@@ -7,7 +7,7 @@ for filename in ./csv/*.csv; do
   city=$(basename "$filename" .csv)
 
   # sort
-  echo -ne "year;latitude;longitude\n$(tail -n +2 $filename | sort)" > $filename
+  echo -ne "year;latitude;longitude\n$(tail -n +2 $filename | sort | sed -E 's/,/;/g' | sed -E 's/[[:space:]]//g')" > $filename
 
   # generate temporary json files for each city
   cat "./csv/$city.csv" | jq -sRr "split(\"\\n\") | .[1:] | map(split(\";\")) | map({(.[0]): [.[1], .[2]] | join(\",\") }) | add as \$points | {\"$city\": {\"points\": \$points}}" >$temp

@@ -11,6 +11,18 @@
       }
     }
   },
+  "TODO": {
+    "config": {
+      "zoom": 12,
+      "center": "51.507200,-0.127600",
+      "borders": {
+        "south": 51.279860,
+        "north": 51.692042,
+        "west": -0.524924,
+        "east": 0.323770
+      }
+    }
+  },
   "Copenhagen": {
     "config": {
       "zoom": 13,
