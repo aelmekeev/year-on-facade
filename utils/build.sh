@@ -57,7 +57,7 @@ EOF
   <rect y="0" x="$background_start" width="$background_width" height="$height" fill="#a3bff4" />
 EOF
 
-  cat $filename | tail -n +2 | while read line; do
+  for line in $(cat $filename | sed -n '/^[[:digit:]]/p'); do
     year=$(echo $line | cut -d ';' -f 1)
     rect_start=$(($year - $min_year))
     cat >>$svg_file <<EOF
