@@ -17,7 +17,7 @@
 .year {
   width: 34px;
   height: 34px;
-  background-color: #A3BFF4;
+  background-color: #a3bff4;
   border: 0.5px solid white;
   line-height: 34px;
   text-align: center;
@@ -26,6 +26,6 @@
 }
 
 .found {
-  background-color: #C8E3C2;
+  background-color: #c8e3c2;
   cursor: pointer;
 }

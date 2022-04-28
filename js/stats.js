@@ -13,7 +13,7 @@ function updateRange() {
 function redirectToExactPoint(year) {
   return function () {
     const currentUrl = window.location.href;
-    window.location.href = currentUrl.replace("/stats", "") + (currentUrl.includes("?") ? "&" : "?") + "year=" + year;
+    window.location.href = currentUrl.replace("/stats", "/map") + (currentUrl.includes("?") ? "&" : "?") + "year=" + year;
   }
 }
 
@@ -56,11 +56,16 @@ function updateTotal() {
   document.querySelector("#total .value").innerHTML = `${years.length} (${coverage}%)`;
 }
 
+function updateLink() {
+  document.querySelector("a").href = window.location.href.replace('stats/', '').replace(/\?.+/, '')
+}
+
 function updateStats() {
   updateHeader()
   updateRange()
-  updateTable()
   updateTotal()
+  updateLink()
+  updateTable()
 }
 
 window.onload = updateStats

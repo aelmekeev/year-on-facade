@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Year on Facade</title>
+  <link rel="stylesheet" type="text/css" href="../css/map.css" />
+  <meta name="viewport" content="width=device-width" />
+  <script>
+    const dataScript = document.createElement('script');
+    const url = new URL(window.location.href);
+    dataScript.src = '../js/_generated/' + (url.searchParams.get("city") || 'London') + '.js';
+    dataScript.defer = false;
+    dataScript.async = false;
+    document.head.appendChild(dataScript);
+
+    const mainScript = document.createElement('script');
+    mainScript.src = '../js/map.js'
+    mainScript.defer = false;
+    mainScript.async = false;
+    document.head.appendChild(mainScript);
+
+    const mapScript = document.createElement('script');
+    mapScript.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCoiKEmUCSlurpp6Qs5aCLt1O5x4WnKWKw&callback=initMap&v=weekly'
+    mapScript.defer = false;
+    mapScript.async = false;
+    document.head.appendChild(mapScript);
+</script>
+</head>
+
+<body>
+  <div id="map"></div>
+</body>
+
+</html>
