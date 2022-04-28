@@ -31,7 +31,7 @@ echo "const data = {" >$list_js
 for filename in ./csv/*.csv; do
   city=$(basename "$filename" .csv)
 
-  echo "  \"$city\": $(grep -c '^\d' $filename)," >>$list_js
+  echo "  \"$city\": $(sed -n '/^[[:digit:]]/p' $filename | grep -c '.')," >>$list_js
 done
 echo "}" >>$list_js
 
