@@ -1,5 +1,5 @@
 const data = {
-  "Copenhagen": 3,
-  "London": 18,
-  "TODO": 60,
+  "Copenhagen": 0,
+  "London": 0,
+  "TODO": 0,
 }
