@@ -3,32 +3,22 @@
 
 <head>
   <title>Year on Facade</title>
-  <link rel="stylesheet" type="text/css" href="./css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/list.css" />
   <meta name="viewport" content="width=device-width" />
-  <script>
-    const dataScript = document.createElement('script');
-    const url = new URL(window.location.href);
-    dataScript.src = './js/_generated/' + (url.searchParams.get("city") || 'London') + '.js';
-    dataScript.defer = false;
-    dataScript.async = false;
-    document.head.appendChild(dataScript);
-
-    const mainScript = document.createElement('script');
-    mainScript.src = './js/main.js'
-    mainScript.defer = false;
-    mainScript.async = false;
-    document.head.appendChild(mainScript);
-
-    const mapScript = document.createElement('script');
-    mapScript.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCoiKEmUCSlurpp6Qs5aCLt1O5x4WnKWKw&callback=initMap&v=weekly'
-    mapScript.defer = false;
-    mapScript.async = false;
-    document.head.appendChild(mapScript);
-</script>
+  <script src="js/_generated/list.js"></script>
+  <script src="js/list.js"></script>
 </head>
 
 <body>
-  <div id="map"></div>
+  <h1>Year on Facade</h1>
+
+  <span>Sort</span>
+  <input type="radio" id="by_count" name="sort" value="by_count" checked />
+  <label for="by_count">by count</label>
+  <input type="radio" id="alphabetically" name="sort" value="alphabetically" />
+  <label for="alphabetically">alphabetically</label>
+
+  <div id="list" />
 </body>
 
 </html>
