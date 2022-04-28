@@ -9,15 +9,19 @@ for filename in ./csv/*.csv; do
   (echo "Error: $filename contains duplicates" && exit 1)
 done
 
-echo $(cat ./js/data.js | sed 's/const data = //') >$temp
+for filename in ./js/_generated/*.js; do
+  city=$(basename "$filename" .js)
+  if [ "$city" != "list" ]; then
+    echo $(cat $filename | sed 's/const data = //') >$temp
 
-jq '. as $data |
-  $data | keys[] | . as $city |
-  $data[$city].config.borders as $borders |
-  $borders.south as $minLat | $borders.north as $maxLat | $borders.west as $minLng | $borders.east as $maxLng |
-  $data[$city].points[] | split(",") as [$lat, $lng] |
-  ($lat | tonumber > $minLat) and ($lat | tonumber < $maxLat) and ($lng | tonumber > $minLng) and ($lng | tonumber) < $maxLng
-  ' $temp | jq -se '. | all' &>/dev/null ||
-  (echo "Error: some cities have coordinates outside of config specified in $config." && rm $temp && exit 1)
+    jq '. as $data |
+      $data.config.borders as $borders |
+      $borders.south as $minLat | $borders.north as $maxLat | $borders.west as $minLng | $borders.east as $maxLng |
+      $data.points[] | split(",") as [$lat, $lng] |
+      ($lat | tonumber > $minLat) and ($lat | tonumber < $maxLat) and ($lng | tonumber > $minLng) and ($lng | tonumber) < $maxLng
+      ' $temp | jq -se '. | all' &>/dev/null ||
+      (echo "Error: $city.csv has coordinates outside of config specified in configs.json." && rm $temp && exit 1)
+  fi
+done
 
 rm $temp
