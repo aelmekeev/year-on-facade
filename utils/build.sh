@@ -45,7 +45,7 @@ for filename in ./csv/*.csv; do
   svg_file="./img/_generated/$city.svg"
 
   cat >$svg_file <<EOF
-<svg viewBox="0 0 $width $height" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 $width $height" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
 EOF
 
   # draw range

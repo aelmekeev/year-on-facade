@@ -1,4 +1,4 @@
-<svg viewBox="0 0 313 35" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 313 35" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
   <rect y="0" x="170" width="121" height="35" fill="#a3bff4" />
   <rect y="0" x="170" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="175" width="1" height="35" fill="#c8e3c2" />

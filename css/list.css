@@ -24,14 +24,14 @@ h1 {
 
 #tea {
   color: black;
-  font-weight: normal;
+  font-size: smaller;
 }
 
 #list {
   margin: 10px 0px;
   border-left: 1px solid black;
   border-right: 1px solid black;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .row {
@@ -59,6 +59,7 @@ label {
 #marks {
   display: flex;
   margin-top: 15px;
+  font-size: smaller;
 }
 
 #start {
