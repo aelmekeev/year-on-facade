@@ -1,5 +1,37 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header {
+  display: flex;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+}
+
+#links {
+  width: 150px;
+  text-align: right;
+  padding-top: 10px;
+}
+
+#github img {
+  width: 60px;
+  margin-bottom: 5px;
+}
+
+#tea {
+  color: black;
+  font-weight: normal;
+}
+
 #list {
-  margin-top: 30px;
+  margin: 10px 0px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding-top: 15px;
 }
 
 .row {
@@ -8,10 +40,27 @@
   width: 100%;
   height: 35px;
   line-height: 35px;
+  margin-bottom: 2px;
+}
+
+.row a {
   padding-left: 10px;
-  margin: 2px 5px 0px 5px;
+}
+
+.row:first-child {
+  border-top: 1px dashed black;
+  height: 0px;
 }
 
 label {
   margin-right: 10px;
+}
+
+#marks {
+  display: flex;
+  margin-top: 15px;
+}
+
+#start {
+  width: 100%;
 }

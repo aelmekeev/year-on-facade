@@ -34,6 +34,7 @@ for filename in ./csv/*.csv; do
   echo "  \"$city\": $(sed -n '/^[[:digit:]]/p' $filename | grep -c '.')," >>$list_js
 done
 echo "}" >>$list_js
+echo "const minYear = $min_year;" >>$list_js
 
 # generate svg files for each city
 current_year=$(date +%Y)
@@ -41,7 +42,7 @@ height=35
 width=$(($current_year - $min_year))
 for filename in ./csv/*.csv; do
   city=$(basename "$filename" .csv)
-  svg_file="./svg/_generated/$city.svg"
+  svg_file="./img/_generated/$city.svg"
 
   cat >$svg_file <<EOF
 <svg viewBox="0 0 $width $height" xmlns="http://www.w3.org/2000/svg">
