@@ -17,7 +17,7 @@ function sortList(sortFunction = sortByCount) {
 
       const row = document.createElement('div');
       row.classList.add('row');
-      row.innerHTML = `<a href="${window.location.href.replace('/year-on-facade', '/year-on-facade/map')}?city=${city}">${city}</a> - ${score}`;
+      row.innerHTML = `<a href="${window.location.href.replace('/year-on-facade', '/year-on-facade/stats')}?city=${city}">${city}</a> - ${score}`;
       row.style.backgroundImage = `url("img/_generated/${city}.svg")`;
       parent.appendChild(row);
     });

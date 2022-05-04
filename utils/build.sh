@@ -18,7 +18,7 @@ for filename in ./csv/*.csv; do
 
   # generate temporary json files for each city
   cat "./csv/$city.csv" | jq -sRr "split(\"\\n\") | .[1:] | map(split(\";\")) | map({(.[0]): [.[1], .[2]] | join(\",\") }) | add as \$points | {\"$city\": {\"points\": \$points}}" >$temp
-  jq -s ".[0] * .[1] | {\"$city\": .[\"$city\"]}" ./utils/configs.json $temp >"./utils/$city.json.tmp"
+  jq -s ".[0].useInternalMap as \$useInternalMap | .[1] * .[2] | {\"$city\": .[\"$city\"]} | .[\"$city\"].config.useInternalMap = \$useInternalMap" config.json ./utils/configs.json $temp >"./utils/$city.json.tmp"
 
   cat >"./js/_generated/$city.js" <<EOF
 const data = $(cat ./utils/$city.json.tmp | jq ".[\"$city\"]")
@@ -68,5 +68,10 @@ EOF
 
   echo "</svg>" >>$svg_file
 done
+
+# update api key
+api_key=$(jq -r '.apiKey' config.json)
+cat ./map/index.html | sed -E "s/key=[^&]+/key=$api_key/g" > ./utils/index.html.tmp
+mv ./utils/index.html.tmp ./map/index.html
 
 rm ./utils/*.tmp

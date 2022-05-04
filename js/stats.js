@@ -13,7 +13,9 @@ function updateRange() {
 function redirectToExactPoint(year) {
   return function () {
     const currentUrl = window.location.href;
-    window.location.href = currentUrl.replace("/stats", "/map") + (currentUrl.includes("?") ? "&" : "?") + "year=" + year;
+    window.location.href = data.config.useInternalMap ?
+      currentUrl.replace("/stats", "/map") + (currentUrl.includes("?") ? "&" : "?") + "year=" + year :
+      `https://www.google.com/maps/search/${data.points[year]}`;
   }
 }
 
