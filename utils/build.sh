@@ -25,13 +25,22 @@ const data = $(cat ./utils/$city.json.tmp | jq ".[\"$city\"]")
 EOF
 done
 
+#generate world.js
+jq -s --sort-keys '{"World": {"points": [.[] | ..? | .points] | del(..|nulls) | add }}' $(ls -SA1 utils/*tmp | grep -v temp.json.tmp) >$temp
+city="World"
+jq -s ".[0].useInternalMap as \$useInternalMap | .[1] * .[2] | {\"$city\": .[\"$city\"]} | .[\"$city\"].config.useInternalMap = \$useInternalMap" config.json ./utils/configs.json $temp >"./utils/$city.json.tmp"
+
+cat >"./js/_generated/$city.js" <<EOF
+const data = $(cat ./utils/$city.json.tmp | jq ".[\"$city\"]")
+EOF
+
 # generate list.js
 list_js="./js/_generated/list.js"
 echo "const data = {" >$list_js
-for filename in ./csv/*.csv; do
-  city=$(basename "$filename" .csv)
+for filename in $(ls -A1 utils/*tmp | grep -v temp.json.tmp); do
+  city=$(basename "$filename" .json.tmp)
 
-  echo "  \"$city\": $(sed -n '/^[[:digit:]]/p' $filename | grep -c '.')," >>$list_js
+  echo "  \"$city\": $(jq -r ".$city.points | keys | length" $filename)," >>$list_js
 done
 echo "}" >>$list_js
 echo "const minYear = $min_year;" >>$list_js
@@ -40,8 +49,8 @@ echo "const minYear = $min_year;" >>$list_js
 current_year=$(date +%Y)
 height=35
 width=$(($current_year - $min_year))
-for filename in ./csv/*.csv; do
-  city=$(basename "$filename" .csv)
+for filename in $(ls -A1 utils/*tmp | grep -v temp.json.tmp); do
+  city=$(basename "$filename" .json.tmp)
   svg_file="./img/_generated/$city.svg"
 
   cat >$svg_file <<EOF
@@ -49,8 +58,8 @@ for filename in ./csv/*.csv; do
 EOF
 
   # draw range
-  first_year=$(cat $filename | sed -n 2p | cut -d ';' -f 1)
-  last_year=$(cat $filename | tail -n 1 | cut -d ';' -f 1)
+  first_year=$(jq -r ".$city.points | keys | first" $filename)
+  last_year=$(jq -r ".$city.points | keys | last" $filename)
   background_width=$(($last_year - $first_year + 1))
   background_start=$(($first_year - $min_year))
 
@@ -58,8 +67,7 @@ EOF
   <rect y="0" x="$background_start" width="$background_width" height="$height" fill="#a3bff4" />
 EOF
 
-  for line in $(cat $filename | sed -n '/^[[:digit:]]/p'); do
-    year=$(echo $line | cut -d ';' -f 1)
+  for year in $(jq -r ".$city.points | keys | .[]" $filename); do
     rect_start=$(($year - $min_year))
     cat >>$svg_file <<EOF
   <rect y="0" x="$rect_start" width="1" height="$height" fill="#c8e3c2" />

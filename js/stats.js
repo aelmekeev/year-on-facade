@@ -7,7 +7,7 @@ function updateRange() {
   const years = Object.keys(data.points).map(y => parseInt(y));
   const min = Math.min(...years);
   const max = Math.max(...years);
-  document.querySelector("#range .value").innerHTML = `${min} &mdash; ${max} (${max - min} years)`;
+  document.querySelector("#range .value").innerHTML = `${min} &mdash; ${max} (${max - min + 1} years)`;
 }
 
 function redirectToExactPoint(year) {
@@ -54,19 +54,20 @@ function updateTotal() {
   const years = Object.keys(data.points).map(y => parseInt(y));
   const min = Math.min(...years);
   const max = Math.max(...years);
-  const coverage = Math.floor(years.length * 100 / (max - min))
+  const coverage = Math.floor(years.length * 100 / (max - min + 1))
   document.querySelector("#total .value").innerHTML = `${years.length} (${coverage}%)`;
 }
 
-function updateLink() {
-  document.querySelector("a").href = window.location.href.replace('stats/', '').replace(/\?.+/, '')
+function updateLinks() {
+  document.querySelector(".stat a").href = window.location.href.replace('stats/', '').replace(/\?.+/, '')
+  document.querySelector(".map a").href = window.location.href.replace('stats/', 'map/')
 }
 
 function updateStats() {
   updateHeader()
   updateRange()
   updateTotal()
-  updateLink()
+  updateLinks()
   updateTable()
 }
 

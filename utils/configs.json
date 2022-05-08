@@ -1,4 +1,11 @@
 {
+  "World": {
+    "config": {
+      "zoom": 5,
+      "center": "51.507200,-0.127600",
+      "borders": null
+    }
+  },
   "London": {
     "config": {
       "zoom": 12,
@@ -20,6 +27,18 @@
         "north": 51.692042,
         "west": -0.524924,
         "east": 0.323770
+      }
+    }
+  },
+  "Billund": {
+    "config": {
+      "zoom": 14,
+      "center": "55.6722309,12.4896549",
+      "borders": {
+        "south": 55.699129,
+        "north": 55.773428,
+        "west": 9.057742,
+        "east": 9.244760
       }
     }
   },
