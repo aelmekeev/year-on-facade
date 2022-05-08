@@ -10,7 +10,7 @@ h1 {
   display: flex;
 }
 
-.stat {
+.stat, .map {
   margin: 10px;
 }
 
