@@ -25,27 +25,7 @@ It is OK to replace existing points in case the replacement:
 
 ## Contribution
 
-Simply raise a pull request with a change in the correct file in `csv` folder.
-
-**Note:** it's better to use web UI of Google Maps to keep coordinates precision consistent.
-
-If you want to you can also run `make build` and `make validate` locally if you have `jq` installed, otherwise they will be executed as part of pull request pipelines.
-
-### Adding new city
-
-* add `./csv/<city name>.csv`
-* add configuration for the city in `./utils/configs.json`
-
-**Note:** please use underscores instead of spaces in the city name, e.g. `New_York`.
-
-### Configuration
-
-`config.json` contains the following:
-
-* `useInternalMap` controls wether links on the Stats page will lead to a "builtin" map with all the markers, or to google maps website / application
-* `apiKey` is the Google Maps API key restricted to `Maps JavaScript API`
-
-Don't forget to update those values if you decided to fork this repository.
+Please read [Contributor's Guide](https://github.com/aelmekeev/year-on-facade/tree/main/.github/CONTRIBUTING.md).
 
 ## Similar projects
 
