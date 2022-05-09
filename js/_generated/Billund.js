@@ -1,7 +1,7 @@
 const data = {
   "config": {
     "zoom": 14,
-    "center": "55.6722309,12.4896549",
+    "center": "55.730953, 9.126648",
     "borders": {
       "south": 55.699129,
       "north": 55.773428,
