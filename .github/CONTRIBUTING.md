@@ -22,7 +22,7 @@ If you want to you can also run `make build` and `make validate` locally if you 
 
 Don't forget to update these values if you decided to fork this repository.
 
-## Local testing
+## Local testing
 
 Local testing is required only when you are contributing to the collection tooling. For this you would need:
 
