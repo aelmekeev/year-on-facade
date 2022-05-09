@@ -3,11 +3,14 @@ function updateHeader() {
   document.querySelector("h1").innerHTML = url.searchParams.get("city") || "London";
 }
 
+const maybePluralize = (count, noun = 'year', suffix = 's') =>
+  `${count} ${noun}${count !== 1 ? suffix : ''}`;
+
 function updateRange() {
   const years = Object.keys(data.points).map(y => parseInt(y));
   const min = Math.min(...years);
   const max = Math.max(...years);
-  document.querySelector("#range .value").innerHTML = `${min} &mdash; ${max} (${max - min + 1} years)`;
+  document.querySelector("#range .value").innerHTML = `${min} &mdash; ${max} (${maybePluralize(max - min + 1)})`;
 }
 
 function redirectToExactPoint(year) {
@@ -58,15 +61,35 @@ function updateTotal() {
   document.querySelector("#total .value").innerHTML = `${years.length} (${coverage}%)`;
 }
 
+function updateLongestSequence() {
+  const years = Object.keys(data.points).map(y => parseInt(y));
+  const sequence = years.reduce(([max, current, sequenceStart], year, i) => {
+    const partOfSequence = (year - years[i - 1] || 0) == 1
+    current = partOfSequence ? ++current : 0
+    sequenceStart = current > max ? year - current : sequenceStart
+    return [Math.max(max, current), current, sequenceStart]
+  }, [0, 0, years[0]])
+  const sequenceStart = sequence[2]
+  const sequenceLength = sequence[0] + 1
+  const sequenceEnd = sequenceStart + sequenceLength - 1
+  document.querySelector("#sequence .value").innerHTML = `${sequenceStart} &mdash; ${sequenceEnd} (${maybePluralize(sequenceLength)})`;
+}
+
 function updateLinks() {
-  document.querySelector(".stat a").href = window.location.href.replace('stats/', '').replace(/\?.+/, '')
-  document.querySelector(".map a").href = window.location.href.replace('stats/', 'map/')
+  document.querySelector("#compare a").href = window.location.href.replace('stats/', '').replace(/\?.+/, '')
+  const map = document.querySelector("#map a")
+  if (data.config.useInternalMap) {
+    map.href = window.location.href.replace('stats/', 'map/')
+  } else {
+    map.remove()
+  }
 }
 
 function updateStats() {
   updateHeader()
   updateRange()
   updateTotal()
+  updateLongestSequence()
   updateLinks()
   updateTable()
 }

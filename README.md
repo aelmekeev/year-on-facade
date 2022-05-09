@@ -11,8 +11,8 @@ In order to be added to collection the location needs to meet the following requ
 1. The year must be on facade and be part of the building and should be associated with it ([examples](https://www.instagram.com/year_on_facade/)):
     * Year of the construction / reconstruction :white_check_mark:
     * [Commemorative plaque](https://en.wikipedia.org/wiki/Commemorative_plaque) :x:
-    * [Cornerstone](https://en.wikipedia.org/wiki/Cornerstone) :x:
     * Name of the organization located in the building :x:
+    * Year when the organization located in the building was established :x:
 2. Year must be written with arabic numerals.
 3. The building must be located in administrative boundaries of particular city.
 4. Be verifiable via Google Street View.
@@ -20,7 +20,7 @@ In order to be added to collection the location needs to meet the following requ
 
 It is OK to replace existing points in case the replacement:
 
-1. either represent some landmark / building with interesting history
+1. either represent some landmark / building with interesting history (e.g. listed by [Historic England](https://historicengland.org.uk/))
 2. or makes distribution of the points on the map nicer (i.e. less crowdy)
 
 ## Contribution
@@ -37,6 +37,15 @@ If you want to you can also run `make build` and `make validate` locally if you 
 * add configuration for the city in `./utils/configs.json`
 
 **Note:** please use underscores instead of spaces in the city name, e.g. `New_York`.
+
+### Configuration
+
+`config.json` contains the following:
+
+* `useInternalMap` controls wether links on the Stats page will lead to a "builtin" map with all the markers, or to google maps website / application
+* `apiKey` is the Google Maps API key restricted to `Maps JavaScript API`
+
+Don't forget to update those values if you decided to fork this repository.
 
 ## Similar projects
 
