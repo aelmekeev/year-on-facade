@@ -53,7 +53,7 @@ function initMap() {
   map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(statsControlDiv);
 
   for (const year in points) {
-    new google.maps.Marker({
+    const marker = new google.maps.Marker({
       position: parseCoordinatesString(points[year]),
       map,
       title: year,
@@ -62,6 +62,10 @@ function initMap() {
         color: "white",
         fontSize: "9px"
       }
+    });
+    marker.addListener("click", () => {
+      map.setZoom(15);
+      map.setCenter(marker.getPosition());
     });
   }
 }
