@@ -27,7 +27,9 @@ function updateTable() {
 
   const years = Object.keys(data.points).map(y => parseInt(y));
   const min = Math.floor(Math.min(...years) / yearsInLine) * yearsInLine;
-  const max = Math.ceil(Math.max(...years) / yearsInLine) * yearsInLine;
+  let max = Math.ceil(Math.max(...years) / yearsInLine) * yearsInLine;
+
+  if (max == min) { max = max + yearsInLine }
 
   const parent = document.querySelector("#table");
 
