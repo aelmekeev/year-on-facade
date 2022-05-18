@@ -1,8 +1,8 @@
 const data = {
-  "Billund": 1,
-  "Copenhagen": 3,
-  "London": 31,
-  "Perm": 1,
+  "Billund, Denmark": 1,
+  "Copenhagen, Denmark": 3,
+  "London, UK": 31,
+  "Perm, Russia": 1,
   "TODO": 48,
   "World": 72,
 }

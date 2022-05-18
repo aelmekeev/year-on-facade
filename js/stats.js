@@ -1,6 +1,8 @@
 function updateHeader() {
   const url = new URL(window.location.href);
-  document.querySelector("h1").innerHTML = url.searchParams.get("city") || "London";
+  const city = url.searchParams.get("city") || "London";
+  const title = [city, data.config.country].filter(n => n).join(", ");
+  document.querySelector("h1").innerHTML = title;
 }
 
 const maybePluralize = (count, noun = 'year', suffix = 's') =>

@@ -12,12 +12,13 @@ function sortList(sortFunction = sortByCount) {
   Object.entries(data)
     .sort(sortFunction)
     .forEach(e => {
-      const city = e[0];
+      const title = e[0]; 
+      const city = title.split(',')[0];
       const score = e[1];
 
       const row = document.createElement('div');
       row.classList.add('row');
-      row.innerHTML = `<a href="${window.location.href.replace('/year-on-facade', '/year-on-facade/stats')}?city=${city}">${city}</a> - ${score}`;
+      row.innerHTML = `<a href="${window.location.href.replace('/year-on-facade', '/year-on-facade/stats')}?city=${city}">${title}</a> - ${score}`;
       row.style.backgroundImage = `url("img/_generated/${city}.svg")`;
       parent.appendChild(row);
     });

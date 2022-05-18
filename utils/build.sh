@@ -40,7 +40,8 @@ echo "const data = {" >$list_js
 for filename in $(ls -A1 utils/*tmp | grep -v temp.json.tmp); do
   city=$(basename "$filename" .json.tmp)
 
-  echo "  \"$city\": $(jq -r ".$city.points | keys | length" $filename)," >>$list_js
+  city_with_country=$(jq -r "[[\"$city\", .$city.config.country][] | strings ] | join(\", \")" $filename)
+  echo "  \"$city_with_country\": $(jq -r ".$city.points | keys | length" $filename)," >>$list_js
 done
 echo "}" >>$list_js
 echo "const minYear = $min_year;" >>$list_js

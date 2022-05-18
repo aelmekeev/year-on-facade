@@ -8,6 +8,7 @@
   },
   "London": {
     "config": {
+      "country": "UK",
       "zoom": 12,
       "center": "51.507200,-0.127600",
       "borders": {
@@ -32,6 +33,7 @@
   },
   "Billund": {
     "config": {
+      "country": "Denmark",
       "zoom": 14,
       "center": "55.730953, 9.126648",
       "borders": {
@@ -44,6 +46,7 @@
   },
   "Copenhagen": {
     "config": {
+      "country": "Denmark",
       "zoom": 13,
       "center": "55.6722309,12.4896549",
       "borders": {
@@ -56,6 +59,7 @@
   },
   "Perm": {
     "config": {
+      "country": "Russia",
       "zoom": 13,
       "center": "58.015969,56.282795",
       "borders": {
