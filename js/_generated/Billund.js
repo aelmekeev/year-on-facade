@@ -2,7 +2,10 @@ const data = {
   "config": {
     "country": "Denmark",
     "zoom": 14,
-    "center": "55.730953, 9.126648",
+    "center": {
+      "lat": 55.730953,
+      "lng": 9.126648
+    },
     "borders": {
       "south": 55.699129,
       "north": 55.773428,
@@ -12,6 +15,11 @@ const data = {
     "useInternalMap": true
   },
   "points": {
-    "1924": "55.73171536145109,9.113889380972617"
+    "1924": {
+      "latlng": {
+        "lat": 55.73171536145109,
+        "lng": 9.113889380972617
+      }
+    }
   }
 }

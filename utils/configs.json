@@ -2,7 +2,10 @@
   "World": {
     "config": {
       "zoom": 5,
-      "center": "51.507200,-0.127600",
+      "center": {
+        "lat": 51.5072,
+        "lng": -0.1276
+      },
       "borders": null
     }
   },
@@ -10,7 +13,10 @@
     "config": {
       "country": "UK",
       "zoom": 12,
-      "center": "51.507200,-0.127600",
+      "center": {
+        "lat": 51.5072,
+        "lng": -0.1276
+      },
       "borders": {
         "south": 51.279860,
         "north": 51.692042,
@@ -22,7 +28,10 @@
   "TODO": {
     "config": {
       "zoom": 12,
-      "center": "51.507200,-0.127600",
+      "center": {
+        "lat": 51.5072,
+        "lng": -0.1276
+      },
       "borders": {
         "south": 51.279860,
         "north": 51.692042,
@@ -35,7 +44,10 @@
     "config": {
       "country": "Denmark",
       "zoom": 14,
-      "center": "55.730953, 9.126648",
+      "center": {
+        "lat": 55.730953,
+        "lng": 9.126648
+      },
       "borders": {
         "south": 55.699129,
         "north": 55.773428,
@@ -48,7 +60,10 @@
     "config": {
       "country": "Denmark",
       "zoom": 13,
-      "center": "55.6722309,12.4896549",
+      "center": {
+        "lat": 55.6722309,
+        "lng": 12.4896549
+      },
       "borders": {
         "south": 55.614929,
         "north": 55.728391,
@@ -61,7 +76,10 @@
     "config": {
       "country": "Russia",
       "zoom": 13,
-      "center": "58.015969,56.282795",
+      "center": {
+        "lat": 58.015969,
+        "lng": 56.282795
+      },
       "borders": {
         "south": 57.802453,
         "north": 58.231352,

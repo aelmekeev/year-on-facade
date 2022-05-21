@@ -17,7 +17,7 @@ for filename in ./csv/*.csv; do
   min_year=$([ "$first_year" \< "$min_year" ] && echo "$first_year" || echo "$min_year")
 
   # generate temporary json files for each city
-  cat "./csv/$city.csv" | jq -sRr "split(\"\\n\") | .[1:] | map(split(\";\")) | map({(.[0]): [.[1], .[2]] | join(\",\") }) | add as \$points | {\"$city\": {\"points\": \$points}}" >$temp
+  cat "./csv/$city.csv" | jq -sRr "split(\"\\n\") | .[1:] | map(split(\";\")) | map({(.[0]): {latlng: {lat: .[1]|tonumber, lng: .[2]|tonumber}} }) | add as \$points | {\"$city\": {\"points\": \$points}}" >$temp
   jq -s ".[0].useInternalMap as \$useInternalMap | .[1] * .[2] | {\"$city\": .[\"$city\"]} | .[\"$city\"].config.useInternalMap = \$useInternalMap" config.json ./utils/configs.json $temp >"./utils/$city.json.tmp"
 
   cat >"./js/_generated/$city.js" <<EOF

@@ -20,7 +20,7 @@ function redirectToExactPoint(year) {
     const currentUrl = window.location.href;
     window.location.href = data.config.useInternalMap ?
       currentUrl.replace("/stats", "/map") + (currentUrl.includes("?") ? "&" : "?") + "year=" + year :
-      `https://www.google.com/maps/search/${data.points[year]}`;
+      `https://www.google.com/maps/search/${data.points[year].latlng.lat},${data.points[year].latlng.lng}`;
   }
 }
 
