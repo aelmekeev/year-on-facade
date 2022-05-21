@@ -15,9 +15,7 @@ function StatsControl(controlDiv) {
     const currentUrl = window.location.href;
     window.location.href = currentUrl
       .replace("/map/", "/stats/")
-      .replace(/&year=\d+/g, "")
-      .replace(/\?year=\d+$/g, "")
-      .replace(/\?year=\d+&/g, "?");
+      .replace(/&year=\d+/g, "");
   });
 }
 

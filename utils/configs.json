@@ -22,6 +22,10 @@
         "north": 51.692042,
         "west": -0.524924,
         "east": 0.323770
+      },
+      "external": {
+        "label": "Check out Historic England",
+        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
       }
     }
   },

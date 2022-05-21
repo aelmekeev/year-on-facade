@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Year on Facade | Item</title>
+  <link rel="stylesheet" type="text/css" href="../css/item.css" />
+  <meta name="viewport" content="width=device-width" />
+  <script>
+    const url = new URL(window.location.href);
+    const city = url.searchParams.get("city") || 'London';
+    document.title = `Year on Facade | Item | ${city.replace('_', ' ')}`
+
+    const dataScript = document.createElement('script');
+    dataScript.src = '../js/_generated/' + city + '.js';
+    dataScript.defer = false;
+    dataScript.async = false;
+    document.head.appendChild(dataScript);
+
+    const itemScript = document.createElement('script');
+    itemScript.src = '../js/item.js'
+    itemScript.defer = false;
+    itemScript.async = false;
+    document.head.appendChild(itemScript);
+  </script>
+</head>
+
+<body>
+  <h1></h1>
+
+  <div class="line" id="map">
+    <a href="#">Show on map</a>
+  </div>
+
+  <div class="line" id="more">
+    <a href="#">More items in this city</a>
+  </div>
+
+  <div class="line" id="external">
+    <a href="#"></a>
+  </div>
+
+  <div class="line" id="notes"></div>
+
+</body>
+
+</html>

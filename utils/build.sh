@@ -10,14 +10,14 @@ for filename in ./csv/*.csv; do
   city=$(basename "$filename" .csv)
 
   # sort
-  echo -ne "year;latitude;longitude\n$(tail -n +2 $filename | sort | sed -E 's/,/;/g' | sed -E 's/[[:space:]]//g')" >$filename
+  echo -ne "year;latitude;longitude;notes;external\n$(tail -n +2 $filename | sort)" >$filename
 
   # get first year and compare it with minimum among all cities
   first_year=$(cat $filename | sed -n 2p | cut -d ';' -f 1)
   min_year=$([ "$first_year" \< "$min_year" ] && echo "$first_year" || echo "$min_year")
 
   # generate temporary json files for each city
-  cat "./csv/$city.csv" | jq -sRr "split(\"\\n\") | .[1:] | map(split(\";\")) | map({(.[0]): {latlng: {lat: .[1]|tonumber, lng: .[2]|tonumber}} }) | add as \$points | {\"$city\": {\"points\": \$points}}" >$temp
+  cat "./csv/$city.csv" | jq -sRr "split(\"\\n\") | .[1:] | map(split(\";\")) | map({(.[0]): {latlng: {lat: .[1]|tonumber, lng: .[2]|tonumber}, notes: .[3], external: .[4]} }) | add as \$points | {\"$city\": {\"points\": \$points}} | del(..|nulls)" >$temp
   jq -s ".[0].useInternalMap as \$useInternalMap | .[1] * .[2] | {\"$city\": .[\"$city\"]} | .[\"$city\"].config.useInternalMap = \$useInternalMap" config.json ./utils/configs.json $temp >"./utils/$city.json.tmp"
 
   cat >"./js/_generated/$city.js" <<EOF
