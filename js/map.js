@@ -1,10 +1,3 @@
-function parseCoordinatesString(coordinatesString) {
-  return {
-    lat: +coordinatesString.split(',')[0],
-    lng: +coordinatesString.split(',')[1]
-  }
-}
-
 function StatsControl(controlDiv) {
   controlDiv.classList.add("control");
 
@@ -34,7 +27,7 @@ function initMap() {
   const points = data.points;
 
   const zoom = year ? 18 : data.config.zoom;
-  const center = parseCoordinatesString(year ? points[year] : data.config.center);
+  const center = year ? points[year].latlng : data.config.center;
 
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom,
@@ -54,7 +47,7 @@ function initMap() {
 
   for (const year in points) {
     const marker = new google.maps.Marker({
-      position: parseCoordinatesString(points[year]),
+      position: points[year].latlng,
       map,
       title: year,
       label: {
