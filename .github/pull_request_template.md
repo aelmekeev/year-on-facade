@@ -1,4 +1,4 @@
 The following locations were added:
 
-* <year>: [Google Streets](<link to google street view>), [English Heritage](<link to English Heritage Official List Entry page>)
+* <year>: [Google Streets](<link to google street view>)
   * replaced due to <better points distribution / interesting history>
