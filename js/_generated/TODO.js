@@ -11,6 +11,10 @@ const data = {
       "west": -0.524924,
       "east": 0.32377
     },
+    "external": {
+      "label": "Check out Historic England",
+      "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+    },
     "useInternalMap": true
   },
   "points": {
@@ -142,14 +146,6 @@ const data = {
       "notes": "",
       "external": "1066062"
     },
-    "1826": {
-      "latlng": {
-        "lat": 51.50156555699284,
-        "lng": -0.15705257018722305
-      },
-      "notes": "",
-      "external": "1251180"
-    },
     "1829": {
       "latlng": {
         "lat": 51.49135484522112,
@@ -275,6 +271,14 @@ const data = {
       },
       "notes": "",
       "external": "1286182"
+    },
+    "1885": {
+      "latlng": {
+        "lat": 51.51729939033099,
+        "lng": -0.08043718041034395
+      },
+      "notes": "",
+      "external": "1064750"
     },
     "1887": {
       "latlng": {
