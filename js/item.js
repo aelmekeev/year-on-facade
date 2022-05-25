@@ -32,6 +32,21 @@ function updateNotes(year) {
   }
 }
 
+function addPhoto(container, url) {
+  const photo = document.createElement('object')
+  photo.data = url
+  photo.type = 'image/jpeg'
+  container.appendChild(photo)
+}
+
+function addPhotos(city, year) {
+  if (data.config.photosBaseUrl) {
+    const photoContainer = document.querySelector('#photoContainer')
+    addPhoto(photoContainer, `${data.config.photosBaseUrl}/${city}/${year}_close.jpg`)
+    addPhoto(photoContainer, `${data.config.photosBaseUrl}/${city}/${year}.jpg`)
+  }
+}
+
 function updateItem() {
   const url = new URL(window.location.href);
   const year = url.searchParams.get("year");
@@ -41,6 +56,7 @@ function updateItem() {
   updateLinks(city, year)
   updateExternalLink(year)
   updateNotes(year)
+  addPhotos(city, year)
 }
 
 window.onload = updateItem

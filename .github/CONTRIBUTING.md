@@ -19,6 +19,7 @@ If you want to you can also run `make build` and `make validate` locally if you 
 
 * `useInternalMap` controls wether links on the Stats page will lead to a "builtin" map with all the markers, or to google maps website / application
 * `apiKey` is the Google Maps API key restricted to `Maps JavaScript API`
+* `photosBaseUrl` contains base URL for the photos shown on the item page, the url would look like `${photosBaseUrl}/${city}/${year}.jpg`. If not specified photo won't be shown.
 
 Don't forget to update these values if you decided to fork this repository.
 

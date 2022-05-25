@@ -12,7 +12,8 @@ const data = {
       "west": 12.4526044,
       "east": 12.6514573
     },
-    "useInternalMap": true
+    "useInternalMap": true,
+    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com"
   },
   "points": {
     "1756": {
