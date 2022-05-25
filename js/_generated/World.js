@@ -6,7 +6,8 @@ const data = {
       "lng": -0.1276
     },
     "borders": null,
-    "useInternalMap": true
+    "useInternalMap": true,
+    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com"
   },
   "points": {
     "1669": {
