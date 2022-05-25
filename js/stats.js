@@ -43,6 +43,9 @@ function updateTable() {
       if (years.includes(currentYear)) {
         year.classList.add('found');
         year.onclick = redirectToExactPoint(currentYear);
+        if (data.points[currentYear].external) {
+          year.classList.add('external');
+        }
       }
       if (c == 0 || c % 5 == 0) {
         year.innerText = currentYear;
