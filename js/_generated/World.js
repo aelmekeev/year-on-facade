@@ -317,7 +317,7 @@ const data = {
         "lat": 51.47905493625614,
         "lng": -0.15482418562066752
       },
-      "notes": ""
+      "notes": "Retake photo when there is no party around"
     },
     "1862": {
       "external": "1225397",
@@ -725,13 +725,15 @@ const data = {
       "latlng": {
         "lat": 51.49172807289298,
         "lng": -0.23267063228138624
-      }
+      },
+      "notes": "Hardly a facade"
     },
     "1988": {
       "latlng": {
         "lat": 51.51995755900059,
         "lng": -0.15303397064267749
-      }
+      },
+      "notes": "Retake the photo"
     },
     "1993": {
       "latlng": {

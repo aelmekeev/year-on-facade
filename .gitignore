@@ -1,3 +1,6 @@
+photos/original
+photos/web
+
 *.tmp
 
 .DS_Store
