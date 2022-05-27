@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width" />
   <script>
     const url = new URL(window.location.href);
-    const city = url.searchParams.get("city") || 'London';
+    const city = url.searchParams.get('city');
     document.title = `Year on Facade | Item | ${city.replace('_', ' ')}`
 
     const dataScript = document.createElement('script');
@@ -29,6 +29,10 @@
 
   <div class="line" id="map">
     <a href="#">Show on map</a>
+  </div>
+
+  <div class="line" id="back">
+    <a href="#">Go back to World collection</a>
   </div>
 
   <div class="line" id="more">

@@ -12,15 +12,26 @@ function updateLinks(city, year) {
     `https://www.google.com/maps/search/${data.points[year].latlng.lat},${data.points[year].latlng.lng}`;
 
   const more = document.querySelector("#more a")
-  more.href = `${currentLocation.origin}${currentLocation.pathname.replace("/item", "/stats")}?city=${city}`
+  const statsUrl = `${currentLocation.origin}${currentLocation.pathname.replace("/item", "/stats")}`
+  more.href = `${statsUrl}?city=${city}`
+
+  // handle Back to World view link
+  const url = new URL(currentLocation.href)
+  if (url.searchParams.get("city") == "World") {
+    document.querySelector("#back a").href = `${statsUrl}?city=World`
+  } else {
+    document.querySelector("#back").remove()
+  }
 }
 
-function updateExternalLink(year) {
+function updateExternalLink(city, year) {
   const externalId = data.points[year].external
-  if (data.config.external && externalId) {
+  const externalConfig = data.config.external || data.citiesConfig[city].config.external
+  if (externalConfig && externalId) {
     const link = document.querySelector("#external a")
-    link.innerHTML = data.config.external.label
-    link.href = data.config.external.template.replace("EXTERNAL_ID", externalId)
+    link.innerHTML = externalConfig.label
+    const template = externalConfig.template
+    link.href = template.replace("EXTERNAL_ID", externalId)
   }
 }
 
@@ -40,7 +51,7 @@ function addPhoto(container, url) {
 }
 
 function addPhotos(city, year) {
-  if (data.config.photosBaseUrl) {
+  if (data.config.photosBaseUrl && city != "TODO") {
     const photoContainer = document.querySelector('#photoContainer')
     addPhoto(photoContainer, `${data.config.photosBaseUrl}/${city}/${year}_close.jpg`)
     addPhoto(photoContainer, `${data.config.photosBaseUrl}/${city}/${year}.jpg`)
@@ -50,11 +61,11 @@ function addPhotos(city, year) {
 function updateItem() {
   const url = new URL(window.location.href);
   const year = url.searchParams.get("year");
-  const city = url.searchParams.get("city") || "London";
+  const city = data.points[year].city || url.searchParams.get("city");
 
   updateHeader(city, year)
   updateLinks(city, year)
-  updateExternalLink(year)
+  updateExternalLink(city, year)
   updateNotes(year)
   addPhotos(city, year)
 }
