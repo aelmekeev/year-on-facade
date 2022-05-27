@@ -1,6 +1,6 @@
 function updateHeader() {
   const url = new URL(window.location.href);
-  const city = url.searchParams.get("city") || "London";
+  const city = url.searchParams.get("city");
   const title = [city, data.config.country].filter(n => n).join(", ");
   document.querySelector("h1").innerHTML = title;
 }

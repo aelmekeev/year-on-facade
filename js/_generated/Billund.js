@@ -13,7 +13,8 @@ const data = {
       "east": 9.24476
     },
     "useInternalMap": true,
-    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com"
+    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com",
+    "city": "Billund"
   },
   "points": {
     "1924": {
