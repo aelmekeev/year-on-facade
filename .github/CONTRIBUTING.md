@@ -6,6 +6,8 @@ To contribute to this collection simply raise a pull request with a change in th
 
 If you want to you can also run `make build` and `make validate` locally if you have `jq` installed, otherwise they will be executed as part of pull request pipelines.
 
+Photos are managed locally by the maintainer of the collection with the help of `make photos`.
+
 ## Adding new city
 
 * add `./csv/<city name>.csv`

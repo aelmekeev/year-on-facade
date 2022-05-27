@@ -10,9 +10,13 @@ h1 {
   margin: 10px;
 }
 
+#photoContainer {
+  padding: 10px
+}
+
 #photoContainer object {
   display: block;
   width: 100%;
   max-width: 600px;
-  margin: 10px;
+  margin-bottom: 10px;
 }
