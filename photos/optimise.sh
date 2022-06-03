@@ -39,7 +39,28 @@ if [ "$has_missing_photos" == "yes" ]; then
 fi
 
 
-echo "\nStep 2. Validate checksums\n"
+echo "\nStep 2. Regenerate photos for web\n"
+
+function optimise_photo() {
+  magick $1 -quality 80 -resize '1024x1024' $2
+}
+
+for city_dir in photos/original/*/; do
+  mkdir -p "${city_dir/original/web}"
+done
+
+for original_photo in photos/original/*/**.jpg; do
+  web_photo="${original_photo/original/web}"
+  if [ ! -f $web_photo ]; then
+    echo "File $web_photo is not found. Re-generating..."
+    optimise_photo $original_photo $web_photo
+  fi
+done
+
+rm -rf photos/upload
+mkdir photos/upload
+
+echo "\nStep 3. Validate checksums\n"
 checksum_file="checksum.json"
 checksum_new_file="checksum.json.tmp"
 (cd photos/original && for d in */; do
@@ -50,10 +71,21 @@ checksum_new_file="checksum.json.tmp"
     updated=$(jq -s '[(.[0] - (if .[1] == null then [] else .[1] end))[] | split("|")[0]]' $checksum_new_file $checksum_file 2>/dev/null)
     if [ "$updated" != "[]" ]; then
       echo "The following photos were updated in $d: $updated"
+
       if [ "$1" == "update" ]; then
         rm -f $checksum_file
         mv $checksum_new_file $checksum_file
         echo "Checksum file was updated."
+      else
+        mkdir "../../upload/$d"
+        updated_raw=$(jq -r '. | join(" ")' <<< $updated)
+        for updated_item in $updated_raw; do
+          original_photo="../../original/$d/$updated_item"
+          web_photo="../../web/$d/$updated_item"
+          echo "$updated_item has a different checksum. Re-generating..."
+          optimise_photo $original_photo $web_photo
+          cp $web_photo "../../upload/$d/$updated_item"
+        done
       fi
     fi
   )
@@ -64,17 +96,3 @@ if [ "$1" != "update" ]; then
 fi
 
 rm -rf ./photos/original/**/*.tmp
-
-echo "\nStep 3. Regenerate photos for web\n"
-
-for city_dir in photos/original/*/; do
-  mkdir -p "${city_dir/original/web}"
-done
-
-for original_photo in photos/original/*/**.jpg; do
-  web_photo="${original_photo/original/web}"
-  if [ ! -f $web_photo ]; then
-    echo "File $web_photo is not found. Re-generating..."
-    magick $original_photo -quality 80 -resize '1024x1024' "${original_photo/original/web}"
-  fi
-done
