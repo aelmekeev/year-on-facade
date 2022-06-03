@@ -225,7 +225,7 @@ const data = {
       "notes": ""
     },
     "1823": {
-      "city": "TODO",
+      "city": "London",
       "external": "1356750",
       "latlng": {
         "lat": 51.55619485881125,
@@ -332,7 +332,7 @@ const data = {
       "notes": "Hardly a facade"
     },
     "1850": {
-      "city": "TODO",
+      "city": "London",
       "external": "1376633",
       "latlng": {
         "lat": 51.50683089044675,
@@ -436,7 +436,7 @@ const data = {
       }
     },
     "1869": {
-      "city": "TODO",
+      "city": "London",
       "external": "1251239",
       "latlng": {
         "lat": 51.491754158670695,
@@ -472,7 +472,7 @@ const data = {
       "notes": ""
     },
     "1873": {
-      "city": "TODO",
+      "city": "London",
       "external": "1378826",
       "latlng": {
         "lat": 51.55686160358814,
@@ -513,13 +513,13 @@ const data = {
       "notes": ""
     },
     "1878": {
-      "city": "TODO",
+      "city": "London",
       "external": "1385916",
       "latlng": {
         "lat": 51.50225389232734,
         "lng": -0.09777086265129277
       },
-      "notes": ""
+      "notes": "Retake photo when once construction is complete"
     },
     "1879": {
       "city": "London",
@@ -549,7 +549,7 @@ const data = {
       "notes": ""
     },
     "1882": {
-      "city": "TODO",
+      "city": "London",
       "external": "1213696",
       "latlng": {
         "lat": 51.51267601225725,
@@ -594,7 +594,7 @@ const data = {
       "notes": ""
     },
     "1887": {
-      "city": "TODO",
+      "city": "London",
       "external": "1064742",
       "latlng": {
         "lat": 51.51434737135173,
@@ -673,12 +673,10 @@ const data = {
     },
     "1897": {
       "city": "London",
-      "external": "1226629",
       "latlng": {
-        "lat": 51.49756909347076,
-        "lng": -0.15924721516165202
-      },
-      "notes": ""
+        "lat": 51.50482520885608,
+        "lng": -0.11081581979973493
+      }
     },
     "1898": {
       "city": "London",
@@ -706,7 +704,7 @@ const data = {
       "notes": ""
     },
     "1901": {
-      "city": "TODO",
+      "city": "London",
       "external": "1379177",
       "latlng": {
         "lat": 51.551752501726476,
@@ -761,7 +759,7 @@ const data = {
       }
     },
     "1908": {
-      "city": "TODO",
+      "city": "London",
       "external": "1192446",
       "latlng": {
         "lat": 51.493947215594496,
@@ -795,7 +793,7 @@ const data = {
       "notes": ""
     },
     "1912": {
-      "city": "TODO",
+      "city": "London",
       "external": "1031506",
       "latlng": {
         "lat": 51.4858548662263,
@@ -836,7 +834,7 @@ const data = {
       }
     },
     "1920": {
-      "city": "TODO",
+      "city": "London",
       "external": "1236368",
       "latlng": {
         "lat": 51.50853180214528,
@@ -939,10 +937,9 @@ const data = {
     "1936": {
       "city": "London",
       "latlng": {
-        "lat": 51.49172807289298,
-        "lng": -0.23267063228138624
-      },
-      "notes": "Hardly a facade"
+        "lat": 51.50345166547039,
+        "lng": -0.10651402477112712
+      }
     },
     "1955": {
       "city": "TODO",
@@ -963,13 +960,20 @@ const data = {
       "notes": ""
     },
     "1979": {
-      "city": "TODO",
+      "city": "London",
       "external": "1224373",
       "latlng": {
         "lat": 51.50107890577769,
         "lng": -0.18952437117097545
       },
       "notes": ""
+    },
+    "1985": {
+      "city": "London",
+      "latlng": {
+        "lat": 51.499137826754534,
+        "lng": -0.10916729058594485
+      }
     },
     "1988": {
       "city": "London",
