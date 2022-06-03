@@ -498,10 +498,10 @@ const data = {
       "city": "London",
       "external": "1297994",
       "latlng": {
-        "lat": 51.52901046006989,
-        "lng": -0.10344638054641554
+        "lat": 51.52938511067449,
+        "lng": -0.10289051268348608
       },
-      "notes": "Retake the photo when construction is complete"
+      "notes": "Retake photo when construction is complete"
     },
     "1877": {
       "city": "TODO",
@@ -519,7 +519,7 @@ const data = {
         "lat": 51.50225389232734,
         "lng": -0.09777086265129277
       },
-      "notes": "Retake photo when once construction is complete"
+      "notes": "Retake photo when construction is complete"
     },
     "1879": {
       "city": "London",
