@@ -1,27 +1,18 @@
 <svg viewBox="0 0 353 35" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
-  <rect y="0" x="0" width="301" height="35" fill="#a3bff4" />
+  <rect y="0" x="0" width="287" height="35" fill="#a3bff4" />
   <rect y="0" x="0" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="50" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="51" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="52" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="74" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="86" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="91" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="93" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="97" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="98" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="107" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="116" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="121" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="143" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="147" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="152" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="153" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="155" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="160" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="166" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="169" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="171" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="173" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="185" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="189" width="1" height="35" fill="#c8e3c2" />
@@ -30,8 +21,6 @@
   <rect y="0" x="199" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="201" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="202" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="203" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="207" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="208" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="212" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="216" width="1" height="35" fill="#c8e3c2" />
@@ -42,7 +31,6 @@
   <rect y="0" x="225" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="226" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="227" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="230" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="233" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="234" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="235" width="1" height="35" fill="#c8e3c2" />
@@ -50,16 +38,13 @@
   <rect y="0" x="238" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="240" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="244" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="246" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="250" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="252" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="253" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="254" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="257" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="258" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="260" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="262" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="265" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="286" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="300" width="1" height="35" fill="#c8e3c2" />
 </svg>
