@@ -39,7 +39,7 @@ if [ "$has_missing_photos" == "yes" ]; then
 fi
 
 
-echo "\nStep 2. Regenerate photos for web\n"
+echo "\nStep 2. Generate photos for web\n"
 
 function optimise_photo() {
   magick $1 -quality 80 -resize '1024x1024' $2
@@ -49,18 +49,9 @@ for city_dir in photos/original/*/; do
   mkdir -p "${city_dir/original/web}"
 done
 
-for original_photo in photos/original/*/**.jpg; do
-  web_photo="${original_photo/original/web}"
-  if [ ! -f $web_photo ]; then
-    echo "File $web_photo is not found. Re-generating..."
-    optimise_photo $original_photo $web_photo
-  fi
-done
-
 rm -rf photos/upload
 mkdir photos/upload
 
-echo "\nStep 3. Validate checksums\n"
 checksum_file="checksum.json"
 checksum_new_file="checksum.json.tmp"
 (cd photos/original && for d in */; do

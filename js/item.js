@@ -26,7 +26,7 @@ function updateLinks(city, year) {
 
 function updateExternalLink(city, year) {
   const externalId = data.points[year].external
-  const externalConfig = data.config.external || data.citiesConfig[city].config.external
+  const externalConfig = data.config.external || data.citiesConfig && data.citiesConfig[city].config.external
   if (externalConfig && externalId) {
     const link = document.querySelector("#external a")
     link.innerHTML = externalConfig.label
