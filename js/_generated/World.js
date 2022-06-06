@@ -120,10 +120,12 @@ const data = {
     },
     "1756": {
       "city": "Copenhagen",
+      "external": "3177920",
       "latlng": {
         "lat": 55.679587967436206,
         "lng": 12.59258735833644
-      }
+      },
+      "notes": ""
     },
     "1760": {
       "city": "London",
@@ -387,7 +389,7 @@ const data = {
       "notes": ""
     },
     "1844": {
-      "city": "TODO",
+      "city": "London",
       "external": "1358112",
       "latlng": {
         "lat": 51.493102624901645,
@@ -812,10 +814,12 @@ const data = {
     },
     "1899": {
       "city": "Copenhagen",
+      "external": "3343222",
       "latlng": {
         "lat": 55.67751919534578,
         "lng": 12.536597484595521
-      }
+      },
+      "notes": ""
     },
     "1900": {
       "city": "London",
@@ -873,10 +877,12 @@ const data = {
     },
     "1906": {
       "city": "Copenhagen",
+      "external": "3163917",
       "latlng": {
         "lat": 55.69863940860437,
         "lng": 12.540628344999996
-      }
+      },
+      "notes": ""
     },
     "1907": {
       "city": "TODO",
@@ -1194,7 +1200,11 @@ const data = {
     },
     "Copenhagen": {
       "config": {
-        "country": "Denmark"
+        "country": "Denmark",
+        "external": {
+          "label": "Check out Fredede og Bevaringsværdige Bygninger",
+          "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
+        }
       }
     },
     "Perm": {

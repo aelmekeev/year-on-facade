@@ -9,10 +9,9 @@ https://aelmekeev.github.io/year-on-facade/
 In order to be added to collection the location needs to meet the following requirements:
 
 1. The year must be on facade and be part of the building and should be associated with it ([examples](https://www.instagram.com/year_on_facade/)):
-    * Year of the construction / reconstruction :white_check_mark:
+    * Year of the construction / reconstruction, i.e. `erected`, `enlarged`, `rebuilt` :white_check_mark:
     * [Commemorative plaque](https://en.wikipedia.org/wiki/Commemorative_plaque) :x:
-    * Name of the organization located in the building :x:
-    * Year when the organization located in the building was established :x:
+    * Year when the organization located in the building was `established` :x:
 2. Year must be written with arabic numerals.
 3. The building must be located in administrative boundaries of particular city.
 4. Be verifiable via Google Street View.
@@ -20,8 +19,8 @@ In order to be added to collection the location needs to meet the following requ
 
 It is OK to replace existing points in case the replacement:
 
-1. either represent some landmark / building with interesting history (e.g. listed by [Historic England](https://historicengland.org.uk/))
-2. or makes distribution of the points on the map nicer (i.e. less crowdy)
+1. is in the [heritage registers](https://en.wikipedia.org/wiki/List_of_heritage_registers) e.g. in [Historic England](https://historicengland.org.uk/) or [Fredede og Bevaringsværdige Bygninger](https://www.kulturarv.dk/fbb/index.htm)
+1. or makes distribution of the points on the map nicer (i.e. less crowdy)
 
 ## Contribution
 
