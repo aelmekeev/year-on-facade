@@ -209,7 +209,7 @@ const data = {
       "notes": ""
     },
     "1786": {
-      "city": "TODO",
+      "city": "London",
       "external": "1099903",
       "latlng": {
         "lat": 51.46712771285955,
@@ -317,7 +317,7 @@ const data = {
       "notes": ""
     },
     "1820": {
-      "city": "TODO",
+      "city": "London",
       "external": "1385550",
       "latlng": {
         "lat": 51.501997283446876,
@@ -380,7 +380,7 @@ const data = {
       "notes": ""
     },
     "1828": {
-      "city": "TODO",
+      "city": "London",
       "external": "1376562",
       "latlng": {
         "lat": 51.500095653625664,
@@ -407,7 +407,7 @@ const data = {
       "notes": ""
     },
     "1833": {
-      "city": "TODO",
+      "city": "London",
       "external": "1378436",
       "latlng": {
         "lat": 51.478073170998876,
@@ -434,7 +434,7 @@ const data = {
       "notes": ""
     },
     "1836": {
-      "city": "TODO",
+      "city": "London",
       "external": "1385434",
       "latlng": {
         "lat": 51.48037805606216,
@@ -1224,6 +1224,14 @@ const data = {
         "lat": 51.49122137346518,
         "lng": -0.23167309975822403
       }
+    },
+    "1997": {
+      "city": "London",
+      "latlng": {
+        "lat": 51.500631691752275,
+        "lng": -0.08169293099627453
+      },
+      "notes": "Not ideal just a metal plaque attached to the building"
     },
     "1999": {
       "city": "London",
