@@ -141,6 +141,14 @@ const data = {
       "notes": "",
       "external": "1080970"
     },
+    "1786": {
+      "latlng": {
+        "lat": 51.46712771285955,
+        "lng": -0.1177413901637235
+      },
+      "notes": "Quite hard to verify on Google Street View",
+      "external": "1099903"
+    },
     "1790": {
       "latlng": {
         "lat": 51.53475540970112,
@@ -164,6 +172,14 @@ const data = {
       },
       "notes": "",
       "external": "1194151"
+    },
+    "1820": {
+      "latlng": {
+        "lat": 51.501997283446876,
+        "lng": -0.10181751195841827
+      },
+      "notes": "",
+      "external": "1385550"
     },
     "1821": {
       "latlng": {
@@ -213,6 +229,14 @@ const data = {
       "notes": "",
       "external": "1251180"
     },
+    "1828": {
+      "latlng": {
+        "lat": 51.500095653625664,
+        "lng": -0.0816478835097796
+      },
+      "notes": "What does PD mean?",
+      "external": "1376562"
+    },
     "1830": {
       "latlng": {
         "lat": 51.512196862800046,
@@ -220,6 +244,14 @@ const data = {
       },
       "notes": "",
       "external": "1066949"
+    },
+    "1833": {
+      "latlng": {
+        "lat": 51.478073170998876,
+        "lng": -0.10257634372309779
+      },
+      "notes": "",
+      "external": "1378436"
     },
     "1834": {
       "latlng": {
@@ -236,6 +268,14 @@ const data = {
       },
       "notes": "",
       "external": "1204342"
+    },
+    "1836": {
+      "latlng": {
+        "lat": 51.48037805606216,
+        "lng": -0.06145020356565105
+      },
+      "notes": "",
+      "external": "1385434"
     },
     "1838": {
       "latlng": {
@@ -819,6 +859,13 @@ const data = {
         "lat": 51.49122137346518,
         "lng": -0.23167309975822403
       }
+    },
+    "1997": {
+      "latlng": {
+        "lat": 51.500631691752275,
+        "lng": -0.08169293099627453
+      },
+      "notes": "Not ideal just a metal plaque attached to the building"
     },
     "1999": {
       "latlng": {
