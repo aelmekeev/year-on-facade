@@ -19,6 +19,8 @@ function StatsControl(controlDiv) {
   });
 }
 
+var start, end, longpress;
+
 function initMap() {
   const url = new URL(window.location.href);
   const year = url.searchParams.get("year");
@@ -55,8 +57,20 @@ function initMap() {
       }
     });
     marker.addListener("click", () => {
-      map.setZoom(15);
-      map.setCenter(marker.getPosition());
+      if (longpress) {
+        const currentUrl = window.location.href;
+        window.location.href = `${currentUrl.replace("/map", "/item").replace(/[\?&]year=\d+/, '')}&year=${marker.getTitle()}`;
+      } else {
+        map.setZoom(15);
+        map.setCenter(marker.getPosition());
+      }
+    });
+    marker.addListener("mousedown", () => {
+      start = new Date().getTime();
+    });
+    marker.addListener("mouseup", () => {
+      end = new Date().getTime();
+      longpress = (end - start < 500) ? false : true;
     });
   }
 }
