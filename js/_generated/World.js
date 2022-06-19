@@ -19,12 +19,30 @@ const data = {
       },
       "notes": ""
     },
+    "1705": {
+      "city": "TODO",
+      "external": "1359298",
+      "latlng": {
+        "lat": 51.353924798649906,
+        "lng": 0.1379032927353277
+      },
+      "notes": ""
+    },
     "1709": {
       "city": "London",
       "external": "1210081",
       "latlng": {
         "lat": 51.49847923861978,
         "lng": -0.13602878042143146
+      },
+      "notes": ""
+    },
+    "1713": {
+      "city": "TODO",
+      "external": "1359024",
+      "latlng": {
+        "lat": 51.582921611075214,
+        "lng": -0.21535680992076248
       },
       "notes": ""
     },
@@ -218,7 +236,7 @@ const data = {
       "notes": "Quite hard to verify on Google Street View"
     },
     "1789": {
-      "city": "TODO",
+      "city": "London",
       "external": "1279725",
       "latlng": {
         "lat": 51.55150095217059,
@@ -497,13 +515,13 @@ const data = {
       "notes": ""
     },
     "1847": {
-      "city": "TODO",
+      "city": "London",
       "external": "1265629",
       "latlng": {
         "lat": 51.540898953589725,
         "lng": -0.047402240238299385
       },
-      "notes": "Alternative is 1079900"
+      "notes": ""
     },
     "1848": {
       "city": "London",
@@ -663,7 +681,7 @@ const data = {
       "notes": ""
     },
     "1871": {
-      "city": "TODO",
+      "city": "London",
       "external": "1391501",
       "latlng": {
         "lat": 51.55183674452193,
@@ -713,7 +731,7 @@ const data = {
       "notes": "Retake photo when construction is complete"
     },
     "1877": {
-      "city": "TODO",
+      "city": "London",
       "external": "1378818",
       "latlng": {
         "lat": 51.55123480899446,
