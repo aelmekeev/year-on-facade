@@ -149,6 +149,14 @@ const data = {
       "notes": "Quite hard to verify on Google Street View",
       "external": "1099903"
     },
+    "1789": {
+      "latlng": {
+        "lat": 51.55150095217059,
+        "lng": -0.102049905650245
+      },
+      "notes": "",
+      "external": "1279725"
+    },
     "1790": {
       "latlng": {
         "lat": 51.53475540970112,
@@ -317,6 +325,14 @@ const data = {
       "notes": "",
       "external": "1195613"
     },
+    "1847": {
+      "latlng": {
+        "lat": 51.540898953589725,
+        "lng": -0.047402240238299385
+      },
+      "notes": "",
+      "external": "1265629"
+    },
     "1848": {
       "latlng": {
         "lat": 51.5151682770451,
@@ -432,6 +448,14 @@ const data = {
       "notes": "",
       "external": "1260135"
     },
+    "1871": {
+      "latlng": {
+        "lat": 51.55183674452193,
+        "lng": -0.14153477573018972
+      },
+      "notes": "",
+      "external": "1391501"
+    },
     "1872": {
       "latlng": {
         "lat": 51.533805611907304,
@@ -467,6 +491,14 @@ const data = {
       },
       "notes": "Retake photo when construction is complete",
       "external": "1297994"
+    },
+    "1877": {
+      "latlng": {
+        "lat": 51.55123480899446,
+        "lng": -0.16634608919477561
+      },
+      "notes": "",
+      "external": "1378818"
     },
     "1878": {
       "latlng": {
