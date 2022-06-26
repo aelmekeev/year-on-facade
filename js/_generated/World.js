@@ -10,12 +10,39 @@ const data = {
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com"
   },
   "points": {
+    "1658": {
+      "city": "TODO",
+      "external": "1293320",
+      "latlng": {
+        "lat": 51.55150570588003,
+        "lng": -0.08588690411222581
+      },
+      "notes": ""
+    },
+    "1665": {
+      "city": "TODO",
+      "external": "1064411",
+      "latlng": {
+        "lat": 51.54012913767072,
+        "lng": 0.16254019586796453
+      },
+      "notes": ""
+    },
     "1669": {
       "city": "TODO",
       "external": "1184479",
       "latlng": {
         "lat": 51.366376853500455,
         "lng": -0.30684944046646584
+      },
+      "notes": ""
+    },
+    "1702": {
+      "city": "TODO",
+      "external": "1079115",
+      "latlng": {
+        "lat": 51.518003317823236,
+        "lng": -0.10088095828089627
       },
       "notes": ""
     },
