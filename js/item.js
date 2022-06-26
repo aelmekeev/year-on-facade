@@ -58,9 +58,36 @@ function addPhotos(city, year) {
   }
 }
 
+function generateNotFoundPage(year) {
+  const body = document.querySelector('body')
+  body.innerHTML = ''
+
+  const header = document.createElement('h1')
+  header.innerText = `No year ${year} in the ${city} collection`
+
+  const wrapper = document.createElement('div')
+  wrapper.classList.add("stat")
+
+  const link = document.createElement('a')
+  const currentLocation = window.location
+  link.href = `${currentLocation.origin}${currentLocation.pathname.replace("/item", "/stats")}?city=${city}`
+  link.innerText = `All the items in the ${city} collection`
+
+  body.appendChild(header)
+
+  wrapper.appendChild(link)
+  body.appendChild(wrapper)
+}
+
 function updateItem() {
   const url = new URL(window.location.href);
   const year = url.searchParams.get("year");
+
+  if (typeof data == 'undefined' || !data.points[year]) {
+    generateNotFoundPage(year)
+    return
+  }
+
   const city = data.points[year].city || url.searchParams.get("city");
 
   updateHeader(city, year)

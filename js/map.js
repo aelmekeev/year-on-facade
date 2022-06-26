@@ -26,8 +26,8 @@ function initMap() {
   const year = url.searchParams.get("year");
   const points = data.points;
 
-  const zoom = year ? 18 : data.config.zoom;
-  const center = year ? points[year].latlng : data.config.center;
+  const zoom = year && points[year]? 18 : data.config.zoom;
+  const center = year && points[year] ? points[year].latlng : data.config.center;
 
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom,
