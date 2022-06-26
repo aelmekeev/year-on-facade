@@ -1,15 +1,16 @@
 name: Purge Cloudflare cache
 
 on:
-  page_build
+  workflow_run:
+    workflows: [pages-build-deployment]
+    types: [completed]
+    branches: [cloudflare]
 
 jobs:
   purge:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Sleep for 60 seconds
-        run: sleep 60s
       - name: Purge Cloudflare cache
         env:
           CLOUDFLARE_ZONE_ID: ${{ CLOUDFLARE_ZONE_ID }}
