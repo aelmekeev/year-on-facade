@@ -4,7 +4,7 @@ on:
   workflow_run:
     workflows: [pages-build-deployment]
     types: [completed]
-    branches: [cloudflare]
+    branches: [main]
 
 jobs:
   purge:
