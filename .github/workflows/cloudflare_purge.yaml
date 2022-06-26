@@ -1,0 +1,23 @@
+name: Purge Cloudflare cache
+
+on:
+  page_build
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Sleep for 60 seconds
+        run: sleep 60s
+      - name: Purge Cloudflare cache
+        env:
+          CLOUDFLARE_ZONE_ID: ${{ CLOUDFLARE_ZONE_ID }}
+          CLOUDFLARE_AUTH_EMAIL: ${{ secrets.CLOUDFLARE_AUTH_EMAIL }}
+          CLOUDFLARE_AUTH_KEY: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
+        run: |
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE_ID/purge_cache" \
+            -H "X-Auth-Email: $CLOUDFLARE_AUTH_EMAIL" \
+            -H "X-Auth-Key: $CLOUDFLARE_AUTH_KEY" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}'
