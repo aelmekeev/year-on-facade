@@ -2,7 +2,7 @@
 
 This is a collection of years on facades.
 
-https://aelmekeev.github.io/year-on-facade/
+https://year-on-facade.uk/
 
 ## Rules
 
