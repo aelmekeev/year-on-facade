@@ -88,7 +88,32 @@ function updateLinks() {
   }
 }
 
+function generateNotFoundPage() {
+  const body = document.querySelector('body')
+  body.innerHTML = ''
+
+  const header = document.createElement('h1')
+  header.innerText = `No items in the collection for ${city}`
+
+  const wrapper = document.createElement('div')
+  wrapper.classList.add("stat")
+
+  const link = document.createElement('a')
+  link.href = window.location.href.replace('stats/', '').replace(/\?.+/, '')
+  link.innerText = 'See all the cities in the collection'
+
+  body.appendChild(header)
+
+  wrapper.appendChild(link)
+  body.appendChild(wrapper)
+}
+
 function updateStats() {
+  if (typeof data == 'undefined') {
+    generateNotFoundPage()
+    return
+  }
+
   updateHeader()
   updateRange()
   updateTotal()
