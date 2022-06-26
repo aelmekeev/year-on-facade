@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Purge Cloudflare cache
         env:
-          CLOUDFLARE_ZONE_ID: ${{ CLOUDFLARE_ZONE_ID }}
+          CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
           CLOUDFLARE_AUTH_EMAIL: ${{ secrets.CLOUDFLARE_AUTH_EMAIL }}
           CLOUDFLARE_AUTH_KEY: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
         run: |
