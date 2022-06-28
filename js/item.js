@@ -51,7 +51,7 @@ function addPhoto(container, url) {
 }
 
 function addPhotos(city, year) {
-  if (data.config.photosBaseUrl && city != "TODO") {
+  if (data.config.photosBaseUrl && city != "Replacements") {
     const photoContainer = document.querySelector('#photoContainer')
     addPhoto(photoContainer, `${data.config.photosBaseUrl}/${city}/${year}_close.jpg`)
     addPhoto(photoContainer, `${data.config.photosBaseUrl}/${city}/${year}.jpg`)
@@ -94,7 +94,9 @@ function updateItem() {
   updateLinks(city, year)
   updateExternalLink(city, year)
   updateNotes(year)
-  addPhotos(city, year)
+  if (!data.points[year].notes || !data.points[year].notes.startsWith('TODO')) {
+    addPhotos(city, year)
+  }
 }
 
 window.onload = updateItem
