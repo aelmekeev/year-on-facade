@@ -6,7 +6,7 @@ temp=./utils/temp.json.tmp
 
 for filename in ./csv/*.csv; do
   cat $filename | jq -sRre "split(\"\\n\") | .[1:] | map(split(\",\")) | map(.[0]) | length as \$pointsNumber | . | unique | length == \$pointsNumber" &>/dev/null ||
-  (echo "Error: $filename contains duplicates" && exit 1)
+    (echo "Error: $filename contains duplicates" && exit 1)
 done
 
 for filename in ./js/_generated/*.js; do

@@ -1,5 +1,5 @@
-const sortByCount = ([, a], [, b]) => b - a;
-const sortAlphabetically = ([a,], [b,]) => b < a;
+const sortByCount = ([, a], [, b]) => b - a
+const sortAlphabetically = ([a], [b]) => b < a
 
 function addTimeline(list) {
   const timeline = document.createElement('div')
@@ -11,7 +11,7 @@ function addTimeline(list) {
   let end = start
   while (start + 100 < currentYear) {
     end = Math.floor((start + 100) / 100) * 100
-    length = (end - start) * 100 / range
+    length = ((end - start) * 100) / range
     const century = document.createElement('div')
     century.style.width = `${length}%`
     timeline.appendChild(century)
@@ -36,10 +36,13 @@ function sortList(sortFunction = sortByCount) {
 
       const row = document.createElement('div')
       row.classList.add('row')
-      row.innerHTML = `<a href="${window.location.href.replace(/(year-on-facade[^//]*)/, '$1/stats')}?city=${city}">${title}</a> - ${score}`
+      row.innerHTML = `<a href="${window.location.href.replace(
+        /(year-on-facade[^//]*)/,
+        '$1/stats'
+      )}?city=${city}">${title}</a> - ${score}`
       row.style.backgroundImage = `url("img/_generated/${city}.svg")`
       parent.appendChild(row)
-    });
+    })
 }
 
 function sortListListener(sortBy) {
@@ -57,8 +60,7 @@ function updateMarks() {
 
 function updateList() {
   sortList()
-  document.querySelectorAll('[name=sort]')
-    .forEach(r => r.onclick = sortListListener(r.value))
+  document.querySelectorAll('[name=sort]').forEach(r => (r.onclick = sortListListener(r.value)))
   updateMarks()
 }
 

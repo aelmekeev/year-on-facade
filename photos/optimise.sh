@@ -25,7 +25,7 @@ for filename in ./csv/*.csv; do
     if [ "$missing" != "[]" ]; then
       has_missing_photos="yes"
       echo "The following close-up photos are missing for $city: $missing"
-    fi    
+    fi
   else
     if [ "$city" != "Replacements" ]; then
       echo "No photos for $city"
@@ -37,7 +37,6 @@ done
 if [ "$has_missing_photos" == "yes" ]; then
   echo "\nNOTE: You can add exceptions with for missing photos to exceptions.json in city folder\n"
 fi
-
 
 echo "\nStep 2. Generate photos for web\n"
 
@@ -69,7 +68,7 @@ checksum_new_file="checksum.json.tmp"
         echo "Checksum file was updated."
       else
         mkdir "../../upload/$d"
-        updated_raw=$(jq -r '. | join(" ")' <<< $updated)
+        updated_raw=$(jq -r '. | join(" ")' <<<$updated)
         for updated_item in $updated_raw; do
           original_photo="../../original/$d/$updated_item"
           web_photo="../../web/$d/$updated_item"
