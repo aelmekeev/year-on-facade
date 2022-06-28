@@ -10,14 +10,14 @@ for filename in ./csv/*.csv; do
   city=$(basename "$filename" .csv)
 
   # sort
-  echo -ne "year;latitude;longitude;notes;external\n$(tail -n +2 $filename | sort)" >$filename
+  echo -ne "year,latitude,longitude,notes,external\n$(tail -n +2 $filename | sort)" >$filename
 
   # get first year and compare it with minimum among all cities
-  first_year=$(cat $filename | sed -n 2p | cut -d ';' -f 1)
+  first_year=$(cat $filename | sed -n 2p | cut -d ',' -f 1)
   min_year=$([ "$first_year" \< "$min_year" ] && echo "$first_year" || echo "$min_year")
 
   # generate temporary json files for each city
-  cat "./csv/$city.csv" | jq -sRr "split(\"\\n\") | .[1:] | map(split(\";\")) | map({(.[0]): {latlng: {lat: .[1]|tonumber, lng: .[2]|tonumber}, notes: .[3], external: .[4]} }) | add as \$points | {\"$city\": {\"points\": \$points}} | del(..|nulls)" >$temp
+  cat "./csv/$city.csv" | jq -sRr "split(\"\\n\") | .[1:] | map(split(\",\")) | map({(.[0]): {latlng: {lat: .[1]|tonumber, lng: .[2]|tonumber}, notes: .[3], external: .[4]} }) | add as \$points | {\"$city\": {\"points\": \$points}} | del(..|nulls)" >$temp
   jq -s "(.[0] | del(.apiKey)) as \$globalConfigs | .[1] * .[2] | {\"$city\": .[\"$city\"]} | .[\"$city\"].config += \$globalConfigs | .[\"$city\"].config.city = \"$city\"" config.json ./utils/configs.json $temp >"./utils/$city.json.tmp"
 
   cat >"./js/_generated/$city.js" <<EOF

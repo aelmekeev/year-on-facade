@@ -82,7 +82,7 @@ const data = {
         "lat": 51.506665651285076,
         "lng": -0.0579892712400174
       },
-      "notes": "Impossible to read in Google maps atm, should be better once restored",
+      "notes": "Impossible to read in Google maps atm - should be better once restored",
       "external": "1260423"
     },
     "1720": {
