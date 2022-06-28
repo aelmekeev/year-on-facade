@@ -74,7 +74,7 @@ function initMap() {
   StatsControl(statsControlDiv);
   map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(statsControlDiv);
 
-  if (Object.values(points).some(p => p.notes && p.notes.startsWith("TODO"))) {
+  if (Object.values(points).some(p => p.notes.startsWith("TODO"))) {
     const todoFilterControlDiv = document.createElement("div");
     TodoFilterControl(todoFilterControlDiv);
     map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(todoFilterControlDiv);
@@ -90,7 +90,7 @@ function initMap() {
         color: "white",
         fontSize: "9px"
       },
-      todo: points[year].notes && points[year].notes.startsWith('TODO')
+      todo: points[year].notes.startsWith('TODO')
     });
     marker.addListener("click", () => {
       if (longpress) {

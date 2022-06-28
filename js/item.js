@@ -94,7 +94,7 @@ function updateItem() {
   updateLinks(city, year)
   updateExternalLink(city, year)
   updateNotes(year)
-  if (!data.points[year].notes || !data.points[year].notes.startsWith('TODO')) {
+  if (!data.points[year].notes.startsWith('TODO')) {
     addPhotos(city, year)
   }
 }
