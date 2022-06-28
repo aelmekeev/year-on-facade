@@ -88,7 +88,7 @@ done
 
 # update api key
 api_key=$(jq -r '.apiKey' config.json)
-cat ./map/index.html | sed -E "s/key=[^&]+/key=$api_key/g" > ./utils/index.html.tmp
+cat ./map/index.html | sed -E "s/key=[^&]+/key=$api_key/g" >./utils/index.html.tmp
 mv ./utils/index.html.tmp ./map/index.html
 
 rm ./utils/*.tmp
