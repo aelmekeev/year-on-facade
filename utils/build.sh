@@ -10,7 +10,11 @@ for filename in ./csv/*.csv; do
   city=$(basename "$filename" .csv)
 
   # sort
-  echo -ne "year,latitude,longitude,notes,external\n$(tail -n +2 $filename | sort)" >$filename
+  header="year,latitude,longitude,notes"
+  if $(jq ".[\"$city\"].config | has(\"external\")" utils/configs.json); then
+    header="$header,external"
+  fi
+  echo -ne "$header\n$(tail -n +2 $filename | sort)" >$filename
 
   # get first year and compare it with minimum among all cities
   first_year=$(cat $filename | sed -n 2p | cut -d ',' -f 1)
