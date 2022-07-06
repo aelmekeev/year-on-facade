@@ -16,8 +16,8 @@ const data = {
       "label": "Check out Fredede og Bevaringsværdige Bygninger",
       "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
     },
-    "useInternalMap": true,
-    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com",
+    "useInternalMap": false,
+    "photosBaseUrl": "",
     "city": "Copenhagen"
   },
   "points": {
