@@ -5,3 +5,6 @@ photos/upload
 *.tmp
 
 .DS_Store
+
+utils/*/*.csv
+utils/*/*.json
