@@ -12,8 +12,8 @@ const data = {
       "west": 55.630661,
       "east": 56.901738
     },
-    "useInternalMap": false,
-    "photosBaseUrl": "",
+    "useInternalMap": true,
+    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com",
     "city": "Perm"
   },
   "points": {
