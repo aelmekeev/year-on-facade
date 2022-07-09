@@ -15,8 +15,8 @@ const data = {
       "label": "Check out Historic England",
       "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
     },
-    "useInternalMap": false,
-    "photosBaseUrl": "",
+    "useInternalMap": true,
+    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com",
     "city": "Replacements"
   },
   "points": {

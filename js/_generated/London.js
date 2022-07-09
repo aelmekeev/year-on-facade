@@ -16,11 +16,19 @@ const data = {
       "label": "Check out Historic England",
       "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
     },
-    "useInternalMap": false,
-    "photosBaseUrl": "",
+    "useInternalMap": true,
+    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com",
     "city": "London"
   },
   "points": {
+    "1607": {
+      "latlng": {
+        "lat": 51.48068758027714,
+        "lng": 0.037021553277171264
+      },
+      "notes": "TODO",
+      "external": "1218593"
+    },
     "1629": {
       "latlng": {
         "lat": 51.535080908278466,
