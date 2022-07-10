@@ -236,13 +236,13 @@ const data = {
       "notes": ""
     },
     "1767": {
-      "city": "Replacements",
+      "city": "London",
       "external": "1079381",
       "latlng": {
         "lat": 51.4955623949858,
         "lng": -0.36575359610833696
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1776": {
       "city": "London",
