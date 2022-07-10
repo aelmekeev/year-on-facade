@@ -20,14 +20,6 @@ const data = {
     "city": "Replacements"
   },
   "points": {
-    "1767": {
-      "latlng": {
-        "lat": 51.4955623949858,
-        "lng": -0.36575359610833696
-      },
-      "notes": "TODO",
-      "external": "1079381"
-    },
     "1896": {
       "latlng": {
         "lat": 51.4646337076582,
