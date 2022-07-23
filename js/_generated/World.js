@@ -962,7 +962,7 @@ const data = {
         "lat": 51.4646337076582,
         "lng": 0.009301754363103189
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1897": {
       "city": "London",
@@ -1025,7 +1025,7 @@ const data = {
         "lat": 51.4864943335234,
         "lng": 0.09639768502470046
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1904": {
       "city": "Replacements",
@@ -1034,7 +1034,7 @@ const data = {
         "lat": 51.45876931464815,
         "lng": 0.05432071021885597
       },
-      "notes": "TODO: Hardly a facade"
+      "notes": "Hardly a facade"
     },
     "1905": {
       "city": "London",
@@ -1278,12 +1278,48 @@ const data = {
       },
       "notes": ""
     },
+    "1937": {
+      "city": "London",
+      "external": "1393674",
+      "latlng": {
+        "lat": 51.490634202831494,
+        "lng": -0.09684378363170754
+      },
+      "notes": "TODO"
+    },
+    "1951": {
+      "city": "London",
+      "external": "1352668",
+      "latlng": {
+        "lat": 51.51543817583066,
+        "lng": -0.1401986986250597
+      },
+      "notes": "TODO"
+    },
     "1955": {
       "city": "London",
       "external": "1195534",
       "latlng": {
         "lat": 51.52658034298981,
         "lng": -0.08810312220234778
+      },
+      "notes": ""
+    },
+    "1960": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.46408854940336,
+        "lng": -0.16551492334963452
+      },
+      "notes": ""
+    },
+    "1961": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.464287569044494,
+        "lng": -0.16433424419801804
       },
       "notes": ""
     },
@@ -1369,11 +1405,11 @@ const data = {
       "notes": "Not ideal just a metal plaque attached to the building"
     },
     "1999": {
-      "city": "London",
+      "city": "Replacements",
       "external": "",
       "latlng": {
-        "lat": 51.49285967213844,
-        "lng": -0.2335728686373021
+        "lat": 51.33331970197817,
+        "lng": -0.26813525094536617
       },
       "notes": ""
     },
