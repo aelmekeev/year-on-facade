@@ -640,6 +640,15 @@ const data = {
       },
       "notes": ""
     },
+    "1859": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.42310704204055,
+        "lng": -0.33340331280270746
+      },
+      "notes": ""
+    },
     "1860": {
       "city": "London",
       "external": "1242346",
@@ -683,7 +692,7 @@ const data = {
         "lat": 51.41074957336541,
         "lng": -0.30021478961622816
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1865": {
       "city": "London",
@@ -1079,7 +1088,7 @@ const data = {
         "lat": 51.41004230016464,
         "lng": -0.30659101957045914
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1910": {
       "city": "London",
