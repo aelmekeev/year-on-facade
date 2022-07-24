@@ -66,7 +66,7 @@ const data = {
         "lat": 51.518003317823236,
         "lng": -0.10088095828089627
       },
-      "notes": "TODO",
+      "notes": "Retake photo once construction is complete",
       "external": "1079115"
     },
     "1705": {
@@ -815,11 +815,11 @@ const data = {
     },
     "1891": {
       "latlng": {
-        "lat": 51.526110625913276,
-        "lng": -0.027550670605991135
+        "lat": 51.51394567283098,
+        "lng": -0.10259378375214182
       },
-      "notes": "TODO: Not available due to construction",
-      "external": ""
+      "notes": "",
+      "external": "1064603"
     },
     "1892": {
       "latlng": {
@@ -1018,7 +1018,7 @@ const data = {
         "lat": 51.51249979139474,
         "lng": -0.1044392448218371
       },
-      "notes": "TODO",
+      "notes": "",
       "external": "1359215"
     },
     "1919": {
@@ -1154,7 +1154,7 @@ const data = {
         "lat": 51.51543817583066,
         "lng": -0.1401986986250597
       },
-      "notes": "TODO",
+      "notes": "",
       "external": "1352668"
     },
     "1955": {
@@ -1186,7 +1186,7 @@ const data = {
         "lat": 51.51674530295639,
         "lng": -0.10176218482665145
       },
-      "notes": "TODO",
+      "notes": "",
       "external": ""
     },
     "1969": {
@@ -1210,7 +1210,7 @@ const data = {
         "lat": 51.51575260865176,
         "lng": -0.09929624069836795
       },
-      "notes": "TODO",
+      "notes": "",
       "external": ""
     },
     "1985": {
