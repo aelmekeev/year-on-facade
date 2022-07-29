@@ -118,6 +118,15 @@ const data = {
       },
       "notes": ""
     },
+    "1722": {
+      "city": "London",
+      "external": "1213357",
+      "latlng": {
+        "lat": 51.49768930392938,
+        "lng": -0.12771203320425797
+      },
+      "notes": "TODO"
+    },
     "1723": {
       "city": "London",
       "external": "1183550",
@@ -126,6 +135,15 @@ const data = {
         "lng": -0.19479679871373656
       },
       "notes": ""
+    },
+    "1725": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.525646019374605,
+        "lng": -0.09646337131625886
+      },
+      "notes": "TODO"
     },
     "1726": {
       "city": "London",
@@ -369,6 +387,15 @@ const data = {
         "lng": -0.08174232808540169
       },
       "notes": ""
+    },
+    "1813": {
+      "city": "London",
+      "external": "1244496",
+      "latlng": {
+        "lat": 51.5566287628569,
+        "lng": -0.18062882454293655
+      },
+      "notes": "TODO"
     },
     "1816": {
       "city": "London",
@@ -1233,6 +1260,15 @@ const data = {
       },
       "notes": "TODO"
     },
+    "1928": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.40123276332768,
+        "lng": -0.11839569141109627
+      },
+      "notes": "TODO"
+    },
     "1929": {
       "city": "London",
       "external": "",
@@ -1241,6 +1277,15 @@ const data = {
         "lng": -0.13452690989194183
       },
       "notes": ""
+    },
+    "1930": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.37027198737291,
+        "lng": -0.10009565778522758
+      },
+      "notes": "TODO"
     },
     "1931": {
       "city": "London",
@@ -1261,13 +1306,13 @@ const data = {
       "notes": ""
     },
     "1933": {
-      "city": "London",
-      "external": "",
+      "city": "Replacements",
+      "external": "1418431",
       "latlng": {
-        "lat": 51.496855668873025,
-        "lng": -0.17404722057261884
+        "lat": 51.435772310500056,
+        "lng": -0.1591420441906156
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1934": {
       "city": "London",
