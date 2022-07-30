@@ -1,4 +1,4 @@
 The following locations were added:
 
 * year: [Google Street View](link)
-  * replaced due to better points distribution / interesting history
+  * replaced due since it is listed in heritage registry / leads better points distribution

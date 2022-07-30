@@ -82,8 +82,8 @@ function updateLongestSequence() {
 }
 
 function updateHeritageRegistry () {
-  if (data.config.external) {
-    const inRegistry = Object.values(data.points).filter(p => p.external).length
+  const inRegistry = Object.values(data.points).filter(p => p.external).length
+  if (inRegistry > 0) {
     const percentage = Math.floor(inRegistry * 100 / Object.keys(data.points).length)
     document.querySelector('#registry .value').innerHTML = `${inRegistry} (${percentage}%)`
   } else {
