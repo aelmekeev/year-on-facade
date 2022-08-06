@@ -354,7 +354,7 @@ const data = {
         "lat": 51.57852913655827,
         "lng": -0.15386294828823677
       },
-      "notes": "TODO",
+      "notes": "TODO: Take photo when wisteria has no leafs",
       "external": "1079189"
     },
     "1812": {
