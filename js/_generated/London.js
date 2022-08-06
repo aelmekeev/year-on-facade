@@ -90,7 +90,7 @@ const data = {
         "lat": 51.582921611075214,
         "lng": -0.21535680992076248
       },
-      "notes": "TODO",
+      "notes": "",
       "external": "1359024"
     },
     "1719": {
@@ -354,7 +354,7 @@ const data = {
         "lat": 51.57852913655827,
         "lng": -0.15386294828823677
       },
-      "notes": "TODO",
+      "notes": "TODO: Take photo when wisteria has no leafs",
       "external": "1079189"
     },
     "1812": {
@@ -370,7 +370,7 @@ const data = {
         "lat": 51.5566287628569,
         "lng": -0.18062882454293655
       },
-      "notes": "TODO",
+      "notes": "",
       "external": "1244496"
     },
     "1816": {
