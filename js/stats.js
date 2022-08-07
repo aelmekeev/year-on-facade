@@ -91,6 +91,18 @@ function updateHeritageRegistry () {
   }
 }
 
+function updateVisited () {
+  const todo = Object.values(data.points).filter(p => p.notes.includes("TODO")).length
+  if (todo > 0) {
+    const total = Object.keys(data.points).length
+    const visited = total - todo
+    const percentage = Math.floor(visited * 100 / total)
+    document.querySelector('#visited .value').innerHTML = `${visited} (${percentage}%)`
+  } else {
+    document.querySelector('#visited').remove()
+  }
+}
+
 function updateLinks() {
   document.querySelector('#compare a').href = window.location.href.replace('stats/', '').replace(/\?.+/, '')
   const map = document.querySelector('#map a')
@@ -132,6 +144,7 @@ function updateStats() {
   updateTotal()
   updateLongestSequence()
   updateHeritageRegistry()
+  updateVisited()
   updateLinks()
   updateTable()
 }
