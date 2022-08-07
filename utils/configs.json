@@ -9,6 +9,16 @@
       "borders": null
     }
   },
+  "TODO": {
+    "config": {
+      "zoom": 12,
+      "center": {
+        "lat": 51.5072,
+        "lng": -0.1276
+      },
+      "borders": null
+    }
+  },
   "London": {
     "config": {
       "country": "UK",

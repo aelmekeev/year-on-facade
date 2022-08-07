@@ -11,7 +11,7 @@ done
 
 for filename in ./js/_generated/*.js; do
   city=$(basename "$filename" .js)
-  if [ "$city" != "list" ] && [ "$city" != "World" ]; then
+  if [ "$city" != "list" ] && [ "$city" != "World" ] && [ "$city" != "TODO" ]; then
     echo $(cat $filename | sed 's/const data = //') >$temp
 
     jq '. as $data |
