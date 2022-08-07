@@ -359,7 +359,7 @@ const data = {
         "lat": 51.58442176879655,
         "lng": -0.012419421300780905
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1797": {
       "city": "London",
@@ -683,7 +683,7 @@ const data = {
         "lat": 51.585905533879654,
         "lng": -0.07033708595953014
       },
-      "notes": "TODO: Check March 2018 to verify"
+      "notes": ""
     },
     "1858": {
       "city": "London",
@@ -989,7 +989,7 @@ const data = {
         "lat": 51.57607292023583,
         "lng": -0.029968151294945646
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1893": {
       "city": "London",
@@ -1348,7 +1348,7 @@ const data = {
         "lat": 51.56816064952934,
         "lng": 0.010780853193313442
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1936": {
       "city": "London",
