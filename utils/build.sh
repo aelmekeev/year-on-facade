@@ -29,18 +29,26 @@ const data = $(cat ./utils/$city.json.tmp | jq ".[\"$city\"]")
 EOF
 done
 
-#generate world.js
-jq -s --sort-keys '{"World": {"points": [.[] | ..? | .config.city as $city | .points // empty | with_entries(.value += {"city": $city})] | add }}' $(ls -SA1 utils/*tmp | grep -v temp.json.tmp) >$temp
-city="World"
-jq -s "(.[1] | with_entries(.value.config |= del(.zoom, .borders, .center))) as \$citiesConfigs |
+function generateFakeCity {
+  city=$1
+  jq -s "(.[1] | with_entries(.value.config |= del(.zoom, .borders, .center))) as \$citiesConfigs |
   (.[0] | del(.apiKey)) as \$globalConfigs |
   .[1] * .[2] | {\"$city\": .[\"$city\"]} |
   .[\"$city\"].config += \$globalConfigs |
   .[\"$city\"].citiesConfig = \$citiesConfigs" config.json ./utils/configs.json $temp >"./utils/$city.json.tmp"
 
-cat >"./js/_generated/$city.js" <<EOF
+  cat >"./js/_generated/$city.js" <<EOF
 const data = $(cat ./utils/$city.json.tmp | jq ".[\"$city\"]")
 EOF
+}
+
+#generate world.js
+jq -s --sort-keys '{"World": {"points": [.[] | ..? | .config.city as $city | .points // empty | with_entries(.value += {"city": $city})] | add }}' $(ls -SA1 utils/*tmp | grep -v temp.json.tmp) >$temp
+generateFakeCity "World"
+
+#generate todo.js
+jq -s --sort-keys '{"TODO": {"points": [.[] | ..? | .config.city as $city | .points // empty | with_entries(.value += {"city": $city}) | with_entries(select(.value.notes | contains("TODO")))] | add }}' $(ls -SA1 utils/*tmp | grep -v temp.json.tmp) >$temp
+generateFakeCity "TODO"
 
 # generate list.js
 list_js="./js/_generated/list.js"
