@@ -333,6 +333,14 @@ const data = {
       "notes": "TODO",
       "external": "1358048"
     },
+    "1798": {
+      "latlng": {
+        "lat": 51.51081852855117,
+        "lng": -0.13179918042208724
+      },
+      "notes": "TODO: year is not related to the built date",
+      "external": "1066156"
+    },
     "1799": {
       "latlng": {
         "lat": 51.584475106114326,
@@ -340,6 +348,14 @@ const data = {
       },
       "notes": "TODO",
       "external": "1184520"
+    },
+    "1802": {
+      "latlng": {
+        "lat": 51.52937316843962,
+        "lng": -0.0836608177654305
+      },
+      "notes": "TODO",
+      "external": ""
     },
     "1806": {
       "latlng": {
@@ -1204,6 +1220,14 @@ const data = {
       },
       "notes": "",
       "external": "1418380"
+    },
+    "1935": {
+      "latlng": {
+        "lat": 51.58650822483798,
+        "lng": -0.21503353456319424
+      },
+      "notes": "TODO",
+      "external": ""
     },
     "1936": {
       "latlng": {
