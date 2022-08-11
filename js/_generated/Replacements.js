@@ -20,6 +20,14 @@ const data = {
     "city": "Replacements"
   },
   "points": {
+    "1863": {
+      "latlng": {
+        "lat": 51.533889128530646,
+        "lng": -0.08002735315358976
+      },
+      "notes": "TODO",
+      "external": "1393325"
+    },
     "1896": {
       "latlng": {
         "lat": 51.4646337076582,
@@ -51,6 +59,14 @@ const data = {
       },
       "notes": "TODO",
       "external": "1389537"
+    },
+    "1987": {
+      "latlng": {
+        "lat": 51.533040650381615,
+        "lng": -0.10630392881939463
+      },
+      "notes": "TODO",
+      "external": ""
     },
     "1999": {
       "latlng": {
