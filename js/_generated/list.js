@@ -3,8 +3,8 @@ const data = {
   "Copenhagen, Denmark": 3,
   "London, UK": 170,
   "Perm, Russia": 1,
-  "Replacements": 7,
-  "TODO": 26,
+  "Replacements": 5,
+  "TODO": 21,
   "World": 172,
 }
 const minYear = 1607;

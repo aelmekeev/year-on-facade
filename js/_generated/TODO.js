@@ -91,30 +91,12 @@ const data = {
       },
       "notes": "TODO"
     },
-    "1798": {
-      "city": "London",
-      "external": "1066156",
-      "latlng": {
-        "lat": 51.51081852855117,
-        "lng": -0.13179918042208724
-      },
-      "notes": "TODO: year is not related to the built date"
-    },
     "1799": {
       "city": "London",
       "external": "1184520",
       "latlng": {
         "lat": 51.584475106114326,
         "lng": 0.1736602090991156
-      },
-      "notes": "TODO"
-    },
-    "1802": {
-      "city": "London",
-      "external": "",
-      "latlng": {
-        "lat": 51.52937316843962,
-        "lng": -0.0836608177654305
       },
       "notes": "TODO"
     },
@@ -151,15 +133,6 @@ const data = {
       "latlng": {
         "lat": 51.499055934136145,
         "lng": 0.06335156553439077
-      },
-      "notes": "TODO"
-    },
-    "1863": {
-      "city": "Replacements",
-      "external": "1393325",
-      "latlng": {
-        "lat": 51.533889128530646,
-        "lng": -0.08002735315358976
       },
       "notes": "TODO"
     },
@@ -205,24 +178,6 @@ const data = {
       "latlng": {
         "lat": 51.40564335790167,
         "lng": 0.013973970382273842
-      },
-      "notes": "TODO"
-    },
-    "1935": {
-      "city": "London",
-      "external": "",
-      "latlng": {
-        "lat": 51.58650822483798,
-        "lng": -0.21503353456319424
-      },
-      "notes": "TODO"
-    },
-    "1987": {
-      "city": "Replacements",
-      "external": "",
-      "latlng": {
-        "lat": 51.533040650381615,
-        "lng": -0.10630392881939463
       },
       "notes": "TODO"
     },
