@@ -10,15 +10,6 @@ const data = {
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com"
   },
   "points": {
-    "1607": {
-      "city": "London",
-      "external": "1218593",
-      "latlng": {
-        "lat": 51.48068758027714,
-        "lng": 0.037021553277171264
-      },
-      "notes": "TODO"
-    },
     "1629": {
       "city": "London",
       "external": "1080160",
@@ -109,15 +100,6 @@ const data = {
       },
       "notes": "TODO: Take photo when wisteria has no leafs"
     },
-    "1829": {
-      "city": "London",
-      "external": "1079080",
-      "latlng": {
-        "lat": 51.49135484522112,
-        "lng": 0.06955560536950561
-      },
-      "notes": "TODO"
-    },
     "1842": {
       "city": "London",
       "external": "1079064",
@@ -125,16 +107,7 @@ const data = {
         "lat": 51.490713568647855,
         "lng": 0.06430737577769526
       },
-      "notes": "TODO"
-    },
-    "1854": {
-      "city": "London",
-      "external": "1376229",
-      "latlng": {
-        "lat": 51.499055934136145,
-        "lng": 0.06335156553439077
-      },
-      "notes": "TODO"
+      "notes": "TODO: Under construction"
     },
     "1896": {
       "city": "Replacements",
@@ -142,15 +115,6 @@ const data = {
       "latlng": {
         "lat": 51.4646337076582,
         "lng": 0.009301754363103189
-      },
-      "notes": "TODO"
-    },
-    "1903": {
-      "city": "Replacements",
-      "external": "1430680",
-      "latlng": {
-        "lat": 51.4864943335234,
-        "lng": 0.09639768502470046
       },
       "notes": "TODO"
     },
