@@ -604,6 +604,15 @@ const data = {
       },
       "notes": ""
     },
+    "1841": {
+      "city": "Brighton_and_Hove",
+      "external": "1379976",
+      "latlng": {
+        "lat": 50.82436384784516,
+        "lng": -0.15388839369851492
+      },
+      "notes": ""
+    },
     "1842": {
       "city": "London",
       "external": "1079064",
@@ -623,11 +632,11 @@ const data = {
       "notes": ""
     },
     "1846": {
-      "city": "London",
-      "external": "1195613",
+      "city": "Brighton_and_Hove",
+      "external": "1379993",
       "latlng": {
-        "lat": 51.540521397077875,
-        "lng": -0.11370665954632292
+        "lat": 50.81725443541366,
+        "lng": -0.11749110475440262
       },
       "notes": ""
     },
@@ -785,11 +794,11 @@ const data = {
       "notes": ""
     },
     "1868": {
-      "city": "London",
+      "city": "Brighton_and_Hove",
       "external": "",
       "latlng": {
-        "lat": 51.508432465297346,
-        "lng": -0.07893555143274959
+        "lat": 50.82728137001251,
+        "lng": -0.1409624150127564
       },
       "notes": ""
     },
@@ -992,11 +1001,11 @@ const data = {
       "notes": ""
     },
     "1891": {
-      "city": "London",
-      "external": "1064603",
+      "city": "Brighton_and_Hove",
+      "external": "",
       "latlng": {
-        "lat": 51.51394567283098,
-        "lng": -0.10259378375214182
+        "lat": 50.81912217271996,
+        "lng": -0.1239040074582801
       },
       "notes": ""
     },
@@ -1199,11 +1208,11 @@ const data = {
       "notes": ""
     },
     "1914": {
-      "city": "London",
+      "city": "Brighton_and_Hove",
       "external": "",
       "latlng": {
-        "lat": 51.513596653731256,
-        "lng": -0.1120202349541296
+        "lat": 50.82096548106133,
+        "lng": -0.13455930638858804
       },
       "notes": ""
     },
@@ -1574,6 +1583,15 @@ const data = {
       "config": {}
     },
     "London": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Brighton_and_Hove": {
       "config": {
         "country": "UK",
         "external": {

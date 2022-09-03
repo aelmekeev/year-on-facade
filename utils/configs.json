@@ -39,6 +39,26 @@
       }
     }
   },
+  "Brighton_and_Hove": {
+    "config": {
+      "country": "UK",
+      "zoom": 10,
+      "center": {
+        "lat": 50.8396,
+        "lng": -0.134
+      },
+      "borders": {
+        "south": 50.797214,
+        "north": 50.892159,
+        "west": -0.240598,
+        "east": -0.017147
+      },
+      "external": {
+        "label": "Check out Historic England",
+        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+      }
+    }
+  },
   "Replacements": {
     "config": {
       "zoom": 12,

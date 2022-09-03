@@ -30,8 +30,8 @@ function sortList(sortFunction = sortByCount) {
   Object.entries(data)
     .sort(sortFunction)
     .forEach(e => {
-      const title = e[0]
-      const city = title.split(',')[0]
+      const title = e[0].replaceAll('_', ' ')
+      const city = e[0].split(',')[0]
       const score = e[1]
 
       const row = document.createElement('div')

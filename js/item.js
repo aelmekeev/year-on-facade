@@ -1,5 +1,5 @@
 function updateHeader(city, year) {
-  const title = [year, city, data.config.country].filter(n => n).join(', ')
+  const title = [year, city.replaceAll('_', ' '), data.config.country].filter(n => n).join(', ')
   document.querySelector('h1').innerHTML = title
 }
 
