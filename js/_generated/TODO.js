@@ -10,15 +10,6 @@ const data = {
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com"
   },
   "points": {
-    "1629": {
-      "city": "London",
-      "external": "1080160",
-      "latlng": {
-        "lat": 51.535080908278466,
-        "lng": -0.46018471798074584
-      },
-      "notes": "TODO"
-    },
     "1665": {
       "city": "London",
       "external": "1064411",
