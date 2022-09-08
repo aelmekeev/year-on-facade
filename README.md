@@ -34,4 +34,4 @@ Please read [Contributor's Guide](https://github.com/aelmekeev/year-on-facade/tr
 
 ## Other collections
 
-* https://github.com/oobrien/year-on-facade by @oobrien
+* [by @oobrien](https://github.com/oobrien/year-on-facade) (UK)
