@@ -10,6 +10,15 @@ const data = {
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com"
   },
   "points": {
+    "1580": {
+      "city": "London",
+      "external": "1286035",
+      "latlng": {
+        "lat": 51.593877502427425,
+        "lng": -0.38171197372486587
+      },
+      "notes": "TODO"
+    },
     "1607": {
       "city": "London",
       "external": "1218593",
@@ -52,6 +61,24 @@ const data = {
       "latlng": {
         "lat": 51.366376853500455,
         "lng": -0.30684944046646584
+      },
+      "notes": "TODO"
+    },
+    "1675": {
+      "city": "London",
+      "external": "1358413",
+      "latlng": {
+        "lat": 51.48799556003381,
+        "lng": -0.47840978805720674
+      },
+      "notes": "TODO"
+    },
+    "1696": {
+      "city": "London",
+      "external": "1359092",
+      "latlng": {
+        "lat": 51.61740992811515,
+        "lng": -0.22716355529185003
       },
       "notes": "TODO"
     },
@@ -153,6 +180,15 @@ const data = {
         "lng": -0.12719965924515406
       },
       "notes": ""
+    },
+    "1729": {
+      "city": "London",
+      "external": "1188528",
+      "latlng": {
+        "lat": 51.58990803555381,
+        "lng": -0.22671664035448216
+      },
+      "notes": "TODO"
     },
     "1731": {
       "city": "London",
@@ -657,6 +693,15 @@ const data = {
         "lng": -0.1128261536588332
       },
       "notes": "Hardly a facade"
+    },
+    "1849": {
+      "city": "London",
+      "external": "1193310",
+      "latlng": {
+        "lat": 51.55955252340366,
+        "lng": -0.33485619160659685
+      },
+      "notes": "TODO"
     },
     "1850": {
       "city": "London",
@@ -1413,6 +1458,15 @@ const data = {
       },
       "notes": ""
     },
+    "1948": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.552577701397176,
+        "lng": -0.29464052044987477
+      },
+      "notes": "TODO"
+    },
     "1951": {
       "city": "London",
       "external": "1352668",
@@ -1422,6 +1476,15 @@ const data = {
       },
       "notes": ""
     },
+    "1953": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.62150053241681,
+        "lng": -0.27635353918630556
+      },
+      "notes": "TODO"
+    },
     "1955": {
       "city": "London",
       "external": "1195534",
@@ -1430,6 +1493,15 @@ const data = {
         "lng": -0.08810312220234778
       },
       "notes": ""
+    },
+    "1957": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.53447149325069,
+        "lng": -0.3888946653567865
+      },
+      "notes": "TODO"
     },
     "1960": {
       "city": "London",
@@ -1485,6 +1557,15 @@ const data = {
       },
       "notes": ""
     },
+    "1982": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.57749483936218,
+        "lng": -0.33363218554777435
+      },
+      "notes": "TODO"
+    },
     "1985": {
       "city": "London",
       "external": "",
@@ -1520,6 +1601,15 @@ const data = {
         "lng": -0.23167309975822403
       },
       "notes": ""
+    },
+    "1994": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.58152304450025,
+        "lng": -0.3349727287793572
+      },
+      "notes": "TODO"
     },
     "1996": {
       "city": "London",
@@ -1575,6 +1665,33 @@ const data = {
       },
       "notes": "TODO"
     },
+    "2003": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.61717219857497,
+        "lng": -0.3162726760722418
+      },
+      "notes": "TODO"
+    },
+    "2007": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.60714706704947,
+        "lng": -0.43571815522518753
+      },
+      "notes": "TODO"
+    },
+    "2009": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.57963986814652,
+        "lng": -0.24169263659624746
+      },
+      "notes": "TODO"
+    },
     "2010": {
       "city": "Perm",
       "latlng": {
@@ -1582,6 +1699,15 @@ const data = {
         "lng": 56.26782744824511
       },
       "notes": ""
+    },
+    "2012": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.61186465188856,
+        "lng": -0.4350614757921235
+      },
+      "notes": "TODO"
     }
   },
   "citiesConfig": {
