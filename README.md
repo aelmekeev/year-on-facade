@@ -31,3 +31,7 @@ Please read [Contributor's Guide](https://github.com/aelmekeev/year-on-facade/tr
 * [Waymarking.com](https://waymarking.com/) provides the tools to share and discover unique and interesting locations on the planet. Stone Corners group maintains a collection of Dated Buildings and Cornerstones - Buildings on which the date of construction was incorporated in the fabric of the building by the builders and is clearly visible. Here is an [example for London](https://www.waymarking.com/cat/details.aspx?f=1&guid=f95ee474-324f-408c-83d4-85151f84829b&wo=True&s=220&ct=11&st=2).
 * [Colouring London](https://colouring.london/) is a free knowledge exchange platform designed to provide over fifty types of open data ([including age](https://www.pages.colouring.london/age)) on London buildings, to help make the city more sustainable.
 * [CDRC Dwelling Age maps](https://mapmaker.cdrc.ac.uk/#/dwelling-age) allows to see residential building age for many towns and cities in England and Wales.
+
+## Other collections
+
+* https://github.com/oobrien/year-on-facade by @oobrien
