@@ -6,10 +6,14 @@ function updateHeader(city, year) {
 function updateLinks(city, year) {
   const currentLocation = window.location
 
+  const coordinates = `${data.points[year].latlng.lat},${data.points[year].latlng.lng}`
   const map = document.querySelector('#map a')
   map.href = data.config.useInternalMap
     ? currentLocation.href.replace('/item', '/map')
-    : `https://www.google.com/maps/search/${data.points[year].latlng.lat},${data.points[year].latlng.lng}`
+    : `https://www.google.com/maps/search/${coordinates}`
+
+  const streetview = document.querySelector('#streetview a')
+  streetview.href = `https://www.google.com/maps?q=&layer=c&cbll=${coordinates}&cbp=12,0,0,0,-15`
 
   const more = document.querySelector('#more a')
   const statsUrl = `${currentLocation.origin}${currentLocation.pathname.replace('/item', '/stats')}`
