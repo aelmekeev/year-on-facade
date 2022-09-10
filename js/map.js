@@ -13,7 +13,7 @@ function StatsControl(controlDiv) {
 
   controlUI.addEventListener('click', () => {
     const currentUrl = window.location.href
-    window.location.href = currentUrl.replace('/map/', '/stats/').replace(/&year=\d+/g, '')
+    window.location.href = currentUrl.replace('/map/', '/stats/').replace(/&year=\d+_?/g, '')
   })
 }
 
@@ -44,7 +44,9 @@ let markers = []
 
 function toggleTODOMarkers(showOnlyTODO) {
   for (const marker of markers) {
-    marker.setMap(!showOnlyTODO || marker.todo ? map : null)
+    whenOnlyTODO = showOnlyTODO && (marker.todo || marker.replacement)
+    whenNotOnlyTODO = !showOnlyTODO && !marker.replacement
+    marker.setMap(whenNotOnlyTODO || whenOnlyTODO ? map : null)
   }
 }
 
@@ -81,7 +83,7 @@ function initMap() {
   for (const year in points) {
     const marker = new google.maps.Marker({
       position: points[year].latlng,
-      map,
+      map: year.length == 4 ? map : null, // hide replacement initially
       title: year,
       label: {
         text: year,
@@ -89,13 +91,14 @@ function initMap() {
         fontSize: '9px',
       },
       todo: points[year].notes.startsWith('TODO'),
+      replacement: year.length != 4,
     })
     marker.addListener('click', () => {
       if (longpress) {
         const currentUrl = window.location.href
         window.location.href = `${currentUrl
           .replace('/map', '/item')
-          .replace(/[\?&]year=\d+/, '')}&year=${marker.getTitle()}`
+          .replace(/[\?&]year=\d+_?/, '')}&year=${marker.getTitle()}`
       } else {
         map.setZoom(15)
         map.setCenter(marker.getPosition())
