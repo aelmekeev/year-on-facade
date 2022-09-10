@@ -1,9 +1,9 @@
 const data = {
   "config": {
-    "zoom": 5,
+    "zoom": 2,
     "center": {
-      "lat": 51.5072,
-      "lng": -0.1276
+      "lat": 0,
+      "lng": 0
     },
     "borders": null,
     "useInternalMap": true,
@@ -1714,8 +1714,19 @@ const data = {
     "World": {
       "config": {}
     },
-    "TODO": {
+    "Denmark": {
       "config": {}
+    },
+    "Russia": {
+      "config": {}
+    },
+    "UK": {
+      "config": {
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
     },
     "London": {
       "config": {
@@ -1729,14 +1740,6 @@ const data = {
     "Brighton_and_Hove": {
       "config": {
         "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Replacements": {
-      "config": {
         "external": {
           "label": "Check out Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"

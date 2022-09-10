@@ -81,12 +81,13 @@ function initMap() {
   }
 
   for (const year in points) {
+    const title = year.slice(0, 4)
     const marker = new google.maps.Marker({
       position: points[year].latlng,
       map: year.length == 4 ? map : null, // hide replacement initially
-      title: year,
+      title,
       label: {
-        text: year,
+        text: title,
         color: 'white',
         fontSize: '9px',
       },

@@ -1,22 +1,46 @@
 {
   "World": {
     "config": {
+      "zoom": 2,
+      "center": {
+        "lat": 0,
+        "lng": 0
+      },
+      "borders": null
+    }
+  },
+  "Denmark": {
+    "config": {
+      "zoom": 7,
+      "center": {
+        "lat": 56.0076,
+        "lng": 10.5197
+      },
+      "borders": null
+    }
+  },
+  "Russia": {
+    "config": {
+      "zoom": 3,
+      "center": {
+        "lat": 63.8708,
+        "lng": 96.0191
+      },
+      "borders": null
+    }
+  },
+  "UK": {
+    "config": {
       "zoom": 5,
       "center": {
         "lat": 51.5072,
         "lng": -0.1276
       },
-      "borders": null
-    }
-  },
-  "TODO": {
-    "config": {
-      "zoom": 12,
-      "center": {
-        "lat": 51.5072,
-        "lng": -0.1276
-      },
-      "borders": null
+      "borders": null,
+      "external": {
+        "label": "Check out Historic England",
+        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+      }
     }
   },
   "London": {
@@ -52,25 +76,6 @@
         "north": 50.892159,
         "west": -0.240598,
         "east": -0.017147
-      },
-      "external": {
-        "label": "Check out Historic England",
-        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-      }
-    }
-  },
-  "Replacements": {
-    "config": {
-      "zoom": 12,
-      "center": {
-        "lat": 51.5072,
-        "lng": -0.1276
-      },
-      "borders": {
-        "south": 51.279860,
-        "north": 51.692042,
-        "west": -0.524924,
-        "east": 0.323770
       },
       "external": {
         "label": "Check out Historic England",
