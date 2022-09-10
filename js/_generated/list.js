@@ -4,8 +4,6 @@ const data = {
   "Copenhagen, Denmark": 3,
   "London, UK": 186,
   "Perm, Russia": 1,
-  "Replacements": 4,
-  "TODO": 23,
   "World": 189,
 }
 const minYear = 1580;

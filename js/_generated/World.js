@@ -1091,13 +1091,13 @@ const data = {
       "notes": ""
     },
     "1896": {
-      "city": "Replacements",
-      "external": "1213950",
+      "city": "Brighton_and_Hove",
+      "external": "",
       "latlng": {
-        "lat": 51.4646337076582,
-        "lng": 0.009301754363103189
+        "lat": 50.82621033726481,
+        "lng": -0.1420692953514744
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1897": {
       "city": "London",
@@ -1163,13 +1163,13 @@ const data = {
       "notes": ""
     },
     "1904": {
-      "city": "Replacements",
-      "external": "1392379",
+      "city": "London",
+      "external": "",
       "latlng": {
-        "lat": 51.45876931464815,
-        "lng": 0.05432071021885597
+        "lat": 51.49962117850561,
+        "lng": -0.16637723166738133
       },
-      "notes": "TODO: Hardly a facade"
+      "notes": ""
     },
     "1905": {
       "city": "London",
@@ -1630,13 +1630,13 @@ const data = {
       "notes": "Not ideal just a metal plaque attached to the building"
     },
     "1999": {
-      "city": "Replacements",
+      "city": "London",
       "external": "",
       "latlng": {
-        "lat": 51.33331970197817,
-        "lng": -0.26813525094536617
+        "lat": 51.49285967213844,
+        "lng": -0.2335728686373021
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "2000": {
       "city": "London",

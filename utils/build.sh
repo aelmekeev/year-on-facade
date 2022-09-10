@@ -35,7 +35,8 @@ function generateFakeCity {
   (.[0] | del(.apiKey)) as \$globalConfigs |
   .[1] * .[2] | {\"$city\": .[\"$city\"]} |
   .[\"$city\"].config += \$globalConfigs |
-  .[\"$city\"].citiesConfig = \$citiesConfigs" config.json ./utils/configs.json $temp >"./utils/$city.json.tmp"
+  .[\"$city\"].citiesConfig = \$citiesConfigs |
+  .[\"$city\"].points |= with_entries(select(.key | length == 4))" config.json ./utils/configs.json $temp >"./utils/$city.json.tmp"
 
   cat >"./js/_generated/$city.js" <<EOF
 const data = $(cat ./utils/$city.json.tmp | jq ".[\"$city\"]")
@@ -46,10 +47,6 @@ EOF
 jq -s --sort-keys '{"World": {"points": [.[] | ..? | .config.city as $city | .points // empty | with_entries(.value += {"city": $city})] | add }}' $(ls -SA1 utils/*tmp | grep -v temp.json.tmp) >$temp
 generateFakeCity "World"
 
-#generate todo.js
-jq -s --sort-keys '{"TODO": {"points": [.[] | ..? | .config.city as $city | .points // empty | with_entries(.value += {"city": $city}) | with_entries(select(.value.notes | contains("TODO")))] | add }}' $(ls -SA1 utils/*tmp | grep -v temp.json.tmp) >$temp
-generateFakeCity "TODO"
-
 # generate list.js
 list_js="./js/_generated/list.js"
 echo "const data = {" >$list_js
@@ -57,7 +54,7 @@ for filename in $(ls -A1 utils/*tmp | grep -v temp.json.tmp); do
   city=$(basename "$filename" .json.tmp)
 
   city_with_country=$(jq -r "[[\"$city\", .$city.config.country][] | strings ] | join(\", \")" $filename)
-  echo "  \"$city_with_country\": $(jq -r ".$city.points | keys | length" $filename)," >>$list_js
+  echo "  \"$city_with_country\": $(jq -r ".$city.points | keys | map(select(. | length == 4)) | length" $filename)," >>$list_js
 done
 echo "}" >>$list_js
 echo "const minYear = $min_year;" >>$list_js
@@ -75,8 +72,8 @@ for filename in $(ls -A1 utils/*tmp | grep -v temp.json.tmp); do
 EOF
 
   # draw range
-  first_year=$(jq -r ".$city.points | keys | first" $filename)
-  last_year=$(jq -r ".$city.points | keys | last" $filename)
+  first_year=$(jq -r ".$city.points | keys | first | .[0:4]" $filename)
+  last_year=$(jq -r ".$city.points | keys | last | .[0:4]" $filename)
   background_width=$(($last_year - $first_year + 1))
   background_start=$(($first_year - $min_year))
 
@@ -84,7 +81,7 @@ EOF
   <rect y="0" x="$background_start" width="$background_width" height="$height" fill="#a3bff4" />
 EOF
 
-  for year in $(jq -r ".$city.points | keys | .[]" $filename); do
+  for year in $(jq -r ".$city.points | keys | .[] | select(. | length == 4)" $filename); do
     rect_start=$(($year - $min_year))
     cat >>$svg_file <<EOF
   <rect y="0" x="$rect_start" width="1" height="$height" fill="#c8e3c2" />
