@@ -13,7 +13,7 @@ function StatsControl(controlDiv) {
 
   controlUI.addEventListener('click', () => {
     const currentUrl = window.location.href
-    window.location.href = currentUrl.replace('/map/', '/stats/').replace(/&year=\d+/g, '')
+    window.location.href = currentUrl.replace('/map/', '/stats/').replace(/&year=\d+_?/g, '')
   })
 }
 
@@ -98,7 +98,7 @@ function initMap() {
         const currentUrl = window.location.href
         window.location.href = `${currentUrl
           .replace('/map', '/item')
-          .replace(/[\?&]year=\d+/, '')}&year=${marker.getTitle()}`
+          .replace(/[\?&]year=\d+_?/, '')}&year=${marker.getTitle()}`
       } else {
         map.setZoom(15)
         map.setCenter(marker.getPosition())
