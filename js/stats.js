@@ -1,3 +1,11 @@
+// Ignore replacements in stats
+points = structuredClone(data.points)
+for (let k of Object.keys(points)) {
+  if (k.length != 4) delete points[k]
+}
+
+const years = Object.keys(points).map(y => parseInt(y))
+
 function updateHeader() {
   const url = new URL(window.location.href)
   const city = url.searchParams.get('city')
@@ -8,7 +16,6 @@ function updateHeader() {
 const maybePluralize = (count, noun = 'year', suffix = 's') => `${count} ${noun}${count !== 1 ? suffix : ''}`
 
 function updateRange() {
-  const years = Object.keys(data.points).map(y => parseInt(y))
   const min = Math.min(...years)
   const max = Math.max(...years)
   document.querySelector('#range .value').innerHTML = `${min} &mdash; ${max} (${maybePluralize(max - min + 1)})`
@@ -24,7 +31,6 @@ function redirectToExactPoint(year) {
 function updateTable() {
   const yearsInLine = 10
 
-  const years = Object.keys(data.points).map(y => parseInt(y))
   const min = Math.floor(Math.min(...years) / yearsInLine) * yearsInLine
   let max = Math.ceil((Math.max(...years) + 1) / yearsInLine) * yearsInLine
 
@@ -40,7 +46,7 @@ function updateTable() {
       if (years.includes(currentYear)) {
         year.classList.add('found')
         year.onclick = redirectToExactPoint(currentYear)
-        if (data.points[currentYear].external) {
+        if (points[currentYear].external) {
           year.classList.add('external')
         }
       }
@@ -55,7 +61,6 @@ function updateTable() {
 }
 
 function updateTotal() {
-  const years = Object.keys(data.points).map(y => parseInt(y))
   const min = Math.min(...years)
   const max = Math.max(...years)
   const coverage = Math.floor((years.length * 100) / (max - min + 1))
@@ -63,7 +68,6 @@ function updateTotal() {
 }
 
 function updateLongestSequence() {
-  const years = Object.keys(data.points).map(y => parseInt(y))
   const sequence = years.reduce(
     ([max, current, sequenceStart], year, i) => {
       const partOfSequence = (year - years[i - 1] || 0) == 1
@@ -81,22 +85,22 @@ function updateLongestSequence() {
   )})`
 }
 
-function updateHeritageRegistry () {
-  const inRegistry = Object.values(data.points).filter(p => p.external).length
+function updateHeritageRegistry() {
+  const inRegistry = Object.values(points).filter(p => p.external).length
   if (inRegistry > 0) {
-    const percentage = Math.floor(inRegistry * 100 / Object.keys(data.points).length)
+    const percentage = Math.floor((inRegistry * 100) / Object.keys(points).length)
     document.querySelector('#registry .value').innerHTML = `${inRegistry} (${percentage}%)`
   } else {
     document.querySelector('#registry').remove()
   }
 }
 
-function updateVisited () {
-  const todo = Object.values(data.points).filter(p => p.notes.includes("TODO")).length
+function updateVisited() {
+  const todo = Object.values(points).filter(p => p.notes.includes('TODO')).length
   if (todo > 0) {
-    const total = Object.keys(data.points).length
+    const total = Object.keys(points).length
     const visited = total - todo
-    const percentage = Math.floor(visited * 100 / total)
+    const percentage = Math.floor((visited * 100) / total)
     document.querySelector('#visited .value').innerHTML = `${visited} (${percentage}%)`
   } else {
     document.querySelector('#visited').remove()
