@@ -71,16 +71,11 @@ function generateSvg {
   city=$(basename "$filename" .json.tmp)
   country=$(jq -r ".$city.config.country" $filename)
 
-  if [ "$2" = true ]; then
-    min_year=$(jq -r ".$name.points | keys | map(.[0:4]) | sort | first" "utils/World.json.tmp")
-    svg_file="./img/_generated/$city.svg"
-  elif [ "$country" != "null" ]; then
-    min_year=$(jq -r ".$country.points | keys | map(.[0:4]) | sort | first" "utils/$country.json.tmp")
-    svg_file="./img/_generated/country_$city.svg"
-  else
-    min_year=$(jq -r ".$city.points | keys | map(.[0:4]) | sort | first" "utils/$city.json.tmp")
-    svg_file="./img/_generated/country_$city.svg"
-  fi
+  [[ "$country" != "null" ]] && key="$country" || key="$city"
+  [[ "$2" = true ]] && svg_name=$city && key="World" || svg_name="country_$city"
+
+  min_year=$(jq -r ".$key.points | keys | map(.[0:4]) | sort | first" "utils/$key.json.tmp")
+  svg_file="./img/_generated/$svg_name.svg"
 
   current_year=$(date +%Y)
   height=35
