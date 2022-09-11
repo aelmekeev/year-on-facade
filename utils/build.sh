@@ -44,7 +44,7 @@ jq -s --sort-keys '{"World": {"points": [.[] | ..? | .config.city as $city | .po
 generateFakeCity "World"
 
 #generate <country>.js
-for d in ./csv/*/ ; do
+for d in ./csv/*/; do
   country=$(basename "$d")
   jq -s --sort-keys "{\"$country\": {\"points\": [.[] | ..? | .config.city as \$city | .points // empty | with_entries(.value += {\"city\": \$city})] | add }}" $(ls -SA1 csv/$country/* | sed -e "s/^csv\/$country/utils/" -e 's/csv$/json.tmp/') >$temp
   generateFakeCity "$country"
@@ -67,17 +67,22 @@ echo "]" >>$list_js
 # generate svg files for each city
 function generateSvg {
   filename=$1
+
+  city=$(basename "$filename" .json.tmp)
+  country=$(jq -r ".$city.config.country" $filename)
+
   if [ "$2" = true ]; then
     min_year=$(jq -r ".$name.points | keys | map(.[0:4]) | sort | first" "utils/World.json.tmp")
+    svg_file="./img/_generated/$city.svg"
+  elif [ "$country" != "null" ]; then
+    min_year=$(jq -r ".$country.points | keys | map(.[0:4]) | sort | first" "utils/$country.json.tmp")
+    svg_file="./img/_generated/country_$city.svg"
   else
-    min_year=1000
+    return 0
   fi
 
   current_year=$(date +%Y)
   height=35
-
-  city=$(basename "$filename" .json.tmp)
-  svg_file="./img/_generated/$city.svg"
 
   width=$(($current_year - $min_year))
 
@@ -106,7 +111,8 @@ EOF
 }
 
 for filename in $(ls -A1 utils/*tmp | grep -v temp.json.tmp); do
-  generateSvg $filename true
+  generateSvg $filename true  # world view
+  generateSvg $filename false # country view
 done
 
 # update api key
