@@ -6,7 +6,7 @@ temp=./utils/temp.json.tmp
 min_year="2000"
 
 # generate js files for each city
-for filename in ./csv/*.csv; do
+for filename in ./csv/**/*.csv; do
   city=$(basename "$filename" .csv)
 
   # sort
@@ -16,12 +16,8 @@ for filename in ./csv/*.csv; do
   fi
   echo -ne "$header\n$(tail -n +2 $filename | sort)" >$filename
 
-  # get first year and compare it with minimum among all cities
-  first_year=$(cat $filename | sed -n 2p | cut -d ',' -f 1)
-  min_year=$([ "$first_year" \< "$min_year" ] && echo "$first_year" || echo "$min_year")
-
   # generate temporary json files for each city
-  cat "./csv/$city.csv" | jq -sRr "split(\"\\n\") | .[1:] | map(split(\",\")) | map({(.[0]): {latlng: {lat: .[1]|tonumber, lng: .[2]|tonumber}, notes: .[3], external: .[4]} }) | add as \$points | {\"$city\": {\"points\": \$points}} | del(..|nulls)" >$temp
+  cat $filename | jq -sRr "split(\"\\n\") | .[1:] | map(split(\",\")) | map({(.[0]): {latlng: {lat: .[1]|tonumber, lng: .[2]|tonumber}, notes: .[3], external: .[4]} }) | add as \$points | {\"$city\": {\"points\": \$points}} | del(..|nulls)" >$temp
   jq -s "(.[0] | del(.apiKey)) as \$globalConfigs | .[1] * .[2] | {\"$city\": .[\"$city\"]} | .[\"$city\"].config += \$globalConfigs | .[\"$city\"].config.city = \"$city\"" config.json ./utils/configs.json $temp >"./utils/$city.json.tmp"
 
   cat >"./js/_generated/$city.js" <<EOF
@@ -47,25 +43,44 @@ EOF
 jq -s --sort-keys '{"World": {"points": [.[] | ..? | .config.city as $city | .points // empty | with_entries(.value += {"city": $city})] | add }}' $(ls -SA1 utils/*tmp | grep -v temp.json.tmp) >$temp
 generateFakeCity "World"
 
+#generate <country>.js
+for d in ./csv/*/; do
+  country=$(basename "$d")
+  jq -s --sort-keys "{\"$country\": {\"points\": [.[] | ..? | .config.city as \$city | .points // empty | with_entries(.value += {\"city\": \$city})] | add }}" $(ls -SA1 csv/$country/* | sed -e "s/^csv\/$country/utils/" -e 's/csv$/json.tmp/') >$temp
+  generateFakeCity "$country"
+done
+
 # generate list.js
 list_js="./js/_generated/list.js"
-echo "const data = {" >$list_js
+echo "const data = [" >$list_js
 for filename in $(ls -A1 utils/*tmp | grep -v temp.json.tmp); do
-  city=$(basename "$filename" .json.tmp)
+  name=$(basename "$filename" .json.tmp)
 
-  city_with_country=$(jq -r "[[\"$city\", .$city.config.country][] | strings ] | join(\", \")" $filename)
-  echo "  \"$city_with_country\": $(jq -r ".$city.points | keys | map(select(. | length == 4)) | length" $filename)," >>$list_js
+  country=$(jq -r ".$name.config.country" $filename)
+  min_year=$(jq -r ".$name.points | keys | map(.[0:4]) | sort | first" $filename)
+  count=$(jq -r ".$name.points | keys | map(select(. | length == 4)) | length" $filename)
+
+  echo "  {name: \"$name\", country: \"$country\", count: $count, minYear: $min_year}," >>$list_js
 done
-echo "}" >>$list_js
-echo "const minYear = $min_year;" >>$list_js
+echo "]" >>$list_js
 
 # generate svg files for each city
-current_year=$(date +%Y)
-height=35
-width=$(($current_year - $min_year))
-for filename in $(ls -A1 utils/*tmp | grep -v temp.json.tmp); do
+function generateSvg {
+  filename=$1
+
   city=$(basename "$filename" .json.tmp)
-  svg_file="./img/_generated/$city.svg"
+  country=$(jq -r ".$city.config.country" $filename)
+
+  [[ "$country" != "null" ]] && key="$country" || key="$city"
+  [[ "$2" = true ]] && svg_name=$city && key="World" || svg_name="country_$city"
+
+  min_year=$(jq -r ".$key.points | keys | map(.[0:4]) | sort | first" "utils/$key.json.tmp")
+  svg_file="./img/_generated/$svg_name.svg"
+
+  current_year=$(date +%Y)
+  height=35
+
+  width=$(($current_year - $min_year))
 
   cat >$svg_file <<EOF
 <svg viewBox="0 0 $width $height" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
@@ -89,6 +104,11 @@ EOF
   done
 
   echo "</svg>" >>$svg_file
+}
+
+for filename in $(ls -A1 utils/*tmp | grep -v temp.json.tmp); do
+  generateSvg $filename true  # world view
+  generateSvg $filename false # country view
 done
 
 # update api key
