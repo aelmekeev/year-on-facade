@@ -1,7 +1,7 @@
 const country = new URL(window.location.href).searchParams.get('country')
 const minYear = data.find(c => c.name == (country ? country : 'World')).minYear
 
-const sortByCount = (a, b) => b.count - a.count
+const sortByCount = (a, b) => a.country == 'null' ? -1 : b.count - a.count
 const sortAlphabetically = (a, b) => {
   if (!country || country == 'World') {
     return a.name == 'World' ? -1 : a.name.localeCompare(b.name)
