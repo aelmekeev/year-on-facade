@@ -1,5 +1,14 @@
-const sortByCount = ([, a], [, b]) => b - a
-const sortAlphabetically = ([a], [b]) => b < a
+const country = new URL(window.location.href).searchParams.get('country')
+const minYear = data.find(c => c.name == (country ? country : 'World')).minYear
+
+const sortByCount = (a, b) => b.count - a.count
+const sortAlphabetically = (a, b) => {
+  if (!country || country == 'World') {
+    return a.name == 'World' ? -1 : a.name.localeCompare(b.name)
+  } else {
+    return a.country == 'null' ? -1 : a.name.localeCompare(b.name)
+  }
+}
 
 function addTimeline(list) {
   const timeline = document.createElement('div')
@@ -27,20 +36,32 @@ function sortList(sortFunction = sortByCount) {
 
   addTimeline(parent)
 
-  Object.entries(data)
+  data
+    .filter(
+      e =>
+        (!country && e.country == 'null') ||
+        (country != 'World' && (e.country == country || e.name == country)) ||
+        (country == 'World' && e.country != 'null')
+    )
     .sort(sortFunction)
     .forEach(e => {
-      const title = e[0].replaceAll('_', ' ')
-      const city = e[0].split(',')[0]
-      const score = e[1]
+      const title = e.name.replaceAll('_', ' ')
+      const city = e.name.split(',')[0]
+      const score = e.count
 
       const row = document.createElement('div')
       row.classList.add('row')
-      row.innerHTML = `<a href="${window.location.href.replace(
-        /(year-on-facade[^//]*)/,
-        '$1/stats'
-      )}?city=${city}">${title}</a> - ${score}`
-      row.style.backgroundImage = `url("img/_generated/${city}.svg")`
+
+      const statsLink = `<a href="${window.location.href
+        .replace(/\?.+/, '')
+        .replace(/(year-on-facade[^//]*)/, '$1/stats')}?city=${city}">${title}</a>`
+      const citiesLink =
+        !country && e.country == 'null'
+          ? ` (<a href="${window.location.href}?country=${e.name}">cities</a>)`
+          : ''
+      row.innerHTML = `${statsLink}${citiesLink} - ${score}`
+
+      row.style.backgroundImage = `url("img/_generated/${(!country || country == 'World') ? city : 'country_' + city}.svg")`
       parent.appendChild(row)
     })
 }
@@ -64,4 +85,14 @@ function updateList() {
   updateMarks()
 }
 
-window.onload = () => updateList()
+function addOtherCountriesLink() {
+  const container = document.createElement('p')
+  container.innerHTML = `<a href="${window.location.href.replace(/\?.+/, '')}">Checkout all countries</a>`
+  document.body.insertBefore(container, document.querySelector('div#sort'))
+}
+
+window.onload = () => {
+  if (country && country != 'World') document.querySelector('h1').innerHTML = `Year on Facade (${country})`
+  if (country) addOtherCountriesLink()
+  updateList()
+}

@@ -108,7 +108,8 @@ function updateVisited() {
 }
 
 function updateLinks() {
-  document.querySelector('#compare a').href = window.location.href.replace('stats/', '').replace(/\?.+/, '')
+  document.querySelector('#compare a').href = `${window.location.href
+    .replace('stats/', '').replace(/\?.+/, '')}${data.config.country ? `?country=${data.config.country}` : ''}`
   const map = document.querySelector('#map a')
   if (data.config.useInternalMap) {
     map.href = window.location.href.replace('stats/', 'map/')

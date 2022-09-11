@@ -58,7 +58,7 @@ h1 {
   margin-bottom: 2px;
 }
 
-.row a {
+.row a:first-child {
   padding-left: 10px;
 }
 

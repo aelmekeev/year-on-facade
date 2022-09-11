@@ -78,7 +78,8 @@ function generateSvg {
     min_year=$(jq -r ".$country.points | keys | map(.[0:4]) | sort | first" "utils/$country.json.tmp")
     svg_file="./img/_generated/country_$city.svg"
   else
-    return 0
+    min_year=$(jq -r ".$city.points | keys | map(.[0:4]) | sort | first" "utils/$city.json.tmp")
+    svg_file="./img/_generated/country_$city.svg"
   fi
 
   current_year=$(date +%Y)
