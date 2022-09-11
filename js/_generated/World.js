@@ -37,6 +37,15 @@ const data = {
       },
       "notes": ""
     },
+    "1631": {
+      "city": "London",
+      "external": "1002019",
+      "latlng": {
+        "lat": 51.48378800554696,
+        "lng": -0.29497913281445076
+      },
+      "notes": ""
+    },
     "1658": {
       "city": "London",
       "external": "1293320",
@@ -80,7 +89,7 @@ const data = {
         "lat": 51.61740992811515,
         "lng": -0.22716355529185003
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1702": {
       "city": "London",
@@ -188,7 +197,7 @@ const data = {
         "lat": 51.58990803555381,
         "lng": -0.22671664035448216
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1731": {
       "city": "London",
@@ -287,7 +296,7 @@ const data = {
         "lat": 51.48321650208327,
         "lng": -0.2932745539360185
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1762": {
       "city": "London",
@@ -1483,7 +1492,7 @@ const data = {
         "lat": 51.62150053241681,
         "lng": -0.27635353918630556
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1955": {
       "city": "London",
@@ -1502,6 +1511,15 @@ const data = {
         "lng": -0.3888946653567865
       },
       "notes": "TODO"
+    },
+    "1959": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.62087230486803,
+        "lng": -0.25358332087771424
+      },
+      "notes": ""
     },
     "1960": {
       "city": "London",
@@ -1624,10 +1642,10 @@ const data = {
       "city": "London",
       "external": "",
       "latlng": {
-        "lat": 51.500631691752275,
-        "lng": -0.08169293099627453
+        "lat": 51.60780876697991,
+        "lng": -0.23332661836532445
       },
-      "notes": "Not ideal just a metal plaque attached to the building"
+      "notes": ""
     },
     "1999": {
       "city": "London",
@@ -1672,7 +1690,7 @@ const data = {
         "lat": 51.61717219857497,
         "lng": -0.3162726760722418
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "2007": {
       "city": "London",
@@ -1690,7 +1708,7 @@ const data = {
         "lat": 51.57963986814652,
         "lng": -0.24169263659624746
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "2010": {
       "city": "Perm",
