@@ -1481,6 +1481,15 @@ const data = {
       },
       "notes": ""
     },
+    "1952": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.59856411678716,
+        "lng": -0.11993516527939693
+      },
+      "notes": "TODO"
+    },
     "1953": {
       "city": "London",
       "external": "",
@@ -1543,6 +1552,15 @@ const data = {
         "lng": -0.10176218482665145
       },
       "notes": ""
+    },
+    "1963": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.63052925219003,
+        "lng": -0.1280381086758057
+      },
+      "notes": "TODO"
     },
     "1969": {
       "city": "London",
@@ -1688,6 +1706,15 @@ const data = {
       },
       "notes": ""
     },
+    "2006": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.53232164438765,
+        "lng": -0.37400852892292
+      },
+      "notes": "TODO"
+    },
     "2007": {
       "city": "London",
       "external": "",
@@ -1696,6 +1723,15 @@ const data = {
         "lng": -0.43571815522518753
       },
       "notes": ""
+    },
+    "2008": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.47918241915184,
+        "lng": -0.34169621256938704
+      },
+      "notes": "TODO"
     },
     "2009": {
       "city": "London",
