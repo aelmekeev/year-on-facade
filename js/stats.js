@@ -36,7 +36,11 @@ function updateTable() {
 
   const parent = document.querySelector('#table')
 
+  let lastIsDotRow = false
+
   for (let r = min / yearsInLine; r < max / yearsInLine; r++) {
+    let isDotRow = true
+
     const row = document.createElement('div')
     row.classList.add('row')
     for (let c = 0; c < yearsInLine; c++) {
@@ -44,6 +48,7 @@ function updateTable() {
       year.classList.add('year')
       const currentYear = r * yearsInLine + c
       if (years.includes(currentYear)) {
+        isDotRow = false
         year.classList.add('found')
         year.onclick = redirectToExactPoint(currentYear)
         if (points[currentYear].external) {
@@ -56,7 +61,19 @@ function updateTable() {
       year.title = currentYear
       row.appendChild(year)
     }
-    parent.appendChild(row)
+
+    if (isDotRow) {
+      if (!lastIsDotRow) {
+        const dotRow = document.createElement('div')
+        dotRow.classList.add('row')
+        dotRow.innerText = '...'
+        parent.appendChild(dotRow)
+        lastIsDotRow = true
+      }
+    } else {
+      parent.appendChild(row)
+      lastIsDotRow = false
+    }
   }
 }
 
@@ -108,8 +125,9 @@ function updateVisited() {
 }
 
 function updateLinks() {
-  document.querySelector('#compare a').href = `${window.location.href
-    .replace('stats/', '').replace(/\?.+/, '')}${data.config.country ? `?country=${data.config.country}` : ''}`
+  document.querySelector('#compare a').href = `${window.location.href.replace('stats/', '').replace(/\?.+/, '')}${
+    data.config.country ? `?country=${data.config.country}` : ''
+  }`
   const map = document.querySelector('#map a')
   if (data.config.useInternalMap) {
     map.href = window.location.href.replace('stats/', 'map/')
