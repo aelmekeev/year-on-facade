@@ -1,7 +1,7 @@
 # list missing photos (ignore TODO)
 echo "\nStep 1. Find missing photos\n"
 has_missing_photos="no"
-for filename in ./csv/*.csv; do
+for filename in ./csv/**/*.csv; do
   city=$(basename "$filename" .csv)
 
   city_folder="photos/original/$city"
@@ -14,7 +14,7 @@ for filename in ./csv/*.csv; do
 
     (cd $city_folder && ls -A1 ????.jpg 2>/dev/null | sed -e 's/\.jpg$//' | jq -R '[.]' | jq -s -c 'add' >$photos_years)
     (cd $city_folder && ls -A1 *_close.jpg 2>/dev/null | sed -e 's/_close\.jpg$//' | jq -R '[.]' | jq -s -c 'add // empty' >$photos_close_years)
-    cat "./csv/$city.csv" | jq -sRr "[split(\"\\n\") | .[1:] | map(split(\",\"))[] | select(if .[3] then .[3] | startswith(\"TODO\") | not else true end) | .[0]]" >$items
+    cat $filename | jq -sRr "[split(\"\\n\") | .[1:] | map(split(\",\"))[] | select(if .[3] then .[3] | startswith(\"TODO\") | not else true end) | .[0]] | map(select(. | length == 4))" >$items
 
     missing=$(jq -s '.[0] - (if .[1] == null then [] else .[1] end) - (if .[2] == null then [] else .[2] end)' $items "$city_folder/$photos_years" $exceptions)
     if [ "$missing" != "[]" ]; then
