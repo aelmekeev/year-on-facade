@@ -1625,6 +1625,15 @@ const data = {
       },
       "notes": "Retake the photo"
     },
+    "1990": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.63575218890959,
+        "lng": -0.10292473619647749
+      },
+      "notes": "TODO"
+    },
     "1993": {
       "city": "London",
       "external": "",
@@ -1741,6 +1750,15 @@ const data = {
         "lng": -0.24169263659624746
       },
       "notes": ""
+    },
+    "2010": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.65160711218057,
+        "lng": -0.08636709386581888
+      },
+      "notes": "TODO"
     },
     "2012": {
       "city": "London",

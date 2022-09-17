@@ -1469,6 +1469,14 @@ const data = {
       "notes": "Retake the photo",
       "external": ""
     },
+    "1990": {
+      "latlng": {
+        "lat": 51.63575218890959,
+        "lng": -0.10292473619647749
+      },
+      "notes": "TODO",
+      "external": ""
+    },
     "1993": {
       "latlng": {
         "lat": 51.49122137346518,
@@ -1579,6 +1587,14 @@ const data = {
         "lng": -0.24169263659624746
       },
       "notes": "",
+      "external": ""
+    },
+    "2010": {
+      "latlng": {
+        "lat": 51.65160711218057,
+        "lng": -0.08636709386581888
+      },
+      "notes": "TODO",
       "external": ""
     },
     "2012": {
