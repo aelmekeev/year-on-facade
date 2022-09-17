@@ -1629,6 +1629,15 @@ const data = {
       },
       "notes": "Retake the photo"
     },
+    "1990": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.63575218890959,
+        "lng": -0.10292473619647749
+      },
+      "notes": "TODO"
+    },
     "1993": {
       "city": "London",
       "external": "",
