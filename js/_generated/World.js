@@ -1519,7 +1519,7 @@ const data = {
         "lat": 51.53447149325069,
         "lng": -0.3888946653567865
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1958": {
       "city": "London",
@@ -1728,14 +1728,14 @@ const data = {
       },
       "notes": ""
     },
-    "2006": {
+    "2005": {
       "city": "London",
       "external": "",
       "latlng": {
         "lat": 51.53232164438765,
         "lng": -0.37400852892292
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "2007": {
       "city": "London",
