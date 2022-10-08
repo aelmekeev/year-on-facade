@@ -397,6 +397,15 @@ const data = {
       },
       "notes": ""
     },
+    "1794": {
+      "city": "London",
+      "external": "1359010",
+      "latlng": {
+        "lat": 51.657502713866045,
+        "lng": -0.08787594113958751
+      },
+      "notes": ""
+    },
     "1795": {
       "city": "London",
       "external": "1065608",
@@ -458,7 +467,7 @@ const data = {
         "lat": 51.57852913655827,
         "lng": -0.15386294828823677
       },
-      "notes": "TODO: Take photo when wisteria has no leafs"
+      "notes": ""
     },
     "1812": {
       "city": "London",
@@ -930,10 +939,10 @@ const data = {
     },
     "1875": {
       "city": "London",
-      "external": "",
+      "external": "1079914",
       "latlng": {
-        "lat": 51.492898227374305,
-        "lng": -0.23605706435895332
+        "lat": 51.59838727049163,
+        "lng": -0.11981537208217233
       },
       "notes": ""
     },
@@ -1519,7 +1528,7 @@ const data = {
         "lat": 51.59856411678716,
         "lng": -0.11993516527939693
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1953": {
       "city": "London",
@@ -1600,7 +1609,7 @@ const data = {
         "lat": 51.63052925219003,
         "lng": -0.1280381086758057
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1964": {
       "city": "London",
@@ -1681,7 +1690,7 @@ const data = {
         "lat": 51.63575218890959,
         "lng": -0.10292473619647749
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1993": {
       "city": "London",
@@ -1753,7 +1762,7 @@ const data = {
         "lat": 51.658522612449595,
         "lng": -0.08817388107804792
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "2003": {
       "city": "London",
