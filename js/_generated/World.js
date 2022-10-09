@@ -62,7 +62,7 @@ const data = {
         "lat": 51.54012913767072,
         "lng": 0.16254019586796453
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1669": {
       "city": "London",
@@ -440,7 +440,7 @@ const data = {
         "lat": 51.584475106114326,
         "lng": 0.1736602090991156
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1802": {
       "city": "London",
