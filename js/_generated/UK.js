@@ -68,6 +68,15 @@ const data = {
       },
       "notes": ""
     },
+    "1668": {
+      "city": "London",
+      "external": "1184584",
+      "latlng": {
+        "lat": 51.41090549320917,
+        "lng": -0.298300854259061
+      },
+      "notes": "TODO"
+    },
     "1669": {
       "city": "London",
       "external": "1184479",
@@ -337,6 +346,15 @@ const data = {
         "lng": -0.3072805119249971
       },
       "notes": ""
+    },
+    "1784": {
+      "city": "London",
+      "external": "1079547",
+      "latlng": {
+        "lat": 51.62523735193381,
+        "lng": -0.062374855786708684
+      },
+      "notes": "TODO"
     },
     "1785": {
       "city": "London",
