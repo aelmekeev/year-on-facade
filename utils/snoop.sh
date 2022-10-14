@@ -4,7 +4,7 @@ set -euo pipefail
 
 if [ "$#" -lt 2 ]; then
   echo "Usage: ./snoop.sh <author github id> <city name> <optional, alias for the city in author's repository>"
-  echo "Example: ./snoop.sh oobrien UK/London Middlesex"
+  echo "Example: ./snoop.sh oobrien UK/London UK/Middlesex"
   exit 1
 fi
 
