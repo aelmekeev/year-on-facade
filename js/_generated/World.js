@@ -91,6 +91,15 @@ const data = {
       },
       "notes": ""
     },
+    "1692": {
+      "city": "London",
+      "external": "1189649",
+      "latlng": {
+        "lat": 51.48296365931233,
+        "lng": -0.17094818344711954
+      },
+      "notes": ""
+    },
     "1696": {
       "city": "London",
       "external": "1359092",
@@ -116,7 +125,7 @@ const data = {
         "lat": 51.353924798649906,
         "lng": 0.1379032927353277
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1709": {
       "city": "London",
@@ -215,7 +224,7 @@ const data = {
         "lat": 51.33643988903099,
         "lng": 0.03103325066986683
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1732": {
       "city": "London",
@@ -1411,7 +1420,7 @@ const data = {
         "lat": 51.40564335790167,
         "lng": 0.013973970382273842
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1928": {
       "city": "London",
