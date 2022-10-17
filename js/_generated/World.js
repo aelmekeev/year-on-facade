@@ -775,6 +775,15 @@ const data = {
       },
       "notes": ""
     },
+    "1851": {
+      "city": "Windsor_and_Maidenhead",
+      "external": "1117737",
+      "latlng": {
+        "lat": 51.48571037492711,
+        "lng": -0.6061473112822975
+      },
+      "notes": "TODO"
+    },
     "1852": {
       "city": "London",
       "external": "1223748",
@@ -785,13 +794,13 @@ const data = {
       "notes": ""
     },
     "1853": {
-      "city": "London",
-      "external": "1064606",
+      "city": "Windsor_and_Maidenhead",
+      "external": "1117719",
       "latlng": {
-        "lat": 51.51086300993527,
-        "lng": -0.0875976107094258
+        "lat": 51.46617802049133,
+        "lng": -0.6125678494862948
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1854": {
       "city": "London",
@@ -1055,13 +1064,13 @@ const data = {
       "notes": ""
     },
     "1885": {
-      "city": "London",
-      "external": "1064750",
+      "city": "Windsor_and_Maidenhead",
+      "external": "",
       "latlng": {
-        "lat": 51.51729939033099,
-        "lng": -0.08043718041034395
+        "lat": 51.48273067881295,
+        "lng": -0.6198019131887323
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1886": {
       "city": "London",
@@ -1163,13 +1172,13 @@ const data = {
       "notes": ""
     },
     "1897": {
-      "city": "London",
-      "external": "1226629",
+      "city": "Windsor_and_Maidenhead",
+      "external": "1204606",
       "latlng": {
-        "lat": 51.49756909347076,
-        "lng": -0.15924721516165202
+        "lat": 51.482872494246706,
+        "lng": -0.6084781232629107
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1898": {
       "city": "London",
@@ -1852,6 +1861,15 @@ const data = {
         "lng": -0.4350614757921235
       },
       "notes": ""
+    },
+    "2013": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.57924338507726,
+        "lng": -0.35250002440166217
+      },
+      "notes": "TODO"
     }
   },
   "citiesConfig": {
@@ -1882,6 +1900,15 @@ const data = {
       }
     },
     "Brighton_and_Hove": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Windsor_and_Maidenhead": {
       "config": {
         "country": "UK",
         "external": {
