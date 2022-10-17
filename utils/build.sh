@@ -116,4 +116,9 @@ api_key=$(jq -r '.apiKey' config.json)
 cat ./map/index.html | sed -E "s/key=[^&]+/key=$api_key/g" >./utils/index.html.tmp
 mv ./utils/index.html.tmp ./map/index.html
 
+# update "what is this?" link
+wit_link=$(jq -r '.whatIsThisLink' config.json)
+cat ./index.html | sed -E "s,\"wit\" href=\"[^\"]+\",\"wit\" href=\"$wit_link\",g" >./utils/index.html.tmp
+mv ./utils/index.html.tmp ./index.html
+
 rm ./utils/*.tmp
