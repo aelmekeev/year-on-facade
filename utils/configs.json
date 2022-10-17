@@ -83,6 +83,26 @@
       }
     }
   },
+  "Windsor_and_Maidenhead": {
+    "config": {
+      "country": "UK",
+      "zoom": 12,
+      "center": {
+        "lat": 51.4811,
+        "lng": -0.6828
+      },
+      "borders": {
+        "south": 51.381804,
+        "north": 51.578514,
+        "west": -0.855217,
+        "east": -0.523567
+      },
+      "external": {
+        "label": "Check out Historic England",
+        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+      }
+    }
+  },
   "Billund": {
     "config": {
       "country": "Denmark",
