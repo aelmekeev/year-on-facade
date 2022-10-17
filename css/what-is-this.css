@@ -1,0 +1,25 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header {
+  display: flex;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+}
+
+p, ul, hr {
+  max-width: 600px;
+  margin-left: 0px;
+}
+
+img {
+  width: 600px;
+}
+
+body {
+  margin-bottom: 50px;
+}

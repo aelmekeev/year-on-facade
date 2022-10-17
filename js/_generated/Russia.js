@@ -7,7 +7,8 @@ const data = {
     },
     "borders": null,
     "useInternalMap": true,
-    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com"
+    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com",
+    "whatIsThisLink": "./what-is-this"
   },
   "points": {
     "2010": {
