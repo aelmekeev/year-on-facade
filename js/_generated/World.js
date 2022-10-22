@@ -1870,7 +1870,7 @@ const data = {
         "lat": 51.57924338507726,
         "lng": -0.35250002440166217
       },
-      "notes": "TODO"
+      "notes": ""
     }
   },
   "citiesConfig": {
