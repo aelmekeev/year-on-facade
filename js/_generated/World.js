@@ -632,6 +632,15 @@ const data = {
       },
       "notes": ""
     },
+    "1831": {
+      "city": "Windsor_and_Maidenhead",
+      "external": "1117717",
+      "latlng": {
+        "lat": 51.4756714455087,
+        "lng": -0.6059710891638771
+      },
+      "notes": "TODO"
+    },
     "1833": {
       "city": "London",
       "external": "1378436",
@@ -903,13 +912,13 @@ const data = {
       "notes": ""
     },
     "1866": {
-      "city": "London",
-      "external": "1267743",
+      "city": "Windsor_and_Maidenhead",
+      "external": "1117658",
       "latlng": {
-        "lat": 51.52085361822662,
-        "lng": -0.15204346507493086
+        "lat": 51.48231928897483,
+        "lng": -0.6084290958655567
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1868": {
       "city": "Brighton_and_Hove",
@@ -1092,13 +1101,13 @@ const data = {
       "notes": ""
     },
     "1888": {
-      "city": "London",
-      "external": "1297947",
+      "city": "Windsor_and_Maidenhead",
+      "external": "1117654",
       "latlng": {
-        "lat": 51.53787087942055,
-        "lng": -0.10250280468044137
+        "lat": 51.47983291973321,
+        "lng": -0.6109149835855533
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1889": {
       "city": "London",
@@ -1351,6 +1360,15 @@ const data = {
         "lng": -0.1044392448218371
       },
       "notes": ""
+    },
+    "1917": {
+      "city": "Windsor_and_Maidenhead",
+      "external": "1117665",
+      "latlng": {
+        "lat": 51.48362573855178,
+        "lng": -0.6086803443361174
+      },
+      "notes": "TODO"
     },
     "1919": {
       "city": "London",
@@ -1720,6 +1738,15 @@ const data = {
       },
       "notes": "Retake the photo"
     },
+    "1989": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.53878973978951,
+        "lng": 0.08087278083448099
+      },
+      "notes": "TODO"
+    },
     "1990": {
       "city": "London",
       "external": "",
@@ -1746,6 +1773,15 @@ const data = {
         "lng": -0.3349727287793572
       },
       "notes": ""
+    },
+    "1995": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.42139943181547,
+        "lng": -0.207929013421329
+      },
+      "notes": "TODO"
     },
     "1996": {
       "city": "London",
@@ -1818,6 +1854,15 @@ const data = {
         "lng": -0.37400852892292
       },
       "notes": ""
+    },
+    "2006": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.36218699154088,
+        "lng": -0.20376141717071067
+      },
+      "notes": "TODO"
     },
     "2007": {
       "city": "London",

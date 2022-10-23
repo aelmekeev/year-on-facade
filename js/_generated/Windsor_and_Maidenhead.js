@@ -22,6 +22,14 @@ const data = {
     "city": "Windsor_and_Maidenhead"
   },
   "points": {
+    "1831": {
+      "latlng": {
+        "lat": 51.4756714455087,
+        "lng": -0.6059710891638771
+      },
+      "notes": "TODO",
+      "external": "1117717"
+    },
     "1851": {
       "latlng": {
         "lat": 51.48571037492711,
@@ -38,6 +46,14 @@ const data = {
       "notes": "TODO",
       "external": "1117719"
     },
+    "1866": {
+      "latlng": {
+        "lat": 51.48231928897483,
+        "lng": -0.6084290958655567
+      },
+      "notes": "TODO",
+      "external": "1117658"
+    },
     "1885": {
       "latlng": {
         "lat": 51.48273067881295,
@@ -46,6 +62,14 @@ const data = {
       "notes": "TODO",
       "external": ""
     },
+    "1888": {
+      "latlng": {
+        "lat": 51.47983291973321,
+        "lng": -0.6109149835855533
+      },
+      "notes": "TODO",
+      "external": "1117654"
+    },
     "1897": {
       "latlng": {
         "lat": 51.482872494246706,
@@ -53,6 +77,14 @@ const data = {
       },
       "notes": "TODO",
       "external": "1204606"
+    },
+    "1917": {
+      "latlng": {
+        "lat": 51.48362573855178,
+        "lng": -0.6086803443361174
+      },
+      "notes": "TODO",
+      "external": "1117665"
     }
   }
 }
