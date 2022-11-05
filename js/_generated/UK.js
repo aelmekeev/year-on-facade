@@ -132,6 +132,15 @@ const data = {
       },
       "notes": ""
     },
+    "1706": {
+      "city": "Bath",
+      "external": "1394042",
+      "latlng": {
+        "lat": 51.39509031382486,
+        "lng": -2.3882225033684494
+      },
+      "notes": "TODO"
+    },
     "1709": {
       "city": "London",
       "external": "1210081",
@@ -257,6 +266,15 @@ const data = {
         "lng": -0.13550894000966707
       },
       "notes": ""
+    },
+    "1739": {
+      "city": "Bath",
+      "external": "1395448",
+      "latlng": {
+        "lat": 51.38252489885143,
+        "lng": -2.360744459509861
+      },
+      "notes": "TODO"
     },
     "1743": {
       "city": "London",
@@ -510,6 +528,15 @@ const data = {
       },
       "notes": ""
     },
+    "1815": {
+      "city": "Bath",
+      "external": "1394841",
+      "latlng": {
+        "lat": 51.38966196777405,
+        "lng": -2.3578359473798733
+      },
+      "notes": "TODO"
+    },
     "1816": {
       "city": "London",
       "external": "1194151",
@@ -636,6 +663,15 @@ const data = {
       },
       "notes": "TODO"
     },
+    "1832": {
+      "city": "Manchester",
+      "external": "1200815",
+      "latlng": {
+        "lat": 53.50233794351952,
+        "lng": -2.180902510654716
+      },
+      "notes": "TODO"
+    },
     "1833": {
       "city": "London",
       "external": "1378436",
@@ -673,13 +709,13 @@ const data = {
       "notes": ""
     },
     "1837": {
-      "city": "London",
-      "external": "",
+      "city": "Bath",
+      "external": "1395598",
       "latlng": {
-        "lat": 51.44366704084219,
-        "lng": 0.15142619646932207
+        "lat": 51.39061686984914,
+        "lng": -2.3553570223670324
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1838": {
       "city": "London",
@@ -734,6 +770,15 @@ const data = {
         "lng": -0.1621792173272314
       },
       "notes": ""
+    },
+    "1845": {
+      "city": "Manchester",
+      "external": "1246667",
+      "latlng": {
+        "lat": 53.4778798558999,
+        "lng": -2.2465156165669837
+      },
+      "notes": "TODO"
     },
     "1846": {
       "city": "Brighton_and_Hove",
@@ -916,13 +961,13 @@ const data = {
       "notes": "TODO"
     },
     "1868": {
-      "city": "Brighton_and_Hove",
-      "external": "",
+      "city": "Manchester",
+      "external": "1282966",
       "latlng": {
-        "lat": 50.82728137001251,
-        "lng": -0.1409624150127564
+        "lat": 53.479802560206814,
+        "lng": -2.2425819597005794
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1869": {
       "city": "London",
@@ -1942,7 +1987,25 @@ const data = {
         }
       }
     },
+    "Bath": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Brighton_and_Hove": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Manchester": {
       "config": {
         "country": "UK",
         "external": {

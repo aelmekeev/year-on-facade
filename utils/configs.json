@@ -63,6 +63,26 @@
       }
     }
   },
+  "Bath": {
+    "config": {
+      "country": "UK",
+      "zoom": 9,
+      "center": {
+        "lat": 51.3805,
+        "lng": -2.3657
+      },
+      "borders": {
+        "south": 51.351671,
+        "north": 51.411133,
+        "west": -2.4139684,
+        "east": -2.3207563
+      },
+      "external": {
+        "label": "Check out Historic England",
+        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+      }
+    }
+  },
   "Brighton_and_Hove": {
     "config": {
       "country": "UK",
@@ -76,6 +96,26 @@
         "north": 50.892159,
         "west": -0.240598,
         "east": -0.017147
+      },
+      "external": {
+        "label": "Check out Historic England",
+        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+      }
+    }
+  },
+  "Manchester": {
+    "config": {
+      "country": "UK",
+      "zoom": 10,
+      "center": {
+        "lat": 53.4741,
+        "lng": -2.2114
+      },
+      "borders": {
+        "south": 53.401461,
+        "north": 53.540422,
+        "west": -2.2893825,
+        "east": -2.1472469
       },
       "external": {
         "label": "Check out Historic England",
