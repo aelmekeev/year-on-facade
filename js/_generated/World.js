@@ -1826,7 +1826,7 @@ const data = {
         "lat": 51.42139943181547,
         "lng": -0.207929013421329
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1996": {
       "city": "London",
@@ -1891,6 +1891,15 @@ const data = {
       },
       "notes": ""
     },
+    "2004": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.41765850662135,
+        "lng": -0.22669902851382995
+      },
+      "notes": ""
+    },
     "2005": {
       "city": "London",
       "external": "",
@@ -1907,7 +1916,7 @@ const data = {
         "lat": 51.36218699154088,
         "lng": -0.20376141717071067
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "2007": {
       "city": "London",
