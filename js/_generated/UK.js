@@ -1779,6 +1779,15 @@ const data = {
       },
       "notes": ""
     },
+    "1986": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.47145688647251,
+        "lng": -0.1679732957145623
+      },
+      "notes": ""
+    },
     "1987": {
       "city": "London",
       "external": "",
