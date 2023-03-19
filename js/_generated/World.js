@@ -1980,6 +1980,15 @@ const data = {
       },
       "notes": ""
     },
+    "2011": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.47108238481107,
+        "lng": -0.27253667031774015
+      },
+      "notes": ""
+    },
     "2012": {
       "city": "London",
       "external": "",
