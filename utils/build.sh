@@ -9,6 +9,8 @@ min_year="2000"
 for filename in ./csv/**/*.csv; do
   city=$(basename "$filename" .csv)
 
+  echo "Generating $city.js..."
+
   # sort
   header="year,latitude,longitude,notes"
   if $(jq ".[\"$city\"].config | has(\"external\")" utils/configs.json); then
@@ -40,17 +42,20 @@ EOF
 }
 
 #generate world.js
+echo "Generating world.js..."
 jq -s --sort-keys '{"World": {"points": [.[] | ..? | .config.city as $city | .points // empty | with_entries(.value += {"city": $city})] | add }}' $(ls -SA1 utils/*tmp | grep -v temp.json.tmp) >$temp
 generateFakeCity "World"
 
 #generate <country>.js
 for d in ./csv/*/; do
   country=$(basename "$d")
+  echo "Generating $country.js..."
   jq -s --sort-keys "{\"$country\": {\"points\": [.[] | ..? | .config.city as \$city | .points // empty | with_entries(.value += {\"city\": \$city})] | add }}" $(ls -SA1 csv/$country/* | sed -e "s/^csv\/$country/utils/" -e 's/csv$/json.tmp/') >$temp
   generateFakeCity "$country"
 done
 
 # generate list.js
+echo "Generating list.js..."
 list_js="./js/_generated/list.js"
 echo "const data = [" >$list_js
 for filename in $(ls -A1 utils/*tmp | grep -v temp.json.tmp); do

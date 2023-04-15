@@ -1,9 +1,9 @@
 const data = {
   "config": {
-    "zoom": 3,
+    "zoom": 6,
     "center": {
-      "lat": 63.8708,
-      "lng": 96.0191
+      "lat": 39.2365,
+      "lng": 35.2222
     },
     "borders": null,
     "useInternalMap": true,
@@ -11,11 +11,67 @@ const data = {
     "whatIsThisLink": "./what-is-this"
   },
   "points": {
-    "2010": {
-      "city": "Perm",
+    "1858": {
+      "city": "Istanbul",
       "latlng": {
-        "lat": 58.004339030274615,
-        "lng": 56.26782744824511
+        "lat": 41.02485687791597,
+        "lng": 28.974872100955697
+      },
+      "notes": ""
+    },
+    "1867": {
+      "city": "Istanbul",
+      "latlng": {
+        "lat": 41.02592019364944,
+        "lng": 28.973872055307684
+      },
+      "notes": ""
+    },
+    "1876": {
+      "city": "Istanbul",
+      "latlng": {
+        "lat": 41.03388873920039,
+        "lng": 28.978055853364932
+      },
+      "notes": ""
+    },
+    "1905": {
+      "city": "Istanbul",
+      "latlng": {
+        "lat": 41.01471650321313,
+        "lng": 28.97232955430877
+      },
+      "notes": ""
+    },
+    "1907": {
+      "city": "Istanbul",
+      "latlng": {
+        "lat": 41.02594948355828,
+        "lng": 28.976637994073403
+      },
+      "notes": ""
+    },
+    "1928": {
+      "city": "Istanbul",
+      "latlng": {
+        "lat": 41.0321973899915,
+        "lng": 28.945559455737634
+      },
+      "notes": ""
+    },
+    "1968": {
+      "city": "Istanbul",
+      "latlng": {
+        "lat": 41.016910281179165,
+        "lng": 28.948110846368117
+      },
+      "notes": ""
+    },
+    "1969": {
+      "city": "Istanbul",
+      "latlng": {
+        "lat": 41.01793053189525,
+        "lng": 28.94677330547392
       },
       "notes": ""
     }
