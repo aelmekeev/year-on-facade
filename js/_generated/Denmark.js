@@ -57,6 +57,9 @@ const data = {
     "Russia": {
       "config": {}
     },
+    "Turkey": {
+      "config": {}
+    },
     "UK": {
       "config": {
         "external": {
@@ -127,6 +130,11 @@ const data = {
     "Perm": {
       "config": {
         "country": "Russia"
+      }
+    },
+    "Istanbul": {
+      "config": {
+        "country": "Turkey"
       }
     }
   }

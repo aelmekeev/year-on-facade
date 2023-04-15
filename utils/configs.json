@@ -29,6 +29,16 @@
       "borders": null
     }
   },
+  "Turkey": {
+    "config": {
+      "zoom": 6,
+      "center": {
+        "lat": 39.2365,
+        "lng": 35.2222
+      },
+      "borders": null
+    }
+  },
   "UK": {
     "config": {
       "zoom": 5,
@@ -192,6 +202,22 @@
         "north": 58.231352,
         "west": 55.630661,
         "east": 56.901738
+      }
+    }
+  },
+  "Istanbul": {
+    "config": {
+      "country": "Turkey",
+      "zoom": 11,
+      "center": {
+        "lat": 40.968569,
+        "lng": 29.006633
+      },
+      "borders": {
+        "south": 40.807649,
+        "north": 41.196299,
+        "west": 28.591899,
+        "east": 29.429607
       }
     }
   }

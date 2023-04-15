@@ -894,11 +894,10 @@ const data = {
       "notes": ""
     },
     "1858": {
-      "city": "London",
-      "external": "1065751",
+      "city": "Istanbul",
       "latlng": {
-        "lat": 51.514040410109324,
-        "lng": -0.07058651440386456
+        "lat": 41.02485687791597,
+        "lng": 28.974872100955697
       },
       "notes": ""
     },
@@ -975,11 +974,10 @@ const data = {
       "notes": "TODO"
     },
     "1867": {
-      "city": "London",
-      "external": "",
+      "city": "Istanbul",
       "latlng": {
-        "lat": 51.54641070905271,
-        "lng": -0.1568443135945722
+        "lat": 41.02592019364944,
+        "lng": 28.973872055307684
       },
       "notes": ""
     },
@@ -1056,13 +1054,12 @@ const data = {
       "notes": ""
     },
     "1876": {
-      "city": "London",
-      "external": "1297994",
+      "city": "Istanbul",
       "latlng": {
-        "lat": 51.52938511067449,
-        "lng": -0.10289051268348608
+        "lat": 41.03388873920039,
+        "lng": 28.978055853364932
       },
-      "notes": "Retake photo when construction is complete"
+      "notes": ""
     },
     "1877": {
       "city": "London",
@@ -1317,11 +1314,10 @@ const data = {
       "notes": ""
     },
     "1905": {
-      "city": "London",
-      "external": "1079754",
+      "city": "Istanbul",
       "latlng": {
-        "lat": 51.4748164774283,
-        "lng": -0.22060844720414502
+        "lat": 41.01471650321313,
+        "lng": 28.97232955430877
       },
       "notes": ""
     },
@@ -1335,11 +1331,10 @@ const data = {
       "notes": ""
     },
     "1907": {
-      "city": "London",
-      "external": "1393589",
+      "city": "Istanbul",
       "latlng": {
-        "lat": 51.51389305345233,
-        "lng": -0.04603021813304363
+        "lat": 41.02594948355828,
+        "lng": 28.976637994073403
       },
       "notes": ""
     },
@@ -1514,11 +1509,10 @@ const data = {
       "notes": ""
     },
     "1928": {
-      "city": "London",
-      "external": "",
+      "city": "Istanbul",
       "latlng": {
-        "lat": 51.40123276332768,
-        "lng": -0.11839569141109627
+        "lat": 41.0321973899915,
+        "lng": 28.945559455737634
       },
       "notes": ""
     },
@@ -1738,12 +1732,19 @@ const data = {
       },
       "notes": ""
     },
-    "1969": {
-      "city": "London",
-      "external": "1279541",
+    "1968": {
+      "city": "Istanbul",
       "latlng": {
-        "lat": 51.52296639007307,
-        "lng": -0.10568060878887817
+        "lat": 41.016910281179165,
+        "lng": 28.948110846368117
+      },
+      "notes": ""
+    },
+    "1969": {
+      "city": "Istanbul",
+      "latlng": {
+        "lat": 41.01793053189525,
+        "lng": 28.94677330547392
       },
       "notes": ""
     },
@@ -2036,6 +2037,9 @@ const data = {
     "Russia": {
       "config": {}
     },
+    "Turkey": {
+      "config": {}
+    },
     "UK": {
       "config": {
         "external": {
@@ -2106,6 +2110,11 @@ const data = {
     "Perm": {
       "config": {
         "country": "Russia"
+      }
+    },
+    "Istanbul": {
+      "config": {
+        "country": "Turkey"
       }
     }
   }
