@@ -79,6 +79,8 @@ function generateSvg {
   [[ "$country" != "null" ]] && key="$country" || key="$city"
   [[ "$2" = true ]] && svg_name=$city && key="World" || svg_name="country_$city"
 
+  echo "Generating $svg_name.svg..."
+
   min_year=$(jq -r ".$key.points | keys | map(.[0:4]) | sort | first" "utils/$key.json.tmp")
   svg_file="./img/_generated/$svg_name.svg"
 

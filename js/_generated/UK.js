@@ -1608,6 +1608,15 @@ const data = {
       },
       "notes": ""
     },
+    "1939": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.43433767759288,
+        "lng": -0.16193159695449566
+      },
+      "notes": ""
+    },
     "1947": {
       "city": "London",
       "external": "",
