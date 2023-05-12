@@ -525,11 +525,11 @@ const data = {
       "notes": ""
     },
     "1812": {
-      "city": "London",
-      "external": "1193012",
+      "city": "Windsor_and_Maidenhead",
+      "external": "1290216",
       "latlng": {
-        "lat": 51.54637235101121,
-        "lng": -0.08174232808540169
+        "lat": 51.48860321249841,
+        "lng": -0.6090992191900136
       },
       "notes": ""
     },
@@ -675,7 +675,7 @@ const data = {
         "lat": 51.4756714455087,
         "lng": -0.6059710891638771
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1832": {
       "city": "Manchester",
@@ -741,11 +741,11 @@ const data = {
       "notes": ""
     },
     "1839": {
-      "city": "London",
-      "external": "1225715",
+      "city": "Windsor_and_Maidenhead",
+      "external": "1117655",
       "latlng": {
-        "lat": 51.48791993874699,
-        "lng": -0.19402712099172004
+        "lat": 51.47983121608525,
+        "lng": -0.61111080348477
       },
       "notes": ""
     },
@@ -846,7 +846,7 @@ const data = {
         "lat": 51.48571037492711,
         "lng": -0.6061473112822975
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1852": {
       "city": "London",
@@ -864,7 +864,7 @@ const data = {
         "lat": 51.46617802049133,
         "lng": -0.6125678494862948
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1854": {
       "city": "London",
@@ -971,7 +971,7 @@ const data = {
         "lat": 51.48231928897483,
         "lng": -0.6084290958655567
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1867": {
       "city": "Istanbul",
@@ -1000,20 +1000,20 @@ const data = {
       "notes": ""
     },
     "1870": {
-      "city": "London",
-      "external": "1260135",
+      "city": "Windsor_and_Maidenhead",
+      "external": "",
       "latlng": {
-        "lat": 51.509030345289496,
-        "lng": -0.015565358847997769
+        "lat": 51.483825338980964,
+        "lng": -0.6195308684559833
       },
       "notes": ""
     },
     "1871": {
-      "city": "London",
-      "external": "1391501",
+      "city": "Windsor_and_Maidenhead",
+      "external": "",
       "latlng": {
-        "lat": 51.55183674452193,
-        "lng": -0.14153477573018972
+        "lat": 51.477269161578505,
+        "lng": -0.6089861339867938
       },
       "notes": ""
     },
@@ -1045,11 +1045,11 @@ const data = {
       "notes": ""
     },
     "1875": {
-      "city": "London",
-      "external": "1079914",
+      "city": "Windsor_and_Maidenhead",
+      "external": "",
       "latlng": {
-        "lat": 51.59838727049163,
-        "lng": -0.11981537208217233
+        "lat": 51.47743917036133,
+        "lng": -0.6105261381688867
       },
       "notes": ""
     },
@@ -1089,11 +1089,11 @@ const data = {
       "notes": ""
     },
     "1880": {
-      "city": "London",
-      "external": "1096068",
+      "city": "Spelthorne",
+      "external": "1187053",
       "latlng": {
-        "lat": 51.46231963007184,
-        "lng": -0.30386212156577386
+        "lat": 51.433119880224666,
+        "lng": -0.5141677816989878
       },
       "notes": ""
     },
@@ -1140,7 +1140,7 @@ const data = {
         "lat": 51.48273067881295,
         "lng": -0.6198019131887323
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1886": {
       "city": "London",
@@ -1152,11 +1152,11 @@ const data = {
       "notes": ""
     },
     "1887": {
-      "city": "London",
-      "external": "1064742",
+      "city": "Windsor_and_Maidenhead",
+      "external": "",
       "latlng": {
-        "lat": 51.51434737135173,
-        "lng": -0.10129390094287034
+        "lat": 51.464825146771176,
+        "lng": -0.5870811886445856
       },
       "notes": ""
     },
@@ -1167,23 +1167,23 @@ const data = {
         "lat": 51.47983291973321,
         "lng": -0.6109149835855533
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1889": {
-      "city": "London",
-      "external": "1211009",
+      "city": "Windsor_and_Maidenhead",
+      "external": "",
       "latlng": {
-        "lat": 51.51662431229585,
-        "lng": -0.138591338918972
+        "lat": 51.47791521236458,
+        "lng": -0.6100061130294592
       },
       "notes": ""
     },
     "1890": {
-      "city": "London",
+      "city": "Windsor_and_Maidenhead",
       "external": "",
       "latlng": {
-        "lat": 51.4917065076334,
-        "lng": -0.11890162231838927
+        "lat": 51.47801015127985,
+        "lng": -0.6098602085865449
       },
       "notes": ""
     },
@@ -1248,14 +1248,14 @@ const data = {
         "lat": 51.482872494246706,
         "lng": -0.6084781232629107
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1898": {
-      "city": "London",
-      "external": "1357448",
+      "city": "Windsor_and_Maidenhead",
+      "external": "",
       "latlng": {
-        "lat": 51.52068522552065,
-        "lng": -0.152624457958324
+        "lat": 51.477888236350175,
+        "lng": -0.6106538029853433
       },
       "notes": ""
     },
@@ -1426,7 +1426,7 @@ const data = {
         "lat": 51.48362573855178,
         "lng": -0.6086803443361174
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1919": {
       "city": "London",
@@ -1580,11 +1580,11 @@ const data = {
       "notes": ""
     },
     "1936": {
-      "city": "London",
+      "city": "Slough",
       "external": "",
       "latlng": {
-        "lat": 51.50345166547039,
-        "lng": -0.10651402477112712
+        "lat": 51.504487530910815,
+        "lng": -0.5778921022923846
       },
       "notes": ""
     },
@@ -2085,6 +2085,24 @@ const data = {
       }
     },
     "Manchester": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Slough": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Spelthorne": {
       "config": {
         "country": "UK",
         "external": {

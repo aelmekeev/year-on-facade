@@ -133,6 +133,46 @@
       }
     }
   },
+  "Slough": {
+    "config": {
+      "country": "UK",
+      "zoom": 12,
+      "center": {
+        "lat": 51.512,
+        "lng": -0.5844
+      },
+      "borders": {
+        "south": 51.467762,
+        "north": 51.5464,
+        "west": -0.661624,
+        "east": -0.489276
+      },
+      "external": {
+        "label": "Check out Historic England",
+        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+      }
+    }
+  },
+  "Spelthorne": {
+    "config": {
+      "country": "UK",
+      "zoom": 12,
+      "center": {
+        "lat": 51.4258,
+        "lng": -0.4719
+      },
+      "borders": {
+        "south": 51.377194,
+        "north": 51.472244,
+        "west": -0.540968,
+        "east": -0.381323
+      },
+      "external": {
+        "label": "Check out Historic England",
+        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+      }
+    }
+  },
   "Windsor_and_Maidenhead": {
     "config": {
       "country": "UK",

@@ -9,8 +9,10 @@ const data = [
   {name: "Manchester", country: "UK", count: 3, minYear: 1832},
   {name: "Perm", country: "Russia", count: 1, minYear: 2010},
   {name: "Russia", country: "null", count: 1, minYear: 2010},
+  {name: "Slough", country: "UK", count: 1, minYear: 1936},
+  {name: "Spelthorne", country: "UK", count: 1, minYear: 1880},
   {name: "Turkey", country: "null", count: 8, minYear: 1858},
   {name: "UK", country: "null", count: 224, minYear: 1580},
-  {name: "Windsor_and_Maidenhead", country: "UK", count: 8, minYear: 1831},
+  {name: "Windsor_and_Maidenhead", country: "UK", count: 21, minYear: 1812},
   {name: "World", country: "null", count: 226, minYear: 1580},
 ]
