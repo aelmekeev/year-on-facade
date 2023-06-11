@@ -20,7 +20,8 @@ In order to be added to collection the location needs to meet the following requ
 It is OK to replace existing points in case the replacement:
 
 1. is in the [heritage registers](https://en.wikipedia.org/wiki/List_of_heritage_registers) e.g. in [Historic England](https://historicengland.org.uk/) or [Fredede og Bevaringsværdige Bygninger](https://www.kulturarv.dk/fbb/index.htm)
-1. or makes distribution of the points on the map nicer (i.e. less crowdy)
+2. is on the building with a unique design or history
+3. or makes distribution of the points on the map nicer (i.e. less crowdy)
 
 ## Contribution
 

@@ -1878,6 +1878,15 @@ const data = {
       },
       "notes": ""
     },
+    "1998": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.54738208852357,
+        "lng": -0.20556370412225855
+      },
+      "notes": "TODO"
+    },
     "1999": {
       "city": "London",
       "external": "",
@@ -1954,8 +1963,8 @@ const data = {
       "city": "London",
       "external": "",
       "latlng": {
-        "lat": 51.60714706704947,
-        "lng": -0.43571815522518753
+        "lat": 51.55016496381227,
+        "lng": -0.40104731434570084
       },
       "notes": ""
     },
