@@ -5,6 +5,8 @@ set -euo pipefail
 temp=./utils/temp.json.tmp
 min_year="2000"
 
+rm -rf ./js/_generated/*
+
 # generate js files for each city
 for filename in ./csv/**/*.csv; do
   city=$(basename "$filename" .csv)

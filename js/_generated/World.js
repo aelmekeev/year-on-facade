@@ -138,7 +138,7 @@ const data = {
       "notes": ""
     },
     "1706": {
-      "city": "Bath",
+      "city": "Somerset",
       "external": "1394042",
       "latlng": {
         "lat": 51.39509031382486,
@@ -273,7 +273,7 @@ const data = {
       "notes": ""
     },
     "1739": {
-      "city": "Bath",
+      "city": "Somerset",
       "external": "1395448",
       "latlng": {
         "lat": 51.38252489885143,
@@ -525,7 +525,7 @@ const data = {
       "notes": ""
     },
     "1812": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "1290216",
       "latlng": {
         "lat": 51.48860321249841,
@@ -543,7 +543,7 @@ const data = {
       "notes": ""
     },
     "1815": {
-      "city": "Bath",
+      "city": "Somerset",
       "external": "1394841",
       "latlng": {
         "lat": 51.38966196777405,
@@ -669,7 +669,7 @@ const data = {
       "notes": ""
     },
     "1831": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "1117717",
       "latlng": {
         "lat": 51.4756714455087,
@@ -723,7 +723,7 @@ const data = {
       "notes": ""
     },
     "1837": {
-      "city": "Bath",
+      "city": "Somerset",
       "external": "1395598",
       "latlng": {
         "lat": 51.39061686984914,
@@ -741,7 +741,7 @@ const data = {
       "notes": ""
     },
     "1839": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "1117655",
       "latlng": {
         "lat": 51.47983121608525,
@@ -759,7 +759,7 @@ const data = {
       "notes": ""
     },
     "1841": {
-      "city": "Brighton_and_Hove",
+      "city": "East_Sussex",
       "external": "1379976",
       "latlng": {
         "lat": 50.82436384784516,
@@ -795,7 +795,7 @@ const data = {
       "notes": "TODO"
     },
     "1846": {
-      "city": "Brighton_and_Hove",
+      "city": "East_Sussex",
       "external": "1379993",
       "latlng": {
         "lat": 50.81725443541366,
@@ -840,7 +840,7 @@ const data = {
       "notes": ""
     },
     "1851": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "1117737",
       "latlng": {
         "lat": 51.48571037492711,
@@ -858,7 +858,7 @@ const data = {
       "notes": ""
     },
     "1853": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "1117719",
       "latlng": {
         "lat": 51.46617802049133,
@@ -965,7 +965,7 @@ const data = {
       "notes": ""
     },
     "1866": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "1117658",
       "latlng": {
         "lat": 51.48231928897483,
@@ -1000,7 +1000,7 @@ const data = {
       "notes": ""
     },
     "1870": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "",
       "latlng": {
         "lat": 51.483825338980964,
@@ -1009,7 +1009,7 @@ const data = {
       "notes": ""
     },
     "1871": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "",
       "latlng": {
         "lat": 51.477269161578505,
@@ -1045,7 +1045,7 @@ const data = {
       "notes": ""
     },
     "1875": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "",
       "latlng": {
         "lat": 51.47743917036133,
@@ -1089,7 +1089,7 @@ const data = {
       "notes": ""
     },
     "1880": {
-      "city": "Spelthorne",
+      "city": "Surrey",
       "external": "1187053",
       "latlng": {
         "lat": 51.433119880224666,
@@ -1134,7 +1134,7 @@ const data = {
       "notes": ""
     },
     "1885": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "",
       "latlng": {
         "lat": 51.48273067881295,
@@ -1152,7 +1152,7 @@ const data = {
       "notes": ""
     },
     "1887": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "",
       "latlng": {
         "lat": 51.464825146771176,
@@ -1161,7 +1161,7 @@ const data = {
       "notes": ""
     },
     "1888": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "1117654",
       "latlng": {
         "lat": 51.47983291973321,
@@ -1170,7 +1170,7 @@ const data = {
       "notes": ""
     },
     "1889": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "",
       "latlng": {
         "lat": 51.47791521236458,
@@ -1179,7 +1179,7 @@ const data = {
       "notes": ""
     },
     "1890": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "",
       "latlng": {
         "lat": 51.47801015127985,
@@ -1188,7 +1188,7 @@ const data = {
       "notes": ""
     },
     "1891": {
-      "city": "Brighton_and_Hove",
+      "city": "East_Sussex",
       "external": "",
       "latlng": {
         "lat": 50.81912217271996,
@@ -1233,7 +1233,7 @@ const data = {
       "notes": ""
     },
     "1896": {
-      "city": "Brighton_and_Hove",
+      "city": "East_Sussex",
       "external": "",
       "latlng": {
         "lat": 50.82621033726481,
@@ -1242,7 +1242,7 @@ const data = {
       "notes": ""
     },
     "1897": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "1204606",
       "latlng": {
         "lat": 51.482872494246706,
@@ -1251,7 +1251,7 @@ const data = {
       "notes": ""
     },
     "1898": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "",
       "latlng": {
         "lat": 51.477888236350175,
@@ -1393,7 +1393,7 @@ const data = {
       "notes": ""
     },
     "1914": {
-      "city": "Brighton_and_Hove",
+      "city": "East_Sussex",
       "external": "",
       "latlng": {
         "lat": 50.82096548106133,
@@ -1420,7 +1420,7 @@ const data = {
       "notes": ""
     },
     "1917": {
-      "city": "Windsor_and_Maidenhead",
+      "city": "Berkshire",
       "external": "1117665",
       "latlng": {
         "lat": 51.48362573855178,
@@ -1580,7 +1580,7 @@ const data = {
       "notes": ""
     },
     "1936": {
-      "city": "Slough",
+      "city": "Berkshire",
       "external": "",
       "latlng": {
         "lat": 51.504487530910815,
@@ -2075,7 +2075,7 @@ const data = {
         }
       }
     },
-    "Bath": {
+    "Berkshire": {
       "config": {
         "country": "UK",
         "external": {
@@ -2084,7 +2084,7 @@ const data = {
         }
       }
     },
-    "Brighton_and_Hove": {
+    "East_Sussex": {
       "config": {
         "country": "UK",
         "external": {
@@ -2102,7 +2102,7 @@ const data = {
         }
       }
     },
-    "Slough": {
+    "Somerset": {
       "config": {
         "country": "UK",
         "external": {
@@ -2111,16 +2111,7 @@ const data = {
         }
       }
     },
-    "Spelthorne": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Windsor_and_Maidenhead": {
+    "Surrey": {
       "config": {
         "country": "UK",
         "external": {

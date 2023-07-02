@@ -1,16 +1,16 @@
 const data = {
   "config": {
     "country": "UK",
-    "zoom": 12,
+    "zoom": 10,
     "center": {
-      "lat": 51.4258,
-      "lng": -0.4719
+      "lat": 51.259,
+      "lng": -0.428
     },
     "borders": {
-      "south": 51.377194,
-      "north": 51.472244,
-      "west": -0.540968,
-      "east": -0.381323
+      "south": 51.070426,
+      "north": 51.473371,
+      "west": -0.849959,
+      "east": 0.060532
     },
     "external": {
       "label": "Check out Historic England",
@@ -19,7 +19,7 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com",
     "whatIsThisLink": "./what-is-this",
-    "city": "Spelthorne"
+    "city": "Surrey"
   },
   "points": {
     "1880": {
