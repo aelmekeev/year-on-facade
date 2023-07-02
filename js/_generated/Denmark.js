@@ -6,6 +6,10 @@ const data = {
       "lng": 10.5197
     },
     "borders": null,
+    "external": {
+      "label": "Check out Fredede og Bevaringsværdige Bygninger",
+      "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
+    },
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com",
     "whatIsThisLink": "./what-is-this"
@@ -40,6 +44,7 @@ const data = {
     },
     "1924": {
       "city": "Billund",
+      "external": "",
       "latlng": {
         "lat": 55.73171536145109,
         "lng": 9.113889380972617
@@ -52,7 +57,12 @@ const data = {
       "config": {}
     },
     "Denmark": {
-      "config": {}
+      "config": {
+        "external": {
+          "label": "Check out Fredede og Bevaringsværdige Bygninger",
+          "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
+        }
+      }
     },
     "Russia": {
       "config": {}
@@ -133,7 +143,11 @@ const data = {
     },
     "Billund": {
       "config": {
-        "country": "Denmark"
+        "country": "Denmark",
+        "external": {
+          "label": "Check out Fredede og Bevaringsværdige Bygninger",
+          "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
+        }
       }
     },
     "Copenhagen": {
@@ -147,12 +161,14 @@ const data = {
     },
     "Perm": {
       "config": {
-        "country": "Russia"
+        "country": "Russia",
+        "external": null
       }
     },
     "Istanbul": {
       "config": {
-        "country": "Turkey"
+        "country": "Turkey",
+        "external": null
       }
     }
   }

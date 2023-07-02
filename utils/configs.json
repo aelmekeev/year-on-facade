@@ -16,7 +16,11 @@
         "lat": 56.0076,
         "lng": 10.5197
       },
-      "borders": null
+      "borders": null,
+      "external": {
+        "label": "Check out Fredede og Bevaringsværdige Bygninger",
+        "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
+      }
     }
   },
   "Russia": {
@@ -66,10 +70,6 @@
         "north": 51.692042,
         "west": -0.524924,
         "east": 0.323770
-      },
-      "external": {
-        "label": "Check out Historic England",
-        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
       }
     }
   },
@@ -86,10 +86,6 @@
         "north": 51.579507,
         "west": -1.591204,
         "east": -0.490289
-      },
-      "external": {
-        "label": "Check out Historic England",
-        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
       }
     }
   },
@@ -106,10 +102,6 @@
         "north": 51.146342,
         "west": -0.245296,
         "east": 0.867201
-      },
-      "external": {
-        "label": "Check out Historic England",
-        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
       }
     }
   },
@@ -126,10 +118,6 @@
         "north": 52.081618,
         "west": -0.748939,
         "east": 0.197257
-      },
-      "external": {
-        "label": "Check out Historic England",
-        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
       }
     }
   },
@@ -146,10 +134,6 @@
         "north": 53.540422,
         "west": -2.2893825,
         "east": -2.1472469
-      },
-      "external": {
-        "label": "Check out Historic England",
-        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
       }
     }
   },
@@ -166,10 +150,6 @@
         "north": 51.503085,
         "west": -3.8442908,
         "east": -2.2402870
-      },
-      "external": {
-        "label": "Check out Historic England",
-        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
       }
     }
   },
@@ -186,10 +166,6 @@
         "north": 51.473371,
         "west": -0.849959,
         "east": 0.060532
-      },
-      "external": {
-        "label": "Check out Historic England",
-        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
       }
     }
   },
@@ -222,10 +198,6 @@
         "north": 55.728391,
         "west": 12.4526044,
         "east": 12.6514573
-      },
-      "external": {
-        "label": "Check out Fredede og Bevaringsværdige Bygninger",
-        "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
       }
     }
   },
