@@ -2055,7 +2055,12 @@ const data = {
       "config": {}
     },
     "Denmark": {
-      "config": {}
+      "config": {
+        "external": {
+          "label": "Check out Fredede og Bevaringsværdige Bygninger",
+          "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
+        }
+      }
     },
     "Russia": {
       "config": {}
@@ -2136,7 +2141,11 @@ const data = {
     },
     "Billund": {
       "config": {
-        "country": "Denmark"
+        "country": "Denmark",
+        "external": {
+          "label": "Check out Fredede og Bevaringsværdige Bygninger",
+          "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
+        }
       }
     },
     "Copenhagen": {
@@ -2150,12 +2159,14 @@ const data = {
     },
     "Perm": {
       "config": {
-        "country": "Russia"
+        "country": "Russia",
+        "external": null
       }
     },
     "Istanbul": {
       "config": {
-        "country": "Turkey"
+        "country": "Turkey",
+        "external": null
       }
     }
   }

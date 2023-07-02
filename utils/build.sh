@@ -15,14 +15,21 @@ for filename in ./csv/**/*.csv; do
 
   # sort
   header="year,latitude,longitude,notes"
-  if $(jq ".[\"$city\"].config | has(\"external\")" utils/configs.json); then
+  if $(jq ".[.[\"$city\"].config.country].config | has(\"external\")" utils/configs.json); then
     header="$header,external"
   fi
   echo -ne "$header\n$(tail -n +2 $filename | sort)" >$filename
 
   # generate temporary json files for each city
   cat $filename | jq -sRr "split(\"\\n\") | .[1:] | map(split(\",\")) | map({(.[0]): {latlng: {lat: .[1]|tonumber, lng: .[2]|tonumber}, notes: .[3], external: .[4]} }) | add as \$points | {\"$city\": {\"points\": \$points}} | del(..|nulls)" >$temp
-  jq -s "(.[0] | del(.apiKey)) as \$globalConfigs | .[1] * .[2] | {\"$city\": .[\"$city\"]} | .[\"$city\"].config += \$globalConfigs | .[\"$city\"].config.city = \"$city\"" config.json ./utils/configs.json $temp >"./utils/$city.json.tmp"
+  jq -s "(.[0] | del(.apiKey)) as \$globalConfigs |
+    (.[1][.[1][\"$city\"].config.country].config.external) as \$countryExternal |
+    .[1] * .[2] |
+    {\"$city\": .[\"$city\"]} |
+    .[\"$city\"].config += if \$countryExternal then {external: \$countryExternal} else {} end |
+    .[\"$city\"].config += \$globalConfigs |
+    .[\"$city\"].config.city = \"$city\"" \
+    config.json ./utils/configs.json $temp >"./utils/$city.json.tmp"
 
   cat >"./js/_generated/$city.js" <<EOF
 const data = $(cat ./utils/$city.json.tmp | jq ".[\"$city\"]")
@@ -31,12 +38,15 @@ done
 
 function generateFakeCity {
   city=$1
-  jq -s "(.[1] | with_entries(.value.config |= del(.zoom, .borders, .center))) as \$citiesConfigs |
-  (.[0] | del(.apiKey)) as \$globalConfigs |
-  .[1] * .[2] | {\"$city\": .[\"$city\"]} |
-  .[\"$city\"].config += \$globalConfigs |
-  .[\"$city\"].citiesConfig = \$citiesConfigs |
-  .[\"$city\"].points |= with_entries(select(.key | length == 4))" config.json ./utils/configs.json $temp >"./utils/$city.json.tmp"
+  jq -s "(.[1] as \$config |
+    .[1] | with_entries(.value.config |= del(.zoom, .borders, .center)) |
+    with_entries(.value.config += if .value.config.country then {external: \$config[.value.config.country].config.external} else {} end)) as \$citiesConfigs |
+    (.[0] | del(.apiKey)) as \$globalConfigs |
+    .[1] * .[2] | {\"$city\": .[\"$city\"]} |
+    .[\"$city\"].config += \$globalConfigs |
+    .[\"$city\"].citiesConfig = \$citiesConfigs |
+    .[\"$city\"].points |= with_entries(select(.key | length == 4))" \
+    config.json ./utils/configs.json $temp >"./utils/$city.json.tmp"
 
   cat >"./js/_generated/$city.js" <<EOF
 const data = $(cat ./utils/$city.json.tmp | jq ".[\"$city\"]")
@@ -45,14 +55,27 @@ EOF
 
 #generate world.js
 echo "Generating world.js..."
-jq -s --sort-keys '{"World": {"points": [.[] | ..? | .config.city as $city | .points // empty | with_entries(.value += {"city": $city})] | add }}' $(ls -SA1 utils/*tmp | grep -v temp.json.tmp) >$temp
+jq -s --sort-keys '
+  {"World":
+    {"points": [
+      .[] | ..? | .config.city as $city | .points // empty |
+      with_entries(.value += {"city": $city})] | add }
+  }' \
+  $(ls -SA1 utils/*tmp | grep -v temp.json.tmp) >$temp
 generateFakeCity "World"
 
 #generate <country>.js
 for d in ./csv/*/; do
   country=$(basename "$d")
   echo "Generating $country.js..."
-  jq -s --sort-keys "{\"$country\": {\"points\": [.[] | ..? | .config.city as \$city | .points // empty | with_entries(.value += {\"city\": \$city})] | add }}" $(ls -SA1 csv/$country/* | sed -e "s/^csv\/$country/utils/" -e 's/csv$/json.tmp/') >$temp
+  jq -s --sort-keys "
+    {\"$country\":
+      {\"points\": [
+        .[] | ..? | .config.city as \$city | .points // empty |
+        with_entries(.value += {\"city\": \$city})] | add }
+    }" \
+    $(ls -SA1 csv/$country/* | \
+    sed -e "s/^csv\/$country/utils/" -e 's/csv$/json.tmp/') >$temp
   generateFakeCity "$country"
 done
 

@@ -12,6 +12,10 @@ const data = {
       "west": 9.057742,
       "east": 9.24476
     },
+    "external": {
+      "label": "Check out Fredede og Bevaringsværdige Bygninger",
+      "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
+    },
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com",
     "whatIsThisLink": "./what-is-this",
@@ -23,7 +27,8 @@ const data = {
         "lat": 55.73171536145109,
         "lng": 9.113889380972617
       },
-      "notes": ""
+      "notes": "",
+      "external": ""
     }
   }
 }
