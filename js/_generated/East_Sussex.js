@@ -1,16 +1,16 @@
 const data = {
   "config": {
     "country": "UK",
-    "zoom": 10,
+    "zoom": 11,
     "center": {
-      "lat": 50.8396,
-      "lng": -0.134
+      "lat": 50.953,
+      "lng": 0.242
     },
     "borders": {
-      "south": 50.797214,
-      "north": 50.892159,
-      "west": -0.240598,
-      "east": -0.017147
+      "south": 50.731831,
+      "north": 51.146342,
+      "west": -0.245296,
+      "east": 0.867201
     },
     "external": {
       "label": "Check out Historic England",
@@ -19,7 +19,7 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com",
     "whatIsThisLink": "./what-is-this",
-    "city": "Brighton_and_Hove"
+    "city": "East_Sussex"
   },
   "points": {
     "1841": {

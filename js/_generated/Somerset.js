@@ -1,16 +1,16 @@
 const data = {
   "config": {
     "country": "UK",
-    "zoom": 9,
+    "zoom": 10,
     "center": {
-      "lat": 51.3805,
-      "lng": -2.3657
+      "lat": 51.175,
+      "lng": -2.962
     },
     "borders": {
-      "south": 51.351671,
-      "north": 51.411133,
-      "west": -2.4139684,
-      "east": -2.3207563
+      "south": 50.81896,
+      "north": 51.503085,
+      "west": -3.8442908,
+      "east": -2.240287
     },
     "external": {
       "label": "Check out Historic England",
@@ -19,7 +19,7 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com",
     "whatIsThisLink": "./what-is-this",
-    "city": "Bath"
+    "city": "Somerset"
   },
   "points": {
     "1706": {

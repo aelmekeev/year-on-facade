@@ -50,7 +50,7 @@ const data = {
         }
       }
     },
-    "Bath": {
+    "Berkshire": {
       "config": {
         "country": "UK",
         "external": {
@@ -59,7 +59,7 @@ const data = {
         }
       }
     },
-    "Brighton_and_Hove": {
+    "East_Sussex": {
       "config": {
         "country": "UK",
         "external": {
@@ -77,7 +77,7 @@ const data = {
         }
       }
     },
-    "Slough": {
+    "Somerset": {
       "config": {
         "country": "UK",
         "external": {
@@ -86,16 +86,7 @@ const data = {
         }
       }
     },
-    "Spelthorne": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Windsor_and_Maidenhead": {
+    "Surrey": {
       "config": {
         "country": "UK",
         "external": {

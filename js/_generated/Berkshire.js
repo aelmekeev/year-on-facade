@@ -1,16 +1,16 @@
 const data = {
   "config": {
     "country": "UK",
-    "zoom": 12,
+    "zoom": 11,
     "center": {
-      "lat": 51.4811,
-      "lng": -0.6828
+      "lat": 51.456,
+      "lng": -0.964
     },
     "borders": {
-      "south": 51.381804,
-      "north": 51.578514,
-      "west": -0.855217,
-      "east": -0.523567
+      "south": 51.328464,
+      "north": 51.579507,
+      "west": -1.591204,
+      "east": -0.490289
     },
     "external": {
       "label": "Check out Historic England",
@@ -19,7 +19,7 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com",
     "whatIsThisLink": "./what-is-this",
-    "city": "Windsor_and_Maidenhead"
+    "city": "Berkshire"
   },
   "points": {
     "1812": {
@@ -184,8 +184,8 @@ const data = {
     },
     "1936": {
       "latlng": {
-        "lat": 51.466402561596425,
-        "lng": -0.6121731425985126
+        "lat": 51.504487530910815,
+        "lng": -0.5778921022923846
       },
       "notes": "",
       "external": ""
