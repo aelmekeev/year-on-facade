@@ -113,6 +113,26 @@
       }
     }
   },
+  "Hertfordshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 10,
+      "center": {
+        "lat": 51.844,
+        "lng": -0.225
+      },
+      "borders": {
+        "south": 51.597124,
+        "north": 52.081618,
+        "west": -0.748939,
+        "east": 0.197257
+      },
+      "external": {
+        "label": "Check out Historic England",
+        "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+      }
+    }
+  },
   "Manchester": {
     "config": {
       "country": "UK",

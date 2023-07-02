@@ -1071,13 +1071,13 @@ const data = {
       "notes": ""
     },
     "1878": {
-      "city": "London",
-      "external": "1385916",
+      "city": "Hertfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.50225389232734,
-        "lng": -0.09777086265129277
+        "lat": 51.6619381781091,
+        "lng": -0.39861372797337147
       },
-      "notes": "Retake photo when construction is complete"
+      "notes": ""
     },
     "1879": {
       "city": "London",
@@ -1098,11 +1098,11 @@ const data = {
       "notes": ""
     },
     "1881": {
-      "city": "London",
-      "external": "1286182",
+      "city": "Hertfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.51287088446407,
-        "lng": -0.08346550614377943
+        "lat": 51.65310644895729,
+        "lng": -0.40019335445680226
       },
       "notes": ""
     },
@@ -1278,11 +1278,11 @@ const data = {
       "notes": ""
     },
     "1901": {
-      "city": "London",
-      "external": "1379177",
+      "city": "Hertfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.551752501726476,
-        "lng": -0.19269477900208365
+        "lat": 51.65420551721437,
+        "lng": -0.40126808264624747
       },
       "notes": ""
     },
@@ -1482,20 +1482,20 @@ const data = {
       "notes": ""
     },
     "1925": {
-      "city": "London",
-      "external": "1380170",
+      "city": "Hertfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.49688392337117,
-        "lng": -0.12863013544703802
+        "lat": 51.658918587860185,
+        "lng": -0.40238266801833955
       },
       "notes": ""
     },
     "1926": {
-      "city": "London",
+      "city": "Hertfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.506598297566164,
-        "lng": -0.26677317202584194
+        "lat": 51.657938309791554,
+        "lng": -0.39948619802696306
       },
       "notes": ""
     },
@@ -1812,13 +1812,13 @@ const data = {
       "notes": ""
     },
     "1988": {
-      "city": "London",
+      "city": "Hertfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.51995755900059,
-        "lng": -0.15303397064267749
+        "lat": 51.65162034333731,
+        "lng": -0.3903694125472171
       },
-      "notes": "Retake the photo"
+      "notes": ""
     },
     "1989": {
       "city": "London",
@@ -1890,7 +1890,7 @@ const data = {
         "lat": 51.54738208852357,
         "lng": -0.20556370412225855
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1999": {
       "city": "London",
@@ -2043,6 +2043,15 @@ const data = {
         "lng": -0.08006112430603354
       },
       "notes": ""
+    },
+    "2016": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.58102547382024,
+        "lng": -0.32716255511793924
+      },
+      "notes": ""
     }
   },
   "citiesConfig": {
@@ -2085,6 +2094,15 @@ const data = {
       }
     },
     "East_Sussex": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Hertfordshire": {
       "config": {
         "country": "UK",
         "external": {
