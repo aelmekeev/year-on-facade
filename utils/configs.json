@@ -23,6 +23,20 @@
       }
     }
   },
+  "Portugal": {
+    "config": {
+      "zoom": 7,
+      "center": {
+        "lat": 39.6253,
+        "lng": -8.0187
+      },
+      "borders": null,
+      "external": {
+        "label": "Check out Direção-Geral do Património Cultural",
+        "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
+      }
+    }
+  },
   "Russia": {
     "config": {
       "zoom": 3,
@@ -230,6 +244,22 @@
         "north": 41.196299,
         "west": 28.591899,
         "east": 29.429607
+      }
+    }
+  },
+  "Lisbon": {
+    "config": {
+      "country": "Portugal",
+      "zoom": 10,
+      "center": {
+        "lat": 38.747186,
+        "lng": -9.154126
+      },
+      "borders": {
+        "south": 38.690869,
+        "north": 38.797006,
+        "west": -9.230198,
+        "east": -9.089545
       }
     }
   }
