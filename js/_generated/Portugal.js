@@ -1,79 +1,37 @@
 const data = {
   "config": {
-    "zoom": 6,
+    "zoom": 7,
     "center": {
-      "lat": 39.2365,
-      "lng": 35.2222
+      "lat": 39.6253,
+      "lng": -8.0187
     },
     "borders": null,
+    "external": {
+      "label": "Check out Direção-Geral do Património Cultural",
+      "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
+    },
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com",
     "whatIsThisLink": "./what-is-this"
   },
   "points": {
-    "1858": {
-      "city": "Istanbul",
+    "1865": {
+      "city": "Lisbon",
+      "external": "75026",
       "latlng": {
-        "lat": 41.02485687791597,
-        "lng": 28.974872100955697
+        "lat": 38.72110161580647,
+        "lng": -9.134935103822784
       },
-      "notes": ""
+      "notes": "TODO"
     },
-    "1867": {
-      "city": "Istanbul",
+    "1917": {
+      "city": "Lisbon",
+      "external": "",
       "latlng": {
-        "lat": 41.02592019364944,
-        "lng": 28.973872055307684
+        "lat": 38.73254158177424,
+        "lng": -9.147079379223277
       },
-      "notes": ""
-    },
-    "1876": {
-      "city": "Istanbul",
-      "latlng": {
-        "lat": 41.03388873920039,
-        "lng": 28.978055853364932
-      },
-      "notes": ""
-    },
-    "1905": {
-      "city": "Istanbul",
-      "latlng": {
-        "lat": 41.01471650321313,
-        "lng": 28.97232955430877
-      },
-      "notes": ""
-    },
-    "1907": {
-      "city": "Istanbul",
-      "latlng": {
-        "lat": 41.02594948355828,
-        "lng": 28.976637994073403
-      },
-      "notes": ""
-    },
-    "1928": {
-      "city": "Istanbul",
-      "latlng": {
-        "lat": 41.0321973899915,
-        "lng": 28.945559455737634
-      },
-      "notes": ""
-    },
-    "1968": {
-      "city": "Istanbul",
-      "latlng": {
-        "lat": 41.016910281179165,
-        "lng": 28.948110846368117
-      },
-      "notes": ""
-    },
-    "1969": {
-      "city": "Istanbul",
-      "latlng": {
-        "lat": 41.01793053189525,
-        "lng": 28.94677330547392
-      },
-      "notes": ""
+      "notes": "TODO"
     }
   },
   "citiesConfig": {

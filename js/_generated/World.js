@@ -956,13 +956,13 @@ const data = {
       "notes": ""
     },
     "1865": {
-      "city": "London",
-      "external": "1358631",
+      "city": "Lisbon",
+      "external": "75026",
       "latlng": {
-        "lat": 51.572851327795014,
-        "lng": -0.3374499163463232
+        "lat": 38.72110161580647,
+        "lng": -9.134935103822784
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1866": {
       "city": "Berkshire",
@@ -1420,13 +1420,13 @@ const data = {
       "notes": ""
     },
     "1917": {
-      "city": "Berkshire",
-      "external": "1117665",
+      "city": "Lisbon",
+      "external": "",
       "latlng": {
-        "lat": 51.48362573855178,
-        "lng": -0.6086803443361174
+        "lat": 38.73254158177424,
+        "lng": -9.147079379223277
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1919": {
       "city": "London",
@@ -2076,6 +2076,14 @@ const data = {
         }
       }
     },
+    "Portugal": {
+      "config": {
+        "external": {
+          "label": "Check out Direção-Geral do Património Cultural",
+          "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
+        }
+      }
+    },
     "Russia": {
       "config": {}
     },
@@ -2181,6 +2189,15 @@ const data = {
       "config": {
         "country": "Turkey",
         "external": null
+      }
+    },
+    "Lisbon": {
+      "config": {
+        "country": "Portugal",
+        "external": {
+          "label": "Check out Direção-Geral do Património Cultural",
+          "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
+        }
       }
     }
   }
