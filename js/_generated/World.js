@@ -326,6 +326,15 @@ const data = {
       },
       "notes": ""
     },
+    "1757": {
+      "city": "Sintra",
+      "external": "69881",
+      "latlng": {
+        "lat": 38.793788900993555,
+        "lng": -9.38493235169018
+      },
+      "notes": ""
+    },
     "1760": {
       "city": "London",
       "external": "1065086",
@@ -962,7 +971,7 @@ const data = {
         "lat": 38.72110161580647,
         "lng": -9.134935103822784
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1866": {
       "city": "Berkshire",
@@ -1116,11 +1125,11 @@ const data = {
       "notes": ""
     },
     "1883": {
-      "city": "London",
-      "external": "1391087",
+      "city": "Lisbon",
+      "external": "",
       "latlng": {
-        "lat": 51.45688784070135,
-        "lng": -0.19278389916146296
+        "lat": 38.714662991711116,
+        "lng": -9.130844043080163
       },
       "notes": ""
     },
@@ -1197,11 +1206,11 @@ const data = {
       "notes": ""
     },
     "1892": {
-      "city": "London",
-      "external": "1391928",
+      "city": "Porto",
+      "external": "",
       "latlng": {
-        "lat": 51.57607292023583,
-        "lng": -0.029968151294945646
+        "lat": 41.14062885023722,
+        "lng": -8.61236978478208
       },
       "notes": ""
     },
@@ -1375,13 +1384,13 @@ const data = {
       "notes": ""
     },
     "1912": {
-      "city": "London",
-      "external": "1031506",
+      "city": "Lisbon",
+      "external": "",
       "latlng": {
-        "lat": 51.4858548662263,
-        "lng": -0.17595556945053117
+        "lat": 38.73167621166924,
+        "lng": -9.148758359263605
       },
-      "notes": "Check August 2020 to verify"
+      "notes": ""
     },
     "1913": {
       "city": "London",
@@ -1426,7 +1435,7 @@ const data = {
         "lat": 38.73254158177424,
         "lng": -9.147079379223277
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1919": {
       "city": "London",
@@ -1510,10 +1519,11 @@ const data = {
       "notes": ""
     },
     "1928": {
-      "city": "Istanbul",
+      "city": "Porto",
+      "external": "",
       "latlng": {
-        "lat": 41.0321973899915,
-        "lng": 28.945559455737634
+        "lat": 41.142735476630456,
+        "lng": -8.615384379773117
       },
       "notes": ""
     },
@@ -2192,6 +2202,24 @@ const data = {
       }
     },
     "Lisbon": {
+      "config": {
+        "country": "Portugal",
+        "external": {
+          "label": "Check out Direção-Geral do Património Cultural",
+          "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
+        }
+      }
+    },
+    "Porto": {
+      "config": {
+        "country": "Portugal",
+        "external": {
+          "label": "Check out Direção-Geral do Património Cultural",
+          "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
+        }
+      }
+    },
+    "Sintra": {
       "config": {
         "country": "Portugal",
         "external": {

@@ -250,7 +250,7 @@
   "Lisbon": {
     "config": {
       "country": "Portugal",
-      "zoom": 10,
+      "zoom": 11,
       "center": {
         "lat": 38.747186,
         "lng": -9.154126
@@ -260,6 +260,38 @@
         "north": 38.797006,
         "west": -9.230198,
         "east": -9.089545
+      }
+    }
+  },
+  "Porto": {
+    "config": {
+      "country": "Portugal",
+      "zoom": 11,
+      "center": {
+        "lat": 41.160972,
+        "lng": -8.620924
+      },
+      "borders": {
+        "south": 41.138093,
+        "north": 41.186168,
+        "west": -8.691305,
+        "east": -8.552603
+      }
+    }
+  },
+  "Sintra": {
+    "config": {
+      "country": "Portugal",
+      "zoom": 11,
+      "center": {
+        "lat": 38.822258,
+        "lng": -9.354866
+      },
+      "borders": {
+        "south": 38.737738,
+        "north": 38.931868,
+        "west": -9.501551,
+        "east": -9.219954
       }
     }
   }
