@@ -187,6 +187,24 @@ const data = {
           "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
         }
       }
+    },
+    "Porto": {
+      "config": {
+        "country": "Portugal",
+        "external": {
+          "label": "Check out Direção-Geral do Património Cultural",
+          "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
+        }
+      }
+    },
+    "Sintra": {
+      "config": {
+        "country": "Portugal",
+        "external": {
+          "label": "Check out Direção-Geral do Património Cultural",
+          "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
+        }
+      }
     }
   }
 }
