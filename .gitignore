@@ -13,3 +13,5 @@ utils/historic-england/prepare/*.csv
 utils/historic-england/crawl
 utils/historic-england/analysis
 utils/historic-england/db/pgdata
+
+data.csv
