@@ -64,7 +64,7 @@ function sortList(sortFunction = sortByCount) {
         .replace(/(year-on-facade[^//]*)/, '$1/stats')}?city=${city}">${title}</a>`
       const citiesLink =
         !country && e.country == 'null'
-          ? ` (<a href="${window.location.href}?country=${e.name}">cities</a>)`
+          ? ` (<a href="${window.location.href}${window.location.href.includes("?") ? "&" : "?"}country=${e.name}">cities</a>)`
           : ''
       row.innerHTML = `${statsLink}${citiesLink} - ${score}`
 
