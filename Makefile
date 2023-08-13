@@ -13,3 +13,6 @@ photos-update:
 
 photos-upload:
 	aws-vault exec year-on-facade -- aws s3 sync ./photos/upload s3://year-on-facade
+
+show-stats:
+	python ./utils/show-stats.py $(country) $(city)
