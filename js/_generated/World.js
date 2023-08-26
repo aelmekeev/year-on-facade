@@ -126,7 +126,7 @@ const data = {
         "lat": 51.518003317823236,
         "lng": -0.10088095828089627
       },
-      "notes": "Retake photo once construction is complete"
+      "notes": "TODO"
     },
     "1705": {
       "city": "London",
@@ -171,16 +171,7 @@ const data = {
         "lat": 51.506665651285076,
         "lng": -0.0579892712400174
       },
-      "notes": "Impossible to read in Google maps atm - should be better once restored"
-    },
-    "1720": {
-      "city": "London",
-      "external": "1298117",
-      "latlng": {
-        "lat": 51.521691499845204,
-        "lng": -0.10403787393545795
-      },
-      "notes": "Not ideal since it's painted"
+      "notes": "TODO"
     },
     "1721": {
       "city": "London",
@@ -306,7 +297,7 @@ const data = {
         "lat": 51.51377886299489,
         "lng": -0.11091931686837486
       },
-      "notes": "Retake photo once construction is complete"
+      "notes": "TODO"
     },
     "1755": {
       "city": "London",
@@ -423,7 +414,7 @@ const data = {
         "lat": 51.46712771285955,
         "lng": -0.1177413901637235
       },
-      "notes": "Quite hard to verify on Google Street View"
+      "notes": ""
     },
     "1789": {
       "city": "London",
@@ -487,15 +478,6 @@ const data = {
         "lng": -0.3036895054983236
       },
       "notes": ""
-    },
-    "1798": {
-      "city": "London",
-      "external": "1066156",
-      "latlng": {
-        "lat": 51.51081852855117,
-        "lng": -0.13179918042208724
-      },
-      "notes": "Year is not related to the built date though"
     },
     "1799": {
       "city": "London",
@@ -657,7 +639,7 @@ const data = {
         "lat": 51.500095653625664,
         "lng": -0.0816478835097796
       },
-      "notes": "What does PD mean?"
+      "notes": ""
     },
     "1829": {
       "city": "London",
@@ -711,7 +693,7 @@ const data = {
         "lat": 51.51154928820497,
         "lng": -0.11957324166149164
       },
-      "notes": "A better photo is needed"
+      "notes": "TODO"
     },
     "1835": {
       "city": "London",
@@ -828,7 +810,7 @@ const data = {
         "lat": 51.5151682770451,
         "lng": -0.1128261536588332
       },
-      "notes": "Hardly a facade"
+      "notes": ""
     },
     "1849": {
       "city": "London",
@@ -935,7 +917,7 @@ const data = {
         "lat": 51.47905493625614,
         "lng": -0.15482418562066752
       },
-      "notes": "Retake photo when there is no party around"
+      "notes": "TODO"
     },
     "1862": {
       "city": "London",

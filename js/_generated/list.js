@@ -7,7 +7,7 @@ const data = [
   {name: "Hertfordshire", country: "UK", count: 7, minYear: 1878},
   {name: "Istanbul", country: "Turkey", count: 8, minYear: 1858},
   {name: "Lisbon", country: "Portugal", count: 4, minYear: 1865},
-  {name: "London", country: "UK", count: 219, minYear: 1580},
+  {name: "London", country: "UK", count: 217, minYear: 1580},
   {name: "Manchester", country: "UK", count: 3, minYear: 1832},
   {name: "Perm", country: "Russia", count: 1, minYear: 2010},
   {name: "Porto", country: "Portugal", count: 2, minYear: 1892},
@@ -17,6 +17,6 @@ const data = [
   {name: "Somerset", country: "UK", count: 4, minYear: 1706},
   {name: "Surrey", country: "UK", count: 1, minYear: 1880},
   {name: "Turkey", country: "null", count: 8, minYear: 1858},
-  {name: "UK", country: "null", count: 227, minYear: 1580},
-  {name: "World", country: "null", count: 230, minYear: 1580},
+  {name: "UK", country: "null", count: 225, minYear: 1580},
+  {name: "World", country: "null", count: 228, minYear: 1580},
 ]

@@ -123,7 +123,7 @@ const data = {
         "lat": 51.518003317823236,
         "lng": -0.10088095828089627
       },
-      "notes": "Retake photo once construction is complete",
+      "notes": "TODO",
       "external": "1079115"
     },
     "1705": {
@@ -155,16 +155,8 @@ const data = {
         "lat": 51.506665651285076,
         "lng": -0.0579892712400174
       },
-      "notes": "Impossible to read in Google maps atm - should be better once restored",
+      "notes": "TODO",
       "external": "1260423"
-    },
-    "1720": {
-      "latlng": {
-        "lat": 51.521691499845204,
-        "lng": -0.10403787393545795
-      },
-      "notes": "Not ideal since it's painted",
-      "external": "1298117"
     },
     "1721": {
       "latlng": {
@@ -267,7 +259,7 @@ const data = {
         "lat": 51.51377886299489,
         "lng": -0.11091931686837486
       },
-      "notes": "Retake photo once construction is complete",
+      "notes": "TODO",
       "external": "1064693"
     },
     "1755": {
@@ -355,7 +347,7 @@ const data = {
         "lat": 51.46712771285955,
         "lng": -0.1177413901637235
       },
-      "notes": "Quite hard to verify on Google Street View",
+      "notes": "",
       "external": "1099903"
     },
     "1789": {
@@ -413,14 +405,6 @@ const data = {
       },
       "notes": "",
       "external": "1358048"
-    },
-    "1798": {
-      "latlng": {
-        "lat": 51.51081852855117,
-        "lng": -0.13179918042208724
-      },
-      "notes": "Year is not related to the built date though",
-      "external": "1066156"
     },
     "1799": {
       "latlng": {
@@ -555,7 +539,7 @@ const data = {
         "lat": 51.500095653625664,
         "lng": -0.0816478835097796
       },
-      "notes": "What does PD mean?",
+      "notes": "",
       "external": "1376562"
     },
     "1829": {
@@ -587,7 +571,7 @@ const data = {
         "lat": 51.51154928820497,
         "lng": -0.11957324166149164
       },
-      "notes": "A better photo is needed",
+      "notes": "TODO",
       "external": "1066119"
     },
     "1835": {
@@ -675,7 +659,7 @@ const data = {
         "lat": 51.5151682770451,
         "lng": -0.1128261536588332
       },
-      "notes": "Hardly a facade",
+      "notes": "",
       "external": ""
     },
     "1849": {
@@ -771,7 +755,7 @@ const data = {
         "lat": 51.47905493625614,
         "lng": -0.15482418562066752
       },
-      "notes": "Retake photo when there is no party around",
+      "notes": "TODO",
       "external": "1225940"
     },
     "1862": {
@@ -891,7 +875,7 @@ const data = {
         "lat": 51.52938511067449,
         "lng": -0.10289051268348608
       },
-      "notes": "Retake photo when construction is complete",
+      "notes": "TODO",
       "external": "1297994"
     },
     "1877": {
@@ -907,7 +891,7 @@ const data = {
         "lat": 51.50225389232734,
         "lng": -0.09777086265129277
       },
-      "notes": "Retake photo when construction is complete",
+      "notes": "TODO",
       "external": "1385916"
     },
     "1879": {
@@ -1179,7 +1163,7 @@ const data = {
         "lat": 51.4858548662263,
         "lng": -0.17595556945053117
       },
-      "notes": "Check August 2020 to verify",
+      "notes": "",
       "external": "1031506"
     },
     "1913": {
@@ -1555,7 +1539,7 @@ const data = {
         "lat": 51.51995755900059,
         "lng": -0.15303397064267749
       },
-      "notes": "Retake the photo",
+      "notes": "TODO",
       "external": ""
     },
     "1989": {
