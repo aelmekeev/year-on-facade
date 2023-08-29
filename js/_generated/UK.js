@@ -62,12 +62,12 @@ const data = {
     },
     "1665": {
       "city": "Hertfordshire",
-      "external": "",
+      "external": "1103131",
       "latlng": {
         "lat": 51.75113876102868,
         "lng": -0.34080121822541126
       },
-      "notes": "1103131"
+      "notes": ""
     },
     "1668": {
       "city": "London",
