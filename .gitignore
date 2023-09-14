@@ -1,3 +1,11 @@
+# infra
+.terraform
+.terraform.lock.hcl
+/iaac/*.zip
+# python dependencies
+/iaac/lambda-resize/*/*
+
+# photos
 photos/original
 photos/web
 photos/upload
