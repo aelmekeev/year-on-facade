@@ -2,7 +2,7 @@ build:
 	./utils/build.sh
 
 t-init:
-	aws-vault exec year-on-facade -- terraform -chdir=iaac init -backend-config=backend.tfvars
+	aws-vault exec year-on-facade -- terraform -chdir=iaac init -backend-config=../config.properties
 
 t-plan:
 	aws-vault exec year-on-facade -- terraform -chdir=iaac plan
@@ -20,9 +20,8 @@ photos:
 photos-update:
 	./photos/optimise.sh update
 
-# TODO: read name of the bucket from iaac/backend.tfvars
 photos-upload:
-	aws-vault exec year-on-facade -- aws s3 sync ./photos/upload s3://year-on-facade
+	./photos/upload.sh
 
 show-stats:
 	python ./utils/show-stats.py $(country) $(city)

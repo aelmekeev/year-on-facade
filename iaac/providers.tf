@@ -9,8 +9,4 @@ terraform {
 
 provider "aws" {
   region = local.aws_region
-
-  assume_role {
-    role_arn = local.aws_role_arn
-  }
 }

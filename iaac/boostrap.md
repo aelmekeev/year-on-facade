@@ -74,12 +74,13 @@
 }
 ```
   * Update `Principal.AWS` under Trust relationships to the ARN of `year-on-facade` IAM User
-7. Update `iaac/backend.tfvars` with information specific to your setup
+7. Update `config.properties` with information specific to your setup
 8. Add the following to `~/.aws/config`
 ```
 [profile year-on-facade]
 [default]
 region = <region you use, e.g. eu-west-2>
+role_arn = <arn of the role you have created, e.g. "arn:aws:iam::000000000000:role/year-on-facade">
 ```
 9.  Run `make t-init`. You should be prompted for your system password and then see the message:
 ```
