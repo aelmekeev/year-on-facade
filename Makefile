@@ -13,14 +13,8 @@ t-apply:
 validate:
 	./utils/validate.sh
 
-.PHONY: photos
-photos:
-	./photos/optimise.sh
-
-photos-update:
-	./photos/optimise.sh update
-
 photos-upload:
+	./photos/find_missing.sh
 	./photos/upload.sh
 
 show-stats:
