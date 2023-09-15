@@ -1,21 +1,17 @@
-data "aws_s3_bucket" "lambda" {
+data "aws_s3_bucket" "this" {
   bucket = local.bucket_name
 }
 
-resource "aws_s3_bucket" "photos" {
-  bucket = "${local.bucket_name}-photos"
-}
-
-resource "aws_s3_bucket_versioning" "photos" {
-  bucket = aws_s3_bucket.photos.id
+resource "aws_s3_bucket_versioning" "this" {
+  bucket = data.aws_s3_bucket.this.id
 
   versioning_configuration {
     status = "Disabled"
   }
 }
 
-resource "aws_s3_bucket_public_access_block" "photos" {
-  bucket = aws_s3_bucket.photos.id
+resource "aws_s3_bucket_public_access_block" "this" {
+  bucket = data.aws_s3_bucket.this.id
 
   block_public_acls       = true
   block_public_policy     = false
@@ -23,14 +19,7 @@ resource "aws_s3_bucket_public_access_block" "photos" {
   restrict_public_buckets = false
 }
 
-resource "aws_s3_bucket_policy" "photos" {
-  bucket = aws_s3_bucket.photos.id
-  policy = data.aws_iam_policy_document.photos.json
-
-  depends_on = [ aws_s3_bucket_public_access_block.photos ]
-}
-
-data "aws_iam_policy_document" "photos" {
+data "aws_iam_policy_document" "this" {
   statement {
     principals {
       type        = "*"
@@ -39,12 +28,30 @@ data "aws_iam_policy_document" "photos" {
 
     actions = ["s3:GetObject"]
 
-    resources = ["${aws_s3_bucket.photos.arn}/web/*/*.jpg"]
+    resources = ["${data.aws_s3_bucket.this.arn}/web/*/*.jpg"]
+  }
+
+  statement {
+    principals {
+      type        = "AWS"
+      identifiers = ["arn:aws:iam::914826113296:role/year-on-facade"]
+    }
+
+    actions = ["s3:*"]
+
+    resources = ["${data.aws_s3_bucket.this.arn}/*"]
   }
 }
 
+resource "aws_s3_bucket_policy" "this" {
+  bucket = data.aws_s3_bucket.this.id
+  policy = data.aws_iam_policy_document.this.json
+
+  depends_on = [aws_s3_bucket_public_access_block.this]
+}
+
 resource "aws_s3_bucket_notification" "new_original_photo" {
-  bucket = aws_s3_bucket.photos.id
+  bucket = data.aws_s3_bucket.this.id
 
   lambda_function {
     lambda_function_arn = aws_lambda_function.resize.arn

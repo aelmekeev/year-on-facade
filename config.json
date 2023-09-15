@@ -1,6 +1,6 @@
 {
   "apiKey": "AIzaSyCoiKEmUCSlurpp6Qs5aCLt1O5x4WnKWKw",
   "useInternalMap": true,
-  "photosBaseUrl": "https://year-on-facade-photos.s3.eu-west-2.amazonaws.com/web",
+  "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
   "whatIsThisLink": "./what-is-this"
 }

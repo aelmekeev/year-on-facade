@@ -5,7 +5,7 @@ set -euo pipefail
 aws_profile="year-on-facade"
 photos_dir="./photos/original"
 
-s3_bucket="$(grep '^bucket' config.properties | cut -d'=' -f2 | cut -d'#' -f1 | cut -d'"' -f2)-photos"
+s3_bucket="$(grep '^bucket' config.properties | cut -d'=' -f2 | cut -d'#' -f1 | cut -d'"' -f2)"
 s3_folder="s3://$s3_bucket/original"
 
 s3_storage_class="$(grep '^s3_storage_class' config.properties | cut -d'=' -f2 | cut -d'#' -f1 | cut -d'"' -f2)"

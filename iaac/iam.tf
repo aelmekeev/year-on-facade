@@ -37,7 +37,7 @@ data "aws_iam_policy_document" "lambda" {
       "s3:PutObject"
     ]
 
-    resources = ["${aws_s3_bucket.photos.arn}/*"]
+    resources = ["${data.aws_s3_bucket.this.arn}/*"]
   }
 
   statement {

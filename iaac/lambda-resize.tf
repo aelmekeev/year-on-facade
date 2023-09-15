@@ -63,7 +63,7 @@ resource "aws_lambda_permission" "allow_bucket" {
   action        = "lambda:InvokeFunction"
   function_name = aws_lambda_function.resize.arn
   principal     = "s3.amazonaws.com"
-  source_arn    = data.aws_s3_bucket.lambda.arn
+  source_arn    = data.aws_s3_bucket.this.arn
 }
 
 resource "aws_cloudwatch_log_group" "resize" {

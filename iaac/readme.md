@@ -33,10 +33,7 @@
         {
             "Effect": "Allow",
             "Action": "s3:*",
-            "Resource": [
-                "arn:aws:s3:::year-on-facade*",
-                "arn:aws:s3:::year-on-facade*/*"
-            ]
+            "Resource": "arn:aws:s3:::year-on-facade"
         },
         {
             "Effect": "Allow",
@@ -56,7 +53,7 @@
         {
             "Effect": "Allow",
             "Action": "sns:*",
-            "Resource": "arn:aws:sns:*:*:year-on-facade*"
+            "Resource": "arn:aws:sns:*:*:year-on-facade"
         },
         {
             "Effect": "Allow",
