@@ -23,10 +23,10 @@
         {
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::914826113296:role/year-on-facade"
+                "AWS": "arn:aws:iam::<your aws account id>:role/year-on-facade"
             },
             "Action": "s3:*",
-            "Resource": "arn:aws:s3:::year-on-facade/*"
+            "Resource": "arn:aws:s3:::year-on-facade/terraform.tfstate"
         }
     ]
 }
