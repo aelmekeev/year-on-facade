@@ -14,14 +14,30 @@
 
 1. You would need [an AWS account](https://aws.amazon.com/free/).
 2. [Create an S3 Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html)
-   * Name of the bucket needs to be unique for the region so you most likely won't be able to use `year-on-facade`
-3. [Create an IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console)
+  * Name of the bucket needs to be unique for the region so you most likely won't be able to use `year-on-facade`
+3. Add the following Bucket policy under Permissions:
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::914826113296:role/year-on-facade"
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::year-on-facade/*"
+        }
+    ]
+}
+```
+4. [Create an IAM User](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console)
   * Name - `year-on-facade`
   * `Attach policies directly` but don't attach any policies
-4. [Create Access Key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey) for the `year-on-facade` user
+5. [Create Access Key](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey) for the `year-on-facade` user
   * You can save it locally or just use it in the next step
-5. `aws-vault add year-on-facade` and enter access key id and secret
-6. [Create an IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html#roles-creatingrole-user-console)
+6. `aws-vault add year-on-facade` and enter access key id and secret
+7. [Create an IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html#roles-creatingrole-user-console)
   * AWS Account
   * This account
   * Role name - `year-on-facade`
@@ -67,17 +83,17 @@
 }
 ```
   * Update `Principal.AWS` under Trust relationships to the ARN of `year-on-facade` IAM User
-7. Update `config.properties` with information specific to your setup
-8. Add the following to `~/.aws/config`
+8. Update `config.properties` with information specific to your setup
+9. Add the following to `~/.aws/config`
 ```
 [profile year-on-facade]
 [default]
 region = <region you use, e.g. eu-west-2>
 role_arn = <arn of the role you have created, e.g. "arn:aws:iam::000000000000:role/year-on-facade">
 ```
-9. Run `make t-init`. You should be prompted for your system password and then see the message:
+10. Run `make t-init`. You should be prompted for your system password and then see the message:
 ```
 Terraform has been successfully initialized!
 ```
-10. Run `make t-apply` to create the resources.
+11. Run `make t-apply` to create the resources.
   * Note that you will be asked for an email address to send notifications to. You would get an email to Confirm subscription once it is created.
