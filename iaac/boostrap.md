@@ -86,4 +86,4 @@ role_arn = <arn of the role you have created, e.g. "arn:aws:iam::000000000000:ro
 ```
 Terraform has been successfully initialized!
 ```
-10. Run `make t-apply` to create the required resources.
+1.  Run `make t-apply` to create the required resources. Note that you will be asked for an email address to send notifications to. You would get an email to Confirm subscription once it is created.

@@ -11,21 +11,24 @@ data "aws_iam_policy_document" "lambda_assume_role" {
   }
 }
 
-resource "aws_iam_role" "iam_for_lambda" {
+resource "aws_iam_role" "lambda" {
   name               = "${local.prefix}-lambda"
   assume_role_policy = data.aws_iam_policy_document.lambda_assume_role.json
 }
 
-data "aws_iam_policy" "lambda_logging" {
-  arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
-}
+data "aws_iam_policy_document" "lambda" {
+  statement {
+    effect = "Allow"
 
-resource "aws_iam_role_policy_attachment" "lambda_logs" {
-  role       = aws_iam_role.iam_for_lambda.name
-  policy_arn = data.aws_iam_policy.lambda_logging.arn
-}
+    actions = [
+      "logs:CreateLogGroup",
+      "logs:CreateLogStream",
+      "logs:PutLogEvents"
+    ]
 
-data "aws_iam_policy_document" "bucket_access" {
+    resources = ["*"]
+  }
+
   statement {
     effect = "Allow"
 
@@ -36,16 +39,24 @@ data "aws_iam_policy_document" "bucket_access" {
 
     resources = ["${aws_s3_bucket.photos.arn}/*"]
   }
+
+  statement {
+    effect = "Allow"
+
+    actions = ["sns:Publish"]
+
+    resources = [aws_sns_topic.dead_letter_queue.arn]
+  }
 }
 
-resource "aws_iam_policy" "bucket_access" {
-  name        = "photos-bucket-access"
-  path        = "/year-on-facade/"
-  description = "IAM policy for getting access to year-on-facade photos bucket"
-  policy      = data.aws_iam_policy_document.bucket_access.json
+resource "aws_iam_policy" "lambda" {
+  name        = "lambda"
+  path        = "/${local.prefix}/"
+  description = "IAM policy for year on facade lambda function"
+  policy      = data.aws_iam_policy_document.lambda.json
 }
 
-resource "aws_iam_role_policy_attachment" "bucket_access" {
-  role       = aws_iam_role.iam_for_lambda.name
-  policy_arn = aws_iam_policy.bucket_access.arn
+resource "aws_iam_role_policy_attachment" "lambda" {
+  role       = aws_iam_role.lambda.name
+  policy_arn = aws_iam_policy.lambda.arn
 }

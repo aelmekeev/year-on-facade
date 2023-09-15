@@ -34,7 +34,7 @@ data "archive_file" "resize" {
 resource "aws_lambda_function" "resize" {
   filename      = data.archive_file.resize.output_path
   function_name = local.resize_lambda_name
-  role          = aws_iam_role.iam_for_lambda.arn
+  role          = aws_iam_role.lambda.arn
   handler       = "resize.lambda_handler"
   architectures = [local.architecture.aws_arch]
   runtime       = "python${local.python_version}"
@@ -42,9 +42,12 @@ resource "aws_lambda_function" "resize" {
   source_code_hash = data.archive_file.resize.output_base64sha256
   
   timeout = 30
+  dead_letter_config {
+    target_arn = aws_sns_topic.dead_letter_queue.arn
+  }
 
   depends_on = [
-    aws_iam_role_policy_attachment.lambda_logs,
+    aws_iam_role_policy_attachment.lambda,
     aws_cloudwatch_log_group.resize,
   ]
 }
@@ -52,7 +55,7 @@ resource "aws_lambda_function" "resize" {
 resource "aws_lambda_function_event_invoke_config" "resize" {
   function_name                = aws_lambda_function.resize.function_name
   maximum_event_age_in_seconds = 300
-  maximum_retry_attempts       = 0
+  maximum_retry_attempts       = 1
 }
 
 resource "aws_lambda_permission" "allow_bucket" {
