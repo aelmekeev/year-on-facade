@@ -1,14 +1,36 @@
 # Infrastructure
 
-# Toolset
+## Design
+
+### Photo storage
+
+```mermaid
+sequenceDiagram
+    actor Collector
+    Collector->>S3: Upload original photo
+    box AWS
+    participant S3
+    participant Lambda
+    participant SNS
+    end
+    S3->>+Lambda: Trigger photo scale down
+    break if processing fails
+        Lambda-->>+SNS: send notification
+        SNS-->>-Collector: send an email
+    end
+    Lambda->>-S3: Upload scaled down photo
+```
+
+## Toolset
 
 * [`aws-vault`](https://github.com/99designs/aws-vault) (e.g. `brew install --cask aws-vault`)
 * [`terraform`](https://developer.hashicorp.com/terraform/downloads) (e.g. `brew tap hashicorp/tap && brew install hashicorp/tap/terraform` or use [`asdf`](https://github.com/asdf-vm/asdf))
+* [`terraform-docs`](https://terraform-docs.io/) (e.g. `brew install terraform-docs`)
 * [`python`](https://www.python.org/) (version specified in the [`asdf`](https://github.com/asdf-vm/asdf)-friendly `.tool-versions`)
 
-# ClickOps
-
 ## AWS
+
+### ClickOps
 
 **Note:** estimated cost for ~1000 items in the collection is < 1$ per month.
 
@@ -97,3 +119,24 @@ Terraform has been successfully initialized!
 ```
 11. Run `make t-apply` to create the resources.
   * Note that you will be asked for an email address to send notifications to. You would get an email to Confirm subscription once it is created.
+
+<!-- BEGIN_TF_DOCS_AWS -->
+### Resources
+
+| Name | Type |
+|------|------|
+| [aws_cloudwatch_log_group.resize](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group) | resource |
+| [aws_iam_policy.lambda](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy) | resource |
+| [aws_iam_role.lambda](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role) | resource |
+| [aws_iam_role_policy_attachment.lambda](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role_policy_attachment) | resource |
+| [aws_lambda_function.resize](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function) | resource |
+| [aws_lambda_function_event_invoke_config.resize](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function_event_invoke_config) | resource |
+| [aws_lambda_permission.allow_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_permission) | resource |
+| [aws_s3_bucket_notification.new_original_photo](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_notification) | resource |
+| [aws_s3_bucket_policy.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_policy) | resource |
+| [aws_s3_bucket_public_access_block.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_public_access_block) | resource |
+| [aws_s3_bucket_versioning.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_versioning) | resource |
+| [aws_sns_topic.dead_letter_queue](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic) | resource |
+| [aws_sns_topic_subscription.email](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic_subscription) | resource |
+| [terraform_data.install_pillow](https://registry.terraform.io/providers/hashicorp/terraform/latest/docs/resources/data) | resource |
+<!-- END_TF_DOCS_AWS -->
