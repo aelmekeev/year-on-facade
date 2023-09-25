@@ -1,4 +1,8 @@
+validate:
+	./utils/validate.sh
+
 build:
+	./utils/validate.sh
 	./utils/build.sh
 
 t-init:
@@ -9,9 +13,7 @@ t-plan:
 
 t-apply:
 	aws-vault exec year-on-facade -- terraform -chdir=iaac apply
-
-validate:
-	./utils/validate.sh
+	terraform-docs --config iaac/.terraform-docs-aws.yml iaac/
 
 photos-upload:
 	./photos/find_missing.sh

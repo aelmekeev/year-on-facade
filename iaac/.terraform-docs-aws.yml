@@ -1,0 +1,15 @@
+formatter: "markdown table"
+
+sections:
+  show: [resources]
+
+output:
+  file: readme.md
+  mode: inject
+  template: |-
+    <!-- BEGIN_TF_DOCS_AWS -->
+    {{ .Content }}
+    <!-- END_TF_DOCS_AWS -->
+
+settings:
+  indent: 3
