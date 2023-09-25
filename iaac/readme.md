@@ -8,7 +8,7 @@
 sequenceDiagram
     actor Collector
     Collector->>S3: Upload original photo
-    box rgb(31,31,31) AWS
+    box AWS
     participant S3
     participant Lambda
     participant SNS
