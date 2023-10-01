@@ -1,6 +1,7 @@
 const data = [
   {name: "Berkshire", country: "UK", count: 21, minYear: 1812},
   {name: "Billund", country: "Denmark", count: 1, minYear: 1924},
+  {name: "Cambridgeshire", country: "UK", count: 15, minYear: 1838},
   {name: "Copenhagen", country: "Denmark", count: 3, minYear: 1756},
   {name: "Denmark", country: "null", count: 4, minYear: 1756},
   {name: "East_Sussex", country: "UK", count: 6, minYear: 1841},

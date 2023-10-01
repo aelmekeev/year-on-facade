@@ -709,11 +709,11 @@ const data = {
       "notes": "TODO"
     },
     "1838": {
-      "city": "London",
-      "external": "1195775",
+      "city": "Cambridgeshire",
+      "external": "",
       "latlng": {
-        "lat": 51.53438679298692,
-        "lng": -0.10458337967825886
+        "lat": 52.20043824222749,
+        "lng": 0.13725578457550752
       },
       "notes": ""
     },
@@ -952,11 +952,11 @@ const data = {
       "notes": ""
     },
     "1867": {
-      "city": "Berkshire",
-      "external": "",
+      "city": "Cambridgeshire",
+      "external": "1122620",
       "latlng": {
-        "lat": 51.47737125101193,
-        "lng": -0.609934525588281
+        "lat": 52.20375905138928,
+        "lng": 0.11768686954602431
       },
       "notes": ""
     },
@@ -1096,11 +1096,11 @@ const data = {
       "notes": ""
     },
     "1883": {
-      "city": "London",
-      "external": "1391087",
+      "city": "Cambridgeshire",
+      "external": "",
       "latlng": {
-        "lat": 51.45688784070135,
-        "lng": -0.19278389916146296
+        "lat": 52.19922310570112,
+        "lng": 0.13916042863890138
       },
       "notes": ""
     },
@@ -1114,29 +1114,29 @@ const data = {
       "notes": ""
     },
     "1885": {
-      "city": "Berkshire",
+      "city": "Cambridgeshire",
       "external": "",
       "latlng": {
-        "lat": 51.48273067881295,
-        "lng": -0.6198019131887323
+        "lat": 52.20026790837453,
+        "lng": 0.13654690569966862
       },
       "notes": ""
     },
     "1886": {
-      "city": "London",
-      "external": "1358109",
+      "city": "Cambridgeshire",
+      "external": "",
       "latlng": {
-        "lat": 51.49542046655456,
-        "lng": -0.16133364762953536
+        "lat": 52.19838701939176,
+        "lng": 0.1447122607388116
       },
       "notes": ""
     },
     "1887": {
-      "city": "Berkshire",
+      "city": "Cambridgeshire",
       "external": "",
       "latlng": {
-        "lat": 51.464825146771176,
-        "lng": -0.5870811886445856
+        "lat": 52.19876864156989,
+        "lng": 0.14497256822289184
       },
       "notes": ""
     },
@@ -1177,11 +1177,11 @@ const data = {
       "notes": ""
     },
     "1892": {
-      "city": "London",
-      "external": "1391928",
+      "city": "Cambridgeshire",
+      "external": "",
       "latlng": {
-        "lat": 51.57607292023583,
-        "lng": -0.029968151294945646
+        "lat": 52.20060986303926,
+        "lng": 0.13570436244756
       },
       "notes": ""
     },
@@ -1222,20 +1222,20 @@ const data = {
       "notes": ""
     },
     "1897": {
-      "city": "Berkshire",
-      "external": "1204606",
+      "city": "Cambridgeshire",
+      "external": "1126141",
       "latlng": {
-        "lat": 51.482872494246706,
-        "lng": -0.6084781232629107
+        "lat": 52.19929885582522,
+        "lng": 0.13997428781894014
       },
       "notes": ""
     },
     "1898": {
-      "city": "Berkshire",
+      "city": "Cambridgeshire",
       "external": "",
       "latlng": {
-        "lat": 51.477888236350175,
-        "lng": -0.6106538029853433
+        "lat": 52.19833400021642,
+        "lng": 0.14469214417255186
       },
       "notes": ""
     },
@@ -1366,11 +1366,11 @@ const data = {
       "notes": ""
     },
     "1913": {
-      "city": "London",
-      "external": "1079844",
+      "city": "Cambridgeshire",
+      "external": "1265198",
       "latlng": {
-        "lat": 51.49561429449592,
-        "lng": -0.21934561954130852
+        "lat": 52.2068823459644,
+        "lng": 0.12153695026033852
       },
       "notes": ""
     },
@@ -1384,11 +1384,11 @@ const data = {
       "notes": ""
     },
     "1915": {
-      "city": "London",
-      "external": "1267275",
+      "city": "Cambridgeshire",
+      "external": "",
       "latlng": {
-        "lat": 51.517989188157784,
-        "lng": -0.13991853542653138
+        "lat": 52.19833400021642,
+        "lng": 0.14469214417255186
       },
       "notes": ""
     },
@@ -1537,20 +1537,20 @@ const data = {
       "notes": ""
     },
     "1933": {
-      "city": "London",
-      "external": "1418431",
+      "city": "Cambridgeshire",
+      "external": "",
       "latlng": {
-        "lat": 51.435772310500056,
-        "lng": -0.1591420441906156
+        "lat": 52.202136208265934,
+        "lng": 0.12468950748600041
       },
       "notes": ""
     },
     "1934": {
-      "city": "London",
-      "external": "1418380",
+      "city": "Cambridgeshire",
+      "external": "",
       "latlng": {
-        "lat": 51.56816064952934,
-        "lng": 0.010780853193313442
+        "lat": 52.204081250716754,
+        "lng": 0.12281798556582364
       },
       "notes": ""
     },
@@ -1834,11 +1834,11 @@ const data = {
       "notes": ""
     },
     "1995": {
-      "city": "London",
+      "city": "Cambridgeshire",
       "external": "",
       "latlng": {
-        "lat": 51.42139943181547,
-        "lng": -0.207929013421329
+        "lat": 52.20196419460546,
+        "lng": 0.13274595982603526
       },
       "notes": ""
     },
@@ -2085,6 +2085,15 @@ const data = {
       }
     },
     "Berkshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Cambridgeshire": {
       "config": {
         "country": "UK",
         "external": {
