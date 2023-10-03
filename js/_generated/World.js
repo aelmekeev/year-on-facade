@@ -1396,8 +1396,8 @@ const data = {
       "city": "Cambridgeshire",
       "external": "",
       "latlng": {
-        "lat": 52.19833400021642,
-        "lng": 0.14469214417255186
+        "lat": 52.19905462941954,
+        "lng": 0.1401635173472679
       },
       "notes": ""
     },
