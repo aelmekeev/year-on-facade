@@ -103,6 +103,22 @@
       }
     }
   },
+  "Cambridgeshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 52.343,
+        "lng": 0.053
+      },
+      "borders": {
+        "south": 52.006,
+        "north": 52.743,
+        "west": -0.509,
+        "east": 0.521
+      }
+    }
+  },
   "East_Sussex": {
     "config": {
       "country": "UK",
