@@ -16,7 +16,7 @@ const data = [
   {name: "Russia", country: "null", count: 1, minYear: 2010},
   {name: "Sintra", country: "Portugal", count: 1, minYear: 1757},
   {name: "Somerset", country: "UK", count: 4, minYear: 1706},
-  {name: "Surrey", country: "UK", count: 4, minYear: 1880},
+  {name: "Surrey", country: "UK", count: 10, minYear: 1880},
   {name: "Turkey", country: "null", count: 8, minYear: 1858},
   {name: "UK", country: "null", count: 225, minYear: 1580},
   {name: "World", country: "null", count: 228, minYear: 1580},
