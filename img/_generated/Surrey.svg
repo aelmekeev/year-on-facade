@@ -1,7 +1,13 @@
 <svg viewBox="0 0 443 35" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
-  <rect y="0" x="300" width="48" height="35" fill="#a3bff4" />
+  <rect y="0" x="300" width="127" height="35" fill="#a3bff4" />
   <rect y="0" x="300" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="307" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="308" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="318" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="324" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="326" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="343" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="347" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="419" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="426" width="1" height="35" fill="#c8e3c2" />
 </svg>

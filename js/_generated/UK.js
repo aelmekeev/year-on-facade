@@ -1132,11 +1132,11 @@ const data = {
       "notes": ""
     },
     "1887": {
-      "city": "Cambridgeshire",
+      "city": "Surrey",
       "external": "",
       "latlng": {
-        "lat": 52.19876864156989,
-        "lng": 0.14497256822289184
+        "lat": 51.336304667692424,
+        "lng": -0.32047797040111015
       },
       "notes": ""
     },
@@ -1231,11 +1231,11 @@ const data = {
       "notes": ""
     },
     "1898": {
-      "city": "Cambridgeshire",
+      "city": "Surrey",
       "external": "",
       "latlng": {
-        "lat": 52.19833400021642,
-        "lng": 0.14469214417255186
+        "lat": 51.33156255769363,
+        "lng": -0.36338346373983077
       },
       "notes": ""
     },
@@ -1285,11 +1285,11 @@ const data = {
       "notes": ""
     },
     "1904": {
-      "city": "London",
-      "external": "1392379",
+      "city": "Surrey",
+      "external": "",
       "latlng": {
-        "lat": 51.458413588074954,
-        "lng": 0.054701158928156884
+        "lat": 51.37301145270482,
+        "lng": -0.3599360081707331
       },
       "notes": ""
     },
@@ -1303,11 +1303,11 @@ const data = {
       "notes": ""
     },
     "1906": {
-      "city": "London",
-      "external": "1389537",
+      "city": "Surrey",
+      "external": "",
       "latlng": {
-        "lat": 51.652988999068505,
-        "lng": -0.0726415888113681
+        "lat": 51.339981382314726,
+        "lng": -0.2699920967406661
       },
       "notes": ""
     },
@@ -1870,7 +1870,7 @@ const data = {
       "notes": ""
     },
     "1999": {
-      "city": "London",
+      "city": "Surrey",
       "external": "",
       "latlng": {
         "lat": 51.33331970197817,
@@ -1933,11 +1933,11 @@ const data = {
       "notes": ""
     },
     "2006": {
-      "city": "London",
+      "city": "Surrey",
       "external": "",
       "latlng": {
-        "lat": 51.36218699154088,
-        "lng": -0.20376141717071067
+        "lat": 51.38127884604159,
+        "lng": -0.33956840765210405
       },
       "notes": ""
     },
