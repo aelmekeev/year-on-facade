@@ -1931,11 +1931,11 @@ const data = {
       "notes": ""
     },
     "2004": {
-      "city": "London",
+      "city": "Buckinghamshire",
       "external": "",
       "latlng": {
-        "lat": 51.41765850662135,
-        "lng": -0.22669902851382995
+        "lat": 51.589681104685724,
+        "lng": -0.5515117255768285
       },
       "notes": ""
     },
@@ -2020,11 +2020,11 @@ const data = {
       "notes": ""
     },
     "2014": {
-      "city": "Buckinghamshire",
+      "city": "London",
       "external": "",
       "latlng": {
-        "lat": 51.589681104685724,
-        "lng": -0.5515117255768285
+        "lat": 51.540693666854196,
+        "lng": -0.1779099390980688
       },
       "notes": ""
     },
