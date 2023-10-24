@@ -154,3 +154,7 @@ cat ./index.html | sed -E "s,\"wit\" href=\"[^\"]+\",\"wit\" href=\"$wit_link\",
 mv ./utils/index.html.tmp ./index.html
 
 rm ./utils/*.tmp
+
+# build geoguesser json
+echo "Generating World_geogesser.json..."
+sed '1s/^.\{13\}//' ./js/_generated/World.js | jq '.points | map_values(.latlng) | to_entries | map(.value) | map(. += {"heading": 0, "pitch": 0, "zoom": 1})' > ./js/_generated/World_geogesser.json
