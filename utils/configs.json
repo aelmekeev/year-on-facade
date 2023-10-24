@@ -103,6 +103,22 @@
       }
     }
   },
+  "Buckinghamshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 10,
+      "center": {
+        "lat": 51.797,
+        "lng": -0.808
+      },
+      "borders": {
+        "south": 51.484,
+        "north": 52.082,
+        "west": -1.143,
+        "east": -0.473
+      }
+    }
+  },
   "Cambridgeshire": {
     "config": {
       "country": "UK",

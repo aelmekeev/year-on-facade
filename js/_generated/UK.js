@@ -2005,11 +2005,11 @@ const data = {
       "notes": ""
     },
     "2014": {
-      "city": "London",
+      "city": "Buckinghamshire",
       "external": "",
       "latlng": {
-        "lat": 51.540693666854196,
-        "lng": -0.1779099390980688
+        "lat": 51.589681104685724,
+        "lng": -0.5515117255768285
       },
       "notes": ""
     },
@@ -2085,6 +2085,15 @@ const data = {
       }
     },
     "Berkshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Buckinghamshire": {
       "config": {
         "country": "UK",
         "external": {
