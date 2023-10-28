@@ -11,6 +11,7 @@ const data = [
   {name: "Lisbon", country: "Portugal", count: 4, minYear: 1865},
   {name: "London", country: "UK", count: 217, minYear: 1580},
   {name: "Manchester", country: "UK", count: 3, minYear: 1832},
+  {name: "Oxfordshire", country: "UK", count: 24, minYear: 1879},
   {name: "Perm", country: "Russia", count: 1, minYear: 2010},
   {name: "Porto", country: "Portugal", count: 2, minYear: 1892},
   {name: "Portugal", country: "null", count: 7, minYear: 1757},

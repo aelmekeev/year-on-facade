@@ -1071,11 +1071,11 @@ const data = {
       "notes": ""
     },
     "1879": {
-      "city": "London",
-      "external": "1066393",
+      "city": "Oxfordshire",
+      "external": "1369320",
       "latlng": {
-        "lat": 51.51363379377558,
-        "lng": -0.12235376231830868
+        "lat": 51.76047232013679,
+        "lng": -1.2604351197255856
       },
       "notes": ""
     },
@@ -1206,11 +1206,11 @@ const data = {
       "notes": ""
     },
     "1894": {
-      "city": "London",
-      "external": "",
+      "city": "Oxfordshire",
+      "external": "1392911",
       "latlng": {
-        "lat": 51.49351509740085,
-        "lng": -0.24494205049341808
+        "lat": 51.763446678492414,
+        "lng": -1.260304583458615
       },
       "notes": ""
     },
@@ -1287,11 +1287,11 @@ const data = {
       "notes": ""
     },
     "1903": {
-      "city": "London",
-      "external": "1430680",
+      "city": "Oxfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.4864943335234,
-        "lng": 0.09639768502470046
+        "lat": 51.758693513622774,
+        "lng": -1.2129416709488643
       },
       "notes": ""
     },
@@ -1348,11 +1348,11 @@ const data = {
       "notes": ""
     },
     "1910": {
-      "city": "London",
-      "external": "1249651",
+      "city": "Oxfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.50259073133474,
-        "lng": -0.11054840182723785
+        "lat": 51.74825881066575,
+        "lng": -1.2257609375514278
       },
       "notes": ""
     },
@@ -1510,11 +1510,11 @@ const data = {
       "notes": ""
     },
     "1929": {
-      "city": "London",
+      "city": "Oxfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.53161440573577,
-        "lng": -0.13452690989194183
+        "lat": 51.75344818939161,
+        "lng": -1.262513516110906
       },
       "notes": ""
     },
@@ -1591,20 +1591,20 @@ const data = {
       "notes": ""
     },
     "1938": {
-      "city": "London",
+      "city": "Oxfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.51228438747331,
-        "lng": -0.3831833246582766
+        "lat": 51.75281085719076,
+        "lng": -1.2580670835942647
       },
       "notes": ""
     },
     "1939": {
-      "city": "London",
-      "external": "",
+      "city": "Oxfordshire",
+      "external": "1390596",
       "latlng": {
-        "lat": 51.43433767759288,
-        "lng": -0.16193159695449566
+        "lat": 51.75517371152019,
+        "lng": -1.2547228287670449
       },
       "notes": ""
     },
@@ -1769,11 +1769,11 @@ const data = {
       "notes": ""
     },
     "1982": {
-      "city": "London",
+      "city": "Oxfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.57749483936218,
-        "lng": -0.33363218554777435
+        "lat": 51.753571532323136,
+        "lng": -1.2610141024671608
       },
       "notes": ""
     },
@@ -1841,11 +1841,11 @@ const data = {
       "notes": ""
     },
     "1994": {
-      "city": "London",
+      "city": "Oxfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.58152304450025,
-        "lng": -0.3349727287793572
+        "lat": 51.775054216331,
+        "lng": -1.2642172936081992
       },
       "notes": ""
     },
@@ -1895,11 +1895,11 @@ const data = {
       "notes": ""
     },
     "2000": {
-      "city": "London",
+      "city": "Oxfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.51559107085581,
-        "lng": -0.1950800616770617
+        "lat": 51.745868607480354,
+        "lng": -1.2561231258197583
       },
       "notes": ""
     },
@@ -2002,11 +2002,11 @@ const data = {
       "notes": ""
     },
     "2012": {
-      "city": "London",
+      "city": "Oxfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.61186465188856,
-        "lng": -0.4350614757921235
+        "lat": 51.785657912520286,
+        "lng": -1.2698493164126066
       },
       "notes": ""
     },
@@ -2145,6 +2145,15 @@ const data = {
       }
     },
     "Manchester": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Oxfordshire": {
       "config": {
         "country": "UK",
         "external": {

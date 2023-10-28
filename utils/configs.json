@@ -183,6 +183,22 @@
       }
     }
   },
+  "Oxfordshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 10,
+      "center": {
+        "lat": 51.801,
+        "lng": -1.289
+      },
+      "borders": {
+        "south": 51.458,
+        "north": 52.169,
+        "west": -1.724,
+        "east": -0.876
+      }
+    }
+  },
   "Somerset": {
     "config": {
       "country": "UK",
