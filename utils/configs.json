@@ -135,6 +135,38 @@
       }
     }
   },
+  "Cheshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 53.216,
+        "lng": -2.521
+      },
+      "borders": {
+        "south": 52.946465,
+        "north": 53.480860,
+        "west": -3.130119,
+        "east": -1.972515
+      }
+    }
+  },
+  "Devon": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 50.783,
+        "lng": -3.772
+      },
+      "borders": {
+        "south": 50.197743,
+        "north": 51.246192,
+        "west": -4.550117,
+        "east": -2.882941
+      }
+    }
+  },
   "East_Sussex": {
     "config": {
       "country": "UK",
@@ -148,6 +180,70 @@
         "north": 51.146342,
         "west": -0.245296,
         "east": 0.867201
+      }
+    }
+  },
+  "East_Yorkshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 53.901,
+        "lng": -0.485
+      },
+      "borders": {
+        "south": 53.598887,
+        "north": 54.176769,
+        "west": -1.100503,
+        "east": 0.149191
+      }
+    }
+  },
+  "Essex": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 51.803,
+        "lng": 0.613
+      },
+      "borders": {
+        "south": 51.501741,
+        "north": 52.096222,
+        "west": -0.020936,
+        "east": 1.291931
+      }
+    }
+  },
+  "Gloucestershire": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 51.842,
+        "lng": -2.161
+      },
+      "borders": {
+        "south": 51.577579,
+        "north": 52.112387,
+        "west": -2.696015,
+        "east": -1.613902
+      }
+    }
+  },
+  "Hampshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 51.094,
+        "lng": -1.282
+      },
+      "borders": {
+        "south": 50.715419,
+        "north": 51.382016,
+        "west": -1.957332,
+        "east": -0.731067
       }
     }
   },
@@ -167,6 +263,38 @@
       }
     }
   },
+  "Lancashire": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 53.843,
+        "lng": -2.589
+      },
+      "borders": {
+        "south": 53.480225,
+        "north": 54.239895,
+        "west": -3.058159,
+        "east": -2.045864
+      }
+    }
+  },
+  "Lincolnshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 53.127,
+        "lng": -0.229
+      },
+      "borders": {
+        "south": 52.636615,
+        "north": 53.612036,
+        "west": -0.828111,
+        "east": 0.357457
+      }
+    }
+  },
   "Manchester": {
     "config": {
       "country": "UK",
@@ -180,6 +308,38 @@
         "north": 53.540422,
         "west": -2.2893825,
         "east": -2.1472469
+      }
+    }
+  },
+  "North_Yorkshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 54.163,
+        "lng": -1.431
+      },
+      "borders": {
+        "south": 53.619323,
+        "north": 54.558138,
+        "west": -2.569054,
+        "east": -0.211586
+      }
+    }
+  },
+  "Northamptonshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 52.296,
+        "lng": -0.828
+      },
+      "borders": {
+        "south": 51.975466,
+        "north": 52.644039,
+        "west": -1.332793,
+        "east": -0.342651
       }
     }
   },
@@ -215,6 +375,22 @@
       }
     }
   },
+  "South_Yorkshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 10,
+      "center": {
+        "lat": 53.482,
+        "lng": -1.321
+      },
+      "borders": {
+        "south": 53.300211,
+        "north": 53.659557,
+        "west": -1.823894,
+        "east": -0.865515
+      }
+    }
+  },
   "Surrey": {
     "config": {
       "country": "UK",
@@ -228,6 +404,22 @@
         "north": 51.473371,
         "west": -0.849959,
         "east": 0.060532
+      }
+    }
+  },
+  "West_Midlands": {
+    "config": {
+      "country": "UK",
+      "zoom": 10,
+      "center": {
+        "lat": 52.501,
+        "lng": -1.831
+      },
+      "borders": {
+        "south": -1.776644,
+        "north": 52.663008,
+        "west": -2.208741,
+        "east": -1.423549
       }
     }
   },
