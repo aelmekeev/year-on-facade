@@ -343,6 +343,22 @@
       }
     }
   },
+  "Merseyside": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 53.136,
+        "lng": -0.993
+      },
+      "borders": {
+        "south": 53.284414,
+        "north": 53.705959,
+        "west": -3.237463,
+        "east": -2.578283
+      }
+    }
+  },
   "North_Yorkshire": {
     "config": {
       "country": "UK",
@@ -372,6 +388,22 @@
         "north": 52.644039,
         "west": -1.332793,
         "east": -0.342651
+      }
+    }
+  },
+  "Nottinghamshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 53.136,
+        "lng": -0.993
+      },
+      "borders": {
+        "south": 52.788514,
+        "north": 53.502329,
+        "west": -1.346023,
+        "east": -0.666164
       }
     }
   },

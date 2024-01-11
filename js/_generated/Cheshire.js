@@ -22,6 +22,14 @@ const data = {
     "city": "Cheshire"
   },
   "points": {
+    "1746": {
+      "latlng": {
+        "lat": 53.2922827126374,
+        "lng": -2.9528827437141265
+      },
+      "notes": "TODO",
+      "external": "1130334"
+    },
     "1770": {
       "latlng": {
         "lat": 53.28817837478813,

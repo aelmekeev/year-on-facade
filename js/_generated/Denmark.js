@@ -239,6 +239,15 @@ const data = {
         }
       }
     },
+    "Merseyside": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "North_Yorkshire": {
       "config": {
         "country": "UK",
@@ -249,6 +258,15 @@ const data = {
       }
     },
     "Northamptonshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Nottinghamshire": {
       "config": {
         "country": "UK",
         "external": {

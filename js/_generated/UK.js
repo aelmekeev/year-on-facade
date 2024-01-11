@@ -276,6 +276,33 @@ const data = {
       },
       "notes": "TODO"
     },
+    "1740": {
+      "city": "Merseyside",
+      "external": "1242795",
+      "latlng": {
+        "lat": 53.37219895556583,
+        "lng": -3.135980665917508
+      },
+      "notes": "TODO"
+    },
+    "1741": {
+      "city": "Cambridgeshire",
+      "external": "1317803",
+      "latlng": {
+        "lat": 52.194936604492064,
+        "lng": 0.26696295812908866
+      },
+      "notes": "TODO"
+    },
+    "1742": {
+      "city": "Nottinghamshire",
+      "external": "1206685",
+      "latlng": {
+        "lat": 53.41721888587346,
+        "lng": -1.075428055602459
+      },
+      "notes": "TODO"
+    },
     "1743": {
       "city": "London",
       "external": "1240697",
@@ -294,6 +321,33 @@ const data = {
       },
       "notes": ""
     },
+    "1745": {
+      "city": "Somerset",
+      "external": "1320779",
+      "latlng": {
+        "lat": 51.36134230253197,
+        "lng": -2.4813207002229523
+      },
+      "notes": "TODO"
+    },
+    "1746": {
+      "city": "Cheshire",
+      "external": "1130334",
+      "latlng": {
+        "lat": 53.2922827126374,
+        "lng": -2.9528827437141265
+      },
+      "notes": "TODO"
+    },
+    "1747": {
+      "city": "Somerset",
+      "external": "1384663",
+      "latlng": {
+        "lat": 51.40480704238451,
+        "lng": -2.4529482934846696
+      },
+      "notes": "TODO"
+    },
     "1748": {
       "city": "London",
       "external": "1064693",
@@ -302,6 +356,33 @@ const data = {
         "lng": -0.11091931686837486
       },
       "notes": ""
+    },
+    "1749": {
+      "city": "Manchester",
+      "external": "1235737",
+      "latlng": {
+        "lat": 53.533746404323004,
+        "lng": -2.050034939397119
+      },
+      "notes": "TODO"
+    },
+    "1750": {
+      "city": "Leicestershire",
+      "external": "1235737",
+      "latlng": {
+        "lat": 52.76555688732329,
+        "lng": -0.8876054928122231
+      },
+      "notes": "TODO"
+    },
+    "1751": {
+      "city": "Oxfordshire",
+      "external": "1369753",
+      "latlng": {
+        "lat": 51.89664265844956,
+        "lng": -1.1513516881845516
+      },
+      "notes": "TODO"
     },
     "1752": {
       "city": "Manchester",
@@ -2615,6 +2696,15 @@ const data = {
         }
       }
     },
+    "Merseyside": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "North_Yorkshire": {
       "config": {
         "country": "UK",
@@ -2625,6 +2715,15 @@ const data = {
       }
     },
     "Northamptonshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Nottinghamshire": {
       "config": {
         "country": "UK",
         "external": {
