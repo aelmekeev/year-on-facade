@@ -167,6 +167,22 @@
       }
     }
   },
+  "Dorset": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 50.783,
+        "lng": -3.772
+      },
+      "borders": {
+        "south": 50.514392,
+        "north": 51.083446,
+        "west": -2.963315,
+        "east": -1.682454
+      }
+    }
+  },
   "East_Sussex": {
     "config": {
       "country": "UK",
@@ -279,6 +295,22 @@
       }
     }
   },
+  "Leicestershire": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 52.644,
+        "lng": -1.156
+      },
+      "borders": {
+        "south": 52.391265,
+        "north": 52.877991,
+        "west": -1.596417,
+        "east": -0.713542
+      }
+    }
+  },
   "Lincolnshire": {
     "config": {
       "country": "UK",
@@ -304,10 +336,10 @@
         "lng": -2.2114
       },
       "borders": {
-        "south": 53.401461,
-        "north": 53.540422,
-        "west": -2.2893825,
-        "east": -2.1472469
+        "south": 53.327834,
+        "north": 53.687138,
+        "west": -2.7306122,
+        "east": -1.9101606
       }
     }
   },
@@ -407,6 +439,22 @@
       }
     }
   },
+  "Warwickshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 10,
+      "center": {
+        "lat": 52.313,
+        "lng": -1.557
+      },
+      "borders": {
+        "south": 51.955932,
+        "north": 52.690624,
+        "west": -1.962376,
+        "east": -1.172711
+      }
+    }
+  },
   "West_Midlands": {
     "config": {
       "country": "UK",
@@ -416,10 +464,42 @@
         "lng": -1.831
       },
       "borders": {
-        "south": -1.776644,
+        "south": 52.347093,
         "north": 52.663008,
         "west": -2.208741,
         "east": -1.423549
+      }
+    }
+  },
+  "West_Sussex": {
+    "config": {
+      "country": "UK",
+      "zoom": 10,
+      "center": {
+        "lat": 50.9610187772785,
+        "lng": -0.494072
+      },
+      "borders": {
+        "south": 50.721388,
+        "north": 53.519227,
+        "west": -0.958713,
+        "east": 0.039925
+      }
+    }
+  },
+  "West_Yorkshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 10,
+      "center": {
+        "lat": 53.745,
+        "lng": -1.668
+      },
+      "borders": {
+        "south": 53.519227,
+        "north": 53.963124,
+        "west": -2.173283,
+        "east": -1.198031
       }
     }
   },

@@ -1,16 +1,16 @@
 const data = {
   "config": {
     "country": "UK",
-    "zoom": 11,
+    "zoom": 10,
     "center": {
-      "lat": 53.216,
-      "lng": -2.521
+      "lat": 50.9610187772785,
+      "lng": -0.494072
     },
     "borders": {
-      "south": 52.946465,
-      "north": 53.48086,
-      "west": -3.130119,
-      "east": -1.972515
+      "south": 50.721388,
+      "north": 53.519227,
+      "west": -0.958713,
+      "east": 0.039925
     },
     "external": {
       "label": "Check out Historic England",
@@ -19,32 +19,24 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this",
-    "city": "Cheshire"
+    "city": "West_Sussex"
   },
   "points": {
-    "1770": {
+    "1754": {
       "latlng": {
-        "lat": 53.28817837478813,
-        "lng": -2.151465118056369
+        "lat": 50.832393558124515,
+        "lng": -0.27499791365108894
       },
       "notes": "TODO",
-      "external": "1221674"
+      "external": "1027901"
     },
-    "1775": {
+    "1758": {
       "latlng": {
-        "lat": 53.3130806604761,
-        "lng": -2.3225711126567985
+        "lat": 50.86157638530915,
+        "lng": -0.9263605847550551
       },
       "notes": "TODO",
-      "external": "1139526"
-    },
-    "1807": {
-      "latlng": {
-        "lat": 53.275983934015265,
-        "lng": -2.768036612224138
-      },
-      "notes": "TODO",
-      "external": "1253459"
+      "external": "1234661"
     }
   }
 }

@@ -303,14 +303,77 @@ const data = {
       },
       "notes": ""
     },
-    "1755": {
-      "city": "London",
-      "external": "1064243",
+    "1752": {
+      "city": "Manchester",
+      "external": "1337667",
       "latlng": {
-        "lat": 51.44160860852726,
-        "lng": 0.1477712680269168
+        "lat": 53.38835793999124,
+        "lng": -2.4149138932333063
       },
-      "notes": ""
+      "notes": "TODO"
+    },
+    "1753": {
+      "city": "Warwickshire",
+      "external": "1365072",
+      "latlng": {
+        "lat": 52.3369138790917,
+        "lng": -1.2895538128953048
+      },
+      "notes": "TODO"
+    },
+    "1754": {
+      "city": "West_Sussex",
+      "external": "1027901",
+      "latlng": {
+        "lat": 50.832393558124515,
+        "lng": -0.27499791365108894
+      },
+      "notes": "TODO"
+    },
+    "1755": {
+      "city": "Surrey",
+      "external": "1028944",
+      "latlng": {
+        "lat": 51.432146993220606,
+        "lng": -0.5156283759512514
+      },
+      "notes": "TODO"
+    },
+    "1756": {
+      "city": "Manchester",
+      "external": "1068087",
+      "latlng": {
+        "lat": 53.556032259558975,
+        "lng": -2.0145926764063646
+      },
+      "notes": "TODO"
+    },
+    "1757": {
+      "city": "West_Yorkshire",
+      "external": "1132990",
+      "latlng": {
+        "lat": 53.79099366717839,
+        "lng": -1.8506975418707463
+      },
+      "notes": "TODO"
+    },
+    "1758": {
+      "city": "West_Sussex",
+      "external": "1234661",
+      "latlng": {
+        "lat": 50.86157638530915,
+        "lng": -0.9263605847550551
+      },
+      "notes": "TODO"
+    },
+    "1759": {
+      "city": "Manchester",
+      "external": "1067913",
+      "latlng": {
+        "lat": 53.38948622293105,
+        "lng": -2.3923261595725243
+      },
+      "notes": "TODO"
     },
     "1760": {
       "city": "London",
@@ -339,6 +402,33 @@ const data = {
       },
       "notes": ""
     },
+    "1763": {
+      "city": "Somerset",
+      "external": "1173829",
+      "latlng": {
+        "lat": 51.266788874561385,
+        "lng": -2.2848270237031842
+      },
+      "notes": "TODO"
+    },
+    "1764": {
+      "city": "Manchester",
+      "external": "1241729",
+      "latlng": {
+        "lat": 53.38053234945709,
+        "lng": -2.185443271942082
+      },
+      "notes": "TODO"
+    },
+    "1765": {
+      "city": "Dorset",
+      "external": "1172061",
+      "latlng": {
+        "lat": 50.720659318237225,
+        "lng": -2.304162254229089
+      },
+      "notes": "TODO"
+    },
     "1766": {
       "city": "London",
       "external": "1195492",
@@ -356,6 +446,69 @@ const data = {
         "lng": -0.36575359610833696
       },
       "notes": ""
+    },
+    "1768": {
+      "city": "Lancashire",
+      "external": "1197070",
+      "latlng": {
+        "lat": 53.563289981837464,
+        "lng": -2.844434181504066
+      },
+      "notes": "TODO"
+    },
+    "1769": {
+      "city": "Leicestershire",
+      "external": "1188247",
+      "latlng": {
+        "lat": 52.658995973904986,
+        "lng": -0.9806737059030777
+      },
+      "notes": "TODO"
+    },
+    "1770": {
+      "city": "Cheshire",
+      "external": "1221674",
+      "latlng": {
+        "lat": 53.28817837478813,
+        "lng": -2.151465118056369
+      },
+      "notes": "TODO"
+    },
+    "1771": {
+      "city": "West_Yorkshire",
+      "external": "1133834",
+      "latlng": {
+        "lat": 53.72686473440512,
+        "lng": -1.8123717973029807
+      },
+      "notes": "TODO"
+    },
+    "1772": {
+      "city": "South_Yorkshire",
+      "external": "1254578",
+      "latlng": {
+        "lat": 53.39515336392582,
+        "lng": -1.4295216408243951
+      },
+      "notes": "TODO"
+    },
+    "1773": {
+      "city": "Manchester",
+      "external": "1067270",
+      "latlng": {
+        "lat": 53.58899915601493,
+        "lng": -2.3589555795260893
+      },
+      "notes": "TODO"
+    },
+    "1774": {
+      "city": "Leicestershire",
+      "external": "1075027",
+      "latlng": {
+        "lat": 52.852865508314466,
+        "lng": -0.8155303263061423
+      },
+      "notes": "TODO"
     },
     "1775": {
       "city": "Cheshire",
@@ -760,7 +913,7 @@ const data = {
         "lat": 50.82027101498947,
         "lng": -0.13794973827612603
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1820": {
       "city": "London",
@@ -1195,13 +1348,13 @@ const data = {
       "notes": ""
     },
     "1868": {
-      "city": "Manchester",
-      "external": "1282966",
+      "city": "East_Sussex",
+      "external": "",
       "latlng": {
-        "lat": 53.479802560206814,
-        "lng": -2.2425819597005794
+        "lat": 50.82728137001251,
+        "lng": -0.1409624150127564
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1869": {
       "city": "London",
@@ -2363,6 +2516,15 @@ const data = {
         }
       }
     },
+    "Dorset": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "East_Sussex": {
       "config": {
         "country": "UK",
@@ -2418,6 +2580,15 @@ const data = {
       }
     },
     "Lancashire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Leicestershire": {
       "config": {
         "country": "UK",
         "external": {
@@ -2498,7 +2669,34 @@ const data = {
         }
       }
     },
+    "Warwickshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "West_Midlands": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "West_Sussex": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "West_Yorkshire": {
       "config": {
         "country": "UK",
         "external": {

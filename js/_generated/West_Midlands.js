@@ -7,7 +7,7 @@ const data = {
       "lng": -1.831
     },
     "borders": {
-      "south": -1.776644,
+      "south": 52.347093,
       "north": 52.663008,
       "west": -2.208741,
       "east": -1.423549

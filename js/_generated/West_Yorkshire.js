@@ -1,16 +1,16 @@
 const data = {
   "config": {
     "country": "UK",
-    "zoom": 11,
+    "zoom": 10,
     "center": {
-      "lat": 53.216,
-      "lng": -2.521
+      "lat": 53.745,
+      "lng": -1.668
     },
     "borders": {
-      "south": 52.946465,
-      "north": 53.48086,
-      "west": -3.130119,
-      "east": -1.972515
+      "south": 53.519227,
+      "north": 53.963124,
+      "west": -2.173283,
+      "east": -1.198031
     },
     "external": {
       "label": "Check out Historic England",
@@ -19,32 +19,24 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this",
-    "city": "Cheshire"
+    "city": "West_Yorkshire"
   },
   "points": {
-    "1770": {
+    "1757": {
       "latlng": {
-        "lat": 53.28817837478813,
-        "lng": -2.151465118056369
+        "lat": 53.79099366717839,
+        "lng": -1.8506975418707463
       },
       "notes": "TODO",
-      "external": "1221674"
+      "external": "1132990"
     },
-    "1775": {
+    "1771": {
       "latlng": {
-        "lat": 53.3130806604761,
-        "lng": -2.3225711126567985
+        "lat": 53.72686473440512,
+        "lng": -1.8123717973029807
       },
       "notes": "TODO",
-      "external": "1139526"
-    },
-    "1807": {
-      "latlng": {
-        "lat": 53.275983934015265,
-        "lng": -2.768036612224138
-      },
-      "notes": "TODO",
-      "external": "1253459"
+      "external": "1133834"
     }
   }
 }

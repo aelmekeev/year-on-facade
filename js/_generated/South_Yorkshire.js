@@ -22,6 +22,14 @@ const data = {
     "city": "South_Yorkshire"
   },
   "points": {
+    "1772": {
+      "latlng": {
+        "lat": 53.39515336392582,
+        "lng": -1.4295216408243951
+      },
+      "notes": "TODO",
+      "external": "1254578"
+    },
     "1802": {
       "latlng": {
         "lat": 53.407659897336806,

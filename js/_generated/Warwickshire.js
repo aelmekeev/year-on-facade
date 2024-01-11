@@ -1,16 +1,16 @@
 const data = {
   "config": {
     "country": "UK",
-    "zoom": 11,
+    "zoom": 10,
     "center": {
-      "lat": 54.163,
-      "lng": -1.431
+      "lat": 52.313,
+      "lng": -1.557
     },
     "borders": {
-      "south": 53.619323,
-      "north": 54.558138,
-      "west": -2.569054,
-      "east": -0.211586
+      "south": 51.955932,
+      "north": 52.690624,
+      "west": -1.962376,
+      "east": -1.172711
     },
     "external": {
       "label": "Check out Historic England",
@@ -19,24 +19,16 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this",
-    "city": "North_Yorkshire"
+    "city": "Warwickshire"
   },
   "points": {
-    "1765": {
+    "1753": {
       "latlng": {
-        "lat": 54.453728940022,
-        "lng": -0.6646983268463321
+        "lat": 52.3369138790917,
+        "lng": -1.2895538128953048
       },
       "notes": "TODO",
-      "external": "1173839"
-    },
-    "1856": {
-      "latlng": {
-        "lat": 53.94602536795454,
-        "lng": -1.0434694198175227
-      },
-      "notes": "TODO",
-      "external": "1316285"
+      "external": "1365072"
     }
   }
 }
