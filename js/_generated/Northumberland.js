@@ -3,14 +3,14 @@ const data = {
     "country": "UK",
     "zoom": 11,
     "center": {
-      "lat": 53.136,
-      "lng": -0.993
+      "lat": 55.293,
+      "lng": -2.061
     },
     "borders": {
-      "south": 53.284414,
-      "north": 53.705959,
-      "west": -3.237463,
-      "east": -2.578283
+      "south": 54.781048,
+      "north": 55.810994,
+      "west": -2.688144,
+      "east": -1.458719
     },
     "external": {
       "label": "Check out Historic England",
@@ -19,24 +19,16 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this",
-    "city": "Merseyside"
+    "city": "Northumberland"
   },
   "points": {
-    "1733": {
+    "1718": {
       "latlng": {
-        "lat": 53.48965187258543,
-        "lng": -2.7220092146981862
+        "lat": 54.988246795552676,
+        "lng": -1.8549601436234688
       },
       "notes": "TODO",
-      "external": "1075920"
-    },
-    "1740": {
-      "latlng": {
-        "lat": 53.37219895556583,
-        "lng": -3.135980665917508
-      },
-      "notes": "TODO",
-      "external": "1242795"
+      "external": "1303901"
     }
   }
 }

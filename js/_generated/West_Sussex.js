@@ -22,6 +22,14 @@ const data = {
     "city": "West_Sussex"
   },
   "points": {
+    "1720": {
+      "latlng": {
+        "lat": 50.83928536449385,
+        "lng": -0.7420157996039726
+      },
+      "notes": "TODO",
+      "external": "1026295"
+    },
     "1754": {
       "latlng": {
         "lat": 50.832393558124515,

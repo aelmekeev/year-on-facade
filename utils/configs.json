@@ -151,6 +151,22 @@
       }
     }
   },
+  "Derbyshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 53.146,
+        "lng": -1.574
+      },
+      "borders": {
+        "south": 52.697346,
+        "north": 53.540492,
+        "west": -2.036065,
+        "east": -1.166344
+      }
+    }
+  },
   "Devon": {
     "config": {
       "country": "UK",
@@ -391,6 +407,22 @@
       }
     }
   },
+  "Northumberland": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 55.293,
+        "lng": -2.061
+      },
+      "borders": {
+        "south": 54.781048,
+        "north": 55.810994,
+        "west": -2.688144,
+        "east": -1.458719
+      }
+    }
+  },
   "Nottinghamshire": {
     "config": {
       "country": "UK",
@@ -532,6 +564,22 @@
         "north": 53.963124,
         "west": -2.173283,
         "east": -1.198031
+      }
+    }
+  },
+  "Wiltshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 10,
+      "center": {
+        "lat": 51.331,
+        "lng": -1.928
+      },
+      "borders": {
+        "south": 50.944295,
+        "north": 51.703717,
+        "west": -2.365109,
+        "east": -1.484692
       }
     }
   },

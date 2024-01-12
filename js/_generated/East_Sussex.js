@@ -22,6 +22,14 @@ const data = {
     "city": "East_Sussex"
   },
   "points": {
+    "1724": {
+      "latlng": {
+        "lat": 50.807029951644225,
+        "lng": -0.05954560654420038
+      },
+      "notes": "TODO",
+      "external": "1381008"
+    },
     "1819": {
       "latlng": {
         "lat": 50.82027101498947,

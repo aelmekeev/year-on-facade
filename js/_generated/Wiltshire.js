@@ -3,14 +3,14 @@ const data = {
     "country": "UK",
     "zoom": 10,
     "center": {
-      "lat": 53.745,
-      "lng": -1.668
+      "lat": 51.331,
+      "lng": -1.928
     },
     "borders": {
-      "south": 53.519227,
-      "north": 53.963124,
-      "west": -2.173283,
-      "east": -1.198031
+      "south": 50.944295,
+      "north": 51.703717,
+      "west": -2.365109,
+      "east": -1.484692
     },
     "external": {
       "label": "Check out Historic England",
@@ -19,32 +19,24 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this",
-    "city": "West_Yorkshire"
+    "city": "Wiltshire"
   },
   "points": {
-    "1737": {
+    "1730": {
       "latlng": {
-        "lat": 53.67607475196065,
-        "lng": -1.9292026774356457
+        "lat": 51.46081204018757,
+        "lng": -2.1966465097776218
       },
       "notes": "TODO",
-      "external": "1232391"
+      "external": "1022836"
     },
-    "1757": {
+    "1738": {
       "latlng": {
-        "lat": 53.79099366717839,
-        "lng": -1.8506975418707463
+        "lat": 51.43845430006178,
+        "lng": -2.262736200910375
       },
       "notes": "TODO",
-      "external": "1132990"
-    },
-    "1771": {
-      "latlng": {
-        "lat": 53.72686473440512,
-        "lng": -1.8123717973029807
-      },
-      "notes": "TODO",
-      "external": "1133834"
+      "external": "1022913"
     }
   }
 }

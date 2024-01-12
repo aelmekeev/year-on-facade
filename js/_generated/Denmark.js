@@ -131,6 +131,15 @@ const data = {
         }
       }
     },
+    "Derbyshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Devon": {
       "config": {
         "country": "UK",
@@ -266,6 +275,15 @@ const data = {
         }
       }
     },
+    "Northumberland": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Nottinghamshire": {
       "config": {
         "country": "UK",
@@ -339,6 +357,15 @@ const data = {
       }
     },
     "West_Yorkshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Wiltshire": {
       "config": {
         "country": "UK",
         "external": {

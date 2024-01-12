@@ -3,14 +3,14 @@ const data = {
     "country": "UK",
     "zoom": 11,
     "center": {
-      "lat": 53.136,
-      "lng": -0.993
+      "lat": 53.146,
+      "lng": -1.574
     },
     "borders": {
-      "south": 53.284414,
-      "north": 53.705959,
-      "west": -3.237463,
-      "east": -2.578283
+      "south": 52.697346,
+      "north": 53.540492,
+      "west": -2.036065,
+      "east": -1.166344
     },
     "external": {
       "label": "Check out Historic England",
@@ -19,24 +19,16 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this",
-    "city": "Merseyside"
+    "city": "Derbyshire"
   },
   "points": {
-    "1733": {
+    "1727": {
       "latlng": {
-        "lat": 53.48965187258543,
-        "lng": -2.7220092146981862
+        "lat": 53.33385241249635,
+        "lng": -1.8883171033817328
       },
       "notes": "TODO",
-      "external": "1075920"
-    },
-    "1740": {
-      "latlng": {
-        "lat": 53.37219895556583,
-        "lng": -3.135980665917508
-      },
-      "notes": "TODO",
-      "external": "1242795"
+      "external": "1088028"
     }
   }
 }

@@ -168,6 +168,33 @@ const data = {
       },
       "notes": ""
     },
+    "1716": {
+      "city": "Manchester",
+      "external": "1356250",
+      "latlng": {
+        "lat": 53.516009926357974,
+        "lng": -2.583862015404694
+      },
+      "notes": "TODO"
+    },
+    "1717": {
+      "city": "Manchester",
+      "external": "1347811",
+      "latlng": {
+        "lat": 53.40168159684792,
+        "lng": -2.4500830044850073
+      },
+      "notes": "TODO"
+    },
+    "1718": {
+      "city": "Northumberland",
+      "external": "1303901",
+      "latlng": {
+        "lat": 54.988246795552676,
+        "lng": -1.8549601436234688
+      },
+      "notes": "TODO"
+    },
     "1719": {
       "city": "London",
       "external": "1260423",
@@ -176,6 +203,15 @@ const data = {
         "lng": -0.0579892712400174
       },
       "notes": ""
+    },
+    "1720": {
+      "city": "West_Sussex",
+      "external": "1026295",
+      "latlng": {
+        "lat": 50.83928536449385,
+        "lng": -0.7420157996039726
+      },
+      "notes": "TODO"
     },
     "1721": {
       "city": "London",
@@ -204,14 +240,23 @@ const data = {
       },
       "notes": ""
     },
-    "1725": {
-      "city": "London",
-      "external": "",
+    "1724": {
+      "city": "East_Sussex",
+      "external": "1381008",
       "latlng": {
-        "lat": 51.525646019374605,
-        "lng": -0.09646337131625886
+        "lat": 50.807029951644225,
+        "lng": -0.05954560654420038
       },
-      "notes": ""
+      "notes": "TODO"
+    },
+    "1725": {
+      "city": "Surrey",
+      "external": "1242226",
+      "latlng": {
+        "lat": 51.39262494867464,
+        "lng": -0.5045436671898346
+      },
+      "notes": "TODO"
     },
     "1726": {
       "city": "London",
@@ -222,6 +267,24 @@ const data = {
       },
       "notes": ""
     },
+    "1727": {
+      "city": "Derbyshire",
+      "external": "1088028",
+      "latlng": {
+        "lat": 53.33385241249635,
+        "lng": -1.8883171033817328
+      },
+      "notes": "TODO"
+    },
+    "1728": {
+      "city": "Cheshire",
+      "external": "1206920",
+      "latlng": {
+        "lat": 53.2620820688136,
+        "lng": -2.1255742383950382
+      },
+      "notes": "TODO"
+    },
     "1729": {
       "city": "London",
       "external": "1188528",
@@ -230,6 +293,15 @@ const data = {
         "lng": -0.22671664035448216
       },
       "notes": ""
+    },
+    "1730": {
+      "city": "Wiltshire",
+      "external": "1022836",
+      "latlng": {
+        "lat": 51.46081204018757,
+        "lng": -2.1966465097776218
+      },
+      "notes": "TODO"
     },
     "1731": {
       "city": "London",
@@ -249,6 +321,15 @@ const data = {
       },
       "notes": ""
     },
+    "1733": {
+      "city": "Merseyside",
+      "external": "1075920",
+      "latlng": {
+        "lat": 53.48965187258543,
+        "lng": -2.7220092146981862
+      },
+      "notes": "TODO"
+    },
     "1734": {
       "city": "London",
       "external": "1066781",
@@ -258,6 +339,15 @@ const data = {
       },
       "notes": ""
     },
+    "1735": {
+      "city": "Manchester",
+      "external": "1356485",
+      "latlng": {
+        "lat": 53.44225628181594,
+        "lng": -2.0971366304246106
+      },
+      "notes": "TODO"
+    },
     "1736": {
       "city": "London",
       "external": "1218475",
@@ -266,6 +356,24 @@ const data = {
         "lng": -0.13550894000966707
       },
       "notes": ""
+    },
+    "1737": {
+      "city": "West_Yorkshire",
+      "external": "1232391",
+      "latlng": {
+        "lat": 53.67607475196065,
+        "lng": -1.9292026774356457
+      },
+      "notes": "TODO"
+    },
+    "1738": {
+      "city": "Wiltshire",
+      "external": "1022913",
+      "latlng": {
+        "lat": 51.43845430006178,
+        "lng": -2.262736200910375
+      },
+      "notes": "TODO"
     },
     "1739": {
       "city": "Somerset",
@@ -2588,6 +2696,15 @@ const data = {
         }
       }
     },
+    "Derbyshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Devon": {
       "config": {
         "country": "UK",
@@ -2723,6 +2840,15 @@ const data = {
         }
       }
     },
+    "Northumberland": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Nottinghamshire": {
       "config": {
         "country": "UK",
@@ -2796,6 +2922,15 @@ const data = {
       }
     },
     "West_Yorkshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Wiltshire": {
       "config": {
         "country": "UK",
         "external": {
