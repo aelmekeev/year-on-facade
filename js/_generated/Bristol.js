@@ -3,14 +3,14 @@ const data = {
     "country": "UK",
     "zoom": 11,
     "center": {
-      "lat": 53.136,
-      "lng": -0.993
+      "lat": 51.456,
+      "lng": -0.964
     },
     "borders": {
-      "south": 52.788514,
-      "north": 53.502329,
-      "west": -1.346023,
-      "east": -0.666164
+      "south": 51.392169,
+      "north": 51.544252,
+      "west": -2.730915,
+      "east": -2.451385
     },
     "external": {
       "label": "Check out Historic England",
@@ -19,24 +19,16 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this",
-    "city": "Nottinghamshire"
+    "city": "Bristol"
   },
   "points": {
-    "1700": {
+    "1701": {
       "latlng": {
-        "lat": 52.8607916686074,
-        "lng": -1.134976239035637
+        "lat": 51.45700690467244,
+        "lng": -2.5889531045893106
       },
       "notes": "TODO",
-      "external": "1249034"
-    },
-    "1742": {
-      "latlng": {
-        "lat": 53.41721888587346,
-        "lng": -1.075428055602459
-      },
-      "notes": "TODO",
-      "external": "1206685"
+      "external": "1025053"
     }
   }
 }

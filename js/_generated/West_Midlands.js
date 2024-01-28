@@ -22,6 +22,14 @@ const data = {
     "city": "West_Midlands"
   },
   "points": {
+    "1712": {
+      "latlng": {
+        "lat": 52.42286605677296,
+        "lng": -1.5587983887534522
+      },
+      "notes": "TODO",
+      "external": "1342898"
+    },
     "1804": {
       "latlng": {
         "lat": 52.541343130162936,

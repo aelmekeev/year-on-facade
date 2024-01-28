@@ -128,6 +128,15 @@ const data = {
         }
       }
     },
+    "Bristol": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Buckinghamshire": {
       "config": {
         "country": "UK",
@@ -336,6 +345,15 @@ const data = {
       }
     },
     "South_Yorkshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Staffordshire": {
       "config": {
         "country": "UK",
         "external": {

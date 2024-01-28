@@ -22,6 +22,14 @@ const data = {
     "city": "Oxfordshire"
   },
   "points": {
+    "1708": {
+      "latlng": {
+        "lat": 51.58314472478802,
+        "lng": -1.480300907942031
+      },
+      "notes": "TODO",
+      "external": "1048747"
+    },
     "1737": {
       "latlng": {
         "lat": 51.8511885059823,

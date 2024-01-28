@@ -123,6 +123,24 @@ const data = {
       },
       "notes": ""
     },
+    "1700": {
+      "city": "Nottinghamshire",
+      "external": "1249034",
+      "latlng": {
+        "lat": 52.8607916686074,
+        "lng": -1.134976239035637
+      },
+      "notes": "TODO"
+    },
+    "1701": {
+      "city": "Bristol",
+      "external": "1025053",
+      "latlng": {
+        "lat": 51.45700690467244,
+        "lng": -2.5889531045893106
+      },
+      "notes": "TODO"
+    },
     "1702": {
       "city": "London",
       "external": "1079115",
@@ -131,6 +149,24 @@ const data = {
         "lng": -0.10088095828089627
       },
       "notes": ""
+    },
+    "1703": {
+      "city": "London",
+      "external": "1359204",
+      "latlng": {
+        "lat": 51.51089864095616,
+        "lng": -0.08891114940628847
+      },
+      "notes": "TODO"
+    },
+    "1704": {
+      "city": "West_Yorkshire",
+      "external": "1314323",
+      "latlng": {
+        "lat": 53.83747404621088,
+        "lng": -1.7063973166331907
+      },
+      "notes": "TODO"
     },
     "1705": {
       "city": "London",
@@ -150,6 +186,24 @@ const data = {
       },
       "notes": "TODO"
     },
+    "1707": {
+      "city": "Staffordshire",
+      "external": "1232275",
+      "latlng": {
+        "lat": 52.54540779396713,
+        "lng": -2.2195727034654142
+      },
+      "notes": "TODO"
+    },
+    "1708": {
+      "city": "Oxfordshire",
+      "external": "1048747",
+      "latlng": {
+        "lat": 51.58314472478802,
+        "lng": -1.480300907942031
+      },
+      "notes": "TODO"
+    },
     "1709": {
       "city": "London",
       "external": "1210081",
@@ -159,6 +213,33 @@ const data = {
       },
       "notes": ""
     },
+    "1710": {
+      "city": "West_Yorkshire",
+      "external": "1066565",
+      "latlng": {
+        "lat": 53.89478170228302,
+        "lng": -1.9505595531350155
+      },
+      "notes": "TODO"
+    },
+    "1711": {
+      "city": "Wiltshire",
+      "external": "1342898",
+      "latlng": {
+        "lat": 51.438055585516224,
+        "lng": -2.2607471922356797
+      },
+      "notes": "TODO"
+    },
+    "1712": {
+      "city": "West_Midlands",
+      "external": "1342898",
+      "latlng": {
+        "lat": 52.42286605677296,
+        "lng": -1.5587983887534522
+      },
+      "notes": "TODO"
+    },
     "1713": {
       "city": "London",
       "external": "1359024",
@@ -167,6 +248,24 @@ const data = {
         "lng": -0.21535680992076248
       },
       "notes": ""
+    },
+    "1714": {
+      "city": "Wiltshire",
+      "external": "1182272",
+      "latlng": {
+        "lat": 51.43380413393238,
+        "lng": -2.183923601656115
+      },
+      "notes": "TODO"
+    },
+    "1715": {
+      "city": "Manchester",
+      "external": "1356226",
+      "latlng": {
+        "lat": 53.60498938021097,
+        "lng": -2.0712597669097668
+      },
+      "notes": "TODO"
     },
     "1716": {
       "city": "Manchester",
@@ -2669,6 +2768,15 @@ const data = {
         }
       }
     },
+    "Bristol": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Buckinghamshire": {
       "config": {
         "country": "UK",
@@ -2877,6 +2985,15 @@ const data = {
       }
     },
     "South_Yorkshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Staffordshire": {
       "config": {
         "country": "UK",
         "external": {

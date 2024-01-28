@@ -103,6 +103,22 @@
       }
     }
   },
+  "Bristol": {
+    "config": {
+      "country": "UK",
+      "zoom": 11,
+      "center": {
+        "lat": 51.456,
+        "lng": -0.964
+      },
+      "borders": {
+        "south": 51.392169,
+        "north": 51.544252,
+        "west": -2.730915,
+        "east": -2.451385
+      }
+    }
+  },
   "Buckinghamshire": {
     "config": {
       "country": "UK",
@@ -484,6 +500,22 @@
         "north": 53.659557,
         "west": -1.823894,
         "east": -0.865515
+      }
+    }
+  },
+  "Staffordshire": {
+    "config": {
+      "country": "UK",
+      "zoom": 10,
+      "center": {
+        "lat": 51.259,
+        "lng": -0.428
+      },
+      "borders": {
+        "south": 52.419664,
+        "north": 53.224606,
+        "west": -2.471234,
+        "east": -1.586088
       }
     }
   },
