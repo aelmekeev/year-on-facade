@@ -22,6 +22,14 @@ const data = {
     "city": "Wiltshire"
   },
   "points": {
+    "1694": {
+      "latlng": {
+        "lat": 51.647547576791425,
+        "lng": -1.9333551950709624
+      },
+      "notes": "TODO",
+      "external": "1023056"
+    },
     "1711": {
       "latlng": {
         "lat": 51.438055585516224,

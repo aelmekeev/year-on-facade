@@ -92,6 +92,69 @@ const data = {
       },
       "notes": ""
     },
+    "1685": {
+      "city": "London",
+      "external": "1286024",
+      "latlng": {
+        "lat": 51.512691292055436,
+        "lng": -0.11158412810765127
+      },
+      "notes": "TODO"
+    },
+    "1686": {
+      "city": "London",
+      "external": "1193870",
+      "latlng": {
+        "lat": 51.51299620130975,
+        "lng": -0.11089483495123573
+      },
+      "notes": "TODO"
+    },
+    "1687": {
+      "city": "Cambridgeshire",
+      "external": "1165452",
+      "latlng": {
+        "lat": 52.1016511106486,
+        "lng": 0.10279297224495813
+      },
+      "notes": "TODO"
+    },
+    "1688": {
+      "city": "Cambridgeshire",
+      "external": "1331862",
+      "latlng": {
+        "lat": 52.20543738481224,
+        "lng": 0.11951113503586944
+      },
+      "notes": "TODO"
+    },
+    "1689": {
+      "city": "Lincolnshire",
+      "external": "1372878",
+      "latlng": {
+        "lat": 53.50128283181267,
+        "lng": -0.7557196598011618
+      },
+      "notes": "TODO"
+    },
+    "1690": {
+      "city": "Derbyshire",
+      "external": "1096429",
+      "latlng": {
+        "lat": 52.861730526239626,
+        "lng": -1.3842129517190591
+      },
+      "notes": "TODO"
+    },
+    "1691": {
+      "city": "Cheshire",
+      "external": "1105640",
+      "latlng": {
+        "lat": 53.33366969188379,
+        "lng": -2.7394753793029225
+      },
+      "notes": "TODO"
+    },
     "1692": {
       "city": "London",
       "external": "1189649",
@@ -100,6 +163,24 @@ const data = {
         "lng": -0.17094818344711954
       },
       "notes": ""
+    },
+    "1693": {
+      "city": "Somerset",
+      "external": "1174737",
+      "latlng": {
+        "lat": 51.19271138927652,
+        "lng": -2.3614975391439326
+      },
+      "notes": "TODO"
+    },
+    "1694": {
+      "city": "Wiltshire",
+      "external": "1023056",
+      "latlng": {
+        "lat": 51.647547576791425,
+        "lng": -1.9333551950709624
+      },
+      "notes": "TODO"
     },
     "1695": {
       "city": "London",
@@ -118,6 +199,33 @@ const data = {
         "lng": -0.22716355529185003
       },
       "notes": ""
+    },
+    "1697": {
+      "city": "Somerset",
+      "external": "1058132",
+      "latlng": {
+        "lat": 51.30063273837568,
+        "lng": -2.324309880298963
+      },
+      "notes": "TODO"
+    },
+    "1698": {
+      "city": "Somerset",
+      "external": "1058214",
+      "latlng": {
+        "lat": 51.26684408486354,
+        "lng": -2.2846394940262833
+      },
+      "notes": "TODO"
+    },
+    "1699": {
+      "city": "Manchester",
+      "external": "1068130",
+      "latlng": {
+        "lat": 53.551042021870686,
+        "lng": -1.996095236194317
+      },
+      "notes": "TODO"
     },
     "1700": {
       "city": "Nottinghamshire",

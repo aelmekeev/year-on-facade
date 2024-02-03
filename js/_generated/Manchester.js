@@ -22,6 +22,14 @@ const data = {
     "city": "Manchester"
   },
   "points": {
+    "1699": {
+      "latlng": {
+        "lat": 53.551042021870686,
+        "lng": -1.996095236194317
+      },
+      "notes": "TODO",
+      "external": "1068130"
+    },
     "1715": {
       "latlng": {
         "lat": 53.60498938021097,

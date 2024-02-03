@@ -22,6 +22,14 @@ const data = {
     "city": "Lincolnshire"
   },
   "points": {
+    "1689": {
+      "latlng": {
+        "lat": 53.50128283181267,
+        "lng": -0.7557196598011618
+      },
+      "notes": "TODO",
+      "external": "1372878"
+    },
     "1805": {
       "latlng": {
         "lat": 52.798277891573655,
