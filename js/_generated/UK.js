@@ -87,6 +87,51 @@ const data = {
       },
       "notes": ""
     },
+    "1670": {
+      "city": "Merseyside",
+      "external": "1258392",
+      "latlng": {
+        "lat": 53.390041578814895,
+        "lng": -3.123707745854714
+      },
+      "notes": "TODO"
+    },
+    "1671": {
+      "city": "Oxfordshire",
+      "external": "1220274",
+      "latlng": {
+        "lat": 51.82933974804167,
+        "lng": -1.2793294644199555
+      },
+      "notes": "TODO"
+    },
+    "1672": {
+      "city": "Essex",
+      "external": "1123084",
+      "latlng": {
+        "lat": 51.97819769862175,
+        "lng": 0.6297121235781475
+      },
+      "notes": "TODO"
+    },
+    "1673": {
+      "city": "Staffordshire",
+      "external": "1294988",
+      "latlng": {
+        "lat": 52.72619554770106,
+        "lng": -2.1136317491135674
+      },
+      "notes": "TODO"
+    },
+    "1674": {
+      "city": "Worcestershire",
+      "external": "1100364",
+      "latlng": {
+        "lat": 52.33356421292537,
+        "lng": -2.0641450233458913
+      },
+      "notes": "TODO"
+    },
     "1675": {
       "city": "London",
       "external": "1358413",
@@ -95,6 +140,87 @@ const data = {
         "lng": -0.47840978805720674
       },
       "notes": ""
+    },
+    "1676": {
+      "city": "Oxfordshire",
+      "external": "1283135",
+      "latlng": {
+        "lat": 51.89660699479617,
+        "lng": -1.1552921728506318
+      },
+      "notes": "TODO"
+    },
+    "1677": {
+      "city": "London",
+      "external": "1359199",
+      "latlng": {
+        "lat": 51.51286677913721,
+        "lng": -0.11196054128022448
+      },
+      "notes": "TODO"
+    },
+    "1678": {
+      "city": "Manchester",
+      "external": "1055734",
+      "latlng": {
+        "lat": 53.63449625940493,
+        "lng": -2.179306590545361
+      },
+      "notes": "TODO"
+    },
+    "1679": {
+      "city": "Staffordshire",
+      "external": "1060190",
+      "latlng": {
+        "lat": 52.6581443806343,
+        "lng": -2.1358344504547597
+      },
+      "notes": "TODO"
+    },
+    "1680": {
+      "city": "Northamptonshire",
+      "external": "1067861",
+      "latlng": {
+        "lat": 52.2903560430592,
+        "lng": -0.851179318759054
+      },
+      "notes": "TODO"
+    },
+    "1681": {
+      "city": "Oxfordshire",
+      "external": "1369763",
+      "latlng": {
+        "lat": 51.89666945642508,
+        "lng": -1.1553930756440822
+      },
+      "notes": "TODO"
+    },
+    "1682": {
+      "city": "Oxfordshire",
+      "external": "1046487",
+      "latlng": {
+        "lat": 51.8965471292205,
+        "lng": -1.1552008844661656
+      },
+      "notes": "TODO"
+    },
+    "1683": {
+      "city": "Cambridgeshire",
+      "external": "1309380",
+      "latlng": {
+        "lat": 52.094324829410105,
+        "lng": 0.15509465649662743
+      },
+      "notes": "TODO"
+    },
+    "1684": {
+      "city": "London",
+      "external": "1064612",
+      "latlng": {
+        "lat": 51.51371834713972,
+        "lng": -0.11149891475073909
+      },
+      "notes": "TODO"
     },
     "1685": {
       "city": "London",
@@ -3156,6 +3282,15 @@ const data = {
       }
     },
     "Wiltshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Worcestershire": {
       "config": {
         "country": "UK",
         "external": {

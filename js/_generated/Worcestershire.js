@@ -1,16 +1,16 @@
 const data = {
   "config": {
     "country": "UK",
-    "zoom": 11,
+    "zoom": 10,
     "center": {
-      "lat": 51.803,
-      "lng": 0.613
+      "lat": 51.331,
+      "lng": -1.928
     },
     "borders": {
-      "south": 51.501741,
-      "north": 52.096222,
-      "west": -0.020936,
-      "east": 1.291931
+      "south": 51.967456,
+      "north": 52.454672,
+      "west": -2.663538,
+      "east": -1.758539
     },
     "external": {
       "label": "Check out Historic England",
@@ -19,24 +19,16 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this",
-    "city": "Essex"
+    "city": "Worcestershire"
   },
   "points": {
-    "1672": {
+    "1674": {
       "latlng": {
-        "lat": 51.97819769862175,
-        "lng": 0.6297121235781475
+        "lat": 52.33356421292537,
+        "lng": -2.0641450233458913
       },
       "notes": "TODO",
-      "external": "1123084"
-    },
-    "1810": {
-      "latlng": {
-        "lat": 52.02148402618786,
-        "lng": 0.2409017686686285
-      },
-      "notes": "TODO",
-      "external": "1196179"
+      "external": "1100364"
     }
   }
 }

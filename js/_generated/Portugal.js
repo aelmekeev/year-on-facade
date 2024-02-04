@@ -419,6 +419,15 @@ const data = {
         }
       }
     },
+    "Worcestershire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Billund": {
       "config": {
         "country": "Denmark",

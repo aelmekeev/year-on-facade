@@ -22,6 +22,14 @@ const data = {
     "city": "Merseyside"
   },
   "points": {
+    "1670": {
+      "latlng": {
+        "lat": 53.390041578814895,
+        "lng": -3.123707745854714
+      },
+      "notes": "TODO",
+      "external": "1258392"
+    },
     "1733": {
       "latlng": {
         "lat": 53.48965187258543,
