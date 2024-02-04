@@ -39,7 +39,7 @@ done
 function generateFakeCity {
   city=$1
   jq -s "(.[1] as \$config |
-    .[1] | with_entries(.value.config |= del(.zoom, .borders, .center)) |
+    .[1] | with_entries(.value.config |= del(.borders)) |
     with_entries(.value.config += if .value.config.country then {external: \$config[.value.config.country].config.external} else {} end)) as \$citiesConfigs |
     (.[0] | del(.apiKey)) as \$globalConfigs |
     .[1] * .[2] | {\"$city\": .[\"$city\"]} |

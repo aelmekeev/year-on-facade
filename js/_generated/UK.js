@@ -1,11 +1,11 @@
 const data = {
   "config": {
-    "zoom": 5,
-    "center": {
-      "lat": 51.5072,
-      "lng": -0.1276
+    "borders": {
+      "south": 49.958175,
+      "north": 60.837179,
+      "west": -8.174779,
+      "east": 1.7622613
     },
-    "borders": null,
     "external": {
       "label": "Check out Historic England",
       "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"

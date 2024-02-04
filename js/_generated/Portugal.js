@@ -1,11 +1,11 @@
 const data = {
   "config": {
-    "zoom": 7,
-    "center": {
-      "lat": 39.6253,
-      "lng": -8.0187
+    "borders": {
+      "south": 36.957042,
+      "north": 42.151348,
+      "west": -9.500594,
+      "east": -6.189091
     },
-    "borders": null,
     "external": {
       "label": "Check out Direção-Geral do Património Cultural",
       "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"

@@ -1,11 +1,11 @@
 const data = {
   "config": {
-    "zoom": 3,
-    "center": {
-      "lat": 63.8708,
-      "lng": 96.0191
+    "borders": {
+      "south": 41.185873,
+      "north": 77.721456,
+      "west": 19.875360100148097,
+      "east": 180
     },
-    "borders": null,
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this"
