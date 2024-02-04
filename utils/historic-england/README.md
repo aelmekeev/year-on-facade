@@ -109,7 +109,7 @@ If you want to generate data for a bunch of years at the same time you can run s
 
 
 ```bash
-rm queries.sql && for i in $(seq -f "%.0f" 1580 1960); do echo "COPY (SELECT d.id, years, 'https://www.google.com/maps?q=' || lat || ',' || lng as link, substring(descriptions from '.{0,40}$i.{0,20}'), descriptions FROM descriptions d JOIN years y ON d.id = y.id JOIN listings l ON l.id = d.id WHERE years LIKE '$i%' AND lat > 51.279860 AND lat < 51.692042 AND lng > -0.524924 AND lng < 0.323770) To '/var/lib/postgresql/analysis/$i.csv' With CSV DELIMITER ',' HEADER;" >> queries.sql; done
+rm queries.sql && for i in $(seq -f "%.0f" 1856 1856); do echo "COPY (SELECT d.id, 'https://www.google.com/maps?q=' || lat || ',' || lng as link, lat, lng, descriptions FROM descriptions d JOIN years y ON d.id = y.id JOIN listings l ON l.id = d.id WHERE years LIKE '$i%') To '/var/lib/postgresql/analysis/$i.csv' With CSV DELIMITER ',' HEADER;" >> queries.sql; done
 ```
 
 and then

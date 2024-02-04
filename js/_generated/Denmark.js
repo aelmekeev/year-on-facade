@@ -104,6 +104,15 @@ const data = {
         }
       }
     },
+    "Bristol": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Buckinghamshire": {
       "config": {
         "country": "UK",
@@ -122,7 +131,79 @@ const data = {
         }
       }
     },
+    "Cheshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Derbyshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Devon": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Dorset": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "East_Sussex": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "East_Yorkshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Essex": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Gloucestershire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Hampshire": {
       "config": {
         "country": "UK",
         "external": {
@@ -140,7 +221,79 @@ const data = {
         }
       }
     },
+    "Lancashire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Leicestershire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Lincolnshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Manchester": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Merseyside": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "North_Yorkshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Northamptonshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Northumberland": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Nottinghamshire": {
       "config": {
         "country": "UK",
         "external": {
@@ -167,7 +320,79 @@ const data = {
         }
       }
     },
+    "South_Yorkshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Staffordshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Surrey": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Warwickshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "West_Midlands": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "West_Sussex": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "West_Yorkshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Wiltshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Worcestershire": {
       "config": {
         "country": "UK",
         "external": {
