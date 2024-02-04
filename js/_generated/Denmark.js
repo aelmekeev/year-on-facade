@@ -1,11 +1,11 @@
 const data = {
   "config": {
-    "zoom": 7,
-    "center": {
-      "lat": 56.0076,
-      "lng": 10.5197
+    "borders": {
+      "south": 54.558253,
+      "north": 57.752419,
+      "west": 8.072706,
+      "east": 12.794192
     },
-    "borders": null,
     "external": {
       "label": "Check out Fredede og Bevaringsværdige Bygninger",
       "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"

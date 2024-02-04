@@ -50,25 +50,46 @@ function toggleTODOMarkers(showOnlyTODO) {
   }
 }
 
+function setCenter(map, year) {
+  var center = { lat: 0, lng: 0 }
+  if (year && data.points[year]) {
+    center = data.points[year].latlng
+  } else if (data.config.borders) {
+    center = {
+      lat: (data.config.borders.north + data.config.borders.south) / 2,
+      lng: (data.config.borders.east + data.config.borders.west) / 2,
+    }
+  }
+  map.setCenter(center)
+}
+
+function setZoom(map, year) {
+  if (year) {
+    map.setZoom(18)
+  } else if (!data.config.borders) {
+    map.setZoom(2)
+  } else {
+    map.fitBounds(data.config.borders)
+  }
+}
+
 function initMap() {
   const url = new URL(window.location.href)
   const year = url.searchParams.get('year')
   const points = data.points
 
-  const zoom = year && points[year] ? 18 : data.config.zoom
-  const center = year && points[year] ? points[year].latlng : data.config.center
-
   map = new google.maps.Map(document.getElementById('map'), {
-    zoom,
-    center,
     clickableIcons: false,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
     },
-    restriction: {
+    restriction: data.config.borders ? {
       latLngBounds: data.config.borders,
-    },
+    } : null,
   })
+
+  setCenter(map, year)
+  setZoom(map, year)
 
   const statsControlDiv = document.createElement('div')
   StatsControl(statsControlDiv)

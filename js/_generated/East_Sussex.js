@@ -1,11 +1,6 @@
 const data = {
   "config": {
     "country": "UK",
-    "zoom": 11,
-    "center": {
-      "lat": 50.953,
-      "lng": 0.242
-    },
     "borders": {
       "south": 50.731831,
       "north": 51.146342,
