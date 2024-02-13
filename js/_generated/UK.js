@@ -69,6 +69,24 @@ const data = {
       },
       "notes": ""
     },
+    "1666": {
+      "city": "Wiltshire",
+      "external": "1318514",
+      "latlng": {
+        "lat": 51.22310145978299,
+        "lng": -1.782644852023817
+      },
+      "notes": "TODO"
+    },
+    "1667": {
+      "city": "Lancashire",
+      "external": "1219643",
+      "latlng": {
+        "lat": 53.55413499630956,
+        "lng": -2.757717959593395
+      },
+      "notes": "TODO"
+    },
     "1668": {
       "city": "London",
       "external": "1184584",
