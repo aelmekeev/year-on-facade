@@ -1560,7 +1560,7 @@ const data = {
         "lat": 53.50233794351952,
         "lng": -2.180902510654716
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1833": {
       "city": "London",
@@ -1677,7 +1677,7 @@ const data = {
         "lat": 53.4778798558999,
         "lng": -2.2465156165669837
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1846": {
       "city": "East_Sussex",
@@ -2190,11 +2190,11 @@ const data = {
       "notes": ""
     },
     "1903": {
-      "city": "Oxfordshire",
-      "external": "",
+      "city": "Manchester",
+      "external": "1282970",
       "latlng": {
-        "lat": 51.758693513622774,
-        "lng": -1.2129416709488643
+        "lat": 53.48478286315207,
+        "lng": -2.2429438023387624
       },
       "notes": ""
     },

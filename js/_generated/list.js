@@ -22,7 +22,7 @@ const data = [
   {name: "Lincolnshire", country: "UK", count: 2, minYear: 1689},
   {name: "Lisbon", country: "Portugal", count: 4, minYear: 1865},
   {name: "London", country: "UK", count: 224, minYear: 1580},
-  {name: "Manchester", country: "UK", count: 15, minYear: 1678},
+  {name: "Manchester", country: "UK", count: 21, minYear: 1678},
   {name: "Merseyside", country: "UK", count: 3, minYear: 1670},
   {name: "North_Yorkshire", country: "UK", count: 2, minYear: 1765},
   {name: "Northamptonshire", country: "UK", count: 2, minYear: 1680},
