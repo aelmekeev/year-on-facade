@@ -17,6 +17,14 @@ const data = {
     "city": "Cambridgeshire"
   },
   "points": {
+    "1662": {
+      "latlng": {
+        "lat": 52.411937797885166,
+        "lng": -0.11919104573555378
+      },
+      "notes": "TODO",
+      "external": "1128369"
+    },
     "1683": {
       "latlng": {
         "lat": 52.094324829410105,

@@ -17,6 +17,14 @@ const data = {
     "city": "Warwickshire"
   },
   "points": {
+    "1663": {
+      "latlng": {
+        "lat": 51.99048050575821,
+        "lng": -1.5798743711541918
+      },
+      "notes": "TODO",
+      "external": "1024298"
+    },
     "1753": {
       "latlng": {
         "lat": 52.3369138790917,

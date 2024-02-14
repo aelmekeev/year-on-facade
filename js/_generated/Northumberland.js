@@ -17,6 +17,14 @@ const data = {
     "city": "Northumberland"
   },
   "points": {
+    "1660": {
+      "latlng": {
+        "lat": 54.947774615790856,
+        "lng": -1.9730906532402974
+      },
+      "notes": "TODO",
+      "external": "1045389"
+    },
     "1718": {
       "latlng": {
         "lat": 54.988246795552676,

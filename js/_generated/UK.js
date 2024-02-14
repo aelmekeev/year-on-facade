@@ -60,6 +60,51 @@ const data = {
       },
       "notes": ""
     },
+    "1660": {
+      "city": "Northumberland",
+      "external": "1045389",
+      "latlng": {
+        "lat": 54.947774615790856,
+        "lng": -1.9730906532402974
+      },
+      "notes": "TODO"
+    },
+    "1661": {
+      "city": "Nottinghamshire",
+      "external": "1242375",
+      "latlng": {
+        "lat": 52.82569417070036,
+        "lng": -1.2552402299391499
+      },
+      "notes": "TODO"
+    },
+    "1662": {
+      "city": "Cambridgeshire",
+      "external": "1128369",
+      "latlng": {
+        "lat": 52.411937797885166,
+        "lng": -0.11919104573555378
+      },
+      "notes": "TODO"
+    },
+    "1663": {
+      "city": "Warwickshire",
+      "external": "1024298",
+      "latlng": {
+        "lat": 51.99048050575821,
+        "lng": -1.5798743711541918
+      },
+      "notes": "TODO"
+    },
+    "1664": {
+      "city": "Cheshire",
+      "external": "1376318",
+      "latlng": {
+        "lat": 53.18638558372502,
+        "lng": -2.88953377052421
+      },
+      "notes": "TODO"
+    },
     "1665": {
       "city": "Hertfordshire",
       "external": "1103131",
