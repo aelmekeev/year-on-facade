@@ -220,7 +220,7 @@ const data = {
         "lat": 51.51371834713972,
         "lng": -0.11149891475073909
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1685": {
       "city": "London",
@@ -391,7 +391,7 @@ const data = {
         "lat": 51.51089864095616,
         "lng": -0.08891114940628847
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1704": {
       "city": "West_Yorkshire",
@@ -1156,7 +1156,7 @@ const data = {
         "lat": 51.56164137885795,
         "lng": -0.07135003583609202
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1789": {
       "city": "London",
