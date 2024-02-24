@@ -17,6 +17,14 @@ const data = {
     "city": "Derbyshire"
   },
   "points": {
+    "1652": {
+      "latlng": {
+        "lat": 53.18911982328791,
+        "lng": -1.6183171130114937
+      },
+      "notes": "TODO",
+      "external": "1045804"
+    },
     "1690": {
       "latlng": {
         "lat": 52.861730526239626,

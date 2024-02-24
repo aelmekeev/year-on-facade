@@ -41,6 +41,60 @@ const data = {
       },
       "notes": ""
     },
+    "1652": {
+      "city": "Derbyshire",
+      "external": "1045804",
+      "latlng": {
+        "lat": 53.18911982328791,
+        "lng": -1.6183171130114937
+      },
+      "notes": "TODO"
+    },
+    "1653": {
+      "city": "Lancashire",
+      "external": "1361896",
+      "latlng": {
+        "lat": 53.731768034647395,
+        "lng": -2.727750174952072
+      },
+      "notes": "TODO"
+    },
+    "1654": {
+      "city": "Oxfordshire",
+      "external": "1367879",
+      "latlng": {
+        "lat": 51.74851702700113,
+        "lng": -1.4062517320836578
+      },
+      "notes": "TODO"
+    },
+    "1655": {
+      "city": "South_Yorkshire",
+      "external": "1132727",
+      "latlng": {
+        "lat": 53.39036804940533,
+        "lng": -1.3467884639428296
+      },
+      "notes": "TODO"
+    },
+    "1656": {
+      "city": "Wiltshire",
+      "external": "1355951",
+      "latlng": {
+        "lat": 51.63056419488898,
+        "lng": -1.7088562481118332
+      },
+      "notes": "TODO"
+    },
+    "1657": {
+      "city": "Northumberland",
+      "external": "1042573",
+      "latlng": {
+        "lat": 54.97376724018444,
+        "lng": -2.1054898443407786
+      },
+      "notes": "TODO"
+    },
     "1658": {
       "city": "London",
       "external": "1293320",
@@ -49,6 +103,15 @@ const data = {
         "lng": -0.08588690411222581
       },
       "notes": ""
+    },
+    "1659": {
+      "city": "Lancashire",
+      "external": "1317953",
+      "latlng": {
+        "lat": 53.65027587967841,
+        "lng": -2.7311159233725233
+      },
+      "notes": "TODO"
     },
     "1660": {
       "city": "Northumberland",
