@@ -37,7 +37,7 @@ const data = [
   {name: "Somerset", country: "UK", count: 13, minYear: 1693},
   {name: "South_Yorkshire", country: "UK", count: 4, minYear: 1772},
   {name: "Staffordshire", country: "UK", count: 3, minYear: 1673},
-  {name: "Surrey", country: "UK", count: 12, minYear: 1725},
+  {name: "Surrey", country: "UK", count: 16, minYear: 1725},
   {name: "Turkey", country: "null", count: 8, minYear: 1858},
   {name: "UK", country: "null", count: 327, minYear: 1580},
   {name: "Warwickshire", country: "UK", count: 1, minYear: 1753},
