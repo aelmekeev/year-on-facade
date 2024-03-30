@@ -51,6 +51,69 @@ const data = {
       },
       "notes": ""
     },
+    "1645": {
+      "city": "Oxfordshire",
+      "external": "1368527",
+      "latlng": {
+        "lat": 51.658281136216,
+        "lng": -1.5840588203940438
+      },
+      "notes": "TODO"
+    },
+    "1646": {
+      "city": "Derbyshire",
+      "external": "1384288",
+      "latlng": {
+        "lat": 53.46213698490441,
+        "lng": -1.9699848741147892
+      },
+      "notes": "TODO"
+    },
+    "1647": {
+      "city": "Lancashire",
+      "external": "1219837",
+      "latlng": {
+        "lat": 53.55682533272649,
+        "lng": -2.7220757455423463
+      },
+      "notes": "TODO"
+    },
+    "1648": {
+      "city": "Manchester",
+      "external": "1164611",
+      "latlng": {
+        "lat": 53.533293277552445,
+        "lng": -2.0503086306140212
+      },
+      "notes": "TODO"
+    },
+    "1649": {
+      "city": "Essex",
+      "external": "1111509",
+      "latlng": {
+        "lat": 51.825569236223785,
+        "lng": 1.1429451357107274
+      },
+      "notes": "TODO"
+    },
+    "1650": {
+      "city": "Lancashire",
+      "external": "1073118",
+      "latlng": {
+        "lat": 53.593811900061965,
+        "lng": -2.906775229280001
+      },
+      "notes": "TODO"
+    },
+    "1651": {
+      "city": "North_Yorkshire",
+      "external": "1132098",
+      "latlng": {
+        "lat": 54.06797388767207,
+        "lng": -2.0170503402260085
+      },
+      "notes": "TODO"
+    },
     "1652": {
       "city": "Derbyshire",
       "external": "1045804",
