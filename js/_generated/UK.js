@@ -589,7 +589,7 @@ const data = {
         "lat": 51.39262494867464,
         "lng": -0.5045436671898346
       },
-      "notes": "TODO"
+      "notes": "Retake the photo"
     },
     "1726": {
       "city": "London",
@@ -859,7 +859,7 @@ const data = {
         "lat": 51.432146993220606,
         "lng": -0.5156283759512514
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1756": {
       "city": "Manchester",
@@ -2761,11 +2761,11 @@ const data = {
       "notes": ""
     },
     "1996": {
-      "city": "London",
+      "city": "Surrey",
       "external": "",
       "latlng": {
-        "lat": 51.474762990419876,
-        "lng": -0.025473234399476925
+        "lat": 51.38880892438484,
+        "lng": -0.48780196732587594
       },
       "notes": ""
     },
@@ -2806,11 +2806,11 @@ const data = {
       "notes": ""
     },
     "2001": {
-      "city": "London",
+      "city": "Surrey",
       "external": "",
       "latlng": {
-        "lat": 51.46293033575634,
-        "lng": -0.2099396188497619
+        "lat": 51.43395287857267,
+        "lng": -0.5119709964329753
       },
       "notes": ""
     },
