@@ -30,6 +30,16 @@
       }
     }
   },
+  "Monaco_": {
+    "config": {
+      "borders": {
+        "south": 43.724594,
+        "north": 43.751923,
+        "west": 7.409104,
+        "east": 7.439848
+      }
+    }
+  },
   "Portugal": {
     "config": {
       "borders": {
@@ -504,6 +514,17 @@
         "north": 43.760735,
         "west": 7.1814474,
         "east": 7.3233539
+      }
+    }
+  },
+  "Monaco": {
+    "config": {
+      "country": "Monaco_",
+      "borders": {
+        "south": 43.724594,
+        "north": 43.751923,
+        "west": 7.409104,
+        "east": 7.439848
       }
     }
   },
