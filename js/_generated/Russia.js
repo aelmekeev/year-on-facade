@@ -32,6 +32,14 @@ const data = {
         }
       }
     },
+    "France": {
+      "config": {
+        "external": {
+          "label": "Check out Base Mérimée",
+          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
+        }
+      }
+    },
     "Portugal": {
       "config": {
         "external": {
@@ -384,6 +392,24 @@ const data = {
         "external": {
           "label": "Check out Fredede og Bevaringsværdige Bygninger",
           "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
+        }
+      }
+    },
+    "Menton": {
+      "config": {
+        "country": "France",
+        "external": {
+          "label": "Check out Base Mérimée",
+          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
+        }
+      }
+    },
+    "Nice": {
+      "config": {
+        "country": "France",
+        "external": {
+          "label": "Check out Base Mérimée",
+          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
         }
       }
     },
