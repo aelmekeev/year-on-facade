@@ -2149,11 +2149,10 @@ const data = {
       "notes": ""
     },
     "1900": {
-      "city": "London",
-      "external": "1260615",
+      "city": "Monaco",
       "latlng": {
-        "lat": 51.491351158667854,
-        "lng": -0.26533081752309784
+        "lat": 43.74351326592167,
+        "lng": 7.4275865307354545
       },
       "notes": ""
     },
@@ -2971,6 +2970,9 @@ const data = {
         }
       }
     },
+    "Monaco_": {
+      "config": {}
+    },
     "Portugal": {
       "config": {
         "external": {
@@ -3342,6 +3344,12 @@ const data = {
           "label": "Check out Base Mérimée",
           "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
         }
+      }
+    },
+    "Monaco": {
+      "config": {
+        "country": "Monaco_",
+        "external": null
       }
     },
     "Perm": {

@@ -99,6 +99,9 @@ const data = {
         }
       }
     },
+    "Monaco_": {
+      "config": {}
+    },
     "Portugal": {
       "config": {
         "external": {
@@ -470,6 +473,12 @@ const data = {
           "label": "Check out Base Mérimée",
           "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
         }
+      }
+    },
+    "Monaco": {
+      "config": {
+        "country": "Monaco_",
+        "external": null
       }
     },
     "Perm": {

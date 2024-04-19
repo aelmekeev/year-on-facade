@@ -26,6 +26,8 @@ const data = [
   {name: "Manchester", country: "UK", count: 21, minYear: 1678},
   {name: "Menton", country: "France", count: 3, minYear: 1877},
   {name: "Merseyside", country: "UK", count: 3, minYear: 1670},
+  {name: "Monaco", country: "Monaco_", count: 1, minYear: 1900},
+  {name: "Monaco_", country: "null", count: 1, minYear: 1900},
   {name: "Nice", country: "France", count: 5, minYear: 1648},
   {name: "North_Yorkshire", country: "UK", count: 2, minYear: 1765},
   {name: "Northamptonshire", country: "UK", count: 2, minYear: 1680},
