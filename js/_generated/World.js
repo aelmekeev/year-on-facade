@@ -41,6 +41,14 @@ const data = {
       },
       "notes": ""
     },
+    "1648": {
+      "city": "Nice",
+      "latlng": {
+        "lat": 43.69804150842751,
+        "lng": 7.2767927399627546
+      },
+      "notes": ""
+    },
     "1658": {
       "city": "London",
       "external": "1293320",
@@ -1867,11 +1875,10 @@ const data = {
       "notes": ""
     },
     "1869": {
-      "city": "London",
-      "external": "1251239",
+      "city": "Nice",
       "latlng": {
-        "lat": 51.491754158670695,
-        "lng": -0.10556154853181551
+        "lat": 43.70023806187411,
+        "lng": 7.28534807075022
       },
       "notes": ""
     },
@@ -1938,11 +1945,10 @@ const data = {
       "notes": ""
     },
     "1877": {
-      "city": "London",
-      "external": "1378818",
+      "city": "Menton",
       "latlng": {
-        "lat": 51.55123480899446,
-        "lng": -0.16634608919477561
+        "lat": 43.774709532337496,
+        "lng": 7.500799511495009
       },
       "notes": ""
     },
@@ -1983,11 +1989,10 @@ const data = {
       "notes": ""
     },
     "1882": {
-      "city": "London",
-      "external": "1213696",
+      "city": "Nice",
       "latlng": {
-        "lat": 51.51267601225725,
-        "lng": -0.13652747103585033
+        "lat": 43.69969094664279,
+        "lng": 7.268437193756377
       },
       "notes": ""
     },
@@ -2118,11 +2123,10 @@ const data = {
       "notes": ""
     },
     "1897": {
-      "city": "Cambridgeshire",
-      "external": "1126141",
+      "city": "Nice",
       "latlng": {
-        "lat": 52.19929885582522,
-        "lng": 0.13997428781894014
+        "lat": 43.70061135322727,
+        "lng": 7.2714094262081455
       },
       "notes": ""
     },
@@ -2172,11 +2176,10 @@ const data = {
       "notes": ""
     },
     "1903": {
-      "city": "Manchester",
-      "external": "1282970",
+      "city": "Nice",
       "latlng": {
-        "lat": 53.48478286315207,
-        "lng": -2.2429438023387624
+        "lat": 43.70742877886892,
+        "lng": 7.2622871620867935
       },
       "notes": ""
     },
@@ -2224,11 +2227,10 @@ const data = {
       "notes": ""
     },
     "1909": {
-      "city": "London",
-      "external": "1184764",
+      "city": "Menton",
       "latlng": {
-        "lat": 51.41004230016464,
-        "lng": -0.30659101957045914
+        "lat": 43.77445080628653,
+        "lng": 7.496384817131317
       },
       "notes": ""
     },
@@ -2260,11 +2262,10 @@ const data = {
       "notes": ""
     },
     "1913": {
-      "city": "Cambridgeshire",
-      "external": "1265198",
+      "city": "Menton",
       "latlng": {
-        "lat": 52.2068823459644,
-        "lng": 0.12153695026033852
+        "lat": 43.77346610951384,
+        "lng": 7.495096287558734
       },
       "notes": ""
     },
@@ -2962,6 +2963,14 @@ const data = {
         }
       }
     },
+    "France": {
+      "config": {
+        "external": {
+          "label": "Check out Base Mérimée",
+          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
+        }
+      }
+    },
     "Portugal": {
       "config": {
         "external": {
@@ -3314,6 +3323,24 @@ const data = {
         "external": {
           "label": "Check out Fredede og Bevaringsværdige Bygninger",
           "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
+        }
+      }
+    },
+    "Menton": {
+      "config": {
+        "country": "France",
+        "external": {
+          "label": "Check out Base Mérimée",
+          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
+        }
+      }
+    },
+    "Nice": {
+      "config": {
+        "country": "France",
+        "external": {
+          "label": "Check out Base Mérimée",
+          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
         }
       }
     },

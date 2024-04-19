@@ -1,77 +1,81 @@
 const data = {
   "config": {
     "borders": {
-      "south": 35.807561,
-      "north": 42.102087,
-      "west": 26.038371,
-      "east": 44.817709
+      "south": 41.363662,
+      "north": 51.075319,
+      "west": -4.796351,
+      "east": 9.567461
+    },
+    "external": {
+      "label": "Check out Base Mérimée",
+      "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
     },
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this"
   },
   "points": {
-    "1858": {
-      "city": "Istanbul",
+    "1648": {
+      "city": "Nice",
       "latlng": {
-        "lat": 41.02485687791597,
-        "lng": 28.974872100955697
+        "lat": 43.69804150842751,
+        "lng": 7.2767927399627546
       },
       "notes": ""
     },
-    "1867": {
-      "city": "Istanbul",
+    "1869": {
+      "city": "Nice",
       "latlng": {
-        "lat": 41.02592019364944,
-        "lng": 28.973872055307684
+        "lat": 43.70023806187411,
+        "lng": 7.28534807075022
       },
       "notes": ""
     },
-    "1876": {
-      "city": "Istanbul",
+    "1877": {
+      "city": "Menton",
       "latlng": {
-        "lat": 41.03388873920039,
-        "lng": 28.978055853364932
+        "lat": 43.774709532337496,
+        "lng": 7.500799511495009
       },
       "notes": ""
     },
-    "1905": {
-      "city": "Istanbul",
+    "1882": {
+      "city": "Nice",
       "latlng": {
-        "lat": 41.01471650321313,
-        "lng": 28.97232955430877
+        "lat": 43.69969094664279,
+        "lng": 7.268437193756377
       },
       "notes": ""
     },
-    "1907": {
-      "city": "Istanbul",
+    "1897": {
+      "city": "Nice",
       "latlng": {
-        "lat": 41.02594948355828,
-        "lng": 28.976637994073403
+        "lat": 43.70061135322727,
+        "lng": 7.2714094262081455
       },
       "notes": ""
     },
-    "1928": {
-      "city": "Istanbul",
+    "1903": {
+      "city": "Nice",
       "latlng": {
-        "lat": 41.0321973899915,
-        "lng": 28.945559455737634
+        "lat": 43.70742877886892,
+        "lng": 7.2622871620867935
       },
       "notes": ""
     },
-    "1968": {
-      "city": "Istanbul",
+    "1909": {
+      "city": "Menton",
       "latlng": {
-        "lat": 41.016910281179165,
-        "lng": 28.948110846368117
+        "lat": 43.77445080628653,
+        "lng": 7.496384817131317
       },
       "notes": ""
     },
-    "1969": {
-      "city": "Istanbul",
+    "1913": {
+      "city": "Menton",
       "latlng": {
-        "lat": 41.01793053189525,
-        "lng": 28.94677330547392
+        "lat": 43.77346610951384,
+        "lng": 7.495096287558734
       },
       "notes": ""
     }

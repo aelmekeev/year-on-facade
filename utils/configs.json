@@ -16,6 +16,20 @@
       }
     }
   },
+  "France": {
+    "config": {
+      "borders": {
+        "south": 41.363662,
+        "north": 51.075319,
+        "west": -4.796351,
+        "east": 9.567461
+      },
+      "external": {
+        "label": "Check out Base Mérimée",
+        "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
+      }
+    }
+  },
   "Portugal": {
     "config": {
       "borders": {
@@ -468,6 +482,28 @@
         "north": 55.728391,
         "west": 12.4526044,
         "east": 12.6514573
+      }
+    }
+  },
+  "Menton": {
+    "config": {
+      "country": "France",
+      "borders": {
+        "south": 43.765146,
+        "north": 43.826811,
+        "west": 7.4713062,
+        "east": 7.5302243
+      }
+    }
+  },
+  "Nice": {
+    "config": {
+      "country": "France",
+      "borders": {
+        "south": 43.645419,
+        "north": 43.760735,
+        "west": 7.1814474,
+        "east": 7.3233539
       }
     }
   },
