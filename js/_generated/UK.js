@@ -2979,6 +2979,9 @@ const data = {
         }
       }
     },
+    "Italy": {
+      "config": {}
+    },
     "Monaco_": {
       "config": {}
     },
@@ -3353,6 +3356,12 @@ const data = {
           "label": "Check out Base Mérimée",
           "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
         }
+      }
+    },
+    "Rome": {
+      "config": {
+        "country": "Italy",
+        "external": null
       }
     },
     "Monaco": {

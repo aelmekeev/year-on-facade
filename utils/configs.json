@@ -30,6 +30,16 @@
       }
     }
   },
+  "Italy": {
+    "config": {
+      "borders": {
+        "south": 36.643157,
+        "north": 47.086401,
+        "west": 8.135394,
+        "east": 18.516063
+      }
+    }
+  },
   "Monaco_": {
     "config": {
       "borders": {
@@ -514,6 +524,17 @@
         "north": 43.760735,
         "west": 7.1814474,
         "east": 7.3233539
+      }
+    }
+  },
+  "Rome": {
+    "config": {
+      "country": "Italy",
+      "borders": {
+        "south": 41.404415,
+        "north": 42.296403,
+        "west": 11.7319274,
+        "east": 13.2974791
       }
     }
   },
