@@ -42,15 +42,6 @@ const data = {
       },
       "notes": ""
     },
-    "1757": {
-      "city": "Zurich",
-      "external": "7878",
-      "latlng": {
-        "lat": 47.3701067442549,
-        "lng": 8.541663831298322
-      },
-      "notes": ""
-    },
     "1912": {
       "city": "Zurich",
       "external": "",
