@@ -2024,11 +2024,10 @@ const data = {
       "notes": ""
     },
     "1886": {
-      "city": "Cambridgeshire",
-      "external": "",
+      "city": "Rome",
       "latlng": {
-        "lat": 52.19838701939176,
-        "lng": 0.1447122607388116
+        "lat": 41.909225315095036,
+        "lng": 12.46705382862787
       },
       "notes": ""
     },
@@ -2386,11 +2385,10 @@ const data = {
       "notes": ""
     },
     "1928": {
-      "city": "Porto",
-      "external": "",
+      "city": "Rome",
       "latlng": {
-        "lat": 41.142735476630456,
-        "lng": -8.615384379773117
+        "lat": 41.90762138349003,
+        "lng": 12.461186483405383
       },
       "notes": ""
     },
@@ -2970,6 +2968,9 @@ const data = {
         }
       }
     },
+    "Italy": {
+      "config": {}
+    },
     "Monaco_": {
       "config": {}
     },
@@ -3344,6 +3345,12 @@ const data = {
           "label": "Check out Base Mérimée",
           "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
         }
+      }
+    },
+    "Rome": {
+      "config": {
+        "country": "Italy",
+        "external": null
       }
     },
     "Monaco": {
