@@ -1,80 +1,62 @@
 const data = {
   "config": {
     "borders": {
-      "south": 36.957042,
-      "north": 42.151348,
-      "west": -9.500594,
-      "east": -6.189091
-    },
-    "external": {
-      "label": "Check out Direção-Geral do Património Cultural",
-      "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
+      "south": 45.81531,
+      "north": 47.807533,
+      "west": 5.949322,
+      "east": 10.492168
     },
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this"
   },
+  "external": {
+    "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+    "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+  },
   "points": {
-    "1757": {
-      "city": "Sintra",
-      "external": "69881",
-      "latlng": {
-        "lat": 38.793788900993555,
-        "lng": -9.38493235169018
-      },
-      "notes": ""
-    },
-    "1865": {
-      "city": "Lisbon",
-      "external": "75026",
-      "latlng": {
-        "lat": 38.72110161580647,
-        "lng": -9.134935103822784
-      },
-      "notes": ""
-    },
-    "1883": {
-      "city": "Lisbon",
+    "1566": {
+      "city": "Zurich",
       "external": "",
       "latlng": {
-        "lat": 38.714662991711116,
-        "lng": -9.130844043080163
+        "lat": 47.37013008874929,
+        "lng": 8.544886757381464
       },
       "notes": ""
     },
-    "1892": {
-      "city": "Porto",
+    "1593": {
+      "city": "Zurich",
       "external": "",
       "latlng": {
-        "lat": 41.14062885023722,
-        "lng": -8.61236978478208
+        "lat": 47.370885977351676,
+        "lng": 8.541129039372516
+      },
+      "notes": ""
+    },
+    "1689": {
+      "city": "Zurich",
+      "external": "",
+      "latlng": {
+        "lat": 47.37289180996177,
+        "lng": 8.545091249061413
       },
       "notes": ""
     },
     "1912": {
-      "city": "Lisbon",
+      "city": "Zurich",
       "external": "",
       "latlng": {
-        "lat": 38.73167621166924,
-        "lng": -9.148758359263605
+        "lat": 47.37145245655605,
+        "lng": 8.54400206481939
       },
       "notes": ""
     },
-    "1917": {
-      "city": "Lisbon",
+    "1915": {
+      "city": "Zurich",
       "external": "",
       "latlng": {
-        "lat": 38.73254158177424,
-        "lng": -9.147079379223277
-      },
-      "notes": ""
-    },
-    "1928": {
-      "city": "Porto",
-      "external": "",
-      "latlng": {
-        "lat": 41.142735476630456,
-        "lng": -8.615384379773117
+        "lat": 47.37168093800922,
+        "lng": 8.536465089175993
       },
       "notes": ""
     }

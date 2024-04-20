@@ -120,6 +120,13 @@ const data = {
     "San_Marino": {
       "config": {}
     },
+    "Switzerland": {
+      "config": {},
+      "external": {
+        "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+        "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+      }
+    },
     "Turkey": {
       "config": {}
     },
@@ -503,6 +510,12 @@ const data = {
     "City_of_San_Marino": {
       "config": {
         "country": "San_Marino",
+        "external": null
+      }
+    },
+    "Zurich": {
+      "config": {
+        "country": "Switzerland",
         "external": null
       }
     },

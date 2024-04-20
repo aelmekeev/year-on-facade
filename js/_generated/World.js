@@ -5,12 +5,30 @@ const data = {
     "whatIsThisLink": "./what-is-this"
   },
   "points": {
+    "1566": {
+      "city": "Zurich",
+      "external": "",
+      "latlng": {
+        "lat": 47.37013008874929,
+        "lng": 8.544886757381464
+      },
+      "notes": ""
+    },
     "1580": {
       "city": "London",
       "external": "1286035",
       "latlng": {
         "lat": 51.593877502427425,
         "lng": -0.38171197372486587
+      },
+      "notes": ""
+    },
+    "1593": {
+      "city": "Zurich",
+      "external": "",
+      "latlng": {
+        "lat": 47.370885977351676,
+        "lng": 8.541129039372516
       },
       "notes": ""
     },
@@ -2251,11 +2269,11 @@ const data = {
       "notes": ""
     },
     "1912": {
-      "city": "Lisbon",
+      "city": "Zurich",
       "external": "",
       "latlng": {
-        "lat": 38.73167621166924,
-        "lng": -9.148758359263605
+        "lat": 47.37145245655605,
+        "lng": 8.54400206481939
       },
       "notes": ""
     },
@@ -2277,11 +2295,11 @@ const data = {
       "notes": ""
     },
     "1915": {
-      "city": "Cambridgeshire",
+      "city": "Zurich",
       "external": "",
       "latlng": {
-        "lat": 52.19905462941954,
-        "lng": 0.1401635173472679
+        "lat": 47.37168093800922,
+        "lng": 8.536465089175993
       },
       "notes": ""
     },
@@ -2987,6 +3005,13 @@ const data = {
     "San_Marino": {
       "config": {}
     },
+    "Switzerland": {
+      "config": {},
+      "external": {
+        "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+        "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+      }
+    },
     "Turkey": {
       "config": {}
     },
@@ -3370,6 +3395,12 @@ const data = {
     "City_of_San_Marino": {
       "config": {
         "country": "San_Marino",
+        "external": null
+      }
+    },
+    "Zurich": {
+      "config": {
+        "country": "Switzerland",
         "external": null
       }
     },
