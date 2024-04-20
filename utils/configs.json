@@ -84,6 +84,20 @@
       }
     }
   },
+  "Switzerland": {
+    "config": {
+      "borders": {
+        "south": 45.815310,
+        "north": 47.807533,
+        "west": 5.949322,
+        "east": 10.492168
+      }
+    },
+    "external": {
+      "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+      "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+    }
+  },
   "Turkey": {
     "config": {
       "borders": {
@@ -578,6 +592,17 @@
         "north": 43.940424,
         "west": 12.438273,
         "east": 12.453036
+      }
+    }
+  },
+  "Zurich": {
+    "config": {
+      "country": "Switzerland",
+      "borders": {
+        "south": 47.320514,
+        "north": 47.434805,
+        "west": 8.448064,
+        "east": 8.624871
       }
     }
   },
