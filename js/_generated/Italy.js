@@ -65,6 +65,9 @@ const data = {
     "Russia": {
       "config": {}
     },
+    "San_Marino": {
+      "config": {}
+    },
     "Turkey": {
       "config": {}
     },
@@ -442,6 +445,12 @@ const data = {
     "Perm": {
       "config": {
         "country": "Russia",
+        "external": null
+      }
+    },
+    "City_of_San_Marino": {
+      "config": {
+        "country": "San_Marino",
         "external": null
       }
     },

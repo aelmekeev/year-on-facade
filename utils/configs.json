@@ -69,8 +69,18 @@
       "borders": {
         "south": 41.185873,
         "north": 77.721456,
-        "west": 19.875360100148097,
+        "west": 19.875360,
         "east": 180
+      }
+    }
+  },
+  "San_Marino": {
+    "config": {
+      "borders": {
+        "south": 43.893353,
+        "north": 43.992275,
+        "west": 12.403281,
+        "east": 12.517285
       }
     }
   },
@@ -557,6 +567,17 @@
         "north": 58.231352,
         "west": 55.630661,
         "east": 56.901738
+      }
+    }
+  },
+  "City_of_San_Marino": {
+    "config": {
+      "country": "San_Marino",
+      "borders": {
+        "south": 43.924261,
+        "north": 43.940424,
+        "west": 12.438273,
+        "east": 12.453036
       }
     }
   },

@@ -3,7 +3,7 @@ const data = {
     "borders": {
       "south": 41.185873,
       "north": 77.721456,
-      "west": 19.875360100148097,
+      "west": 19.87536,
       "east": 180
     },
     "useInternalMap": true,
@@ -55,6 +55,9 @@ const data = {
       }
     },
     "Russia": {
+      "config": {}
+    },
+    "San_Marino": {
       "config": {}
     },
     "Turkey": {
@@ -434,6 +437,12 @@ const data = {
     "Perm": {
       "config": {
         "country": "Russia",
+        "external": null
+      }
+    },
+    "City_of_San_Marino": {
+      "config": {
+        "country": "San_Marino",
         "external": null
       }
     },

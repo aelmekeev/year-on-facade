@@ -2447,11 +2447,10 @@ const data = {
       "notes": ""
     },
     "1935": {
-      "city": "Hertfordshire",
-      "external": "",
+      "city": "City_of_San_Marino",
       "latlng": {
-        "lat": 51.75048657941193,
-        "lng": -0.33744901262349536
+        "lat": 43.93329655382632,
+        "lng": 12.449320326608438
       },
       "notes": ""
     },
@@ -2985,6 +2984,9 @@ const data = {
     "Russia": {
       "config": {}
     },
+    "San_Marino": {
+      "config": {}
+    },
     "Turkey": {
       "config": {}
     },
@@ -3362,6 +3364,12 @@ const data = {
     "Perm": {
       "config": {
         "country": "Russia",
+        "external": null
+      }
+    },
+    "City_of_San_Marino": {
+      "config": {
+        "country": "San_Marino",
         "external": null
       }
     },
