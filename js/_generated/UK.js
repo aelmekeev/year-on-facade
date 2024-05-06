@@ -580,7 +580,7 @@ const data = {
         "lat": 50.807029951644225,
         "lng": -0.05954560654420038
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1725": {
       "city": "Surrey",
@@ -850,7 +850,7 @@ const data = {
         "lat": 50.832393558124515,
         "lng": -0.27499791365108894
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1755": {
       "city": "Surrey",
@@ -1435,7 +1435,7 @@ const data = {
         "lat": 50.82027101498947,
         "lng": -0.13794973827612603
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1820": {
       "city": "London",
@@ -2131,20 +2131,20 @@ const data = {
       "notes": ""
     },
     "1897": {
-      "city": "Cambridgeshire",
-      "external": "1126141",
+      "city": "West_Sussex",
+      "external": "",
       "latlng": {
-        "lat": 52.19929885582522,
-        "lng": 0.13997428781894014
+        "lat": 51.10407479275179,
+        "lng": -0.08506923676832027
       },
       "notes": ""
     },
     "1898": {
-      "city": "Surrey",
+      "city": "West_Sussex",
       "external": "",
       "latlng": {
-        "lat": 51.33156255769363,
-        "lng": -0.36338346373983077
+        "lat": 50.9958191036349,
+        "lng": -0.06681543318895576
       },
       "notes": ""
     },
@@ -2167,11 +2167,11 @@ const data = {
       "notes": ""
     },
     "1901": {
-      "city": "Hertfordshire",
+      "city": "West_Sussex",
       "external": "",
       "latlng": {
-        "lat": 51.65420551721437,
-        "lng": -0.40126808264624747
+        "lat": 51.104162248395134,
+        "lng": -0.08555758388592892
       },
       "notes": ""
     },
@@ -2550,6 +2550,15 @@ const data = {
       "latlng": {
         "lat": 51.62150053241681,
         "lng": -0.27635353918630556
+      },
+      "notes": ""
+    },
+    "1954": {
+      "city": "West_Sussex",
+      "external": "",
+      "latlng": {
+        "lat": 51.1058738412073,
+        "lng": -0.08540863771643899
       },
       "notes": ""
     },
