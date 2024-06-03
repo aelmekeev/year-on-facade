@@ -35,7 +35,7 @@ const data = [
   {name: "Northamptonshire", country: "UK", count: 2, minYear: 1680},
   {name: "Northumberland", country: "UK", count: 1, minYear: 1718},
   {name: "Nottinghamshire", country: "UK", count: 2, minYear: 1700},
-  {name: "Oxfordshire", country: "UK", count: 34, minYear: 1671},
+  {name: "Oxfordshire", country: "UK", count: 39, minYear: 1671},
   {name: "Perm", country: "Russia", count: 1, minYear: 2010},
   {name: "Porto", country: "Portugal", count: 2, minYear: 1892},
   {name: "Portugal", country: "null", count: 7, minYear: 1757},

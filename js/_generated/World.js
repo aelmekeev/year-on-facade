@@ -119,7 +119,7 @@ const data = {
         "lat": 51.82933974804167,
         "lng": -1.2793294644199555
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1672": {
       "city": "Essex",
@@ -164,7 +164,7 @@ const data = {
         "lat": 51.89660699479617,
         "lng": -1.1552921728506318
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1677": {
       "city": "London",
@@ -209,7 +209,7 @@ const data = {
         "lat": 51.89666945642508,
         "lng": -1.1553930756440822
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1682": {
       "city": "Oxfordshire",
@@ -218,7 +218,7 @@ const data = {
         "lat": 51.8965471292205,
         "lng": -1.1552008844661656
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1683": {
       "city": "Cambridgeshire",
@@ -839,7 +839,7 @@ const data = {
         "lat": 51.89664265844956,
         "lng": -1.1513516881845516
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1752": {
       "city": "Manchester",
@@ -1100,7 +1100,7 @@ const data = {
         "lat": 51.74753510969564,
         "lng": -1.1399540486229895
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1781": {
       "city": "Lancashire",
@@ -1127,7 +1127,7 @@ const data = {
         "lat": 51.81793460535997,
         "lng": -1.4412674167245114
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1784": {
       "city": "London",
@@ -1220,11 +1220,11 @@ const data = {
       "notes": "TODO"
     },
     "1794": {
-      "city": "London",
-      "external": "1359010",
+      "city": "Oxfordshire",
+      "external": "1220081",
       "latlng": {
-        "lat": 51.657502713866045,
-        "lng": -0.08787594113958751
+        "lat": 51.854590062173294,
+        "lng": -1.2719585228536239
       },
       "notes": ""
     },
@@ -1391,11 +1391,11 @@ const data = {
       "notes": ""
     },
     "1813": {
-      "city": "London",
-      "external": "1244496",
+      "city": "Oxfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.5566287628569,
-        "lng": -0.18062882454293655
+        "lat": 51.825662094621784,
+        "lng": -1.3830064362287582
       },
       "notes": ""
     },
