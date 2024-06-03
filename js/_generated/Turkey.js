@@ -88,6 +88,20 @@ const data = {
         }
       }
     },
+    "France": {
+      "config": {
+        "external": {
+          "label": "Check out Base Mérimée",
+          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
+        }
+      }
+    },
+    "Italy": {
+      "config": {}
+    },
+    "Monaco_": {
+      "config": {}
+    },
     "Portugal": {
       "config": {
         "external": {
@@ -98,6 +112,16 @@ const data = {
     },
     "Russia": {
       "config": {}
+    },
+    "San_Marino": {
+      "config": {}
+    },
+    "Switzerland": {
+      "config": {},
+      "external": {
+        "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+        "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+      }
     },
     "Turkey": {
       "config": {}
@@ -443,9 +467,51 @@ const data = {
         }
       }
     },
+    "Menton": {
+      "config": {
+        "country": "France",
+        "external": {
+          "label": "Check out Base Mérimée",
+          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
+        }
+      }
+    },
+    "Nice": {
+      "config": {
+        "country": "France",
+        "external": {
+          "label": "Check out Base Mérimée",
+          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
+        }
+      }
+    },
+    "Rome": {
+      "config": {
+        "country": "Italy",
+        "external": null
+      }
+    },
+    "Monaco": {
+      "config": {
+        "country": "Monaco_",
+        "external": null
+      }
+    },
     "Perm": {
       "config": {
         "country": "Russia",
+        "external": null
+      }
+    },
+    "City_of_San_Marino": {
+      "config": {
+        "country": "San_Marino",
+        "external": null
+      }
+    },
+    "Zurich": {
+      "config": {
+        "country": "Switzerland",
         "external": null
       }
     },

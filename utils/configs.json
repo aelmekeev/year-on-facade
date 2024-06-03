@@ -16,6 +16,40 @@
       }
     }
   },
+  "France": {
+    "config": {
+      "borders": {
+        "south": 41.363662,
+        "north": 51.075319,
+        "west": -4.796351,
+        "east": 9.567461
+      },
+      "external": {
+        "label": "Check out Base Mérimée",
+        "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
+      }
+    }
+  },
+  "Italy": {
+    "config": {
+      "borders": {
+        "south": 36.643157,
+        "north": 47.086401,
+        "west": 8.135394,
+        "east": 18.516063
+      }
+    }
+  },
+  "Monaco_": {
+    "config": {
+      "borders": {
+        "south": 43.724594,
+        "north": 43.751923,
+        "west": 7.409104,
+        "east": 7.439848
+      }
+    }
+  },
   "Portugal": {
     "config": {
       "borders": {
@@ -35,9 +69,33 @@
       "borders": {
         "south": 41.185873,
         "north": 77.721456,
-        "west": 19.875360100148097,
+        "west": 19.875360,
         "east": 180
       }
+    }
+  },
+  "San_Marino": {
+    "config": {
+      "borders": {
+        "south": 43.893353,
+        "north": 43.992275,
+        "west": 12.403281,
+        "east": 12.517285
+      }
+    }
+  },
+  "Switzerland": {
+    "config": {
+      "borders": {
+        "south": 45.815310,
+        "north": 47.807533,
+        "west": 5.949322,
+        "east": 10.492168
+      }
+    },
+    "external": {
+      "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+      "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
     }
   },
   "Turkey": {
@@ -471,6 +529,50 @@
       }
     }
   },
+  "Menton": {
+    "config": {
+      "country": "France",
+      "borders": {
+        "south": 43.765146,
+        "north": 43.826811,
+        "west": 7.4713062,
+        "east": 7.5302243
+      }
+    }
+  },
+  "Nice": {
+    "config": {
+      "country": "France",
+      "borders": {
+        "south": 43.645419,
+        "north": 43.760735,
+        "west": 7.1814474,
+        "east": 7.3233539
+      }
+    }
+  },
+  "Rome": {
+    "config": {
+      "country": "Italy",
+      "borders": {
+        "south": 41.404415,
+        "north": 42.296403,
+        "west": 11.7319274,
+        "east": 13.2974791
+      }
+    }
+  },
+  "Monaco": {
+    "config": {
+      "country": "Monaco_",
+      "borders": {
+        "south": 43.724594,
+        "north": 43.751923,
+        "west": 7.409104,
+        "east": 7.439848
+      }
+    }
+  },
   "Perm": {
     "config": {
       "country": "Russia",
@@ -479,6 +581,28 @@
         "north": 58.231352,
         "west": 55.630661,
         "east": 56.901738
+      }
+    }
+  },
+  "City_of_San_Marino": {
+    "config": {
+      "country": "San_Marino",
+      "borders": {
+        "south": 43.924261,
+        "north": 43.940424,
+        "west": 12.438273,
+        "east": 12.453036
+      }
+    }
+  },
+  "Zurich": {
+    "config": {
+      "country": "Switzerland",
+      "borders": {
+        "south": 47.320514,
+        "north": 47.434805,
+        "west": 8.448064,
+        "east": 8.624871
       }
     }
   },

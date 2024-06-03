@@ -5,12 +5,30 @@ const data = {
     "whatIsThisLink": "./what-is-this"
   },
   "points": {
+    "1566": {
+      "city": "Zurich",
+      "external": "",
+      "latlng": {
+        "lat": 47.37013008874929,
+        "lng": 8.544886757381464
+      },
+      "notes": ""
+    },
     "1580": {
       "city": "London",
       "external": "1286035",
       "latlng": {
         "lat": 51.593877502427425,
         "lng": -0.38171197372486587
+      },
+      "notes": ""
+    },
+    "1593": {
+      "city": "Zurich",
+      "external": "",
+      "latlng": {
+        "lat": 47.370885977351676,
+        "lng": 8.541129039372516
       },
       "notes": ""
     },
@@ -41,122 +59,13 @@ const data = {
       },
       "notes": ""
     },
-    "1645": {
-      "city": "Oxfordshire",
-      "external": "1368527",
-      "latlng": {
-        "lat": 51.658281136216,
-        "lng": -1.5840588203940438
-      },
-      "notes": "TODO"
-    },
-    "1646": {
-      "city": "Derbyshire",
-      "external": "1384288",
-      "latlng": {
-        "lat": 53.46213698490441,
-        "lng": -1.9699848741147892
-      },
-      "notes": "TODO"
-    },
-    "1647": {
-      "city": "Lancashire",
-      "external": "1219837",
-      "latlng": {
-        "lat": 53.55682533272649,
-        "lng": -2.7220757455423463
-      },
-      "notes": "TODO"
-    },
     "1648": {
-      "city": "Manchester",
-      "external": "1164611",
+      "city": "Nice",
       "latlng": {
-        "lat": 53.533293277552445,
-        "lng": -2.0503086306140212
+        "lat": 43.69804150842751,
+        "lng": 7.2767927399627546
       },
-      "notes": "TODO"
-    },
-    "1649": {
-      "city": "Essex",
-      "external": "1111509",
-      "latlng": {
-        "lat": 51.825569236223785,
-        "lng": 1.1429451357107274
-      },
-      "notes": "TODO"
-    },
-    "1650": {
-      "city": "Lancashire",
-      "external": "1073118",
-      "latlng": {
-        "lat": 53.593811900061965,
-        "lng": -2.906775229280001
-      },
-      "notes": "TODO"
-    },
-    "1651": {
-      "city": "North_Yorkshire",
-      "external": "1132098",
-      "latlng": {
-        "lat": 54.06797388767207,
-        "lng": -2.0170503402260085
-      },
-      "notes": "TODO"
-    },
-    "1652": {
-      "city": "Derbyshire",
-      "external": "1045804",
-      "latlng": {
-        "lat": 53.18911982328791,
-        "lng": -1.6183171130114937
-      },
-      "notes": "TODO"
-    },
-    "1653": {
-      "city": "Lancashire",
-      "external": "1361896",
-      "latlng": {
-        "lat": 53.731768034647395,
-        "lng": -2.727750174952072
-      },
-      "notes": "TODO"
-    },
-    "1654": {
-      "city": "Oxfordshire",
-      "external": "1367879",
-      "latlng": {
-        "lat": 51.74851702700113,
-        "lng": -1.4062517320836578
-      },
-      "notes": "TODO"
-    },
-    "1655": {
-      "city": "South_Yorkshire",
-      "external": "1132727",
-      "latlng": {
-        "lat": 53.39036804940533,
-        "lng": -1.3467884639428296
-      },
-      "notes": "TODO"
-    },
-    "1656": {
-      "city": "Wiltshire",
-      "external": "1355951",
-      "latlng": {
-        "lat": 51.63056419488898,
-        "lng": -1.7088562481118332
-      },
-      "notes": "TODO"
-    },
-    "1657": {
-      "city": "Northumberland",
-      "external": "1042573",
-      "latlng": {
-        "lat": 54.97376724018444,
-        "lng": -2.1054898443407786
-      },
-      "notes": "TODO"
+      "notes": ""
     },
     "1658": {
       "city": "London",
@@ -282,7 +191,7 @@ const data = {
         "lat": 51.82933974804167,
         "lng": -1.2793294644199555
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1672": {
       "city": "Essex",
@@ -327,7 +236,7 @@ const data = {
         "lat": 51.89660699479617,
         "lng": -1.1552921728506318
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1677": {
       "city": "London",
@@ -372,7 +281,7 @@ const data = {
         "lat": 51.89666945642508,
         "lng": -1.1553930756440822
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1682": {
       "city": "Oxfordshire",
@@ -381,7 +290,7 @@ const data = {
         "lat": 51.8965471292205,
         "lng": -1.1552008844661656
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1683": {
       "city": "Cambridgeshire",
@@ -399,7 +308,7 @@ const data = {
         "lat": 51.51371834713972,
         "lng": -0.11149891475073909
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1685": {
       "city": "London",
@@ -570,7 +479,7 @@ const data = {
         "lat": 51.51089864095616,
         "lng": -0.08891114940628847
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1704": {
       "city": "West_Yorkshire",
@@ -759,7 +668,7 @@ const data = {
         "lat": 50.807029951644225,
         "lng": -0.05954560654420038
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1725": {
       "city": "Surrey",
@@ -768,7 +677,7 @@ const data = {
         "lat": 51.39262494867464,
         "lng": -0.5045436671898346
       },
-      "notes": "TODO"
+      "notes": "Retake the photo"
     },
     "1726": {
       "city": "London",
@@ -1002,7 +911,7 @@ const data = {
         "lat": 51.89664265844956,
         "lng": -1.1513516881845516
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1752": {
       "city": "Manchester",
@@ -1029,7 +938,7 @@ const data = {
         "lat": 50.832393558124515,
         "lng": -0.27499791365108894
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1755": {
       "city": "Surrey",
@@ -1038,7 +947,7 @@ const data = {
         "lat": 51.432146993220606,
         "lng": -0.5156283759512514
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1756": {
       "city": "Copenhagen",
@@ -1263,7 +1172,7 @@ const data = {
         "lat": 51.74753510969564,
         "lng": -1.1399540486229895
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1781": {
       "city": "Lancashire",
@@ -1290,7 +1199,7 @@ const data = {
         "lat": 51.81793460535997,
         "lng": -1.4412674167245114
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1784": {
       "city": "London",
@@ -1335,7 +1244,7 @@ const data = {
         "lat": 51.56164137885795,
         "lng": -0.07135003583609202
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1789": {
       "city": "London",
@@ -1383,11 +1292,11 @@ const data = {
       "notes": "TODO"
     },
     "1794": {
-      "city": "London",
-      "external": "1359010",
+      "city": "Oxfordshire",
+      "external": "1220081",
       "latlng": {
-        "lat": 51.657502713866045,
-        "lng": -0.08787594113958751
+        "lat": 51.854590062173294,
+        "lng": -1.2719585228536239
       },
       "notes": ""
     },
@@ -1554,11 +1463,11 @@ const data = {
       "notes": ""
     },
     "1813": {
-      "city": "London",
-      "external": "1244496",
+      "city": "Oxfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.5566287628569,
-        "lng": -0.18062882454293655
+        "lat": 51.825662094621784,
+        "lng": -1.3830064362287582
       },
       "notes": ""
     },
@@ -1614,7 +1523,7 @@ const data = {
         "lat": 50.82027101498947,
         "lng": -0.13794973827612603
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1820": {
       "city": "London",
@@ -2056,11 +1965,10 @@ const data = {
       "notes": ""
     },
     "1869": {
-      "city": "London",
-      "external": "1251239",
+      "city": "Nice",
       "latlng": {
-        "lat": 51.491754158670695,
-        "lng": -0.10556154853181551
+        "lat": 43.70023806187411,
+        "lng": 7.28534807075022
       },
       "notes": ""
     },
@@ -2127,11 +2035,10 @@ const data = {
       "notes": ""
     },
     "1877": {
-      "city": "London",
-      "external": "1378818",
+      "city": "Menton",
       "latlng": {
-        "lat": 51.55123480899446,
-        "lng": -0.16634608919477561
+        "lat": 43.774709532337496,
+        "lng": 7.500799511495009
       },
       "notes": ""
     },
@@ -2172,11 +2079,10 @@ const data = {
       "notes": ""
     },
     "1882": {
-      "city": "London",
-      "external": "1213696",
+      "city": "Nice",
       "latlng": {
-        "lat": 51.51267601225725,
-        "lng": -0.13652747103585033
+        "lat": 43.69969094664279,
+        "lng": 7.268437193756377
       },
       "notes": ""
     },
@@ -2208,11 +2114,10 @@ const data = {
       "notes": ""
     },
     "1886": {
-      "city": "Cambridgeshire",
-      "external": "",
+      "city": "Rome",
       "latlng": {
-        "lat": 52.19838701939176,
-        "lng": 0.1447122607388116
+        "lat": 41.909225315095036,
+        "lng": 12.46705382862787
       },
       "notes": ""
     },
@@ -2307,20 +2212,19 @@ const data = {
       "notes": ""
     },
     "1897": {
-      "city": "Cambridgeshire",
-      "external": "1126141",
+      "city": "Nice",
       "latlng": {
-        "lat": 52.19929885582522,
-        "lng": 0.13997428781894014
+        "lat": 43.70061135322727,
+        "lng": 7.2714094262081455
       },
       "notes": ""
     },
     "1898": {
-      "city": "Surrey",
+      "city": "West_Sussex",
       "external": "",
       "latlng": {
-        "lat": 51.33156255769363,
-        "lng": -0.36338346373983077
+        "lat": 50.9958191036349,
+        "lng": -0.06681543318895576
       },
       "notes": ""
     },
@@ -2334,20 +2238,19 @@ const data = {
       "notes": ""
     },
     "1900": {
-      "city": "London",
-      "external": "1260615",
+      "city": "Monaco",
       "latlng": {
-        "lat": 51.491351158667854,
-        "lng": -0.26533081752309784
+        "lat": 43.74351326592167,
+        "lng": 7.4275865307354545
       },
       "notes": ""
     },
     "1901": {
-      "city": "Hertfordshire",
+      "city": "West_Sussex",
       "external": "",
       "latlng": {
-        "lat": 51.65420551721437,
-        "lng": -0.40126808264624747
+        "lat": 51.104162248395134,
+        "lng": -0.08555758388592892
       },
       "notes": ""
     },
@@ -2361,11 +2264,10 @@ const data = {
       "notes": ""
     },
     "1903": {
-      "city": "Manchester",
-      "external": "1282970",
+      "city": "Nice",
       "latlng": {
-        "lat": 53.48478286315207,
-        "lng": -2.2429438023387624
+        "lat": 43.70742877886892,
+        "lng": 7.2622871620867935
       },
       "notes": ""
     },
@@ -2413,11 +2315,10 @@ const data = {
       "notes": ""
     },
     "1909": {
-      "city": "London",
-      "external": "1184764",
+      "city": "Menton",
       "latlng": {
-        "lat": 51.41004230016464,
-        "lng": -0.30659101957045914
+        "lat": 43.77445080628653,
+        "lng": 7.496384817131317
       },
       "notes": ""
     },
@@ -2440,20 +2341,19 @@ const data = {
       "notes": ""
     },
     "1912": {
-      "city": "Lisbon",
+      "city": "Zurich",
       "external": "",
       "latlng": {
-        "lat": 38.73167621166924,
-        "lng": -9.148758359263605
+        "lat": 47.37145245655605,
+        "lng": 8.54400206481939
       },
       "notes": ""
     },
     "1913": {
-      "city": "Cambridgeshire",
-      "external": "1265198",
+      "city": "Menton",
       "latlng": {
-        "lat": 52.2068823459644,
-        "lng": 0.12153695026033852
+        "lat": 43.77346610951384,
+        "lng": 7.495096287558734
       },
       "notes": ""
     },
@@ -2467,11 +2367,11 @@ const data = {
       "notes": ""
     },
     "1915": {
-      "city": "Cambridgeshire",
+      "city": "Zurich",
       "external": "",
       "latlng": {
-        "lat": 52.19905462941954,
-        "lng": 0.1401635173472679
+        "lat": 47.37168093800922,
+        "lng": 8.536465089175993
       },
       "notes": ""
     },
@@ -2575,11 +2475,10 @@ const data = {
       "notes": ""
     },
     "1928": {
-      "city": "Porto",
-      "external": "",
+      "city": "Rome",
       "latlng": {
-        "lat": 41.142735476630456,
-        "lng": -8.615384379773117
+        "lat": 41.90762138349003,
+        "lng": 12.461186483405383
       },
       "notes": ""
     },
@@ -2638,11 +2537,10 @@ const data = {
       "notes": ""
     },
     "1935": {
-      "city": "Hertfordshire",
-      "external": "",
+      "city": "City_of_San_Marino",
       "latlng": {
-        "lat": 51.75048657941193,
-        "lng": -0.33744901262349536
+        "lat": 43.93329655382632,
+        "lng": 12.449320326608438
       },
       "notes": ""
     },
@@ -2724,6 +2622,15 @@ const data = {
       "latlng": {
         "lat": 51.62150053241681,
         "lng": -0.27635353918630556
+      },
+      "notes": ""
+    },
+    "1954": {
+      "city": "West_Sussex",
+      "external": "",
+      "latlng": {
+        "lat": 51.1058738412073,
+        "lng": -0.08540863771643899
       },
       "notes": ""
     },
@@ -2833,6 +2740,15 @@ const data = {
       },
       "notes": ""
     },
+    "1980": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.5018448882367,
+        "lng": -0.2241468116643884
+      },
+      "notes": ""
+    },
     "1981": {
       "city": "London",
       "external": "",
@@ -2933,11 +2849,11 @@ const data = {
       "notes": ""
     },
     "1996": {
-      "city": "London",
+      "city": "Surrey",
       "external": "",
       "latlng": {
-        "lat": 51.474762990419876,
-        "lng": -0.025473234399476925
+        "lat": 51.38880892438484,
+        "lng": -0.48780196732587594
       },
       "notes": ""
     },
@@ -2978,11 +2894,11 @@ const data = {
       "notes": ""
     },
     "2001": {
-      "city": "London",
+      "city": "Surrey",
       "external": "",
       "latlng": {
-        "lat": 51.46293033575634,
-        "lng": -0.2099396188497619
+        "lat": 51.43395287857267,
+        "lng": -0.5119709964329753
       },
       "notes": ""
     },
@@ -3142,6 +3058,20 @@ const data = {
         }
       }
     },
+    "France": {
+      "config": {
+        "external": {
+          "label": "Check out Base Mérimée",
+          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
+        }
+      }
+    },
+    "Italy": {
+      "config": {}
+    },
+    "Monaco_": {
+      "config": {}
+    },
     "Portugal": {
       "config": {
         "external": {
@@ -3152,6 +3082,16 @@ const data = {
     },
     "Russia": {
       "config": {}
+    },
+    "San_Marino": {
+      "config": {}
+    },
+    "Switzerland": {
+      "config": {},
+      "external": {
+        "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+        "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+      }
     },
     "Turkey": {
       "config": {}
@@ -3497,9 +3437,51 @@ const data = {
         }
       }
     },
+    "Menton": {
+      "config": {
+        "country": "France",
+        "external": {
+          "label": "Check out Base Mérimée",
+          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
+        }
+      }
+    },
+    "Nice": {
+      "config": {
+        "country": "France",
+        "external": {
+          "label": "Check out Base Mérimée",
+          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
+        }
+      }
+    },
+    "Rome": {
+      "config": {
+        "country": "Italy",
+        "external": null
+      }
+    },
+    "Monaco": {
+      "config": {
+        "country": "Monaco_",
+        "external": null
+      }
+    },
     "Perm": {
       "config": {
         "country": "Russia",
+        "external": null
+      }
+    },
+    "City_of_San_Marino": {
+      "config": {
+        "country": "San_Marino",
+        "external": null
+      }
+    },
+    "Zurich": {
+      "config": {
+        "country": "Switzerland",
         "external": null
       }
     },
