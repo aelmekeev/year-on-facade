@@ -1,5 +1,11 @@
 <svg viewBox="0 0 444 35" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
-  <rect y="0" x="188" width="31" height="35" fill="#a3bff4" />
+  <rect y="0" x="53" width="166" height="35" fill="#a3bff4" />
+  <rect y="0" x="53" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="67" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="70" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="73" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="79" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="87" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="188" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="190" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="198" width="1" height="35" fill="#c8e3c2" />

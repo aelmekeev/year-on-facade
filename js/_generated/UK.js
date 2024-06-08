@@ -42,6 +42,15 @@ const data = {
       },
       "notes": ""
     },
+    "1630": {
+      "city": "West_Yorkshire",
+      "external": "1133673",
+      "latlng": {
+        "lat": 53.8374065418849,
+        "lng": -1.7328848362167872
+      },
+      "notes": "TODO"
+    },
     "1631": {
       "city": "London",
       "external": "1002019",
@@ -50,6 +59,222 @@ const data = {
         "lng": -0.29497913281445076
       },
       "notes": ""
+    },
+    "1632": {
+      "city": "North_Yorkshire",
+      "external": "1149238",
+      "latlng": {
+        "lat": 54.26965406245301,
+        "lng": -0.9315680138099055
+      },
+      "notes": "TODO"
+    },
+    "1633": {
+      "city": "Lancashire",
+      "external": "1220236",
+      "latlng": {
+        "lat": 53.54101370090969,
+        "lng": -2.720898421445092
+      },
+      "notes": "TODO"
+    },
+    "1634": {
+      "city": "West_Yorkshire",
+      "external": "1134506",
+      "latlng": {
+        "lat": 53.7319460592759,
+        "lng": -1.9391404416778009
+      },
+      "notes": "TODO"
+    },
+    "1635": {
+      "city": "Wiltshire",
+      "external": "1284224",
+      "latlng": {
+        "lat": 51.13549581540776,
+        "lng": -1.9481054332653198
+      },
+      "notes": "TODO"
+    },
+    "1636": {
+      "city": "Wiltshire",
+      "external": "1283764",
+      "latlng": {
+        "lat": 51.08035286315714,
+        "lng": -1.881133594123886
+      },
+      "notes": "TODO"
+    },
+    "1637": {
+      "city": "West_Yorkshire",
+      "external": "1375129",
+      "latlng": {
+        "lat": 53.853812430509365,
+        "lng": -1.479061747467493
+      },
+      "notes": "TODO"
+    },
+    "1638": {
+      "city": "Derbyshire",
+      "external": "1384250",
+      "latlng": {
+        "lat": 53.435704902915504,
+        "lng": -1.9464921898728553
+      },
+      "notes": "TODO"
+    },
+    "1640": {
+      "city": "Rutland",
+      "external": "1073863",
+      "latlng": {
+        "lat": 52.620900697162014,
+        "lng": -0.6239370819479623
+      },
+      "notes": "TODO"
+    },
+    "1641": {
+      "city": "South_Yorkshire",
+      "external": "1286383",
+      "latlng": {
+        "lat": 53.54276603420719,
+        "lng": -1.52601230868117
+      },
+      "notes": "TODO"
+    },
+    "1642": {
+      "city": "Wiltshire",
+      "external": "1283163",
+      "latlng": {
+        "lat": 51.44848292714915,
+        "lng": -1.947150190091244
+      },
+      "notes": "TODO"
+    },
+    "1643": {
+      "city": "Leicestershire",
+      "external": "1061700",
+      "latlng": {
+        "lat": 52.59607178881066,
+        "lng": -0.8434230733174165
+      },
+      "notes": "TODO"
+    },
+    "1645": {
+      "city": "Oxfordshire",
+      "external": "1368527",
+      "latlng": {
+        "lat": 51.658281136216,
+        "lng": -1.5840588203940438
+      },
+      "notes": "TODO"
+    },
+    "1646": {
+      "city": "Derbyshire",
+      "external": "1384288",
+      "latlng": {
+        "lat": 53.46213698490441,
+        "lng": -1.9699848741147892
+      },
+      "notes": "TODO"
+    },
+    "1647": {
+      "city": "Lancashire",
+      "external": "1219837",
+      "latlng": {
+        "lat": 53.55682533272649,
+        "lng": -2.7220757455423463
+      },
+      "notes": "TODO"
+    },
+    "1648": {
+      "city": "Manchester",
+      "external": "1164611",
+      "latlng": {
+        "lat": 53.533293277552445,
+        "lng": -2.0503086306140212
+      },
+      "notes": "TODO"
+    },
+    "1649": {
+      "city": "Essex",
+      "external": "1111509",
+      "latlng": {
+        "lat": 51.825569236223785,
+        "lng": 1.1429451357107274
+      },
+      "notes": "TODO"
+    },
+    "1650": {
+      "city": "Lancashire",
+      "external": "1073118",
+      "latlng": {
+        "lat": 53.593811900061965,
+        "lng": -2.906775229280001
+      },
+      "notes": "TODO"
+    },
+    "1651": {
+      "city": "North_Yorkshire",
+      "external": "1132098",
+      "latlng": {
+        "lat": 54.06797388767207,
+        "lng": -2.0170503402260085
+      },
+      "notes": "TODO"
+    },
+    "1652": {
+      "city": "Derbyshire",
+      "external": "1045804",
+      "latlng": {
+        "lat": 53.18911982328791,
+        "lng": -1.6183171130114937
+      },
+      "notes": "TODO"
+    },
+    "1653": {
+      "city": "Lancashire",
+      "external": "1361896",
+      "latlng": {
+        "lat": 53.731768034647395,
+        "lng": -2.727750174952072
+      },
+      "notes": "TODO"
+    },
+    "1654": {
+      "city": "Oxfordshire",
+      "external": "1367879",
+      "latlng": {
+        "lat": 51.74851702700113,
+        "lng": -1.4062517320836578
+      },
+      "notes": "TODO"
+    },
+    "1655": {
+      "city": "South_Yorkshire",
+      "external": "1132727",
+      "latlng": {
+        "lat": 53.39036804940533,
+        "lng": -1.3467884639428296
+      },
+      "notes": "TODO"
+    },
+    "1656": {
+      "city": "Wiltshire",
+      "external": "1355951",
+      "latlng": {
+        "lat": 51.63056419488898,
+        "lng": -1.7088562481118332
+      },
+      "notes": "TODO"
+    },
+    "1657": {
+      "city": "Northumberland",
+      "external": "1042573",
+      "latlng": {
+        "lat": 54.97376724018444,
+        "lng": -2.1054898443407786
+      },
+      "notes": "TODO"
     },
     "1658": {
       "city": "London",
@@ -60,6 +285,60 @@ const data = {
       },
       "notes": ""
     },
+    "1659": {
+      "city": "Lancashire",
+      "external": "1317953",
+      "latlng": {
+        "lat": 53.65027587967841,
+        "lng": -2.7311159233725233
+      },
+      "notes": "TODO"
+    },
+    "1660": {
+      "city": "Northumberland",
+      "external": "1045389",
+      "latlng": {
+        "lat": 54.947774615790856,
+        "lng": -1.9730906532402974
+      },
+      "notes": "TODO"
+    },
+    "1661": {
+      "city": "Nottinghamshire",
+      "external": "1242375",
+      "latlng": {
+        "lat": 52.82569417070036,
+        "lng": -1.2552402299391499
+      },
+      "notes": "TODO"
+    },
+    "1662": {
+      "city": "Cambridgeshire",
+      "external": "1128369",
+      "latlng": {
+        "lat": 52.411937797885166,
+        "lng": -0.11919104573555378
+      },
+      "notes": "TODO"
+    },
+    "1663": {
+      "city": "Warwickshire",
+      "external": "1024298",
+      "latlng": {
+        "lat": 51.99048050575821,
+        "lng": -1.5798743711541918
+      },
+      "notes": "TODO"
+    },
+    "1664": {
+      "city": "Cheshire",
+      "external": "1376318",
+      "latlng": {
+        "lat": 53.18638558372502,
+        "lng": -2.88953377052421
+      },
+      "notes": "TODO"
+    },
     "1665": {
       "city": "Hertfordshire",
       "external": "1103131",
@@ -68,6 +347,24 @@ const data = {
         "lng": -0.34080121822541126
       },
       "notes": ""
+    },
+    "1666": {
+      "city": "Wiltshire",
+      "external": "1318514",
+      "latlng": {
+        "lat": 51.22310145978299,
+        "lng": -1.782644852023817
+      },
+      "notes": "TODO"
+    },
+    "1667": {
+      "city": "Lancashire",
+      "external": "1219643",
+      "latlng": {
+        "lat": 53.55413499630956,
+        "lng": -2.757717959593395
+      },
+      "notes": "TODO"
     },
     "1668": {
       "city": "London",
@@ -1861,11 +2158,11 @@ const data = {
       "notes": ""
     },
     "1867": {
-      "city": "Cambridgeshire",
-      "external": "1122620",
+      "city": "Berkshire",
+      "external": "",
       "latlng": {
-        "lat": 52.20375905138928,
-        "lng": 0.11768686954602431
+        "lat": 51.47737125101193,
+        "lng": -0.609934525588281
       },
       "notes": ""
     },
@@ -2023,11 +2320,11 @@ const data = {
       "notes": ""
     },
     "1885": {
-      "city": "Cambridgeshire",
+      "city": "Berkshire",
       "external": "",
       "latlng": {
-        "lat": 52.20026790837453,
-        "lng": 0.13654690569966862
+        "lat": 51.48273067881295,
+        "lng": -0.6198019131887323
       },
       "notes": ""
     },
@@ -3243,6 +3540,15 @@ const data = {
       }
     },
     "Oxfordshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Rutland": {
       "config": {
         "country": "UK",
         "external": {

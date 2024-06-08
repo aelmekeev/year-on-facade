@@ -17,6 +17,22 @@ const data = {
     "city": "North_Yorkshire"
   },
   "points": {
+    "1632": {
+      "latlng": {
+        "lat": 54.26965406245301,
+        "lng": -0.9315680138099055
+      },
+      "notes": "TODO",
+      "external": "1149238"
+    },
+    "1651": {
+      "latlng": {
+        "lat": 54.06797388767207,
+        "lng": -2.0170503402260085
+      },
+      "notes": "TODO",
+      "external": "1132098"
+    },
     "1765": {
       "latlng": {
         "lat": 54.453728940022,

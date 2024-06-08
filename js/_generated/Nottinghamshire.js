@@ -17,6 +17,14 @@ const data = {
     "city": "Nottinghamshire"
   },
   "points": {
+    "1661": {
+      "latlng": {
+        "lat": 52.82569417070036,
+        "lng": -1.2552402299391499
+      },
+      "notes": "TODO",
+      "external": "1242375"
+    },
     "1700": {
       "latlng": {
         "lat": 52.8607916686074,

@@ -362,6 +362,15 @@ const data = {
         }
       }
     },
+    "Rutland": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Somerset": {
       "config": {
         "country": "UK",

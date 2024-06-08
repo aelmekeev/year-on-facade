@@ -2,10 +2,10 @@ const data = {
   "config": {
     "country": "UK",
     "borders": {
-      "south": 51.955932,
-      "north": 52.690624,
-      "west": -1.962376,
-      "east": -1.172711
+      "south": 52.524526,
+      "north": 52.759932,
+      "west": -0.823521,
+      "east": -0.427326
     },
     "external": {
       "label": "Check out Historic England",
@@ -14,24 +14,16 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this",
-    "city": "Warwickshire"
+    "city": "Rutland"
   },
   "points": {
-    "1663": {
+    "1640": {
       "latlng": {
-        "lat": 51.99048050575821,
-        "lng": -1.5798743711541918
+        "lat": 52.620900697162014,
+        "lng": -0.6239370819479623
       },
       "notes": "TODO",
-      "external": "1024298"
-    },
-    "1753": {
-      "latlng": {
-        "lat": 52.3369138790917,
-        "lng": -1.2895538128953048
-      },
-      "notes": "TODO",
-      "external": "1365072"
+      "external": "1073863"
     }
   }
 }
