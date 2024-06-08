@@ -397,6 +397,17 @@
       }
     }
   },
+  "Rutland": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 52.524526,
+        "north": 52.759932,
+        "west": -0.823521,
+        "east": -0.427326
+      }
+    }
+  },
   "Somerset": {
     "config": {
       "country": "UK",

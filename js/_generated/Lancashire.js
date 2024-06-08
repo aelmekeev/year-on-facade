@@ -17,6 +17,14 @@ const data = {
     "city": "Lancashire"
   },
   "points": {
+    "1633": {
+      "latlng": {
+        "lat": 53.54101370090969,
+        "lng": -2.720898421445092
+      },
+      "notes": "TODO",
+      "external": "1220236"
+    },
     "1647": {
       "latlng": {
         "lat": 53.55682533272649,
