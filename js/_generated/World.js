@@ -41,14 +41,95 @@ const data = {
       },
       "notes": ""
     },
-    "1629": {
-      "city": "London",
-      "external": "1080160",
+    "1620": {
+      "city": "Kent",
+      "external": "1070119",
       "latlng": {
-        "lat": 51.535080908278466,
-        "lng": -0.46018471798074584
+        "lat": 51.27262956643476,
+        "lng": 1.2150647912214991
       },
-      "notes": ""
+      "notes": "TODO"
+    },
+    "1621": {
+      "city": "Essex",
+      "external": "1112678",
+      "latlng": {
+        "lat": 51.587047369099224,
+        "lng": 0.6023481966184953
+      },
+      "notes": "TODO"
+    },
+    "1622": {
+      "city": "Manchester",
+      "external": "1084252",
+      "latlng": {
+        "lat": 53.63974531356683,
+        "lng": -2.1929962362141002
+      },
+      "notes": "TODO"
+    },
+    "1623": {
+      "city": "Cambridgeshire",
+      "external": "1330791",
+      "latlng": {
+        "lat": 52.31740472977818,
+        "lng": -0.03619411187297465
+      },
+      "notes": "TODO"
+    },
+    "1624": {
+      "city": "Buckinghamshire",
+      "external": "1115925",
+      "latlng": {
+        "lat": 52.11345563318507,
+        "lng": -0.8257492321840235
+      },
+      "notes": "TODO"
+    },
+    "1625": {
+      "city": "West_Yorkshire",
+      "external": "1375330",
+      "latlng": {
+        "lat": 53.83781375572103,
+        "lng": -1.5912107845789756
+      },
+      "notes": "TODO"
+    },
+    "1626": {
+      "city": "Dorset",
+      "external": "1119278",
+      "latlng": {
+        "lat": 50.871388813029434,
+        "lng": -2.60981050253407
+      },
+      "notes": "TODO"
+    },
+    "1627": {
+      "city": "West_Yorkshire",
+      "external": "1185606",
+      "latlng": {
+        "lat": 53.71773334717786,
+        "lng": -1.950320495774765
+      },
+      "notes": "TODO"
+    },
+    "1628": {
+      "city": "Cumbria",
+      "external": "1327167",
+      "latlng": {
+        "lat": 54.51369338855166,
+        "lng": -3.168101145191791
+      },
+      "notes": "TODO"
+    },
+    "1629": {
+      "city": "Leicestershire",
+      "external": "1361305",
+      "latlng": {
+        "lat": 52.599447959669945,
+        "lng": -1.4298587899693478
+      },
+      "notes": "TODO"
     },
     "1630": {
       "city": "West_Yorkshire",
@@ -2522,11 +2603,11 @@ const data = {
       "notes": ""
     },
     "1908": {
-      "city": "Hertfordshire",
+      "city": "Surrey",
       "external": "",
       "latlng": {
-        "lat": 51.75700894825333,
-        "lng": -0.33266260263129965
+        "lat": 51.39104368936547,
+        "lng": -0.5001259849904044
       },
       "notes": ""
     },
@@ -3374,6 +3455,15 @@ const data = {
         }
       }
     },
+    "Cumbria": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Derbyshire": {
       "config": {
         "country": "UK",
@@ -3447,6 +3537,15 @@ const data = {
       }
     },
     "Hertfordshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Kent": {
       "config": {
         "country": "UK",
         "external": {

@@ -2,10 +2,10 @@ const data = {
   "config": {
     "country": "UK",
     "borders": {
-      "south": 51.484,
-      "north": 52.195,
-      "west": -1.143,
-      "east": -0.538
+      "south": 50.910225,
+      "north": 51.455694,
+      "west": 0.031844,
+      "east": 1.451841
     },
     "external": {
       "label": "Check out Historic England",
@@ -14,24 +14,16 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this",
-    "city": "Buckinghamshire"
+    "city": "Kent"
   },
   "points": {
-    "1624": {
+    "1620": {
       "latlng": {
-        "lat": 52.11345563318507,
-        "lng": -0.8257492321840235
+        "lat": 51.27262956643476,
+        "lng": 1.2150647912214991
       },
       "notes": "TODO",
-      "external": "1115925"
-    },
-    "2004": {
-      "latlng": {
-        "lat": 51.589681104685724,
-        "lng": -0.5515117255768285
-      },
-      "notes": "",
-      "external": ""
+      "external": "1070119"
     }
   }
 }

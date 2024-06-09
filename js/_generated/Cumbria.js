@@ -2,10 +2,10 @@ const data = {
   "config": {
     "country": "UK",
     "borders": {
-      "south": 51.484,
-      "north": 52.195,
-      "west": -1.143,
-      "east": -0.538
+      "south": 54.042331,
+      "north": 55.188938,
+      "west": -3.641552,
+      "east": -2.158398
     },
     "external": {
       "label": "Check out Historic England",
@@ -14,24 +14,16 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this",
-    "city": "Buckinghamshire"
+    "city": "Cumbria"
   },
   "points": {
-    "1624": {
+    "1628": {
       "latlng": {
-        "lat": 52.11345563318507,
-        "lng": -0.8257492321840235
+        "lat": 54.51369338855166,
+        "lng": -3.168101145191791
       },
       "notes": "TODO",
-      "external": "1115925"
-    },
-    "2004": {
-      "latlng": {
-        "lat": 51.589681104685724,
-        "lng": -0.5515117255768285
-      },
-      "notes": "",
-      "external": ""
+      "external": "1327167"
     }
   }
 }

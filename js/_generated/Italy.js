@@ -140,6 +140,15 @@ const data = {
         }
       }
     },
+    "Cumbria": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Derbyshire": {
       "config": {
         "country": "UK",
@@ -213,6 +222,15 @@ const data = {
       }
     },
     "Hertfordshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Kent": {
       "config": {
         "country": "UK",
         "external": {
