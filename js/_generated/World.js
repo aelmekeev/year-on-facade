@@ -41,6 +41,96 @@ const data = {
       },
       "notes": ""
     },
+    "1610": {
+      "city": "Oxfordshire",
+      "external": "1047840",
+      "latlng": {
+        "lat": 51.645101759970224,
+        "lng": -1.1666801597252294
+      },
+      "notes": "TODO"
+    },
+    "1611": {
+      "city": "West_Yorkshire",
+      "external": "1135675",
+      "latlng": {
+        "lat": 53.75002630064175,
+        "lng": -1.4566859161662744
+      },
+      "notes": "TODO"
+    },
+    "1612": {
+      "city": "Devon",
+      "external": "1098527",
+      "latlng": {
+        "lat": 50.741020809711934,
+        "lng": -3.0703958937329277
+      },
+      "notes": "TODO"
+    },
+    "1613": {
+      "city": "Cambridgeshire",
+      "external": "1128629",
+      "latlng": {
+        "lat": 52.31872681592589,
+        "lng": -0.16954936840590507
+      },
+      "notes": "TODO"
+    },
+    "1614": {
+      "city": "Suffolk",
+      "external": "1181926",
+      "latlng": {
+        "lat": 52.235015446632794,
+        "lng": 0.9020795833204278
+      },
+      "notes": "TODO"
+    },
+    "1615": {
+      "city": "Hertfordshire",
+      "external": "1348000",
+      "latlng": {
+        "lat": 51.94573826716453,
+        "lng": -0.018075210767044384
+      },
+      "notes": "TODO"
+    },
+    "1616": {
+      "city": "Rutland",
+      "external": "1178211",
+      "latlng": {
+        "lat": 52.588309290561774,
+        "lng": -0.7193404721722413
+      },
+      "notes": "TODO"
+    },
+    "1617": {
+      "city": "Cumbria",
+      "external": "1145316",
+      "latlng": {
+        "lat": 54.74925794890673,
+        "lng": -2.706113987628956
+      },
+      "notes": "TODO"
+    },
+    "1618": {
+      "city": "West_Yorkshire",
+      "external": "1232702",
+      "latlng": {
+        "lat": 53.676035920134964,
+        "lng": -1.9149222493668128
+      },
+      "notes": "TODO"
+    },
+    "1619": {
+      "city": "Suffolk",
+      "external": "1284544",
+      "latlng": {
+        "lat": 52.279100177003784,
+        "lng": 0.893768133179074
+      },
+      "notes": "TODO"
+    },
     "1620": {
       "city": "Kent",
       "external": "1070119",
@@ -3672,6 +3762,15 @@ const data = {
       }
     },
     "Staffordshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Suffolk": {
       "config": {
         "country": "UK",
         "external": {

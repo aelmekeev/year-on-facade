@@ -463,6 +463,17 @@
       }
     }
   },
+  "Suffolk": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 51.932131,
+        "north": 52.549311,
+        "west": 0.340461,
+        "east": 1.763123
+      }
+    }
+  },
   "Surrey": {
     "config": {
       "country": "UK",

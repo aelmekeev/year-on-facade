@@ -2,10 +2,10 @@ const data = {
   "config": {
     "country": "UK",
     "borders": {
-      "south": 50.197743,
-      "north": 51.246192,
-      "west": -4.550117,
-      "east": -2.882941
+      "south": 51.932131,
+      "north": 52.549311,
+      "west": 0.340461,
+      "east": 1.763123
     },
     "external": {
       "label": "Check out Historic England",
@@ -14,24 +14,24 @@ const data = {
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this",
-    "city": "Devon"
+    "city": "Suffolk"
   },
   "points": {
-    "1612": {
+    "1614": {
       "latlng": {
-        "lat": 50.741020809711934,
-        "lng": -3.0703958937329277
+        "lat": 52.235015446632794,
+        "lng": 0.9020795833204278
       },
       "notes": "TODO",
-      "external": "1098527"
+      "external": "1181926"
     },
-    "1809": {
+    "1619": {
       "latlng": {
-        "lat": 50.36689965842479,
-        "lng": -4.1351563982025095
+        "lat": 52.279100177003784,
+        "lng": 0.893768133179074
       },
       "notes": "TODO",
-      "external": "1386280"
+      "external": "1284544"
     }
   }
 }

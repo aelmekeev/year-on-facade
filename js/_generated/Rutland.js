@@ -17,6 +17,14 @@ const data = {
     "city": "Rutland"
   },
   "points": {
+    "1616": {
+      "latlng": {
+        "lat": 52.588309290561774,
+        "lng": -0.7193404721722413
+      },
+      "notes": "TODO",
+      "external": "1178211"
+    },
     "1640": {
       "latlng": {
         "lat": 52.620900697162014,
