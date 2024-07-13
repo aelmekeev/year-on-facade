@@ -24,14 +24,86 @@ const data = {
       },
       "notes": ""
     },
-    "1607": {
-      "city": "London",
-      "external": "1218593",
+    "1600": {
+      "city": "Herefordshire",
+      "external": "1255382",
       "latlng": {
-        "lat": 51.48068758027714,
-        "lng": 0.037021553277171264
+        "lat": 52.22841065700945,
+        "lng": -2.7389034078873453
       },
-      "notes": ""
+      "notes": "TODO"
+    },
+    "1601": {
+      "city": "Cheshire",
+      "external": "1230477",
+      "latlng": {
+        "lat": 53.12070812656435,
+        "lng": -2.7685557940928
+      },
+      "notes": "TODO"
+    },
+    "1602": {
+      "city": "Wiltshire",
+      "external": "1355661",
+      "latlng": {
+        "lat": 51.196128751423295,
+        "lng": -1.9027197213948768
+      },
+      "notes": "TODO"
+    },
+    "1603": {
+      "city": "Devon",
+      "external": "1105901",
+      "latlng": {
+        "lat": 50.85736818650454,
+        "lng": -3.392964445344265
+      },
+      "notes": "TODO"
+    },
+    "1604": {
+      "city": "Warwickshire",
+      "external": "1299645",
+      "latlng": {
+        "lat": 52.390973234769675,
+        "lng": -1.3122406763009749
+      },
+      "notes": "TODO"
+    },
+    "1606": {
+      "city": "Bedfordshire",
+      "external": "1321531",
+      "latlng": {
+        "lat": 52.20697961018959,
+        "lng": -0.6007400853734841
+      },
+      "notes": "TODO"
+    },
+    "1607": {
+      "city": "West_Sussex",
+      "external": "1026225",
+      "latlng": {
+        "lat": 50.784882300518056,
+        "lng": -0.7903458886897798
+      },
+      "notes": "TODO"
+    },
+    "1608": {
+      "city": "Northamptonshire",
+      "external": "1293387",
+      "latlng": {
+        "lat": 52.30258913459104,
+        "lng": -0.6946373134716637
+      },
+      "notes": "TODO"
+    },
+    "1609": {
+      "city": "Norfolk",
+      "external": "1096839",
+      "latlng": {
+        "lat": 52.60749180154992,
+        "lng": 1.7234838671162727
+      },
+      "notes": "TODO"
     },
     "1610": {
       "city": "Oxfordshire",
@@ -52,11 +124,11 @@ const data = {
       "notes": "TODO"
     },
     "1612": {
-      "city": "Devon",
-      "external": "1098527",
+      "city": "Cumbria",
+      "external": "1326939",
       "latlng": {
-        "lat": 50.741020809711934,
-        "lng": -3.0703958937329277
+        "lat": 54.670679066320695,
+        "lng": -2.7599614409846263
       },
       "notes": "TODO"
     },
@@ -3503,6 +3575,15 @@ const data = {
         }
       }
     },
+    "Bedfordshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Berkshire": {
       "config": {
         "country": "UK",
@@ -3629,6 +3710,15 @@ const data = {
         }
       }
     },
+    "Herefordshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Hertfordshire": {
       "config": {
         "country": "UK",
@@ -3684,6 +3774,15 @@ const data = {
       }
     },
     "Merseyside": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Norfolk": {
       "config": {
         "country": "UK",
         "external": {

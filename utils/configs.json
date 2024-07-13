@@ -133,6 +133,17 @@
       }
     }
   },
+  "Bedfordshire": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 51.805645,
+        "north": 52.318681,
+        "west": -1.332715,
+        "east": -0.143953
+      }
+    }
+  },
   "Berkshire": {
     "config": {
       "country": "UK",
@@ -287,6 +298,17 @@
       }
     }
   },
+  "Herefordshire": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 51.825775,
+        "north": 52.395097,
+        "west": -3.141703,
+        "east": -2.337258
+      }
+    }
+  },
   "Hertfordshire": {
     "config": {
       "country": "UK",
@@ -361,6 +383,17 @@
         "north": 53.705959,
         "west": -3.237463,
         "east": -2.578283
+      }
+    }
+  },
+  "Norfolk": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 52.354659,
+        "north": 52.989811,
+        "west": 0.153259,
+        "east": 1.746733
       }
     }
   },

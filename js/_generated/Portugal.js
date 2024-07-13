@@ -146,6 +146,15 @@ const data = {
         }
       }
     },
+    "Bedfordshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Berkshire": {
       "config": {
         "country": "UK",
@@ -272,6 +281,15 @@ const data = {
         }
       }
     },
+    "Herefordshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Hertfordshire": {
       "config": {
         "country": "UK",
@@ -327,6 +345,15 @@ const data = {
       }
     },
     "Merseyside": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Norfolk": {
       "config": {
         "country": "UK",
         "external": {
