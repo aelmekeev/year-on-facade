@@ -146,6 +146,15 @@ const data = {
         }
       }
     },
+    "Bedfordshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Berkshire": {
       "config": {
         "country": "UK",
@@ -183,6 +192,15 @@ const data = {
       }
     },
     "Cheshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Cumbria": {
       "config": {
         "country": "UK",
         "external": {
@@ -263,7 +281,25 @@ const data = {
         }
       }
     },
+    "Herefordshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Hertfordshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Kent": {
       "config": {
         "country": "UK",
         "external": {
@@ -309,6 +345,15 @@ const data = {
       }
     },
     "Merseyside": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Norfolk": {
       "config": {
         "country": "UK",
         "external": {
@@ -390,6 +435,15 @@ const data = {
       }
     },
     "Staffordshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Suffolk": {
       "config": {
         "country": "UK",
         "external": {

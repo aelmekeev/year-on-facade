@@ -133,6 +133,17 @@
       }
     }
   },
+  "Bedfordshire": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 51.805645,
+        "north": 52.318681,
+        "west": -1.332715,
+        "east": -0.143953
+      }
+    }
+  },
   "Berkshire": {
     "config": {
       "country": "UK",
@@ -160,9 +171,9 @@
       "country": "UK",
       "borders": {
         "south": 51.484,
-        "north": 52.082,
+        "north": 52.195,
         "west": -1.143,
-        "east": -0.473
+        "east": -0.538
       }
     }
   },
@@ -185,6 +196,17 @@
         "north": 53.480860,
         "west": -3.130119,
         "east": -1.972515
+      }
+    }
+  },
+  "Cumbria": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 54.042331,
+        "north": 55.188938,
+        "west": -3.641552,
+        "east": -2.158398
       }
     }
   },
@@ -276,6 +298,17 @@
       }
     }
   },
+  "Herefordshire": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 51.825775,
+        "north": 52.395097,
+        "west": -3.141703,
+        "east": -2.337258
+      }
+    }
+  },
   "Hertfordshire": {
     "config": {
       "country": "UK",
@@ -284,6 +317,17 @@
         "north": 52.081618,
         "west": -0.748939,
         "east": 0.197257
+      }
+    }
+  },
+  "Kent": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 50.910225,
+        "north": 51.455694,
+        "west": 0.031844,
+        "east": 1.451841
       }
     }
   },
@@ -339,6 +383,17 @@
         "north": 53.705959,
         "west": -3.237463,
         "east": -2.578283
+      }
+    }
+  },
+  "Norfolk": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 52.354659,
+        "north": 52.989811,
+        "west": 0.153259,
+        "east": 1.746733
       }
     }
   },
@@ -438,6 +493,17 @@
         "north": 53.224606,
         "west": -2.471234,
         "east": -1.586088
+      }
+    }
+  },
+  "Suffolk": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 51.932131,
+        "north": 52.549311,
+        "west": 0.340461,
+        "east": 1.763123
       }
     }
   },

@@ -1,5 +1,9 @@
 <svg viewBox="0 0 458 35" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
-  <rect y="0" x="64" width="142" height="35" fill="#a3bff4" />
+  <rect y="0" x="45" width="161" height="35" fill="#a3bff4" />
+  <rect y="0" x="45" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="52" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="59" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="61" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="64" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="68" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="71" width="1" height="35" fill="#c8e3c2" />
