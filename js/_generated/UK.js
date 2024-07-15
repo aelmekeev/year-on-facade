@@ -211,7 +211,7 @@ const data = {
         "lat": 51.587047369099224,
         "lng": 0.6023481966184953
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1622": {
       "city": "Manchester",
@@ -1816,13 +1816,13 @@ const data = {
       "notes": "TODO"
     },
     "1802": {
-      "city": "South_Yorkshire",
-      "external": "1246706",
+      "city": "Essex",
+      "external": "",
       "latlng": {
-        "lat": 53.407659897336806,
-        "lng": -1.5124574939158622
+        "lat": 51.561277725333824,
+        "lng": 0.600576074555862
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1803": {
       "city": "South_Yorkshire",
@@ -3004,11 +3004,11 @@ const data = {
       "notes": ""
     },
     "1935": {
-      "city": "Hertfordshire",
+      "city": "Essex",
       "external": "",
       "latlng": {
-        "lat": 51.75048657941193,
-        "lng": -0.33744901262349536
+        "lat": 51.55932921419081,
+        "lng": 0.5970899938575127
       },
       "notes": ""
     },
