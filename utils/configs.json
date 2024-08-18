@@ -199,6 +199,17 @@
       }
     }
   },
+  "Cornwall": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 49.956738,
+        "north": 50.931358,
+        "west": -5.717016,
+        "east": -4.166044
+      }
+    }
+  },
   "Cumbria": {
     "config": {
       "country": "UK",

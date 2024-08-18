@@ -17,6 +17,22 @@ const data = {
     "city": "Northamptonshire"
   },
   "points": {
+    "1593": {
+      "latlng": {
+        "lat": 52.378580748499324,
+        "lng": -0.5433007067175213
+      },
+      "notes": "TODO",
+      "external": "1040321"
+    },
+    "1594": {
+      "latlng": {
+        "lat": 52.33125619087968,
+        "lng": -0.9014001643015509
+      },
+      "notes": "TODO",
+      "external": "1067636"
+    },
     "1608": {
       "latlng": {
         "lat": 52.30258913459104,

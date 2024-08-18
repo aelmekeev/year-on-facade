@@ -23,14 +23,95 @@ const data = {
       },
       "notes": ""
     },
-    "1593": {
-      "city": "Zurich",
-      "external": "",
+    "1586": {
+      "city": "Suffolk",
+      "external": "1292604",
       "latlng": {
-        "lat": 47.370885977351676,
-        "lng": 8.541129039372516
+        "lat": 52.48082967346413,
+        "lng": 1.755801162411629
       },
-      "notes": ""
+      "notes": "TODO"
+    },
+    "1587": {
+      "city": "Oxfordshire",
+      "external": "1053218",
+      "latlng": {
+        "lat": 51.87462679019858,
+        "lng": -1.4846783761227722
+      },
+      "notes": "TODO"
+    },
+    "1590": {
+      "city": "Essex",
+      "external": "1338242",
+      "latlng": {
+        "lat": 51.87922004189187,
+        "lng": 0.5517011000440238
+      },
+      "notes": "TODO"
+    },
+    "1592": {
+      "city": "Kent",
+      "external": "1069542",
+      "latlng": {
+        "lat": 51.27746919344422,
+        "lng": 1.3385027309759503
+      },
+      "notes": "TODO"
+    },
+    "1593": {
+      "city": "Kent",
+      "external": "1243345",
+      "latlng": {
+        "lat": 51.1550392524119,
+        "lng": 0.20072145725250426
+      },
+      "notes": "TODO"
+    },
+    "1594": {
+      "city": "Northamptonshire",
+      "external": "1067636",
+      "latlng": {
+        "lat": 52.33125619087968,
+        "lng": -0.9014001643015509
+      },
+      "notes": "TODO"
+    },
+    "1595": {
+      "city": "Cornwall",
+      "external": "1159427",
+      "latlng": {
+        "lat": 50.40775890105725,
+        "lng": -4.20620590890077
+      },
+      "notes": "TODO"
+    },
+    "1596": {
+      "city": "Warwickshire",
+      "external": "1298524",
+      "latlng": {
+        "lat": 52.1917554293496,
+        "lng": -1.7070671383375624
+      },
+      "notes": "TODO"
+    },
+    "1598": {
+      "city": "Somerset",
+      "external": "1058319",
+      "latlng": {
+        "lat": 51.24046232706327,
+        "lng": -2.3940850197640775
+      },
+      "notes": "TODO"
+    },
+    "1599": {
+      "city": "Dorset",
+      "external": "1323908",
+      "latlng": {
+        "lat": 50.95547779972133,
+        "lng": -2.574051982631976
+      },
+      "notes": "TODO"
     },
     "1600": {
       "city": "Herefordshire",
@@ -74,6 +155,15 @@ const data = {
       "latlng": {
         "lat": 52.390973234769675,
         "lng": -1.3122406763009749
+      },
+      "notes": "TODO"
+    },
+    "1605": {
+      "city": "Hertfordshire",
+      "external": "1078130",
+      "latlng": {
+        "lat": 51.76177167242635,
+        "lng": -0.5600800306260874
       },
       "notes": "TODO"
     },
@@ -371,6 +461,15 @@ const data = {
       "latlng": {
         "lat": 53.435704902915504,
         "lng": -1.9464921898728553
+      },
+      "notes": "TODO"
+    },
+    "1639": {
+      "city": "Suffolk",
+      "external": "1355165",
+      "latlng": {
+        "lat": 52.05318044842419,
+        "lng": 1.161563583338096
       },
       "notes": "TODO"
     },
@@ -1823,13 +1922,13 @@ const data = {
       "notes": "TODO"
     },
     "1802": {
-      "city": "Essex",
-      "external": "",
+      "city": "South_Yorkshire",
+      "external": "1246706",
       "latlng": {
-        "lat": 51.561277725333824,
-        "lng": 0.600576074555862
+        "lat": 53.407659897336806,
+        "lng": -1.5124574939158622
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1803": {
       "city": "South_Yorkshire",
@@ -3618,6 +3717,15 @@ const data = {
       }
     },
     "Cheshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Cornwall": {
       "config": {
         "country": "UK",
         "external": {

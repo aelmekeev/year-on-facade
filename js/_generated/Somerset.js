@@ -17,6 +17,14 @@ const data = {
     "city": "Somerset"
   },
   "points": {
+    "1598": {
+      "latlng": {
+        "lat": 51.24046232706327,
+        "lng": -2.3940850197640775
+      },
+      "notes": "TODO",
+      "external": "1058319"
+    },
     "1624": {
       "latlng": {
         "lat": 51.16221703050698,
