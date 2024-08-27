@@ -210,7 +210,7 @@ const data = {
         "lat": 51.27262956643476,
         "lng": 1.2150647912214991
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1621": {
       "city": "Essex",
@@ -824,13 +824,13 @@ const data = {
       "notes": "TODO"
     },
     "1691": {
-      "city": "Cheshire",
-      "external": "1105640",
+      "city": "Kent",
+      "external": "1085619",
       "latlng": {
-        "lat": 53.33366969188379,
-        "lng": -2.7394753793029225
+        "lat": 51.27961057924578,
+        "lng": 1.1819422191477025
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1692": {
       "city": "London",
@@ -1130,13 +1130,13 @@ const data = {
       "notes": ""
     },
     "1725": {
-      "city": "Surrey",
-      "external": "1242226",
+      "city": "Kent",
+      "external": "1051628",
       "latlng": {
-        "lat": 51.39262494867464,
-        "lng": -0.5045436671898346
+        "lat": 51.27615410765694,
+        "lng": 1.170241663356693
       },
-      "notes": "Retake the photo"
+      "notes": ""
     },
     "1726": {
       "city": "London",
@@ -1661,11 +1661,11 @@ const data = {
       "notes": ""
     },
     "1784": {
-      "city": "London",
-      "external": "1079547",
+      "city": "Kent",
+      "external": "1070125",
       "latlng": {
-        "lat": 51.62523735193381,
-        "lng": -0.062374855786708684
+        "lat": 51.275760270114404,
+        "lng": 1.2157341938253023
       },
       "notes": ""
     },
@@ -2817,11 +2817,11 @@ const data = {
       "notes": ""
     },
     "1914": {
-      "city": "East_Sussex",
+      "city": "Kent",
       "external": "",
       "latlng": {
-        "lat": 50.82096548106133,
-        "lng": -0.13455930638858804
+        "lat": 51.275955401840314,
+        "lng": 1.0855597043432672
       },
       "notes": ""
     },
@@ -3094,11 +3094,11 @@ const data = {
       "notes": ""
     },
     "1955": {
-      "city": "London",
-      "external": "1195534",
+      "city": "Kent",
+      "external": "",
       "latlng": {
-        "lat": 51.52658034298981,
-        "lng": -0.08810312220234778
+        "lat": 51.279387213941064,
+        "lng": 1.0861043838878168
       },
       "notes": ""
     },
