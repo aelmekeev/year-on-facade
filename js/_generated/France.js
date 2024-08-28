@@ -17,6 +17,7 @@ const data = {
   "points": {
     "1648": {
       "city": "Nice",
+      "external": "",
       "latlng": {
         "lat": 43.69804150842751,
         "lng": 7.2767927399627546
@@ -25,6 +26,7 @@ const data = {
     },
     "1869": {
       "city": "Nice",
+      "external": "",
       "latlng": {
         "lat": 43.70023806187411,
         "lng": 7.28534807075022
@@ -33,6 +35,7 @@ const data = {
     },
     "1877": {
       "city": "Menton",
+      "external": "",
       "latlng": {
         "lat": 43.774709532337496,
         "lng": 7.500799511495009
@@ -41,6 +44,7 @@ const data = {
     },
     "1882": {
       "city": "Nice",
+      "external": "",
       "latlng": {
         "lat": 43.69969094664279,
         "lng": 7.268437193756377
@@ -49,6 +53,7 @@ const data = {
     },
     "1897": {
       "city": "Nice",
+      "external": "",
       "latlng": {
         "lat": 43.70061135322727,
         "lng": 7.2714094262081455
@@ -57,6 +62,7 @@ const data = {
     },
     "1903": {
       "city": "Nice",
+      "external": "",
       "latlng": {
         "lat": 43.70742877886892,
         "lng": 7.2622871620867935
@@ -65,6 +71,7 @@ const data = {
     },
     "1909": {
       "city": "Menton",
+      "external": "",
       "latlng": {
         "lat": 43.77445080628653,
         "lng": 7.496384817131317
@@ -73,6 +80,7 @@ const data = {
     },
     "1913": {
       "city": "Menton",
+      "external": "",
       "latlng": {
         "lat": 43.77346610951384,
         "lng": 7.495096287558734
@@ -121,10 +129,11 @@ const data = {
       "config": {}
     },
     "Switzerland": {
-      "config": {},
-      "external": {
-        "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
-        "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+      "config": {
+        "external": {
+          "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+          "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+        }
       }
     },
     "Turkey": {
@@ -579,7 +588,10 @@ const data = {
     "Zurich": {
       "config": {
         "country": "Switzerland",
-        "external": null
+        "external": {
+          "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+          "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+        }
       }
     },
     "Istanbul": {
