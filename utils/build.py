@@ -10,6 +10,7 @@ site_config_file = 'config.json'
 config_file = 'utils/configs.json'
 output_dir = './js/_generated/'
 temp_json = './utils/temp.json.tmp'
+list_js = "./js/_generated/list.js"
 
 # Ensure output directories exist
 os.makedirs(output_dir, exist_ok=True)
@@ -119,17 +120,16 @@ def generate_fake_city(city):
     # Write to temporary city JSON file
     city_temp_json = f'./utils/{city}.json.tmp'
     with open(city_temp_json, 'w') as f:
-        json.dump({city: city_config}, f, indent=2)
+        json.dump(city_config, f, indent=2)
 
     # Write the final JavaScript file
     with open(os.path.join(output_dir, f'{city}.js'), 'w') as f:
         f.write(f'const data = {json.dumps(city_config, indent=2, ensure_ascii=False)}\n')
 
-# Generate world.js
+# Generate world.js TODO: can combine with country.js
 print("Generating world.js...")
 json_files = []
 for filepath in sorted(glob.glob(os.path.join(utils_dir, '*tmp')), key=os.path.getsize, reverse=True):
-    print(filepath)
     json_files.append(filepath)
 
 points = []
@@ -183,10 +183,44 @@ for directory in glob.glob(os.path.join(csv_dir, '*/')):
     # Generate the fake city file
     generate_fake_city(country)
 
+# Start writing to list.js
+with open(list_js, 'w') as f:
+    f.write("const data = [\n")
+
+    # Process each JSON.tmp file in the utils directory, except temp.json.tmp
+    for filename in sorted(glob.glob("utils/*.json.tmp")):
+        if 'temp.json.tmp' in filename:
+            continue
+
+        # Extract the base name (without the .json.tmp extension)
+        name = os.path.basename(filename).replace('.json.tmp', '')
+
+        # Load the JSON data
+        with open(filename, 'r') as json_file:
+            data = json.load(json_file)
+
+        # Extract required fields from the JSON data
+        country = data.get('config', {}).get('country', 'null')
+        points = data.get('points', {})
+        keys = list(points.keys())
+
+        # Extract minimum year and count of valid entries
+        min_year = min([key[:4] for key in keys]) if keys else None
+        count = sum(1 for key in keys if len(key) == 4)
+
+        # Write the data to the list.js file
+        f.write(f'  {{name: "{name}", country: "{country}", count: {count}, minYear: {min_year}}},\n')
+
+    # End the data array
+    f.write("]\n")
+
+print("list.js generated successfully.")
+
 # Cleanup temporary .json.tmp files
 temp_files = glob.glob('./utils/*.json.tmp')
 for temp_file in temp_files:
     try:
-        os.remove(temp_file)
+        print(f"Removing {temp_file}")
+        # os.remove(temp_file)
     except OSError as e:
         print(f"Error removing {temp_file}: {e}")
