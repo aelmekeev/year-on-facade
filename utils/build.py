@@ -1,6 +1,7 @@
 import os
 import glob
 import json
+import re
 import pandas as pd
 
 # Define paths
@@ -239,6 +240,46 @@ geoguesser_data = [
 with open(world_geoguesser_json_path, 'w') as f:
     json.dump(geoguesser_data, f, indent=2)
     f.write('\n')
+
+# Load the configuration from config.json
+with open('config.json', 'r') as config_file:
+    config = json.load(config_file)
+
+# Update the API key in ./map/index.html
+api_key = config.get('apiKey', '')
+
+# Read the content of ./map/index.html
+with open('./map/index.html', 'r') as f:
+    index_html_content = f.read()
+
+# Replace the API key using regex
+updated_index_html_content = re.sub(r'key=[^&]+', f'key={api_key}', index_html_content)
+
+# Write the updated content back to ./map/index.html
+with open('./map/index.html', 'w') as f:
+    f.write(updated_index_html_content)
+
+print("API key updated in ./map/index.html.")
+
+# Update the "what is this?" link in ./index.html
+wit_link = config.get('whatIsThisLink', '')
+
+# Read the content of ./index.html
+with open('./index.html', 'r') as f:
+    index_html_content = f.read()
+
+# Replace the "what is this?" link using regex
+updated_index_html_content = re.sub(
+    r'\"wit\" href=\"[^\"]+\"',
+    f'\"wit\" href=\"{wit_link}\"',
+    index_html_content
+)
+
+# Write the updated content back to ./index.html
+with open('./index.html', 'w') as f:
+    f.write(updated_index_html_content)
+
+print("\"What is this?\" link updated in ./index.html.")
 
 # Cleanup temporary .json.tmp files
 temp_files = glob.glob('./utils/*.json.tmp')
