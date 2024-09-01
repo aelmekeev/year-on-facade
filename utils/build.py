@@ -252,7 +252,7 @@ def generate_svg(filename, world_view):
     min_year = min(int(k[:4]) for k in keys) if keys else None
     current_year = datetime.now().year
     height = 35
-    width = current_year - min_year if min_year else 100  # Default to 100 if min_year is None
+    width = current_year - min_year if min_year else 2000  # Default to 100 if min_year is None
 
     svg_file = f"{img_dir}{svg_name}.svg"
 
