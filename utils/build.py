@@ -184,6 +184,7 @@ for directory in glob.glob(os.path.join(csv_dir, '*/')):
     generate_fake_city(country)
 
 # Start writing to list.js
+print("Generating list.js...")
 with open(list_js, 'w') as f:
     f.write("const data = [\n")
 
@@ -214,13 +215,35 @@ with open(list_js, 'w') as f:
     # End the data array
     f.write("]\n")
 
-print("list.js generated successfully.")
+# build geoguesser json
+print("Generating World_geogesser.json...")
+
+# Path to the input and output files
+world_js_path = "./js/_generated/World.js"
+world_geoguesser_json_path = "./js/_generated/World_geogesser.json"
+
+# Read the contents of World.js, removing the first 13 characters
+with open(world_js_path, 'r') as f:
+    content = f.read()[13:]  # Remove the first 13 characters
+
+# Parse the remaining content as JSON
+world_data = json.loads(content)
+
+# Extract the 'points' dictionary, map each entry to include latlng, heading, pitch, and zoom
+geoguesser_data = [
+    {**point['latlng'], 'heading': 0, 'pitch': 0, 'zoom': 1}
+    for point in world_data.get('points', {}).values()
+]
+
+# Write the resulting list to World_geogesser.json with an empty line at the end
+with open(world_geoguesser_json_path, 'w') as f:
+    json.dump(geoguesser_data, f, indent=2)
+    f.write('\n')
 
 # Cleanup temporary .json.tmp files
 temp_files = glob.glob('./utils/*.json.tmp')
 for temp_file in temp_files:
     try:
-        print(f"Removing {temp_file}")
-        # os.remove(temp_file)
+        os.remove(temp_file)
     except OSError as e:
         print(f"Error removing {temp_file}: {e}")
