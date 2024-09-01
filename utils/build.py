@@ -2,6 +2,7 @@ import os
 import glob
 import json
 import re
+from datetime import datetime
 import pandas as pd
 
 # Define paths
@@ -215,6 +216,75 @@ with open(list_js, 'w') as f:
 
     # End the data array
     f.write("]\n")
+
+# Define paths
+utils_dir = './utils/'
+img_dir = './img/_generated/'
+os.makedirs(img_dir, exist_ok=True)
+
+def generate_svg(filename, world_view):
+    city = os.path.basename(filename).replace('.json.tmp', '')
+    
+    with open(filename, 'r') as f:
+        city_data = json.load(f)
+
+    country = city_data.get('config', {}).get('country', None)
+    
+    if country:
+        key = country
+    else:
+        key = city
+    
+    if world_view:
+        svg_name = city
+        key = "World"
+    else:
+        svg_name = f"country_{city}"
+
+    print(f"Generating {svg_name}.svg...")
+
+    with open(f"{utils_dir}{key}.json.tmp", 'r') as f:
+        key_data = json.load(f)
+
+    points = key_data.get('points', {})
+    keys = list(points.keys())
+
+    min_year = min(int(k[:4]) for k in keys) if keys else None
+    current_year = datetime.now().year
+    height = 35
+    width = current_year - min_year if min_year else 100  # Default to 100 if min_year is None
+
+    svg_file = f"{img_dir}{svg_name}.svg"
+
+    with open(svg_file, 'w') as f:
+        f.write(f'<svg viewBox="0 0 {width} {height}" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">\n')
+
+        # Draw background range
+        city_points = city_data.get('points', {})
+        city_keys = list(city_points.keys())
+
+        if city_keys:
+            first_year = int(city_keys[0][:4])
+            last_year = int(city_keys[-1][:4])
+            background_width = last_year - first_year + 1
+            background_start = first_year - min_year
+
+            f.write(f'  <rect y="0" x="{background_start}" width="{background_width}" height="{height}" fill="#a3bff4" />\n')
+
+            # Draw each year's rectangle
+            for year in city_keys:
+                if len(year) == 4:
+                    rect_start = int(year) - min_year
+                    f.write(f'  <rect y="0" x="{rect_start}" width="1" height="{height}" fill="#c8e3c2" />\n')
+
+        f.write('</svg>\n')
+
+
+# Generate SVGs for each city
+for filename in glob.glob(f"{utils_dir}*.json.tmp"):
+    if 'temp.json.tmp' not in filename:
+        generate_svg(filename, True)  # World view
+        generate_svg(filename, False) # Country view
 
 # build geoguesser json
 print("Generating World_geogesser.json...")
