@@ -5,6 +5,7 @@ import pandas as pd
 
 # Define paths
 csv_dir = './csv/'
+utils_dir = './utils/'
 site_config_file = 'config.json'
 config_file = 'utils/configs.json'
 output_dir = './js/_generated/'
@@ -124,6 +125,31 @@ def generate_fake_city(city):
     with open(os.path.join(output_dir, f'{city}.js'), 'w') as f:
         f.write(f'const data = {json.dumps(city_config, indent=2, ensure_ascii=False)}\n')
 
+# Generate world.js
+print("Generating world.js...")
+json_files = []
+for filepath in sorted(glob.glob(os.path.join(utils_dir, '*tmp')), key=os.path.getsize, reverse=True):
+    print(filepath)
+    json_files.append(filepath)
+
+points = []
+for json_file in json_files:
+    with open(json_file) as f:
+        data = json.load(f)
+        city = data.get('config', {}).get('city')
+        if city and 'points' in data:
+            for point_key, point_value in data['points'].items():
+                point_value['city'] = city
+                points.append({point_key: point_value})
+
+# Combine all points and create the world JSON
+combined_points = {k: v for point in points for k, v in point.items()}
+world_data = {"points": combined_points}
+
+with open(temp_json, 'w') as f:
+    json.dump(world_data, f, indent=2, sort_keys=True)
+
+generate_fake_city('World')
 
 # Generate <country>.js
 for directory in glob.glob(os.path.join(csv_dir, '*/')):
@@ -156,7 +182,6 @@ for directory in glob.glob(os.path.join(csv_dir, '*/')):
 
     # Generate the fake city file
     generate_fake_city(country)
-
 
 # Cleanup temporary .json.tmp files
 temp_files = glob.glob('./utils/*.json.tmp')
