@@ -9,6 +9,7 @@ build:
 
 build-python:
 	python ./utils/build.py
+	python ./utils/validate.py
 
 t-init:
 	aws-vault exec year-on-facade -- terraform -chdir=iaac init -backend-config=../config.properties
