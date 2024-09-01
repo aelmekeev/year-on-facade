@@ -15,7 +15,6 @@ img_dir = './img/_generated/'
 site_config_file = 'config.json'
 config_file = 'utils/configs.json'
 output_dir = './js/_generated/'
-temp_json = './utils/temp.json.tmp'
 list_js = "./js/_generated/list.js"
 
 
@@ -24,7 +23,7 @@ def generate_cities_js_files(site_configs, configs):
   del site_configs["apiKey"] # TODO: remove me after api key is removed from config.json
 
   # Process each CSV file
-  for filepath in glob.glob(os.path.join(csv_dir, '**/*.csv'), recursive=True):
+  for filepath in glob.glob(os.path.join(csv_dir, '**/*.csv')):
       city = os.path.basename(filepath).replace('.csv', '')
 
       logging.info(f"Generating {city}.js...")
@@ -45,67 +44,44 @@ def generate_cities_js_files(site_configs, configs):
           filehandle.seek(-1, os.SEEK_END)
           filehandle.truncate()
 
-      # Generate temporary JSON files for each city
-      # check if column external exists in df
+      # generate data points
       data_list = df.to_dict(orient='records')
       points = {}
-
       for record in data_list:
           point_data = {
               "latlng": {"lat": float(record["latitude"]), "lng": float(record["longitude"])},
               "notes": record.get("notes", "")
           }
-
           # Conditionally add 'external' only if it exists in the record
           if "external" in record:
               point_data["external"] = str(record["external"])
 
           points[record["year"]] = point_data
 
-      city_data = {city: {"points": points}}
-      with open(temp_json, 'w') as f:
-          json.dump(city_data, f, indent=2)
-
-      # Process and merge JSON data
-      with open(config_file) as f:
-          global_configs = json.load(f)
-
       country = configs[city]["config"]["country"]
       country_external = configs.get(country, {}).get("config", {}).get("external", None)
 
-      with open(temp_json) as f:
-          city_data = json.load(f)
-
-      # Merging configurations
+      # build an object
       city_config = {}
       city_config["config"] = {}
-      city_config["config"].update(global_configs[city]["config"])
+      city_config["config"].update(configs[city]["config"])
       if country_external:
           city_config["config"]["external"] = country_external
       city_config["config"].update(site_configs)
       city_config["config"]["city"] = city
-      city_config["points"] = city_data[city]["points"]
+      city_config["points"] = points
 
-      # Write to temporary city JSON file
-      city_temp_json = f'./utils/{city}.json.tmp'
-      with open(city_temp_json, 'w') as f:
-          json.dump(city_config, f, indent=2)
-
-      # Write the final JavaScript file
       with open(os.path.join(output_dir, f'{city}.js'), 'w') as f:
           f.write(f'const data = {json.dumps(city_config, indent=2, ensure_ascii=False)}\n')
 
 
-def generate_fake_city(site_configs, city):
+def generate_fake_city(site_configs, name, data):
     with open(config_file) as f:
         global_configs = json.load(f)
-
-    with open(temp_json) as f:
-        data = json.load(f)
-
+        
     city_config = {}
     # Merge global configs with city-specific configs
-    city_config['config'] = global_configs[city]['config'].copy()
+    city_config['config'] = global_configs[name]['config'].copy()
     # add site_config_file to city_config['config']
     city_config['config'].update(site_configs)
     city_config['points'] = data['points']
@@ -118,73 +94,66 @@ def generate_fake_city(site_configs, city):
           country = city_config['citiesConfig'][key]['config']['country']
           city_config['citiesConfig'][key]['config']['external'] = global_configs[country]['config'].get('external', None)
 
-    # Write to temporary city JSON file
-    city_temp_json = f'./utils/{city}.json.tmp'
-    with open(city_temp_json, 'w') as f:
-        json.dump(city_config, f, indent=2)
-
     # Write the final JavaScript file
-    with open(os.path.join(output_dir, f'{city}.js'), 'w') as f:
+    with open(os.path.join(output_dir, f'{name}.js'), 'w') as f:
         f.write(f'const data = {json.dumps(city_config, indent=2, ensure_ascii=False)}\n')
 
 
-def generate_countries_js_files(site_configs, configs):
+def generate_countries_js_files(site_configs):
   for directory in glob.glob(os.path.join(csv_dir, '*/')):
       country = os.path.basename(os.path.dirname(directory))
       logging.info(f"Generating {country}.js...")
 
-      # List all the files and process them
-      json_files = []
+      js_files = []
       for filepath in sorted(glob.glob(os.path.join(directory, '*')), key=os.path.getsize, reverse=True):
-          json_temp_file = filepath.replace(f'csv/{country}', 'utils').replace('.csv', '.json.tmp')
-          json_files.append(json_temp_file)
+          js_file = filepath.replace(f'csv/{country}', output_dir).replace('.csv', '.js')
+          js_files.append(js_file)
 
       points = []
-      for json_file in json_files:
-          with open(json_file) as f:
-              data = json.load(f)
+      for js_file in js_files:
+          with open(js_file) as f:
+              content = f.read()[13:]
+              data = json.loads(content)
               city = data.get('config', {}).get('city')
               if city and 'points' in data:
                   for point_key, point_value in data['points'].items():
                       point_value['city'] = city
+                      point_value = {k: point_value[k] for k in sorted(point_value)}
                       points.append({point_key: point_value})
+              points = sorted(points, key=lambda x: list(x.keys())[0])
 
       # Combine all points and create the country-specific JSON
       combined_points = {k: v for point in points for k, v in point.items()}
       country_data = {"points": combined_points}
 
-      # Write temporary JSON to file
-      with open(temp_json, 'w') as f:
-          json.dump(country_data, f, indent=2, sort_keys=True)
-
       # Generate the fake city file
-      generate_fake_city(site_configs, country)
+      generate_fake_city(site_configs, country, country_data)
 
 
 def generate_world_js_file(site_configs, configs):
   logging.info("Generating world.js...")
-  json_files = []
-  for filepath in sorted(glob.glob(os.path.join(utils_dir, '*tmp')), key=os.path.getsize, reverse=True):
-      json_files.append(filepath)
+  js_files = []
+  for filepath in sorted(glob.glob(os.path.join(output_dir, '*js')), key=os.path.getsize, reverse=True):
+      js_files.append(filepath)
 
   points = []
-  for json_file in json_files:
-      with open(json_file) as f:
-          data = json.load(f)
+  for js_file in js_files:
+      with open(js_file) as f:
+          content = f.read()[13:]
+          data = json.loads(content)
           city = data.get('config', {}).get('city')
           if city and 'points' in data:
               for point_key, point_value in data['points'].items():
                   point_value['city'] = city
+                  point_value = {k: point_value[k] for k in sorted(point_value)}
                   points.append({point_key: point_value})
+          points = sorted(points, key=lambda x: list(x.keys())[0])
 
   # Combine all points and create the world JSON
   combined_points = {k: v for point in points for k, v in point.items()}
   world_data = {"points": combined_points}
 
-  with open(temp_json, 'w') as f:
-      json.dump(world_data, f, indent=2, sort_keys=True)
-
-  generate_fake_city(site_configs, 'World')
+  generate_fake_city(site_configs, 'World', world_data)
 
 
 def generate_list_js_file():
@@ -193,17 +162,17 @@ def generate_list_js_file():
   with open(list_js, 'w') as f:
       f.write("const data = [\n")
 
-      # Process each JSON.tmp file in the utils directory, except temp.json.tmp
-      for filename in sorted(glob.glob("utils/*.json.tmp")):
-          if 'temp.json.tmp' in filename:
-              continue
-
-          # Extract the base name (without the .json.tmp extension)
-          name = os.path.basename(filename).replace('.json.tmp', '')
+      for filename in sorted(glob.glob(os.path.join(output_dir, '*js'))):
+          # Extract the base name (without the .js extension)
+          name = os.path.basename(filename).replace('.js', '')
+          
+          if name == 'list':
+            continue
 
           # Load the JSON data
-          with open(filename, 'r') as json_file:
-              data = json.load(json_file)
+          with open(filename, 'r') as js_file:
+              content = js_file.read()[13:]
+              data = json.loads(content)
 
           # Extract required fields from the JSON data
           country = data.get('config', {}).get('country', 'null')
@@ -222,10 +191,11 @@ def generate_list_js_file():
 
 
 def generate_svg(filename, world_view):
-    city = os.path.basename(filename).replace('.json.tmp', '')
+    city = os.path.basename(filename).replace('.js', '')
     
     with open(filename, 'r') as f:
-        city_data = json.load(f)
+        content = f.read()[13:]
+        city_data = json.loads(content)
 
     country = city_data.get('config', {}).get('country', None)
     
@@ -242,8 +212,9 @@ def generate_svg(filename, world_view):
 
     logging.info(f"Generating {svg_name}.svg...")
 
-    with open(f"{utils_dir}{key}.json.tmp", 'r') as f:
-        key_data = json.load(f)
+    with open(f"{output_dir}{key}.js", 'r') as f:
+        content = f.read()[13:]
+        key_data = json.loads(content)
 
     points = key_data.get('points', {})
     keys = list(points.keys())
@@ -306,25 +277,24 @@ def generate_geoguesser_json():
       f.write('\n')
 
 
-# Cleanup temporary .json.tmp files
+# Remove all generated files
 def cleanup():
-  temp_files = glob.glob('./utils/*.json.tmp')
-  for temp_file in temp_files:
-      try:
-          os.remove(temp_file)
-      except OSError as e:
-          logging.info(f"Error removing {temp_file}: {e}")
+  for file in glob.glob(f"{output_dir}*.js"):
+      os.remove(file)
+  for file in glob.glob(f"{img_dir}*.svg"):
+      os.remove(file)
 
 
 def main():
   with open(site_config_file) as f:
     site_configs = json.load(f)
-
   with open(config_file) as f:
     configs = json.load(f)
     
+  cleanup()
+    
   generate_cities_js_files(site_configs, configs)
-  generate_countries_js_files(site_configs, configs)
+  generate_countries_js_files(site_configs)
   generate_world_js_file(site_configs, configs)
   
   generate_list_js_file()
@@ -332,13 +302,10 @@ def main():
   generate_geoguesser_json()
   
   # Generate SVGs for each city
-  for filename in glob.glob(f"{utils_dir}*.json.tmp"): # TODO do not rely on tmp files here
-      if 'temp.json.tmp' not in filename:
+  for filename in sorted(glob.glob(os.path.join(output_dir, '*js'))):
+      if 'list.js' not in filename:
           generate_svg(filename, True)  # World view
           generate_svg(filename, False) # Country view
-  
-  cleanup()
-
 
 if __name__ == "__main__":
     main()
