@@ -87,11 +87,76 @@ for filepath in glob.glob(os.path.join(csv_dir, '**/*.csv'), recursive=True):
     # Write to temporary city JSON file
     city_temp_json = f'./utils/{city}.json.tmp'
     with open(city_temp_json, 'w') as f:
+        json.dump(city_config, f, indent=2)
+
+    # Write the final JavaScript file
+    with open(os.path.join(output_dir, f'{city}.js'), 'w') as f:
+        f.write(f'const data = {json.dumps(city_config, indent=2, ensure_ascii=False)}\n')
+
+
+def generate_fake_city(city):
+    with open(config_file) as f:
+        global_configs = json.load(f)
+
+    with open(temp_json) as f:
+        data = json.load(f)
+
+    # Merge global configs with city-specific configs
+    city_config['config'] = global_configs[city]['config'].copy()
+    # add site_config_file to city_config['config']
+    city_config['config'].update(site_configs)
+    city_config['points'] = data['points']
+    city_config['citiesConfig'] = global_configs
+
+    for key in city_config['citiesConfig'].keys():
+      if 'borders' in city_config['citiesConfig'][key]['config']:
+          del city_config['citiesConfig'][key]['config']['borders']
+      if 'country' in city_config['citiesConfig'][key]['config']:
+          country = city_config['citiesConfig'][key]['config']['country']
+          city_config['citiesConfig'][key]['config']['external'] = global_configs[country]['config'].get('external', None)
+
+    # Write to temporary city JSON file
+    city_temp_json = f'./utils/{city}.json.tmp'
+    with open(city_temp_json, 'w') as f:
         json.dump({city: city_config}, f, indent=2)
 
     # Write the final JavaScript file
     with open(os.path.join(output_dir, f'{city}.js'), 'w') as f:
         f.write(f'const data = {json.dumps(city_config, indent=2, ensure_ascii=False)}\n')
+
+
+# Generate <country>.js
+for directory in glob.glob(os.path.join(csv_dir, '*/')):
+    country = os.path.basename(os.path.dirname(directory))
+    print(f"Generating {country}.js...")
+
+    # List all the files and process them
+    json_files = []
+    for filepath in sorted(glob.glob(os.path.join(directory, '*')), key=os.path.getsize, reverse=True):
+        json_temp_file = filepath.replace(f'csv/{country}', 'utils').replace('.csv', '.json.tmp')
+        json_files.append(json_temp_file)
+
+    points = []
+    for json_file in json_files:
+        with open(json_file) as f:
+            data = json.load(f)
+            city = data.get('config', {}).get('city')
+            if city and 'points' in data:
+                for point_key, point_value in data['points'].items():
+                    point_value['city'] = city
+                    points.append({point_key: point_value})
+
+    # Combine all points and create the country-specific JSON
+    combined_points = {k: v for point in points for k, v in point.items()}
+    country_data = {"points": combined_points}
+
+    # Write temporary JSON to file
+    with open(temp_json, 'w') as f:
+        json.dump(country_data, f, indent=2, sort_keys=True)
+
+    # Generate the fake city file
+    generate_fake_city(country)
+
 
 # Cleanup temporary .json.tmp files
 temp_files = glob.glob('./utils/*.json.tmp')
