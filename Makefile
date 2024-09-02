@@ -1,9 +1,8 @@
-validate:
-	./utils/validate.sh
+.PHONY: build t-init t-plan t-apply photos-upload show-stats
 
 build:
-	./utils/validate.sh
-	./utils/build.sh
+	python ./utils/build.py
+	python ./utils/validate.py
 
 t-init:
 	aws-vault exec year-on-facade -- terraform -chdir=iaac init -backend-config=../config.properties

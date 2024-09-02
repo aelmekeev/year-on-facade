@@ -6,13 +6,13 @@ const data = {
       "west": 5.949322,
       "east": 10.492168
     },
+    "external": {
+      "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+      "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+    },
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "whatIsThisLink": "./what-is-this"
-  },
-  "external": {
-    "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
-    "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
   },
   "points": {
     "1566": {
@@ -102,10 +102,11 @@ const data = {
       "config": {}
     },
     "Switzerland": {
-      "config": {},
-      "external": {
-        "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
-        "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+      "config": {
+        "external": {
+          "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+          "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+        }
       }
     },
     "Turkey": {
@@ -560,7 +561,10 @@ const data = {
     "Zurich": {
       "config": {
         "country": "Switzerland",
-        "external": null
+        "external": {
+          "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+          "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+        }
       }
     },
     "Istanbul": {
