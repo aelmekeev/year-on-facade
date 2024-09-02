@@ -23,9 +23,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r utils/requirements.txt
       - name: Run build
-        run: make build-python
+        run: make build
       - name: Commit changes
         run: |
           git config --global user.name 'Aleksandr Elmekeev'
           git config --global user.email 'donamok@gmail.com'
-          git diff --exit-code || git commit -am "make build-python" && git push
+          git diff --exit-code || git commit -am "make build" && git push
