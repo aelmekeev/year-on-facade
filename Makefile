@@ -1,13 +1,6 @@
-.PHONY: help validate buil build-python t-init t-plan t-apply photos-upload show-stats
-
-validate:
-	./utils/validate.sh
+.PHONY: build t-init t-plan t-apply photos-upload show-stats
 
 build:
-	./utils/validate.sh
-	./utils/build.sh
-
-build-python:
 	python ./utils/build.py
 	python ./utils/validate.py
 

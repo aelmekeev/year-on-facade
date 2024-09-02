@@ -24,7 +24,7 @@ To contribute to this collection simply raise a pull request with a change in th
 > **Note**
 > Please use web UI of Google Maps to keep coordinates precision consistent.
 
-If you want to you can also run `make build` and `make validate` locally if you have `jq` installed, otherwise they will be executed as part of pull request pipelines.
+If you want to you can also run `make build` locally if you have `python` installed, otherwise they will be executed as part of pull request pipelines.
 
 Photos are managed locally by the maintainer of the collection with the help of `make photos`.
 
