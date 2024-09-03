@@ -9,11 +9,11 @@ import pandas as pd
 logging.basicConfig(level=logging.INFO, format="%(levelname)s - %(message)s")
 
 # Define paths
-csv_dir = "./csv/"
-site_config_file = "config.json"
-config_file = "utils/configs.json"
-img_output_dir = "./img/_generated/"
-js_output_dir = "./js/_generated/"
+csv_dir = "csv"
+site_config_file = "site-config.json"
+config_file = os.path.join("utils", "configs.json")
+img_output_dir = os.path.join("img", "_generated")
+js_output_dir = os.path.join("js", "_generated")
 
 js_file_prefix = "const data = "
 current_year = datetime.now().year
@@ -28,10 +28,8 @@ def generate_cities_js_files(site_configs):
     with open(config_file) as f:
         configs = json.load(f)
 
-    del site_configs["apiKey"]  # TODO: remove me after api key is removed from config.json
-
     # Process each CSV file
-    for filepath in glob.glob(os.path.join(csv_dir, "**/*.csv")):
+    for filepath in glob.glob(os.path.join(csv_dir, "**", "*.csv")):
         city = os.path.basename(filepath).replace(".csv", "")
 
         logging.info(f"Generating {city}.js...")
@@ -237,9 +235,9 @@ def generate_geoguesser_json():
 
 # Remove all generated files
 def cleanup():
-    for file in glob.glob(f"{js_output_dir}*.js"):
+    for file in glob.glob(os.path.join(js_output_dir, "*.js")):
         os.remove(file)
-    for file in glob.glob(f"{img_output_dir}*.svg"):
+    for file in glob.glob(os.path.join(img_output_dir, "*.svg")):
         os.remove(file)
 
 
