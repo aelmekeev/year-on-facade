@@ -114,14 +114,15 @@ def generate_js_file(site_configs, name, points):
     # add site_config_file to city_config['config']
     city_config["config"].update(site_configs)
     city_config["points"] = points
-    city_config["citiesConfig"] = global_configs
 
-    for key in city_config["citiesConfig"].keys():
-        if "borders" in city_config["citiesConfig"][key]["config"]:
-            del city_config["citiesConfig"][key]["config"]["borders"]
-        if "country" in city_config["citiesConfig"][key]["config"]:
-            country = city_config["citiesConfig"][key]["config"]["country"]
-            city_config["citiesConfig"][key]["config"]["external"] = global_configs[country]["config"].get("external", None)
+    if name == "World":
+        city_config["citiesConfig"] = global_configs
+        for key in city_config["citiesConfig"].keys():
+            if "borders" in city_config["citiesConfig"][key]["config"]:
+                del city_config["citiesConfig"][key]["config"]["borders"]
+            if "country" in city_config["citiesConfig"][key]["config"]:
+                country = city_config["citiesConfig"][key]["config"]["country"]
+                city_config["citiesConfig"][key]["config"]["external"] = global_configs[country]["config"].get("external", None)
 
     # Write the final JavaScript file
     with open(os.path.join(js_output_dir, f"{name}.js"), "w") as f:
