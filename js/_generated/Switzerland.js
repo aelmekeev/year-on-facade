@@ -11,8 +11,7 @@ const data = {
       "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
     },
     "useInternalMap": true,
-    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
-    "whatIsThisLink": "./what-is-this"
+    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web"
   },
   "points": {
     "1566": {

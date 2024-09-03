@@ -1,8 +1,7 @@
 const data = {
   "config": {
     "useInternalMap": true,
-    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
-    "whatIsThisLink": "./what-is-this"
+    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web"
   },
   "points": {
     "1566": {
