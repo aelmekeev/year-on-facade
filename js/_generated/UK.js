@@ -78,13 +78,13 @@ const data = {
       "notes": "TODO"
     },
     "1607": {
-      "city": "West_Sussex",
-      "external": "1026225",
+      "city": "London",
+      "external": "1218593",
       "latlng": {
-        "lat": 50.784882300518056,
-        "lng": -0.7903458886897798
+        "lat": 51.48068758027714,
+        "lng": 0.037021553277171264
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1608": {
       "city": "Northamptonshire",
@@ -276,13 +276,13 @@ const data = {
       "notes": "TODO"
     },
     "1629": {
-      "city": "Leicestershire",
-      "external": "1361305",
+      "city": "London",
+      "external": "1080160",
       "latlng": {
-        "lat": 52.599447959669945,
-        "lng": -1.4298587899693478
+        "lat": 51.535080908278466,
+        "lng": -0.46018471798074584
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1630": {
       "city": "West_Yorkshire",
@@ -510,13 +510,13 @@ const data = {
       "notes": "TODO"
     },
     "1657": {
-      "city": "Northumberland",
-      "external": "1042573",
+      "city": "Kent",
+      "external": "1097019",
       "latlng": {
-        "lat": 54.97376724018444,
-        "lng": -2.1054898443407786
+        "lat": 51.277420295357494,
+        "lng": 1.0921518476022438
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1658": {
       "city": "London",
@@ -1005,13 +1005,13 @@ const data = {
       "notes": "TODO"
     },
     "1712": {
-      "city": "West_Midlands",
-      "external": "1342898",
+      "city": "East_Sussex",
+      "external": "",
       "latlng": {
-        "lat": 52.42286605677296,
-        "lng": -1.5587983887534522
+        "lat": 50.80429318184203,
+        "lng": -0.05772031169200133
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1713": {
       "city": "London",
@@ -1077,13 +1077,13 @@ const data = {
       "notes": ""
     },
     "1720": {
-      "city": "West_Sussex",
-      "external": "1026295",
+      "city": "London",
+      "external": "1113150",
       "latlng": {
-        "lat": 50.83928536449385,
-        "lng": -0.7420157996039726
+        "lat": 51.523352202126304,
+        "lng": -0.11240423729628167
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1721": {
       "city": "London",
@@ -1194,13 +1194,13 @@ const data = {
       "notes": ""
     },
     "1733": {
-      "city": "Merseyside",
-      "external": "1075920",
+      "city": "Kent",
+      "external": "1085566",
       "latlng": {
-        "lat": 53.48965187258543,
-        "lng": -2.7220092146981862
+        "lat": 51.27515051448413,
+        "lng": 1.1678365825426007
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1734": {
       "city": "London",
@@ -1230,13 +1230,13 @@ const data = {
       "notes": ""
     },
     "1737": {
-      "city": "West_Yorkshire",
-      "external": "1232391",
+      "city": "Oxfordshire",
+      "external": "1052838",
       "latlng": {
-        "lat": 53.67607475196065,
-        "lng": -1.9292026774356457
+        "lat": 51.8511885059823,
+        "lng": -1.3605660240345467
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1738": {
       "city": "Wiltshire",
@@ -1257,13 +1257,13 @@ const data = {
       "notes": "TODO"
     },
     "1740": {
-      "city": "Merseyside",
-      "external": "1242795",
+      "city": "Oxfordshire",
+      "external": "1053125",
       "latlng": {
-        "lat": 53.37219895556583,
-        "lng": -3.135980665917508
+        "lat": 51.84224058831118,
+        "lng": -1.4802249387745492
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1741": {
       "city": "Cambridgeshire",
@@ -1347,13 +1347,13 @@ const data = {
       "notes": "TODO"
     },
     "1750": {
-      "city": "Leicestershire",
-      "external": "1235737",
+      "city": "East_Sussex",
+      "external": "1381637",
       "latlng": {
-        "lat": 52.76555688732329,
-        "lng": -0.8876054928122231
+        "lat": 50.82007634371007,
+        "lng": -0.14005783664672825
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1751": {
       "city": "Oxfordshire",
@@ -1419,13 +1419,13 @@ const data = {
       "notes": "TODO"
     },
     "1758": {
-      "city": "West_Sussex",
-      "external": "1234661",
+      "city": "Kent",
+      "external": "1281636",
       "latlng": {
-        "lat": 50.86157638530915,
-        "lng": -0.9263605847550551
+        "lat": 51.27410241042255,
+        "lng": 1.215212565167261
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1759": {
       "city": "Manchester",
@@ -1599,13 +1599,13 @@ const data = {
       "notes": "TODO"
     },
     "1778": {
-      "city": "Lancashire",
-      "external": "1361824",
+      "city": "Oxfordshire",
+      "external": "1220320",
       "latlng": {
-        "lat": 53.67926954244122,
-        "lng": -2.8327116139825246
+        "lat": 51.82911767469155,
+        "lng": -1.280395481866526
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1779": {
       "city": "Northamptonshire",
@@ -2130,13 +2130,13 @@ const data = {
       "notes": ""
     },
     "1837": {
-      "city": "Somerset",
-      "external": "1395598",
+      "city": "London",
+      "external": "",
       "latlng": {
-        "lat": 51.39061686984914,
-        "lng": -2.3553570223670324
+        "lat": 51.44366704084219,
+        "lng": 0.15142619646932207
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1838": {
       "city": "Cambridgeshire",

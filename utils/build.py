@@ -86,9 +86,26 @@ def read_js_file(js_file):
     return data
 
 
+# Decide which point to keep
+def choose_point(points):
+    chosen_point = points[0]
+    for point in points:
+        # return first visited external point
+        if "external" in point and point["notes"] != "TODO":
+            chosen_point = point
+            break
+        # prefer visited
+        elif point["notes"] != "TODO" and chosen_point["notes"] == "TODO":
+            chosen_point = point
+        # prefer external
+        elif "external" in point and "external" not in chosen_point:
+            chosen_point = point
+    return chosen_point
+
+
 # Extract points from a set of js files
 def extract_points_from_js_files(js_files):
-    points = []
+    points = {}
     for js_file in js_files:
         data = read_js_file(js_file)
         city = data.get("config", {}).get("city")
@@ -96,11 +113,16 @@ def extract_points_from_js_files(js_files):
             for point_key, point_value in data["points"].items():
                 point_value["city"] = city
                 point_value = {k: point_value[k] for k in sorted(point_value)}
-                points.append({point_key: point_value})
-        points = sorted(points, key=lambda x: list(x.keys())[0])
+                if point_key not in points:
+                    points[point_key] = [point_value]
+                else:
+                    points[point_key].append(point_value)
 
-    combined_points = {k: v for point in points for k, v in point.items()}
-    return combined_points
+    combined_points = {}
+    for year, points in points.items():
+        combined_points[year] = choose_point(points)
+
+    return {k: combined_points[k] for k in sorted(combined_points)}
 
 
 # Generate json file with the name from the points provided
@@ -136,7 +158,7 @@ def generate_countries_js_files(site_configs):
         logging.info(f"Generating {country}.js...")
 
         js_files = []
-        for filepath in sorted(glob.glob(os.path.join(directory, "*")), key=os.path.getsize, reverse=True):
+        for filepath in sorted(glob.glob(os.path.join(directory, "*")), key=os.path.getsize):
             city = os.path.basename(filepath).replace(".csv", "")
             js_files.append(os.path.join(js_output_dir, f"{city}.js"))
 
@@ -148,7 +170,7 @@ def generate_countries_js_files(site_configs):
 def generate_world_js_file(site_configs):
     logging.info("Generating world.js...")
     js_files = []
-    for filepath in sorted(glob.glob(os.path.join(js_output_dir, "*js")), key=os.path.getsize, reverse=True):
+    for filepath in sorted(glob.glob(os.path.join(js_output_dir, "*js")), key=os.path.getsize):
         js_files.append(filepath)
 
     points = extract_points_from_js_files(js_files)
