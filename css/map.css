@@ -29,3 +29,25 @@ body {
   padding-left: 7px;
   padding-right: 7px;
 }
+
+.year-marker {
+  background-color: #ec4242;
+  border-radius: 25px 25px 25px 25px;
+  color: #FFFFFF;
+  font-size: 9px;
+  padding: 10px 5px;
+  position: relative;
+}
+
+.year-marker::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 94%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #ec4242;
+}
