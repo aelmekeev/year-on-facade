@@ -87,7 +87,7 @@ function initMap() {
     restriction: data.config.borders ? {
       latLngBounds: data.config.borders,
     } : null,
-    mapId: '58733f12c8d8eb66'
+    mapId: '58733f12c8d8eb66' // https://console.cloud.google.com/google/maps-apis/studio/maps?project=year-on-facade
   })
 
   setCenter(map, year)
