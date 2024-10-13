@@ -87,11 +87,15 @@ def read_js_file(js_file):
 
 
 # Decide which point to keep
-def choose_point(points):
+def choose_point(points, prioritize_world=False):
     chosen_point = points[0]
     for point in points:
+        # return first non-UK point
+        if prioritize_world and point["country"] != "UK":
+            chosen_point = point
+            break
         # return first visited external point
-        if "external" in point and point["notes"] != "TODO":
+        elif "external" in point and point["notes"] != "TODO":
             chosen_point = point
             break
         # prefer visited
@@ -100,18 +104,21 @@ def choose_point(points):
         # prefer external
         elif "external" in point and "external" not in chosen_point:
             chosen_point = point
+    del chosen_point["country"]
     return chosen_point
 
 
 # Extract points from a set of js files
-def extract_points_from_js_files(js_files):
+def extract_points_from_js_files(js_files, prioritize_world=False):
     points = {}
     for js_file in js_files:
         data = read_js_file(js_file)
+        country = data.get("config", {}).get("country")
         city = data.get("config", {}).get("city")
         if city and "points" in data:
             for point_key, point_value in data["points"].items():
                 point_value["city"] = city
+                point_value["country"] = country
                 point_value = {k: point_value[k] for k in sorted(point_value)}
                 if point_key not in points:
                     points[point_key] = [point_value]
@@ -120,7 +127,7 @@ def extract_points_from_js_files(js_files):
 
     combined_points = {}
     for year, points in points.items():
-        combined_points[year] = choose_point(points)
+        combined_points[year] = choose_point(points, prioritize_world)
 
     return {k: combined_points[k] for k in sorted(combined_points)}
 
@@ -173,7 +180,7 @@ def generate_world_js_file(site_configs):
     for filepath in sorted(glob.glob(os.path.join(js_output_dir, "*js")), key=os.path.getsize):
         js_files.append(filepath)
 
-    points = extract_points_from_js_files(js_files)
+    points = extract_points_from_js_files(js_files, True)
     generate_js_file(site_configs, "World", points)
 
 
