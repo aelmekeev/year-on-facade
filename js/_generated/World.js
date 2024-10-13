@@ -2327,11 +2327,10 @@ const data = {
       "notes": ""
     },
     "1858": {
-      "city": "Manchester",
-      "external": "1254687",
+      "city": "Istanbul",
       "latlng": {
-        "lat": 53.485412338495806,
-        "lng": -2.2350337069524175
+        "lat": 41.02485687791597,
+        "lng": 28.974872100955697
       },
       "notes": ""
     },
@@ -2408,11 +2407,10 @@ const data = {
       "notes": ""
     },
     "1867": {
-      "city": "Berkshire",
-      "external": "",
+      "city": "Istanbul",
       "latlng": {
-        "lat": 51.47737125101193,
-        "lng": -0.609934525588281
+        "lat": 41.02592019364944,
+        "lng": 28.973872055307684
       },
       "notes": ""
     },
@@ -2489,11 +2487,10 @@ const data = {
       "notes": ""
     },
     "1876": {
-      "city": "London",
-      "external": "1297994",
+      "city": "Istanbul",
       "latlng": {
-        "lat": 51.52938511067449,
-        "lng": -0.10289051268348608
+        "lat": 41.03388873920039,
+        "lng": 28.978055853364932
       },
       "notes": ""
     },
@@ -2579,11 +2576,10 @@ const data = {
       "notes": ""
     },
     "1886": {
-      "city": "Cambridgeshire",
-      "external": "",
+      "city": "Rome",
       "latlng": {
-        "lat": 52.19838701939176,
-        "lng": 0.1447122607388116
+        "lat": 41.909225315095036,
+        "lng": 12.46705382862787
       },
       "notes": ""
     },
@@ -2705,11 +2701,10 @@ const data = {
       "notes": ""
     },
     "1900": {
-      "city": "London",
-      "external": "1260615",
+      "city": "Monaco",
       "latlng": {
-        "lat": 51.491351158667854,
-        "lng": -0.26533081752309784
+        "lat": 43.74351326592167,
+        "lng": 7.4275865307354545
       },
       "notes": ""
     },
@@ -2750,11 +2745,10 @@ const data = {
       "notes": ""
     },
     "1905": {
-      "city": "Surrey",
-      "external": "",
+      "city": "Istanbul",
       "latlng": {
-        "lat": 51.42727399915832,
-        "lng": -0.526913233115936
+        "lat": 41.01471650321313,
+        "lng": 28.97232955430877
       },
       "notes": ""
     },
@@ -2768,11 +2762,10 @@ const data = {
       "notes": ""
     },
     "1907": {
-      "city": "Oxfordshire",
-      "external": "1369433",
+      "city": "Istanbul",
       "latlng": {
-        "lat": 51.75747752300436,
-        "lng": -1.2562772769221944
+        "lat": 41.02594948355828,
+        "lng": 28.976637994073403
       },
       "notes": ""
     },
@@ -2903,11 +2896,10 @@ const data = {
       "notes": ""
     },
     "1923": {
-      "city": "Surrey",
-      "external": "",
+      "city": "Schaan",
       "latlng": {
-        "lat": 51.42453806745877,
-        "lng": -0.4194991883180949
+        "lat": 47.167334460060985,
+        "lng": 9.515701860857686
       },
       "notes": ""
     },
@@ -2948,11 +2940,10 @@ const data = {
       "notes": ""
     },
     "1928": {
-      "city": "Porto",
-      "external": "",
+      "city": "Rome",
       "latlng": {
-        "lat": 41.142735476630456,
-        "lng": -8.615384379773117
+        "lat": 41.90762138349003,
+        "lng": 12.461186483405383
       },
       "notes": ""
     },
@@ -3011,11 +3002,10 @@ const data = {
       "notes": ""
     },
     "1935": {
-      "city": "Essex",
-      "external": "",
+      "city": "City_of_San_Marino",
       "latlng": {
-        "lat": 51.55932921419081,
-        "lng": 0.5970899938575127
+        "lat": 43.93329655382632,
+        "lng": 12.449320326608438
       },
       "notes": ""
     },
@@ -3199,11 +3189,10 @@ const data = {
       "notes": ""
     },
     "1969": {
-      "city": "London",
-      "external": "1279541",
+      "city": "Istanbul",
       "latlng": {
-        "lat": 51.52296639007307,
-        "lng": -0.10568060878887817
+        "lat": 41.01793053189525,
+        "lng": 28.94677330547392
       },
       "notes": ""
     },
@@ -3451,11 +3440,10 @@ const data = {
       "notes": ""
     },
     "2010": {
-      "city": "London",
-      "external": "",
+      "city": "Perm",
       "latlng": {
-        "lat": 51.65160711218057,
-        "lng": -0.08636709386581888
+        "lat": 58.004339030274615,
+        "lng": 56.26782744824511
       },
       "notes": ""
     },
@@ -3544,6 +3532,9 @@ const data = {
       }
     },
     "Italy": {
+      "config": {}
+    },
+    "Liechtenstein": {
       "config": {}
     },
     "Monaco_": {
@@ -3999,6 +3990,12 @@ const data = {
     "Rome": {
       "config": {
         "country": "Italy",
+        "external": null
+      }
+    },
+    "Schaan": {
+      "config": {
+        "country": "Liechtenstein",
         "external": null
       }
     },
