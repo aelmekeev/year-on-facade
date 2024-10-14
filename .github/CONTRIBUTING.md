@@ -60,3 +60,7 @@ Don't forget to run `make build` if you modify any of the following:
 * `csv/*.csv`
 * `utils/configs.json`
 * `config.json`
+
+## Updating geoguessr map
+
+Existing geoguessr maps can be updated using [Copy/paste Geoguessr map data](https://openuserjs.org/scripts/slashP/Copypaste_Geoguessr_map_data) Tampermonkey script from the `*_geoguessr.json` files.

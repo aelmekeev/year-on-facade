@@ -252,15 +252,15 @@ def generate_svg(filename, world_view):
         f.write("</svg>\n")
 
 
-# build geoguesser json
-def generate_geoguesser_json():
-    logging.info("Generating World_geogesser.json...")
+# build geoguessr json
+def generate_geoguessr_json(name):
+    logging.info(f'Generating {name}_geoguessr.json...')
 
-    world_data = read_js_file(os.path.join(js_output_dir, "World.js"))
-    geoguesser_data = [{**point["latlng"], "heading": 0, "pitch": 0, "zoom": 1} for point in world_data.get("points", {}).values()]
+    data = read_js_file(os.path.join(js_output_dir, f'{name}.js'))
+    geoguessr_data = [{**point["latlng"], "heading": 0, "pitch": 0, "zoom": 1} for point in data.get("points", {}).values()]
 
-    with open(os.path.join(js_output_dir, "World_geogesser.json"), "w") as f:
-        json.dump(geoguesser_data, f, indent=2)
+    with open(os.path.join(js_output_dir, f'{name}_geoguessr.json'), "w") as f:
+        json.dump(geoguessr_data, f, indent=2)
 
 
 # Remove all generated files
@@ -287,7 +287,8 @@ def main():
 
     generate_list_js_file()
 
-    generate_geoguesser_json()
+    generate_geoguessr_json("World")
+    generate_geoguessr_json("UK")
 
 
 if __name__ == "__main__":
