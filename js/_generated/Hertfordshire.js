@@ -16,6 +16,14 @@ const data = {
     "city": "Hertfordshire"
   },
   "points": {
+    "1605": {
+      "latlng": {
+        "lat": 51.76177167242635,
+        "lng": -0.5600800306260874
+      },
+      "notes": "TODO",
+      "external": "1078130"
+    },
     "1615": {
       "latlng": {
         "lat": 51.94573826716453,

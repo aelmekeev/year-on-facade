@@ -16,6 +16,14 @@ const data = {
     "city": "Suffolk"
   },
   "points": {
+    "1586": {
+      "latlng": {
+        "lat": 52.48082967346413,
+        "lng": 1.755801162411629
+      },
+      "notes": "TODO",
+      "external": "1292604"
+    },
     "1614": {
       "latlng": {
         "lat": 52.235015446632794,
@@ -31,6 +39,14 @@ const data = {
       },
       "notes": "TODO",
       "external": "1284544"
+    },
+    "1639": {
+      "latlng": {
+        "lat": 52.05318044842419,
+        "lng": 1.161563583338096
+      },
+      "notes": "TODO",
+      "external": "1355165"
     }
   }
 }
