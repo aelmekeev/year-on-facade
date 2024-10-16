@@ -13,7 +13,6 @@ const data = {
     },
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
-    "whatIsThisLink": "./what-is-this",
     "city": "Menton"
   },
   "points": {
@@ -22,21 +21,24 @@ const data = {
         "lat": 43.774709532337496,
         "lng": 7.500799511495009
       },
-      "notes": ""
+      "notes": "",
+      "external": ""
     },
     "1909": {
       "latlng": {
         "lat": 43.77445080628653,
         "lng": 7.496384817131317
       },
-      "notes": ""
+      "notes": "",
+      "external": ""
     },
     "1913": {
       "latlng": {
         "lat": 43.77346610951384,
         "lng": 7.495096287558734
       },
-      "notes": ""
+      "notes": "",
+      "external": ""
     }
   }
 }

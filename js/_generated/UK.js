@@ -11,8 +11,7 @@ const data = {
       "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
     },
     "useInternalMap": true,
-    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
-    "whatIsThisLink": "./what-is-this"
+    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web"
   },
   "points": {
     "1580": {
@@ -61,11 +60,11 @@ const data = {
       "notes": "TODO"
     },
     "1593": {
-      "city": "Kent",
-      "external": "1243345",
+      "city": "Northamptonshire",
+      "external": "1040321",
       "latlng": {
-        "lat": 51.1550392524119,
-        "lng": 0.20072145725250426
+        "lat": 52.378580748499324,
+        "lng": -0.5433007067175213
       },
       "notes": "TODO"
     },
@@ -178,13 +177,13 @@ const data = {
       "notes": "TODO"
     },
     "1607": {
-      "city": "West_Sussex",
-      "external": "1026225",
+      "city": "London",
+      "external": "1218593",
       "latlng": {
-        "lat": 50.784882300518056,
-        "lng": -0.7903458886897798
+        "lat": 51.48068758027714,
+        "lng": 0.037021553277171264
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1608": {
       "city": "Northamptonshire",
@@ -301,7 +300,7 @@ const data = {
         "lat": 51.27262956643476,
         "lng": 1.2150647912214991
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1621": {
       "city": "Essex",
@@ -376,13 +375,13 @@ const data = {
       "notes": "TODO"
     },
     "1629": {
-      "city": "Leicestershire",
-      "external": "1361305",
+      "city": "London",
+      "external": "1080160",
       "latlng": {
-        "lat": 52.599447959669945,
-        "lng": -1.4298587899693478
+        "lat": 51.535080908278466,
+        "lng": -0.46018471798074584
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1630": {
       "city": "West_Yorkshire",
@@ -619,13 +618,13 @@ const data = {
       "notes": "TODO"
     },
     "1657": {
-      "city": "Northumberland",
-      "external": "1042573",
+      "city": "Kent",
+      "external": "1097019",
       "latlng": {
-        "lat": 54.97376724018444,
-        "lng": -2.1054898443407786
+        "lat": 51.277420295357494,
+        "lng": 1.0921518476022438
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1658": {
       "city": "London",
@@ -925,13 +924,13 @@ const data = {
       "notes": "TODO"
     },
     "1691": {
-      "city": "Cheshire",
-      "external": "1105640",
+      "city": "Kent",
+      "external": "1085619",
       "latlng": {
-        "lat": 53.33366969188379,
-        "lng": -2.7394753793029225
+        "lat": 51.27961057924578,
+        "lng": 1.1819422191477025
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1692": {
       "city": "London",
@@ -1114,13 +1113,13 @@ const data = {
       "notes": "TODO"
     },
     "1712": {
-      "city": "West_Midlands",
-      "external": "1342898",
+      "city": "East_Sussex",
+      "external": "",
       "latlng": {
-        "lat": 52.42286605677296,
-        "lng": -1.5587983887534522
+        "lat": 50.80429318184203,
+        "lng": -0.05772031169200133
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1713": {
       "city": "London",
@@ -1186,13 +1185,13 @@ const data = {
       "notes": ""
     },
     "1720": {
-      "city": "West_Sussex",
-      "external": "1026295",
+      "city": "London",
+      "external": "1113150",
       "latlng": {
-        "lat": 50.83928536449385,
-        "lng": -0.7420157996039726
+        "lat": 51.523352202126304,
+        "lng": -0.11240423729628167
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1721": {
       "city": "London",
@@ -1231,13 +1230,13 @@ const data = {
       "notes": ""
     },
     "1725": {
-      "city": "Surrey",
-      "external": "1242226",
+      "city": "Kent",
+      "external": "1051628",
       "latlng": {
-        "lat": 51.39262494867464,
-        "lng": -0.5045436671898346
+        "lat": 51.27615410765694,
+        "lng": 1.170241663356693
       },
-      "notes": "Retake the photo"
+      "notes": ""
     },
     "1726": {
       "city": "London",
@@ -1303,13 +1302,13 @@ const data = {
       "notes": ""
     },
     "1733": {
-      "city": "Merseyside",
-      "external": "1075920",
+      "city": "Kent",
+      "external": "1085566",
       "latlng": {
-        "lat": 53.48965187258543,
-        "lng": -2.7220092146981862
+        "lat": 51.27515051448413,
+        "lng": 1.1678365825426007
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1734": {
       "city": "London",
@@ -1339,13 +1338,13 @@ const data = {
       "notes": ""
     },
     "1737": {
-      "city": "West_Yorkshire",
-      "external": "1232391",
+      "city": "Oxfordshire",
+      "external": "1052838",
       "latlng": {
-        "lat": 53.67607475196065,
-        "lng": -1.9292026774356457
+        "lat": 51.8511885059823,
+        "lng": -1.3605660240345467
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1738": {
       "city": "Wiltshire",
@@ -1366,13 +1365,13 @@ const data = {
       "notes": "TODO"
     },
     "1740": {
-      "city": "Merseyside",
-      "external": "1242795",
+      "city": "Oxfordshire",
+      "external": "1053125",
       "latlng": {
-        "lat": 53.37219895556583,
-        "lng": -3.135980665917508
+        "lat": 51.84224058831118,
+        "lng": -1.4802249387745492
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1741": {
       "city": "Cambridgeshire",
@@ -1456,13 +1455,13 @@ const data = {
       "notes": "TODO"
     },
     "1750": {
-      "city": "Leicestershire",
-      "external": "1235737",
+      "city": "East_Sussex",
+      "external": "1381637",
       "latlng": {
-        "lat": 52.76555688732329,
-        "lng": -0.8876054928122231
+        "lat": 50.82007634371007,
+        "lng": -0.14005783664672825
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1751": {
       "city": "Oxfordshire",
@@ -1528,13 +1527,13 @@ const data = {
       "notes": "TODO"
     },
     "1758": {
-      "city": "West_Sussex",
-      "external": "1234661",
+      "city": "Kent",
+      "external": "1281636",
       "latlng": {
-        "lat": 50.86157638530915,
-        "lng": -0.9263605847550551
+        "lat": 51.27410241042255,
+        "lng": 1.215212565167261
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1759": {
       "city": "Manchester",
@@ -1708,13 +1707,13 @@ const data = {
       "notes": "TODO"
     },
     "1778": {
-      "city": "Lancashire",
-      "external": "1361824",
+      "city": "Oxfordshire",
+      "external": "1220320",
       "latlng": {
-        "lat": 53.67926954244122,
-        "lng": -2.8327116139825246
+        "lat": 51.82911767469155,
+        "lng": -1.280395481866526
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1779": {
       "city": "Northamptonshire",
@@ -1762,11 +1761,11 @@ const data = {
       "notes": ""
     },
     "1784": {
-      "city": "London",
-      "external": "1079547",
+      "city": "Kent",
+      "external": "1070125",
       "latlng": {
-        "lat": 51.62523735193381,
-        "lng": -0.062374855786708684
+        "lat": 51.275760270114404,
+        "lng": 1.2157341938253023
       },
       "notes": ""
     },
@@ -1924,13 +1923,13 @@ const data = {
       "notes": "TODO"
     },
     "1802": {
-      "city": "South_Yorkshire",
-      "external": "1246706",
+      "city": "Essex",
+      "external": "",
       "latlng": {
-        "lat": 53.407659897336806,
-        "lng": -1.5124574939158622
+        "lat": 51.561277725333824,
+        "lng": 0.600576074555862
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1803": {
       "city": "South_Yorkshire",
@@ -2239,13 +2238,13 @@ const data = {
       "notes": ""
     },
     "1837": {
-      "city": "Somerset",
-      "external": "1395598",
+      "city": "London",
+      "external": "",
       "latlng": {
-        "lat": 51.39061686984914,
-        "lng": -2.3553570223670324
+        "lat": 51.44366704084219,
+        "lng": 0.15142619646932207
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1838": {
       "city": "Cambridgeshire",
@@ -3211,11 +3210,11 @@ const data = {
       "notes": ""
     },
     "1955": {
-      "city": "London",
-      "external": "1195534",
+      "city": "Kent",
+      "external": "",
       "latlng": {
-        "lat": 51.52658034298981,
-        "lng": -0.08810312220234778
+        "lat": 51.279387213941064,
+        "lng": 1.0861043838878168
       },
       "notes": ""
     },
@@ -3614,551 +3613,6 @@ const data = {
         "lng": -0.18458900127279745
       },
       "notes": ""
-    }
-  },
-  "citiesConfig": {
-    "World": {
-      "config": {}
-    },
-    "Denmark": {
-      "config": {
-        "external": {
-          "label": "Check out Fredede og Bevaringsværdige Bygninger",
-          "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
-        }
-      }
-    },
-    "France": {
-      "config": {
-        "external": {
-          "label": "Check out Base Mérimée",
-          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
-        }
-      }
-    },
-    "Italy": {
-      "config": {}
-    },
-    "Monaco_": {
-      "config": {}
-    },
-    "Portugal": {
-      "config": {
-        "external": {
-          "label": "Check out Direção-Geral do Património Cultural",
-          "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
-        }
-      }
-    },
-    "Russia": {
-      "config": {}
-    },
-    "San_Marino": {
-      "config": {}
-    },
-    "Switzerland": {
-      "config": {},
-      "external": {
-        "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
-        "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
-      }
-    },
-    "Turkey": {
-      "config": {}
-    },
-    "UK": {
-      "config": {
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "London": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Bedfordshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Berkshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Bristol": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Buckinghamshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Cambridgeshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Cheshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Cornwall": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Cumbria": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Derbyshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Devon": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Dorset": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "East_Sussex": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "East_Yorkshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Essex": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Gloucestershire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Hampshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Herefordshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Hertfordshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Kent": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Lancashire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Leicestershire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Lincolnshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Manchester": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Merseyside": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Norfolk": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "North_Yorkshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Northamptonshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Northumberland": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Nottinghamshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Oxfordshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Rutland": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Somerset": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "South_Yorkshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Staffordshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Suffolk": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Surrey": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Warwickshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "West_Midlands": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "West_Sussex": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "West_Yorkshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Wiltshire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Worcestershire": {
-      "config": {
-        "country": "UK",
-        "external": {
-          "label": "Check out Historic England",
-          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
-        }
-      }
-    },
-    "Billund": {
-      "config": {
-        "country": "Denmark",
-        "external": {
-          "label": "Check out Fredede og Bevaringsværdige Bygninger",
-          "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
-        }
-      }
-    },
-    "Copenhagen": {
-      "config": {
-        "country": "Denmark",
-        "external": {
-          "label": "Check out Fredede og Bevaringsværdige Bygninger",
-          "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
-        }
-      }
-    },
-    "Menton": {
-      "config": {
-        "country": "France",
-        "external": {
-          "label": "Check out Base Mérimée",
-          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
-        }
-      }
-    },
-    "Nice": {
-      "config": {
-        "country": "France",
-        "external": {
-          "label": "Check out Base Mérimée",
-          "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
-        }
-      }
-    },
-    "Rome": {
-      "config": {
-        "country": "Italy",
-        "external": null
-      }
-    },
-    "Monaco": {
-      "config": {
-        "country": "Monaco_",
-        "external": null
-      }
-    },
-    "Perm": {
-      "config": {
-        "country": "Russia",
-        "external": null
-      }
-    },
-    "City_of_San_Marino": {
-      "config": {
-        "country": "San_Marino",
-        "external": null
-      }
-    },
-    "Zurich": {
-      "config": {
-        "country": "Switzerland",
-        "external": null
-      }
-    },
-    "Istanbul": {
-      "config": {
-        "country": "Turkey",
-        "external": null
-      }
-    },
-    "Lisbon": {
-      "config": {
-        "country": "Portugal",
-        "external": {
-          "label": "Check out Direção-Geral do Património Cultural",
-          "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
-        }
-      }
-    },
-    "Porto": {
-      "config": {
-        "country": "Portugal",
-        "external": {
-          "label": "Check out Direção-Geral do Património Cultural",
-          "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
-        }
-      }
-    },
-    "Sintra": {
-      "config": {
-        "country": "Portugal",
-        "external": {
-          "label": "Check out Direção-Geral do Património Cultural",
-          "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
-        }
-      }
     }
   }
 }

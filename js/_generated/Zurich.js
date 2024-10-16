@@ -7,9 +7,12 @@ const data = {
       "west": 8.448064,
       "east": 8.624871
     },
+    "external": {
+      "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+      "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+    },
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
-    "whatIsThisLink": "./what-is-this",
     "city": "Zurich"
   },
   "points": {

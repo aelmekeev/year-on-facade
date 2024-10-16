@@ -4,6 +4,10 @@ This is a collection of years on facades.
 
 https://year-on-facade.uk/
 
+Also on geoguessr.com:
+* [World](https://www.geoguessr.com/maps/6532feba6b14798f4eda6298)
+* [UK](https://www.geoguessr.com/maps/670d6abbcf57e18ab12f3f0c)
+
 ## Rules
 
 In order to be added to collection the location needs to meet the following requirements:

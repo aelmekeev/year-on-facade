@@ -24,7 +24,7 @@ To contribute to this collection simply raise a pull request with a change in th
 > **Note**
 > Please use web UI of Google Maps to keep coordinates precision consistent.
 
-If you want to you can also run `make build` and `make validate` locally if you have `jq` installed, otherwise they will be executed as part of pull request pipelines.
+If you want to you can also run `make build` locally if you have `python` installed, otherwise they will be executed as part of pull request pipelines.
 
 Photos are managed locally by the maintainer of the collection with the help of `make photos`.
 
@@ -44,9 +44,7 @@ Photos are managed locally by the maintainer of the collection with the help of 
 `config.json` contains the following:
 
 * `useInternalMap` controls wether links on the Stats page will lead to a "builtin" map with all the markers, or to google maps website / application
-* `apiKey` is the Google Maps API key restricted to `Maps JavaScript API`
 * `photosBaseUrl` contains base URL for the photos shown on the item page, the url would look like `${photosBaseUrl}/${city}/${year}_close.jpg` and  `${photosBaseUrl}/${city}/${year}.jpg`. If not specified, photo won't be shown.
-* `whatIsThisLink` link to the "What is this?" page from the header of the list page.
 
 Don't forget to update these values if you decided to fork this repository.
 
@@ -62,3 +60,7 @@ Don't forget to run `make build` if you modify any of the following:
 * `csv/*.csv`
 * `utils/configs.json`
 * `config.json`
+
+## Updating geoguessr map
+
+Existing geoguessr maps can be updated using [Copy/paste Geoguessr map data](https://openuserjs.org/scripts/slashP/Copypaste_Geoguessr_map_data) Tampermonkey script from the `*_geoguessr.json` files.

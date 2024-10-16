@@ -40,6 +40,16 @@
       }
     }
   },
+  "Liechtenstein": {
+    "config": {
+      "borders": {
+        "south": 47.047210,
+        "north": 47.269921,
+        "west": 9.469905,
+        "east": 9.636205
+      }
+    }
+  },
   "Monaco_": {
     "config": {
       "borders": {
@@ -91,11 +101,11 @@
         "north": 47.807533,
         "west": 5.949322,
         "east": 10.492168
+      },
+      "external": {
+        "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+        "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
       }
-    },
-    "external": {
-      "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
-      "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
     }
   },
   "Turkey": {
@@ -647,6 +657,17 @@
         "north": 42.296403,
         "west": 11.7319274,
         "east": 13.2974791
+      }
+    }
+  },
+  "Schaan": {
+    "config": {
+      "country": "Liechtenstein",
+      "borders": {
+        "south": 47.155422,
+        "north": 47.194205,
+        "west": 9.485774,
+        "east": 9.566655
       }
     }
   },

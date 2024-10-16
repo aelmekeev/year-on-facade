@@ -1,8 +1,7 @@
 const data = {
   "config": {
     "useInternalMap": true,
-    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
-    "whatIsThisLink": "./what-is-this"
+    "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web"
   },
   "points": {
     "1566": {
@@ -60,13 +59,13 @@ const data = {
       "notes": "TODO"
     },
     "1593": {
-      "city": "Kent",
-      "external": "1243345",
+      "city": "Zurich",
+      "external": "",
       "latlng": {
-        "lat": 51.1550392524119,
-        "lng": 0.20072145725250426
+        "lat": 47.370885977351676,
+        "lng": 8.541129039372516
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1594": {
       "city": "Northamptonshire",
@@ -177,13 +176,13 @@ const data = {
       "notes": "TODO"
     },
     "1607": {
-      "city": "West_Sussex",
-      "external": "1026225",
+      "city": "London",
+      "external": "1218593",
       "latlng": {
-        "lat": 50.784882300518056,
-        "lng": -0.7903458886897798
+        "lat": 51.48068758027714,
+        "lng": 0.037021553277171264
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1608": {
       "city": "Northamptonshire",
@@ -300,7 +299,7 @@ const data = {
         "lat": 51.27262956643476,
         "lng": 1.2150647912214991
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1621": {
       "city": "Essex",
@@ -375,13 +374,13 @@ const data = {
       "notes": "TODO"
     },
     "1629": {
-      "city": "Leicestershire",
-      "external": "1361305",
+      "city": "London",
+      "external": "1080160",
       "latlng": {
-        "lat": 52.599447959669945,
-        "lng": -1.4298587899693478
+        "lat": 51.535080908278466,
+        "lng": -0.46018471798074584
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1630": {
       "city": "West_Yorkshire",
@@ -538,6 +537,7 @@ const data = {
     },
     "1648": {
       "city": "Nice",
+      "external": "",
       "latlng": {
         "lat": 43.69804150842751,
         "lng": 7.2767927399627546
@@ -617,13 +617,13 @@ const data = {
       "notes": "TODO"
     },
     "1657": {
-      "city": "Northumberland",
-      "external": "1042573",
+      "city": "Kent",
+      "external": "1097019",
       "latlng": {
-        "lat": 54.97376724018444,
-        "lng": -2.1054898443407786
+        "lat": 51.277420295357494,
+        "lng": 1.0921518476022438
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1658": {
       "city": "London",
@@ -905,13 +905,13 @@ const data = {
       "notes": "TODO"
     },
     "1689": {
-      "city": "Lincolnshire",
-      "external": "1372878",
+      "city": "Zurich",
+      "external": "",
       "latlng": {
-        "lat": 53.50128283181267,
-        "lng": -0.7557196598011618
+        "lat": 47.37289180996177,
+        "lng": 8.545091249061413
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1690": {
       "city": "Derbyshire",
@@ -923,13 +923,13 @@ const data = {
       "notes": "TODO"
     },
     "1691": {
-      "city": "Cheshire",
-      "external": "1105640",
+      "city": "Kent",
+      "external": "1085619",
       "latlng": {
-        "lat": 53.33366969188379,
-        "lng": -2.7394753793029225
+        "lat": 51.27961057924578,
+        "lng": 1.1819422191477025
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1692": {
       "city": "London",
@@ -1112,13 +1112,13 @@ const data = {
       "notes": "TODO"
     },
     "1712": {
-      "city": "West_Midlands",
-      "external": "1342898",
+      "city": "East_Sussex",
+      "external": "",
       "latlng": {
-        "lat": 52.42286605677296,
-        "lng": -1.5587983887534522
+        "lat": 50.80429318184203,
+        "lng": -0.05772031169200133
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1713": {
       "city": "London",
@@ -1184,13 +1184,13 @@ const data = {
       "notes": ""
     },
     "1720": {
-      "city": "West_Sussex",
-      "external": "1026295",
+      "city": "London",
+      "external": "1113150",
       "latlng": {
-        "lat": 50.83928536449385,
-        "lng": -0.7420157996039726
+        "lat": 51.523352202126304,
+        "lng": -0.11240423729628167
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1721": {
       "city": "London",
@@ -1229,13 +1229,13 @@ const data = {
       "notes": ""
     },
     "1725": {
-      "city": "Surrey",
-      "external": "1242226",
+      "city": "Kent",
+      "external": "1051628",
       "latlng": {
-        "lat": 51.39262494867464,
-        "lng": -0.5045436671898346
+        "lat": 51.27615410765694,
+        "lng": 1.170241663356693
       },
-      "notes": "Retake the photo"
+      "notes": ""
     },
     "1726": {
       "city": "London",
@@ -1301,13 +1301,13 @@ const data = {
       "notes": ""
     },
     "1733": {
-      "city": "Merseyside",
-      "external": "1075920",
+      "city": "Kent",
+      "external": "1085566",
       "latlng": {
-        "lat": 53.48965187258543,
-        "lng": -2.7220092146981862
+        "lat": 51.27515051448413,
+        "lng": 1.1678365825426007
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1734": {
       "city": "London",
@@ -1337,13 +1337,13 @@ const data = {
       "notes": ""
     },
     "1737": {
-      "city": "West_Yorkshire",
-      "external": "1232391",
+      "city": "Oxfordshire",
+      "external": "1052838",
       "latlng": {
-        "lat": 53.67607475196065,
-        "lng": -1.9292026774356457
+        "lat": 51.8511885059823,
+        "lng": -1.3605660240345467
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1738": {
       "city": "Wiltshire",
@@ -1364,13 +1364,13 @@ const data = {
       "notes": "TODO"
     },
     "1740": {
-      "city": "Merseyside",
-      "external": "1242795",
+      "city": "Oxfordshire",
+      "external": "1053125",
       "latlng": {
-        "lat": 53.37219895556583,
-        "lng": -3.135980665917508
+        "lat": 51.84224058831118,
+        "lng": -1.4802249387745492
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1741": {
       "city": "Cambridgeshire",
@@ -1454,13 +1454,13 @@ const data = {
       "notes": "TODO"
     },
     "1750": {
-      "city": "Leicestershire",
-      "external": "1235737",
+      "city": "East_Sussex",
+      "external": "1381637",
       "latlng": {
-        "lat": 52.76555688732329,
-        "lng": -0.8876054928122231
+        "lat": 50.82007634371007,
+        "lng": -0.14005783664672825
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1751": {
       "city": "Oxfordshire",
@@ -1526,13 +1526,13 @@ const data = {
       "notes": ""
     },
     "1758": {
-      "city": "West_Sussex",
-      "external": "1234661",
+      "city": "Kent",
+      "external": "1281636",
       "latlng": {
-        "lat": 50.86157638530915,
-        "lng": -0.9263605847550551
+        "lat": 51.27410241042255,
+        "lng": 1.215212565167261
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1759": {
       "city": "Manchester",
@@ -1706,13 +1706,13 @@ const data = {
       "notes": "TODO"
     },
     "1778": {
-      "city": "Lancashire",
-      "external": "1361824",
+      "city": "Oxfordshire",
+      "external": "1220320",
       "latlng": {
-        "lat": 53.67926954244122,
-        "lng": -2.8327116139825246
+        "lat": 51.82911767469155,
+        "lng": -1.280395481866526
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1779": {
       "city": "Northamptonshire",
@@ -1760,11 +1760,11 @@ const data = {
       "notes": ""
     },
     "1784": {
-      "city": "London",
-      "external": "1079547",
+      "city": "Kent",
+      "external": "1070125",
       "latlng": {
-        "lat": 51.62523735193381,
-        "lng": -0.062374855786708684
+        "lat": 51.275760270114404,
+        "lng": 1.2157341938253023
       },
       "notes": ""
     },
@@ -1922,13 +1922,13 @@ const data = {
       "notes": "TODO"
     },
     "1802": {
-      "city": "South_Yorkshire",
-      "external": "1246706",
+      "city": "Essex",
+      "external": "",
       "latlng": {
-        "lat": 53.407659897336806,
-        "lng": -1.5124574939158622
+        "lat": 51.561277725333824,
+        "lng": 0.600576074555862
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1803": {
       "city": "South_Yorkshire",
@@ -2237,13 +2237,13 @@ const data = {
       "notes": ""
     },
     "1837": {
-      "city": "Somerset",
-      "external": "1395598",
+      "city": "London",
+      "external": "",
       "latlng": {
-        "lat": 51.39061686984914,
-        "lng": -2.3553570223670324
+        "lat": 51.44366704084219,
+        "lng": 0.15142619646932207
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1838": {
       "city": "Cambridgeshire",
@@ -2524,6 +2524,7 @@ const data = {
     },
     "1869": {
       "city": "Nice",
+      "external": "",
       "latlng": {
         "lat": 43.70023806187411,
         "lng": 7.28534807075022
@@ -2594,6 +2595,7 @@ const data = {
     },
     "1877": {
       "city": "Menton",
+      "external": "",
       "latlng": {
         "lat": 43.774709532337496,
         "lng": 7.500799511495009
@@ -2638,6 +2640,7 @@ const data = {
     },
     "1882": {
       "city": "Nice",
+      "external": "",
       "latlng": {
         "lat": 43.69969094664279,
         "lng": 7.268437193756377
@@ -2771,6 +2774,7 @@ const data = {
     },
     "1897": {
       "city": "Nice",
+      "external": "",
       "latlng": {
         "lat": 43.70061135322727,
         "lng": 7.2714094262081455
@@ -2823,6 +2827,7 @@ const data = {
     },
     "1903": {
       "city": "Nice",
+      "external": "",
       "latlng": {
         "lat": 43.70742877886892,
         "lng": 7.2622871620867935
@@ -2874,6 +2879,7 @@ const data = {
     },
     "1909": {
       "city": "Menton",
+      "external": "",
       "latlng": {
         "lat": 43.77445080628653,
         "lng": 7.496384817131317
@@ -2899,16 +2905,17 @@ const data = {
       "notes": ""
     },
     "1912": {
-      "city": "Zurich",
+      "city": "Lisbon",
       "external": "",
       "latlng": {
-        "lat": 47.37145245655605,
-        "lng": 8.54400206481939
+        "lat": 38.73167621166924,
+        "lng": -9.148758359263605
       },
       "notes": ""
     },
     "1913": {
       "city": "Menton",
+      "external": "",
       "latlng": {
         "lat": 43.77346610951384,
         "lng": 7.495096287558734
@@ -2988,11 +2995,10 @@ const data = {
       "notes": ""
     },
     "1923": {
-      "city": "Surrey",
-      "external": "",
+      "city": "Schaan",
       "latlng": {
-        "lat": 51.42453806745877,
-        "lng": -0.4194991883180949
+        "lat": 47.167334460060985,
+        "lng": 9.515701860857686
       },
       "notes": ""
     },
@@ -3193,11 +3199,11 @@ const data = {
       "notes": ""
     },
     "1955": {
-      "city": "London",
-      "external": "1195534",
+      "city": "Kent",
+      "external": "",
       "latlng": {
-        "lat": 51.52658034298981,
-        "lng": -0.08810312220234778
+        "lat": 51.279387213941064,
+        "lng": 1.0861043838878168
       },
       "notes": ""
     },
@@ -3627,6 +3633,9 @@ const data = {
     "Italy": {
       "config": {}
     },
+    "Liechtenstein": {
+      "config": {}
+    },
     "Monaco_": {
       "config": {}
     },
@@ -3645,10 +3654,11 @@ const data = {
       "config": {}
     },
     "Switzerland": {
-      "config": {},
-      "external": {
-        "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
-        "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+      "config": {
+        "external": {
+          "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+          "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+        }
       }
     },
     "Turkey": {
@@ -4091,6 +4101,12 @@ const data = {
         "external": null
       }
     },
+    "Schaan": {
+      "config": {
+        "country": "Liechtenstein",
+        "external": null
+      }
+    },
     "Monaco": {
       "config": {
         "country": "Monaco_",
@@ -4112,7 +4128,10 @@ const data = {
     "Zurich": {
       "config": {
         "country": "Switzerland",
-        "external": null
+        "external": {
+          "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+          "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
+        }
       }
     },
     "Istanbul": {

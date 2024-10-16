@@ -38,15 +38,16 @@ function TodoFilterControl(controlDiv) {
   })
 }
 
-var start, end, longpress
+var start, end, lastClicked
 let map
-let markers = []
+let markers = {}
 
-function toggleTODOMarkers(showOnlyTODO) {
-  for (const marker of markers) {
+function toggleTODOMarkers(showOnlyTODO) {  
+  for (const year in markers) {
+    const marker = markers[year]
     whenOnlyTODO = showOnlyTODO && (marker.todo || marker.replacement)
     whenNotOnlyTODO = !showOnlyTODO && !marker.replacement
-    marker.setMap(whenNotOnlyTODO || whenOnlyTODO ? map : null)
+    marker.mapMarker.setMap(whenNotOnlyTODO || whenOnlyTODO ? map : null)
   }
 }
 
@@ -86,6 +87,7 @@ function initMap() {
     restriction: data.config.borders ? {
       latLngBounds: data.config.borders,
     } : null,
+    mapId: '58733f12c8d8eb66' // https://console.cloud.google.com/google/maps-apis/studio/maps?project=year-on-facade
   })
 
   setCenter(map, year)
@@ -103,36 +105,33 @@ function initMap() {
 
   for (const year in points) {
     const title = year.slice(0, 4)
-    const marker = new google.maps.Marker({
+
+    const yearMarker = document.createElement('div')
+    yearMarker.className = 'year-marker'
+    yearMarker.textContent = title
+
+    const marker = new google.maps.marker.AdvancedMarkerElement({
       position: points[year].latlng,
       map: year.length == 4 ? map : null, // hide replacement initially
       title,
-      label: {
-        text: title,
-        color: 'white',
-        fontSize: '9px',
-      },
-      todo: points[year].notes.startsWith('TODO'),
-      replacement: year.length != 4,
+      content: yearMarker,
     })
     marker.addListener('click', () => {
-      if (longpress) {
+      if (lastClicked == year) {
         const currentUrl = window.location.href
-        window.location.href = `${currentUrl
+        window.location.assign(`${currentUrl
           .replace('/map', '/item')
-          .replace(/[\?&]year=\d+_?/, '')}&year=${marker.getTitle()}`
+          .replace(/[\?&]year=\d+_?/, '')}&year=${marker.title}`)
       } else {
         map.setZoom(15)
-        map.setCenter(marker.getPosition())
+        map.setCenter(marker.position)
+        lastClicked = year
       }
     })
-    marker.addListener('mousedown', () => {
-      start = new Date().getTime()
-    })
-    marker.addListener('mouseup', () => {
-      end = new Date().getTime()
-      longpress = end - start < 500 ? false : true
-    })
-    markers.push(marker)
+    markers[year] = {
+      mapMarker: marker,
+      todo: points[year].notes.startsWith('TODO'),
+      replacement: year.length != 4,
+    }
   }
 }
