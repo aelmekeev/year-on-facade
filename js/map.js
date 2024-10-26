@@ -74,12 +74,15 @@ function setZoom(map, year) {
   }
 }
 
-function initMap() {
+async function initMap() {
   const url = new URL(window.location.href)
   const year = url.searchParams.get('year')
   const points = data.points
 
-  map = new google.maps.Map(document.getElementById('map'), {
+  const { Map } = await google.maps.importLibrary("maps");
+  const {AdvancedMarkerElement} = await google.maps.importLibrary("marker")
+
+  map = new Map(document.getElementById('map'), {
     clickableIcons: false,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
@@ -110,7 +113,7 @@ function initMap() {
     yearMarker.className = 'year-marker'
     yearMarker.textContent = title
 
-    const marker = new google.maps.marker.AdvancedMarkerElement({
+    const marker = new AdvancedMarkerElement({
       position: points[year].latlng,
       map: year.length == 4 ? map : null, // hide replacement initially
       title,
@@ -135,3 +138,5 @@ function initMap() {
     }
   }
 }
+
+initMap()
