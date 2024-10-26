@@ -255,7 +255,7 @@ const data = {
         "lat": 51.94573826716453,
         "lng": -0.018075210767044384
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1616": {
       "city": "Rutland",
@@ -366,13 +366,13 @@ const data = {
       "notes": "TODO"
     },
     "1628": {
-      "city": "Cumbria",
-      "external": "1327167",
+      "city": "Hertfordshire",
+      "external": "1220694",
       "latlng": {
-        "lat": 54.51369338855166,
-        "lng": -3.168101145191791
+        "lat": 51.818308059837335,
+        "lng": 0.12564659399818506
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1629": {
       "city": "London",
@@ -1257,13 +1257,13 @@ const data = {
       "notes": "TODO"
     },
     "1728": {
-      "city": "Cheshire",
-      "external": "1206920",
+      "city": "Hertfordshire",
+      "external": "1100551",
       "latlng": {
-        "lat": 53.2620820688136,
-        "lng": -2.1255742383950382
+        "lat": 51.745866438127365,
+        "lng": -0.019278302950260666
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1729": {
       "city": "London",
@@ -2421,8 +2421,8 @@ const data = {
       "city": "Hertfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.751641666897086,
-        "lng": -0.33980177521490573
+        "lat": 51.800746247287755,
+        "lng": 0.1120756162216123
       },
       "notes": ""
     },
@@ -2463,11 +2463,11 @@ const data = {
       "notes": ""
     },
     "1862": {
-      "city": "Hertfordshire",
+      "city": "Manchester",
       "external": "",
       "latlng": {
-        "lat": 51.70643887630579,
-        "lng": -0.35734732768931066
+        "lat": 53.48121666779387,
+        "lng": -2.2479055643523567
       },
       "notes": ""
     },
@@ -2607,11 +2607,11 @@ const data = {
       "notes": ""
     },
     "1878": {
-      "city": "Hertfordshire",
-      "external": "",
+      "city": "Manchester",
+      "external": "1270655",
       "latlng": {
-        "lat": 51.6619381781091,
-        "lng": -0.39861372797337147
+        "lat": 53.484638133360306,
+        "lng": -2.237647868317814
       },
       "notes": ""
     },
@@ -2634,11 +2634,11 @@ const data = {
       "notes": ""
     },
     "1881": {
-      "city": "Hertfordshire",
+      "city": "Manchester",
       "external": "",
       "latlng": {
-        "lat": 51.65310644895729,
-        "lng": -0.40019335445680226
+        "lat": 53.48481315792378,
+        "lng": -2.2379415645379126
       },
       "notes": ""
     },
@@ -2805,11 +2805,11 @@ const data = {
       "notes": ""
     },
     "1900": {
-      "city": "London",
-      "external": "1260615",
+      "city": "Hertfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.491351158667854,
-        "lng": -0.26533081752309784
+        "lat": 51.69730237248146,
+        "lng": -0.03607996118655262
       },
       "notes": ""
     },
@@ -2976,11 +2976,11 @@ const data = {
       "notes": ""
     },
     "1920": {
-      "city": "London",
-      "external": "1236368",
+      "city": "Hertfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.50853180214528,
-        "lng": -0.1504398358152587
+        "lat": 51.94780678925057,
+        "lng": -0.0749939511614577
       },
       "notes": ""
     },
@@ -3075,11 +3075,11 @@ const data = {
       "notes": ""
     },
     "1931": {
-      "city": "London",
+      "city": "Hertfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.50450052620141,
-        "lng": -0.3063282571404384
+        "lat": 51.94523697170843,
+        "lng": -0.017628102224327855
       },
       "notes": ""
     },
@@ -3561,11 +3561,11 @@ const data = {
       "notes": ""
     },
     "2012": {
-      "city": "Oxfordshire",
+      "city": "Hertfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.785657912520286,
-        "lng": -1.2698493164126066
+        "lat": 51.94214084343197,
+        "lng": -0.015601315811995541
       },
       "notes": ""
     },
