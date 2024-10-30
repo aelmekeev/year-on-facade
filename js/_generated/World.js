@@ -164,7 +164,7 @@ const data = {
         "lat": 51.76177167242635,
         "lng": -0.5600800306260874
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1606": {
       "city": "Bedfordshire",
@@ -1292,11 +1292,11 @@ const data = {
       "notes": ""
     },
     "1732": {
-      "city": "London",
-      "external": "1210250",
+      "city": "Buckinghamshire",
+      "external": "1158414",
       "latlng": {
-        "lat": 51.513449237533514,
-        "lng": -0.13248067120009926
+        "lat": 51.70344245997987,
+        "lng": -0.6164157886797024
       },
       "notes": ""
     },
@@ -2309,11 +2309,11 @@ const data = {
       "notes": ""
     },
     "1845": {
-      "city": "Manchester",
-      "external": "1246667",
+      "city": "Buckinghamshire",
+      "external": "",
       "latlng": {
-        "lat": 53.4778798558999,
-        "lng": -2.2465156165669837
+        "lat": 51.70405246805514,
+        "lng": -0.6155454189707236
       },
       "notes": ""
     },
@@ -2470,11 +2470,11 @@ const data = {
       "notes": ""
     },
     "1863": {
-      "city": "London",
-      "external": "1393325",
+      "city": "Hertfordshire",
+      "external": "1263638",
       "latlng": {
-        "lat": 51.533889128530646,
-        "lng": -0.08002735315358976
+        "lat": 51.75879511797087,
+        "lng": -0.5594520917404634
       },
       "notes": ""
     },
@@ -2782,11 +2782,11 @@ const data = {
       "notes": ""
     },
     "1898": {
-      "city": "West_Sussex",
+      "city": "Buckinghamshire",
       "external": "",
       "latlng": {
-        "lat": 50.9958191036349,
-        "lng": -0.06681543318895576
+        "lat": 51.70566833992258,
+        "lng": -0.6122235697062884
       },
       "notes": ""
     },
