@@ -23,6 +23,15 @@ const data = {
       },
       "notes": ""
     },
+    "1585": {
+      "city": "Cheshire",
+      "external": "1330175",
+      "latlng": {
+        "lat": 53.1577047926537,
+        "lng": -2.667955313296604
+      },
+      "notes": "TODO"
+    },
     "1586": {
       "city": "Suffolk",
       "external": "1292604",
@@ -804,7 +813,7 @@ const data = {
         "lat": 51.51286677913721,
         "lng": -0.11196054128022448
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1678": {
       "city": "Manchester",
@@ -876,7 +885,7 @@ const data = {
         "lat": 51.512691292055436,
         "lng": -0.11158412810765127
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1686": {
       "city": "London",
@@ -885,7 +894,7 @@ const data = {
         "lat": 51.51299620130975,
         "lng": -0.11089483495123573
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1687": {
       "city": "Cambridgeshire",
