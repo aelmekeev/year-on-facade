@@ -16,6 +16,14 @@ const data = {
     "city": "Essex"
   },
   "points": {
+    "1565": {
+      "latlng": {
+        "lat": 51.87269479032295,
+        "lng": 0.6887281513049
+      },
+      "notes": "TODO",
+      "external": "1169046"
+    },
     "1590": {
       "latlng": {
         "lat": 51.87922004189187,

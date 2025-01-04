@@ -16,6 +16,14 @@ const data = {
     "city": "Hampshire"
   },
   "points": {
+    "1571": {
+      "latlng": {
+        "lat": 51.05809618232594,
+        "lng": -1.3151056291137102
+      },
+      "notes": "TODO",
+      "external": "1095399"
+    },
     "1808": {
       "latlng": {
         "lat": 50.87096458842436,

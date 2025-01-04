@@ -16,6 +16,14 @@ const data = {
     "city": "Leicestershire"
   },
   "points": {
+    "1583": {
+      "latlng": {
+        "lat": 52.70976784110385,
+        "lng": -1.3703654962794223
+      },
+      "notes": "TODO",
+      "external": "1178098"
+    },
     "1629": {
       "latlng": {
         "lat": 52.599447959669945,

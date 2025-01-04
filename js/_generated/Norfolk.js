@@ -16,6 +16,14 @@ const data = {
     "city": "Norfolk"
   },
   "points": {
+    "1581": {
+      "latlng": {
+        "lat": 52.85845610515891,
+        "lng": 1.4477057420786485
+      },
+      "notes": "TODO",
+      "external": "1306240"
+    },
     "1609": {
       "latlng": {
         "lat": 52.60749180154992,

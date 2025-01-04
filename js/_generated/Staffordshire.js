@@ -16,6 +16,14 @@ const data = {
     "city": "Staffordshire"
   },
   "points": {
+    "1560": {
+      "latlng": {
+        "lat": 52.80710542894757,
+        "lng": -2.1151230207741025
+      },
+      "notes": "TODO",
+      "external": "1195380"
+    },
     "1673": {
       "latlng": {
         "lat": 52.72619554770106,
