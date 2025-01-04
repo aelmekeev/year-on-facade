@@ -4,6 +4,42 @@ const data = {
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web"
   },
   "points": {
+    "1560": {
+      "city": "Staffordshire",
+      "external": "1195380",
+      "latlng": {
+        "lat": 52.80710542894757,
+        "lng": -2.1151230207741025
+      },
+      "notes": "TODO"
+    },
+    "1563": {
+      "city": "Somerset",
+      "external": "1297161",
+      "latlng": {
+        "lat": 51.12775178127788,
+        "lng": -3.0072828029592094
+      },
+      "notes": "TODO"
+    },
+    "1564": {
+      "city": "Kent",
+      "external": "1069546",
+      "latlng": {
+        "lat": 51.278286013669266,
+        "lng": 1.3361504276118124
+      },
+      "notes": "TODO"
+    },
+    "1565": {
+      "city": "Essex",
+      "external": "1169046",
+      "latlng": {
+        "lat": 51.87269479032295,
+        "lng": 0.6887281513049
+      },
+      "notes": "TODO"
+    },
     "1566": {
       "city": "Zurich",
       "external": "",
@@ -13,6 +49,69 @@ const data = {
       },
       "notes": ""
     },
+    "1571": {
+      "city": "Hampshire",
+      "external": "1095399",
+      "latlng": {
+        "lat": 51.05809618232594,
+        "lng": -1.3151056291137102
+      },
+      "notes": "TODO"
+    },
+    "1573": {
+      "city": "Dorset",
+      "external": "1303778",
+      "latlng": {
+        "lat": 50.74881805389649,
+        "lng": -2.3447937235387237
+      },
+      "notes": "TODO"
+    },
+    "1574": {
+      "city": "Devon",
+      "external": "1253770",
+      "latlng": {
+        "lat": 51.04971225999911,
+        "lng": -4.0590649514359045
+      },
+      "notes": "TODO"
+    },
+    "1575": {
+      "city": "East_Sussex",
+      "external": "1028215",
+      "latlng": {
+        "lat": 51.02041946772488,
+        "lng": 0.2615640207035947
+      },
+      "notes": "TODO"
+    },
+    "1576": {
+      "city": "Somerset",
+      "external": "1251501",
+      "latlng": {
+        "lat": 50.92924650719932,
+        "lng": -2.7555190684889355
+      },
+      "notes": "TODO"
+    },
+    "1577": {
+      "city": "East_Sussex",
+      "external": "1191443",
+      "latlng": {
+        "lat": 50.872205861038275,
+        "lng": 0.004118697306039961
+      },
+      "notes": "TODO"
+    },
+    "1578": {
+      "city": "Somerset",
+      "external": "1060025",
+      "latlng": {
+        "lat": 51.01437018265468,
+        "lng": -3.102983458200296
+      },
+      "notes": "TODO"
+    },
     "1580": {
       "city": "London",
       "external": "1286035",
@@ -21,6 +120,33 @@ const data = {
         "lng": -0.38171197372486587
       },
       "notes": ""
+    },
+    "1581": {
+      "city": "Norfolk",
+      "external": "1306240",
+      "latlng": {
+        "lat": 52.85845610515891,
+        "lng": 1.4477057420786485
+      },
+      "notes": "TODO"
+    },
+    "1582": {
+      "city": "Oxfordshire",
+      "external": "1224146",
+      "latlng": {
+        "lat": 51.806950807120295,
+        "lng": -1.6368248434842494
+      },
+      "notes": "TODO"
+    },
+    "1583": {
+      "city": "Leicestershire",
+      "external": "1178098",
+      "latlng": {
+        "lat": 52.70976784110385,
+        "lng": -1.3703654962794223
+      },
+      "notes": "TODO"
     },
     "1585": {
       "city": "Cheshire",
@@ -100,6 +226,15 @@ const data = {
       "latlng": {
         "lat": 52.1917554293496,
         "lng": -1.7070671383375624
+      },
+      "notes": "TODO"
+    },
+    "1597": {
+      "city": "Cheshire",
+      "external": "1375800",
+      "latlng": {
+        "lat": 53.191312221896,
+        "lng": -2.8867228191968706
       },
       "notes": "TODO"
     },
@@ -230,11 +365,11 @@ const data = {
       "notes": "TODO"
     },
     "1612": {
-      "city": "Devon",
-      "external": "1098527",
+      "city": "Cumbria",
+      "external": "1326939",
       "latlng": {
-        "lat": 50.741020809711934,
-        "lng": -3.0703958937329277
+        "lat": 54.670679066320695,
+        "lng": -2.7599614409846263
       },
       "notes": "TODO"
     },
@@ -514,6 +649,15 @@ const data = {
       "latlng": {
         "lat": 52.59607178881066,
         "lng": -0.8434230733174165
+      },
+      "notes": "TODO"
+    },
+    "1644": {
+      "city": "Wiltshire",
+      "external": "1022068",
+      "latlng": {
+        "lat": 51.411549406060885,
+        "lng": -2.1993673249390113
       },
       "notes": "TODO"
     },
@@ -1598,11 +1742,11 @@ const data = {
       "notes": "TODO"
     },
     "1765": {
-      "city": "Dorset",
-      "external": "1172061",
+      "city": "North_Yorkshire",
+      "external": "1173839",
       "latlng": {
-        "lat": 50.720659318237225,
-        "lng": -2.304162254229089
+        "lat": 54.453728940022,
+        "lng": -0.6646983268463321
       },
       "notes": "TODO"
     },
@@ -2932,11 +3076,11 @@ const data = {
       "notes": ""
     },
     "1914": {
-      "city": "East_Sussex",
+      "city": "Kent",
       "external": "",
       "latlng": {
-        "lat": 50.82096548106133,
-        "lng": -0.13455930638858804
+        "lat": 51.275955401840314,
+        "lng": 1.0855597043432672
       },
       "notes": ""
     },

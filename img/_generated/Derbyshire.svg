@@ -1,8 +1,8 @@
-<svg viewBox="0 0 458 35" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
-  <rect y="0" x="72" width="90" height="35" fill="#a3bff4" />
-  <rect y="0" x="72" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="80" width="1" height="35" fill="#c8e3c2" />
+<svg viewBox="0 0 465 35" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
+  <rect y="0" x="78" width="90" height="35" fill="#a3bff4" />
+  <rect y="0" x="78" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="86" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="124" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="161" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="92" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="130" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="167" width="1" height="35" fill="#c8e3c2" />
 </svg>
