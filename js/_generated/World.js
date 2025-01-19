@@ -4,6 +4,123 @@ const data = {
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web"
   },
   "points": {
+    "1503": {
+      "city": "Devon",
+      "external": "1163126",
+      "latlng": {
+        "lat": 50.693654432727264,
+        "lng": -3.1505720360967397
+      },
+      "notes": "TODO"
+    },
+    "1510": {
+      "city": "Essex",
+      "external": "1122269",
+      "latlng": {
+        "lat": 51.626179068728575,
+        "lng": 0.41807275241620334
+      },
+      "notes": "TODO"
+    },
+    "1517": {
+      "city": "Hertfordshire",
+      "external": "1103594",
+      "latlng": {
+        "lat": 51.631589719143406,
+        "lng": -0.34381539560366137
+      },
+      "notes": "TODO"
+    },
+    "1520": {
+      "city": "Kent",
+      "external": "1244141",
+      "latlng": {
+        "lat": 51.266855085866226,
+        "lng": 0.07462773329547236
+      },
+      "notes": "TODO"
+    },
+    "1521": {
+      "city": "Surrey",
+      "external": "1189250",
+      "latlng": {
+        "lat": 51.43190493408276,
+        "lng": -0.5476872293298964
+      },
+      "notes": "TODO"
+    },
+    "1525": {
+      "city": "Norfolk",
+      "external": "1050945",
+      "latlng": {
+        "lat": 52.7592692610407,
+        "lng": 1.3282515776979635
+      },
+      "notes": "TODO"
+    },
+    "1526": {
+      "city": "Kent",
+      "external": "1069576",
+      "latlng": {
+        "lat": 51.276032326338395,
+        "lng": 1.3406467341966737
+      },
+      "notes": "TODO"
+    },
+    "1531": {
+      "city": "Devon",
+      "external": "1104148",
+      "latlng": {
+        "lat": 50.69328321351558,
+        "lng": -3.149796389209845
+      },
+      "notes": "TODO"
+    },
+    "1537": {
+      "city": "Oxfordshire",
+      "external": "1199633",
+      "latlng": {
+        "lat": 52.060608576817415,
+        "lng": -1.3377319989857461
+      },
+      "notes": "TODO"
+    },
+    "1539": {
+      "city": "Warwickshire",
+      "external": "1299837",
+      "latlng": {
+        "lat": 52.12585910465733,
+        "lng": -1.4029011426447802
+      },
+      "notes": "TODO"
+    },
+    "1540": {
+      "city": "Essex",
+      "external": "1112758",
+      "latlng": {
+        "lat": 51.892951133924825,
+        "lng": 0.4122926085286375
+      },
+      "notes": "TODO"
+    },
+    "1541": {
+      "city": "Suffolk",
+      "external": "1198625",
+      "latlng": {
+        "lat": 52.147414174076104,
+        "lng": 1.3194223748410667
+      },
+      "notes": "TODO"
+    },
+    "1549": {
+      "city": "Kent",
+      "external": "1362756",
+      "latlng": {
+        "lat": 51.244124723789355,
+        "lng": 0.961133511902956
+      },
+      "notes": "TODO"
+    },
     "1560": {
       "city": "Staffordshire",
       "external": "1195380",
@@ -3076,11 +3193,11 @@ const data = {
       "notes": ""
     },
     "1914": {
-      "city": "Kent",
+      "city": "East_Sussex",
       "external": "",
       "latlng": {
-        "lat": 51.275955401840314,
-        "lng": 1.0855597043432672
+        "lat": 50.82096548106133,
+        "lng": -0.13455930638858804
       },
       "notes": ""
     },
@@ -3296,6 +3413,15 @@ const data = {
         "lng": -1.2547228287670449
       },
       "notes": ""
+    },
+    "1940": {
+      "city": "London",
+      "external": "",
+      "latlng": {
+        "lat": 51.56836623740848,
+        "lng": -0.22952766630398808
+      },
+      "notes": "TODO"
     },
     "1947": {
       "city": "London",
