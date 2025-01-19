@@ -1,19 +1,20 @@
-<svg viewBox="0 0 465 35" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
-  <rect y="0" x="165" width="282" height="35" fill="#a3bff4" />
-  <rect y="0" x="165" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="195" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="320" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="327" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="328" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="338" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="344" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="345" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="346" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="348" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="363" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="367" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="436" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="439" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="441" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="446" width="1" height="35" fill="#c8e3c2" />
+<svg viewBox="0 0 522 35" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
+  <rect y="0" x="18" width="486" height="35" fill="#a3bff4" />
+  <rect y="0" x="18" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="222" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="252" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="377" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="384" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="385" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="395" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="401" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="402" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="403" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="405" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="420" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="424" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="493" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="496" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="498" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="503" width="1" height="35" fill="#c8e3c2" />
 </svg>
