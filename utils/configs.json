@@ -264,6 +264,17 @@
       }
     }
   },
+  "Durham": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 54.451169,
+        "north": 54.918501,
+        "west": -2.354813,
+        "east": -1.240996
+      }
+    }
+  },
   "East_Sussex": {
     "config": {
       "country": "UK",
@@ -547,6 +558,17 @@
         "north": 51.473371,
         "west": -0.849959,
         "east": 0.060532
+      }
+    }
+  },
+  "Tyne_and_Wear": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 54.798945,
+        "north": 55.079193,
+        "west": -1.852756,
+        "east": -1.344328
       }
     }
   },
