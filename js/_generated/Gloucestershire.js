@@ -2,7 +2,7 @@ const data = {
   "config": {
     "country": "UK",
     "borders": {
-      "south": 51.577579,
+      "south": 51.415939,
       "north": 52.112387,
       "west": -2.696015,
       "east": -1.613902
@@ -23,6 +23,14 @@ const data = {
       },
       "notes": "TODO",
       "external": "1220872"
+    },
+    "1848": {
+      "latlng": {
+        "lat": 51.46201794672384,
+        "lng": -2.3243703208447006
+      },
+      "notes": "TODO",
+      "external": "1302590"
     }
   }
 }

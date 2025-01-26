@@ -2707,12 +2707,12 @@ const data = {
     },
     "1859": {
       "city": "London",
-      "external": "",
+      "external": "1079125",
       "latlng": {
-        "lat": 51.42310704204055,
-        "lng": -0.33340331280270746
+        "lat": 51.5102393275951,
+        "lng": -0.07927167211097029
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1860": {
       "city": "London",
@@ -2842,12 +2842,12 @@ const data = {
     },
     "1874": {
       "city": "London",
-      "external": "",
+      "external": "1298116",
       "latlng": {
-        "lat": 51.486220666770585,
-        "lng": -0.1652195975638562
+        "lat": 51.52456237529174,
+        "lng": -0.10734403059642932
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1875": {
       "city": "Berkshire",
@@ -3013,12 +3013,12 @@ const data = {
     },
     "1893": {
       "city": "London",
-      "external": "",
+      "external": "1188749",
       "latlng": {
-        "lat": 51.52374728812829,
-        "lng": -0.07846580212247177
+        "lat": 51.37229269195394,
+        "lng": -0.10011344888850023
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1894": {
       "city": "Oxfordshire",
@@ -3283,12 +3283,12 @@ const data = {
     },
     "1924": {
       "city": "London",
-      "external": "",
+      "external": "1200731",
       "latlng": {
-        "lat": 51.51613997834704,
-        "lng": -0.2052375194195213
+        "lat": 51.4639237930778,
+        "lng": -0.16360833771718145
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1925": {
       "city": "Hertfordshire",

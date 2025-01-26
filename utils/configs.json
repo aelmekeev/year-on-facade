@@ -301,7 +301,7 @@
     "config": {
       "country": "UK",
       "borders": {
-        "south": 51.577579,
+        "south": 51.415939,
         "north": 52.112387,
         "west": -2.696015,
         "east": -1.613902
@@ -481,6 +481,17 @@
         "north": 52.759932,
         "west": -0.823521,
         "east": -0.427326
+      }
+    }
+  },
+  "Shropshire": {
+    "config": {
+      "country": "UK",
+      "borders": {
+        "south": 52.30668,
+        "north": 52.995894,
+        "west": -3.2358947,
+        "east": -2.2333
       }
     }
   },
