@@ -1,2 +1,2 @@
-pandas==2.2.2
+pandas==2.2.3
 glob2==0.7
