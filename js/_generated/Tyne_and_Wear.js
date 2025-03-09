@@ -2,10 +2,10 @@ const data = {
   "config": {
     "country": "UK",
     "borders": {
-      "south": 51.805645,
-      "north": 52.318681,
-      "west": -1.332715,
-      "east": -0.143953
+      "south": 54.798945,
+      "north": 55.079193,
+      "west": -1.852756,
+      "east": -1.344328
     },
     "external": {
       "label": "Check out Historic England",
@@ -13,24 +13,16 @@ const data = {
     },
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
-    "city": "Bedfordshire"
+    "city": "Tyne_and_Wear"
   },
   "points": {
-    "1606": {
+    "1940": {
       "latlng": {
-        "lat": 52.20697961018959,
-        "lng": -0.6007400853734841
+        "lat": 54.996012973114794,
+        "lng": -1.5298320431936003
       },
       "notes": "TODO",
-      "external": "1321531"
-    },
-    "1919": {
-      "latlng": {
-        "lat": 51.91650722381577,
-        "lng": -0.6612180563189494
-      },
-      "notes": "TODO",
-      "external": "1114566"
+      "external": "1413007"
     }
   }
 }

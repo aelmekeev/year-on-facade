@@ -2705,12 +2705,12 @@ const data = {
     },
     "1859": {
       "city": "London",
-      "external": "",
+      "external": "1079125",
       "latlng": {
-        "lat": 51.42310704204055,
-        "lng": -0.33340331280270746
+        "lat": 51.5102393275951,
+        "lng": -0.07927167211097029
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1860": {
       "city": "London",
@@ -2839,12 +2839,12 @@ const data = {
     },
     "1874": {
       "city": "London",
-      "external": "",
+      "external": "1298116",
       "latlng": {
-        "lat": 51.486220666770585,
-        "lng": -0.1652195975638562
+        "lat": 51.52456237529174,
+        "lng": -0.10734403059642932
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1875": {
       "city": "Berkshire",
@@ -3008,12 +3008,12 @@ const data = {
     },
     "1893": {
       "city": "London",
-      "external": "",
+      "external": "1188749",
       "latlng": {
-        "lat": 51.52374728812829,
-        "lng": -0.07846580212247177
+        "lat": 51.37229269195394,
+        "lng": -0.10011344888850023
       },
-      "notes": ""
+      "notes": "TODO"
     },
     "1894": {
       "city": "Oxfordshire",
@@ -3423,6 +3423,15 @@ const data = {
       },
       "notes": ""
     },
+    "1946": {
+      "city": "Oxfordshire",
+      "external": "1225266",
+      "latlng": {
+        "lat": 51.80806901072555,
+        "lng": -1.6390568265814398
+      },
+      "notes": "TODO"
+    },
     "1947": {
       "city": "London",
       "external": "",
@@ -3485,6 +3494,15 @@ const data = {
         "lng": 1.0861043838878168
       },
       "notes": ""
+    },
+    "1956": {
+      "city": "West_Sussex",
+      "external": "1025569",
+      "latlng": {
+        "lat": 51.103874057070755,
+        "lng": -0.0855517119923174
+      },
+      "notes": "TODO"
     },
     "1957": {
       "city": "London",
@@ -3573,6 +3591,15 @@ const data = {
         "lng": 28.94677330547392
       },
       "notes": ""
+    },
+    "1977": {
+      "city": "Suffolk",
+      "external": "1342761",
+      "latlng": {
+        "lat": 52.24281898771393,
+        "lng": 0.7165934228786192
+      },
+      "notes": "TODO"
     },
     "1979": {
       "city": "London",
@@ -4059,6 +4086,15 @@ const data = {
         }
       }
     },
+    "Durham": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "East_Sussex": {
       "config": {
         "country": "UK",
@@ -4239,6 +4275,15 @@ const data = {
         }
       }
     },
+    "Shropshire": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
     "Somerset": {
       "config": {
         "country": "UK",
@@ -4276,6 +4321,15 @@ const data = {
       }
     },
     "Surrey": {
+      "config": {
+        "country": "UK",
+        "external": {
+          "label": "Check out Historic England",
+          "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
+        }
+      }
+    },
+    "Tyne_and_Wear": {
       "config": {
         "country": "UK",
         "external": {

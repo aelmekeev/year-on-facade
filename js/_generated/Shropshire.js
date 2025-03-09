@@ -2,10 +2,10 @@ const data = {
   "config": {
     "country": "UK",
     "borders": {
-      "south": 51.805645,
-      "north": 52.318681,
-      "west": -1.332715,
-      "east": -0.143953
+      "south": 52.30668,
+      "north": 52.995894,
+      "west": -3.2358947,
+      "east": -2.2333
     },
     "external": {
       "label": "Check out Historic England",
@@ -13,24 +13,16 @@ const data = {
     },
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
-    "city": "Bedfordshire"
+    "city": "Shropshire"
   },
   "points": {
-    "1606": {
+    "1926": {
       "latlng": {
-        "lat": 52.20697961018959,
-        "lng": -0.6007400853734841
+        "lat": 52.707911464799835,
+        "lng": -2.754870981925603
       },
       "notes": "TODO",
-      "external": "1321531"
-    },
-    "1919": {
-      "latlng": {
-        "lat": 51.91650722381577,
-        "lng": -0.6612180563189494
-      },
-      "notes": "TODO",
-      "external": "1114566"
+      "external": "1254625"
     }
   }
 }

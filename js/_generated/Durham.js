@@ -2,10 +2,10 @@ const data = {
   "config": {
     "country": "UK",
     "borders": {
-      "south": 51.805645,
-      "north": 52.318681,
-      "west": -1.332715,
-      "east": -0.143953
+      "south": 54.451169,
+      "north": 54.918501,
+      "west": -2.354813,
+      "east": -1.240996
     },
     "external": {
       "label": "Check out Historic England",
@@ -13,24 +13,16 @@ const data = {
     },
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
-    "city": "Bedfordshire"
+    "city": "Durham"
   },
   "points": {
-    "1606": {
+    "1936": {
       "latlng": {
-        "lat": 52.20697961018959,
-        "lng": -0.6007400853734841
+        "lat": 54.84545046498526,
+        "lng": -1.9737555319038076
       },
       "notes": "TODO",
-      "external": "1321531"
-    },
-    "1919": {
-      "latlng": {
-        "lat": 51.91650722381577,
-        "lng": -0.6612180563189494
-      },
-      "notes": "TODO",
-      "external": "1114566"
+      "external": "1229332"
     }
   }
 }
