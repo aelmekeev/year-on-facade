@@ -3592,6 +3592,15 @@ const data = {
       },
       "notes": ""
     },
+    "1977": {
+      "city": "Suffolk",
+      "external": "1342761",
+      "latlng": {
+        "lat": 52.24281898771393,
+        "lng": 0.7165934228786192
+      },
+      "notes": "TODO"
+    },
     "1979": {
       "city": "London",
       "external": "1224373",

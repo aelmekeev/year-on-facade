@@ -55,6 +55,14 @@ const data = {
       },
       "notes": "TODO",
       "external": "1355165"
+    },
+    "1977": {
+      "latlng": {
+        "lat": 52.24281898771393,
+        "lng": 0.7165934228786192
+      },
+      "notes": "TODO",
+      "external": "1342761"
     }
   }
 }
