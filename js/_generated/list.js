@@ -58,7 +58,7 @@ const data = [
   {name: "South_Yorkshire", country: "UK", count: 6, minYear: 1641},
   {name: "Staffordshire", country: "UK", count: 5, minYear: 1560},
   {name: "Suffolk", country: "UK", count: 6, minYear: 1541},
-  {name: "Surrey", country: "UK", count: 17, minYear: 1521},
+  {name: "Surrey", country: "UK", count: 22, minYear: 1521},
   {name: "Switzerland", country: "null", count: 5, minYear: 1566},
   {name: "Turkey", country: "null", count: 8, minYear: 1858},
   {name: "Tyne_and_Wear", country: "UK", count: 1, minYear: 1940},
