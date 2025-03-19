@@ -39,7 +39,7 @@ const data = {
         "lat": 51.631589719143406,
         "lng": -0.34381539560366137
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1520": {
       "city": "Kent",
@@ -2712,7 +2712,7 @@ const data = {
         "lat": 51.5102393275951,
         "lng": -0.07927167211097029
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1860": {
       "city": "London",
@@ -2847,7 +2847,7 @@ const data = {
         "lat": 51.52456237529174,
         "lng": -0.10734403059642932
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1875": {
       "city": "Berkshire",
@@ -3288,7 +3288,7 @@ const data = {
         "lat": 51.4639237930778,
         "lng": -0.16360833771718145
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1925": {
       "city": "Hertfordshire",
