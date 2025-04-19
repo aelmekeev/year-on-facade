@@ -38,7 +38,7 @@ const data = {
         "lat": 51.266855085866226,
         "lng": 0.07462773329547236
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1521": {
       "city": "Surrey",
@@ -3013,7 +3013,7 @@ const data = {
         "lat": 51.37229269195394,
         "lng": -0.10011344888850023
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1894": {
       "city": "Oxfordshire",
