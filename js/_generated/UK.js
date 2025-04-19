@@ -48,7 +48,7 @@ const data = {
         "lat": 51.266855085866226,
         "lng": 0.07462773329547236
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1521": {
       "city": "Surrey",
@@ -3018,7 +3018,7 @@ const data = {
         "lat": 51.37229269195394,
         "lng": -0.10011344888850023
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1894": {
       "city": "Oxfordshire",
@@ -3075,11 +3075,11 @@ const data = {
       "notes": ""
     },
     "1900": {
-      "city": "Hertfordshire",
+      "city": "Kent",
       "external": "",
       "latlng": {
-        "lat": 51.69730237248146,
-        "lng": -0.03607996118655262
+        "lat": 51.275979830007365,
+        "lng": 0.10642078368862186
       },
       "notes": ""
     },
@@ -3138,11 +3138,11 @@ const data = {
       "notes": ""
     },
     "1907": {
-      "city": "Hertfordshire",
+      "city": "Kent",
       "external": "",
       "latlng": {
-        "lat": 51.97895408646062,
-        "lng": -0.22650914516366155
+        "lat": 51.27809531661953,
+        "lng": 0.11113537632187857
       },
       "notes": ""
     },
