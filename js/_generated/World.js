@@ -38,7 +38,7 @@ const data = {
         "lat": 51.266855085866226,
         "lng": 0.07462773329547236
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1521": {
       "city": "Surrey",
@@ -1499,13 +1499,13 @@ const data = {
       "notes": ""
     },
     "1725": {
-      "city": "Kent",
-      "external": "1051628",
+      "city": "Surrey",
+      "external": "1242226",
       "latlng": {
-        "lat": 51.27615410765694,
-        "lng": 1.170241663356693
+        "lat": 51.39262494867464,
+        "lng": -0.5045436671898346
       },
-      "notes": ""
+      "notes": "Retake the photo"
     },
     "1726": {
       "city": "London",
@@ -3013,7 +3013,7 @@ const data = {
         "lat": 51.37229269195394,
         "lng": -0.10011344888850023
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1894": {
       "city": "Oxfordshire",
@@ -3406,11 +3406,11 @@ const data = {
       "notes": ""
     },
     "1939": {
-      "city": "Oxfordshire",
-      "external": "1390596",
+      "city": "Kent",
+      "external": "",
       "latlng": {
-        "lat": 51.75517371152019,
-        "lng": -1.2547228287670449
+        "lat": 51.27498186296646,
+        "lng": 1.0872767338589893
       },
       "notes": ""
     },
