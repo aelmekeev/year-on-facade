@@ -3102,11 +3102,11 @@ const data = {
       "notes": ""
     },
     "1903": {
-      "city": "Essex",
-      "external": "",
+      "city": "Manchester",
+      "external": "1282970",
       "latlng": {
-        "lat": 51.62758868320747,
-        "lng": 0.4194455310446117
+        "lat": 53.48478286315207,
+        "lng": -2.2429438023387624
       },
       "notes": ""
     },
