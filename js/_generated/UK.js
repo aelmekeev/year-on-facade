@@ -2769,11 +2769,11 @@ const data = {
       "notes": ""
     },
     "1866": {
-      "city": "Berkshire",
-      "external": "1117658",
+      "city": "Buckinghamshire",
+      "external": "1117911",
       "latlng": {
-        "lat": 51.48231928897483,
-        "lng": -0.6084290958655567
+        "lat": 51.83640794933766,
+        "lng": -0.5615422488230704
       },
       "notes": ""
     },
@@ -2985,11 +2985,11 @@ const data = {
       "notes": ""
     },
     "1890": {
-      "city": "Buckinghamshire",
+      "city": "Bedfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.63185374340803,
-        "lng": -0.5703936283144048
+        "lat": 51.916001652134,
+        "lng": -0.6654080090248569
       },
       "notes": ""
     },
@@ -3012,11 +3012,11 @@ const data = {
       "notes": ""
     },
     "1893": {
-      "city": "London",
-      "external": "1188749",
+      "city": "Hertfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.37229269195394,
-        "lng": -0.10011344888850023
+        "lat": 51.693389729686245,
+        "lng": -0.43620817548515944
       },
       "notes": ""
     },
@@ -3030,11 +3030,11 @@ const data = {
       "notes": ""
     },
     "1895": {
-      "city": "London",
-      "external": "1262632",
+      "city": "Hertfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.52142671357642,
-        "lng": -0.09445603724564877
+        "lat": 51.73833106115242,
+        "lng": -0.4708521445223124
       },
       "notes": ""
     },
@@ -3138,11 +3138,11 @@ const data = {
       "notes": ""
     },
     "1907": {
-      "city": "Essex",
+      "city": "Bedfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.62807392369522,
-        "lng": 0.1873278584975566
+        "lat": 51.91253362987546,
+        "lng": -0.6560666611963312
       },
       "notes": ""
     },
@@ -3192,11 +3192,11 @@ const data = {
       "notes": ""
     },
     "1913": {
-      "city": "Cambridgeshire",
-      "external": "1265198",
+      "city": "Bedfordshire",
+      "external": "1114545",
       "latlng": {
-        "lat": 52.2068823459644,
-        "lng": 0.12153695026033852
+        "lat": 51.91583998625966,
+        "lng": -0.6640274009161995
       },
       "notes": ""
     },
@@ -3237,11 +3237,11 @@ const data = {
       "notes": ""
     },
     "1919": {
-      "city": "London",
-      "external": "",
+      "city": "Bedfordshire",
+      "external": "1114566",
       "latlng": {
-        "lat": 51.52838568117278,
-        "lng": -0.018955591995673187
+        "lat": 51.91650722381577,
+        "lng": -0.6612180563189494
       },
       "notes": ""
     },
@@ -3885,11 +3885,11 @@ const data = {
       "notes": ""
     },
     "2014": {
-      "city": "London",
+      "city": "Bedfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.540693666854196,
-        "lng": -0.1779099390980688
+        "lat": 51.91206444548607,
+        "lng": -0.6555212917650547
       },
       "notes": ""
     },
