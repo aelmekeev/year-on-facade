@@ -2953,20 +2953,20 @@ const data = {
       "notes": ""
     },
     "1887": {
-      "city": "Berkshire",
+      "city": "Surrey",
       "external": "",
       "latlng": {
-        "lat": 51.464825146771176,
-        "lng": -0.5870811886445856
+        "lat": 51.336304667692424,
+        "lng": -0.32047797040111015
       },
       "notes": ""
     },
     "1888": {
-      "city": "Berkshire",
-      "external": "1117654",
+      "city": "Surrey",
+      "external": "1377701",
       "latlng": {
-        "lat": 51.47983291973321,
-        "lng": -0.6109149835855533
+        "lat": 51.40659015798892,
+        "lng": -0.405067201682028
       },
       "notes": ""
     },
@@ -2980,11 +2980,11 @@ const data = {
       "notes": ""
     },
     "1890": {
-      "city": "Berkshire",
+      "city": "Buckinghamshire",
       "external": "",
       "latlng": {
-        "lat": 51.47801015127985,
-        "lng": -0.6098602085865449
+        "lat": 51.63185374340803,
+        "lng": -0.5703936283144048
       },
       "notes": ""
     },
@@ -3052,11 +3052,11 @@ const data = {
       "notes": ""
     },
     "1898": {
-      "city": "Buckinghamshire",
+      "city": "West_Sussex",
       "external": "",
       "latlng": {
-        "lat": 51.70566833992258,
-        "lng": -0.6122235697062884
+        "lat": 50.9958191036349,
+        "lng": -0.06681543318895576
       },
       "notes": ""
     },
@@ -3157,11 +3157,11 @@ const data = {
       "notes": ""
     },
     "1910": {
-      "city": "Oxfordshire",
+      "city": "Buckinghamshire",
       "external": "",
       "latlng": {
-        "lat": 51.74825881066575,
-        "lng": -1.2257609375514278
+        "lat": 51.60920046844109,
+        "lng": -0.6461965753231689
       },
       "notes": ""
     },
@@ -3256,11 +3256,11 @@ const data = {
       "notes": ""
     },
     "1922": {
-      "city": "London",
-      "external": "",
+      "city": "Buckinghamshire",
+      "external": "1246220",
       "latlng": {
-        "lat": 51.528975682275586,
-        "lng": -0.11586027364646377
+        "lat": 51.613258587643465,
+        "lng": -0.6427076493075105
       },
       "notes": ""
     },
@@ -3335,11 +3335,11 @@ const data = {
       "notes": ""
     },
     "1931": {
-      "city": "Hertfordshire",
+      "city": "Berkshire",
       "external": "",
       "latlng": {
-        "lat": 51.94523697170843,
-        "lng": -0.017628102224327855
+        "lat": 51.521509539020876,
+        "lng": -0.5900437341421019
       },
       "notes": ""
     },
@@ -3353,11 +3353,11 @@ const data = {
       "notes": ""
     },
     "1933": {
-      "city": "Cambridgeshire",
+      "city": "Berkshire",
       "external": "",
       "latlng": {
-        "lat": 52.202136208265934,
-        "lng": 0.12468950748600041
+        "lat": 51.514568346089966,
+        "lng": -0.5927655306320888
       },
       "notes": ""
     },
@@ -3912,6 +3912,24 @@ const data = {
       "latlng": {
         "lat": 51.45052605390518,
         "lng": -0.18458900127279745
+      },
+      "notes": ""
+    },
+    "2022": {
+      "city": "Buckinghamshire",
+      "external": "",
+      "latlng": {
+        "lat": 51.62597061899684,
+        "lng": -0.5891999980015298
+      },
+      "notes": ""
+    },
+    "2024": {
+      "city": "Buckinghamshire",
+      "external": "",
+      "latlng": {
+        "lat": 51.630069224440284,
+        "lng": -0.5764845847960431
       },
       "notes": ""
     }

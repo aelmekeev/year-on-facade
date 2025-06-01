@@ -1,9 +1,17 @@
 <svg viewBox="0 0 522 35" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
-  <rect y="0" x="121" width="381" height="35" fill="#a3bff4" />
+  <rect y="0" x="121" width="401" height="35" fill="#a3bff4" />
   <rect y="0" x="121" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="229" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="342" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="387" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="395" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="396" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="397" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="402" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="407" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="411" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="419" width="1" height="35" fill="#c8e3c2" />
   <rect y="0" x="501" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="519" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="521" width="1" height="35" fill="#c8e3c2" />
 </svg>
