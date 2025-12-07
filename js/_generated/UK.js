@@ -75,7 +75,7 @@ const data = {
         "lat": 51.276032326338395,
         "lng": 1.3406467341966737
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1531": {
       "city": "Devon",
@@ -129,7 +129,7 @@ const data = {
         "lat": 51.244124723789355,
         "lng": 0.961133511902956
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1560": {
       "city": "Staffordshire",
@@ -156,7 +156,7 @@ const data = {
         "lat": 51.278286013669266,
         "lng": 1.3361504276118124
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1565": {
       "city": "Essex",
@@ -309,7 +309,7 @@ const data = {
         "lat": 51.27746919344422,
         "lng": 1.3385027309759503
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1593": {
       "city": "Northamptonshire",
