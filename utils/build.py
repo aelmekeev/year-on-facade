@@ -3,7 +3,7 @@ import glob
 import json
 import logging
 from datetime import datetime
-import pandas as pd
+import csv
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format="%(levelname)s - %(message)s")
@@ -35,30 +35,51 @@ def generate_cities_js_files(site_configs):
         logging.info(f"Generating {city}.js...")
 
         # Determine header based on config
-        dftypes = {"year": "int", "latitude": "string", "longitude": "string", "notes": "string"}
+        fieldnames = ["year", "latitude", "longitude", "notes"]
         if city in configs and "external" in configs[configs[city]["config"]["country"]]["config"]:
-            dftypes["external"] = "string"
+            fieldnames.append("external")
 
-        # Load and sort the CSV file, preserving the header
-        df = pd.read_csv(filepath, dtype=dftypes)
-        df = df.fillna("")
-        df = df.sort_values(by="year")
-        df.to_csv(filepath, index=False)
+        # Read CSV file using built-in csv module
+        data_list = []
+        with open(filepath, newline='', encoding='utf-8') as csvfile:
+            reader = csv.DictReader(csvfile)
+            rows = list(reader)
+            # Remove header row if present
+            if rows and rows[0]["year"] == "year":
+                rows = rows[1:]
+            # Fill missing fields with empty string and sort by year
+            for row in rows:
+                for field in fieldnames:
+                    if row.get(field) is None:
+                        row[field] = ""
+                data_list.append(row)
+            data_list.sort(key=lambda x: int(x["year"]))
 
-        # Delete last \n in the file as pandas adds it
-        with open(filepath, "rb+") as filehandle:
-            filehandle.seek(-1, os.SEEK_END)
-            filehandle.truncate()
+        # Overwrite CSV file with sorted data (no trailing newline)
+        with open(filepath, "w", newline='', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+            for i, row in enumerate(data_list):
+                writer.writerow(row)
+            # Remove trailing newline if present
+            csvfile.flush()
+            csvfile.seek(0, os.SEEK_END)
+            pos = csvfile.tell()
+            if pos > 0:
+                csvfile.truncate(pos - 1)
 
         # generate data points
-        data_list = df.to_dict(orient="records")
         points = {}
         for record in data_list:
-            point_data = {"latlng": {"lat": float(record["latitude"]), "lng": float(record["longitude"])}, "notes": record.get("notes", "")}
-            # Conditionally add 'external' only if it exists in the record
+            point_data = {
+                "latlng": {
+                    "lat": float(record["latitude"]),
+                    "lng": float(record["longitude"])
+                },
+                "notes": record.get("notes", "")
+            }
             if "external" in record:
                 point_data["external"] = str(record["external"])
-
             points[record["year"]] = point_data
 
         country = configs[city]["config"]["country"]
