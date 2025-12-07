@@ -295,7 +295,7 @@ def generate_list_of_routes():
 
     with open("./js/_generated/routes.js", "w") as f:
         f.write(f"{js_file_prefix}[\n")
-        for route in routes:
+        for route in sorted(routes):
             f.write(f'  "{route}",\n')
         f.write("]\n")
 
