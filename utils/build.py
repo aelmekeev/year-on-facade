@@ -263,6 +263,22 @@ def generate_geoguessr_json(name):
         json.dump(geoguessr_data, f, indent=2)
 
 
+# generates list of *.js files located in /js/routes/ and saves them as a JSON array in /js/_generated/routes.js
+def generate_list_of_routes():
+    logging.info("Generating routes.js...")
+
+    routes = []
+    for filename in glob.glob(os.path.join("js", "routes", "*.js")):
+        name = os.path.basename(filename).replace(".js", "")
+        routes.append(name)
+
+    with open("./js/_generated/routes.js", "w") as f:
+        f.write(f"{js_file_prefix}[\n")
+        for route in routes:
+            f.write(f'  "{route}",\n')
+        f.write("]\n")
+
+
 # Remove all generated files
 def cleanup():
     for file in glob.glob(os.path.join(js_output_dir, "*.js")):
@@ -289,6 +305,8 @@ def main():
 
     generate_geoguessr_json("World")
     generate_geoguessr_json("UK")
+
+    generate_list_of_routes()
 
 
 if __name__ == "__main__":
