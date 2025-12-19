@@ -35,7 +35,6 @@ const data = [
   "nw-preston-liverpool",
   "nw-preston-manchester-1",
   "nw-preston-manchester-2",
-  "se-crawley-brighton",
   "sw-barnstaple",
   "sw-bath-swindon",
   "sw-bournemouth",
