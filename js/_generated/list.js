@@ -15,7 +15,7 @@ const data = [
   {name: "Devon", country: "UK", count: 6, minYear: 1503},
   {name: "Dorset", country: "UK", count: 5, minYear: 1573},
   {name: "Durham", country: "UK", count: 1, minYear: 1936},
-  {name: "East_Sussex", country: "UK", count: 20, minYear: 1575},
+  {name: "East_Sussex", country: "UK", count: 19, minYear: 1575},
   {name: "East_Yorkshire", country: "UK", count: 2, minYear: 1787},
   {name: "Essex", country: "UK", count: 14, minYear: 1510},
   {name: "France", country: "null", count: 8, minYear: 1648},
