@@ -3183,11 +3183,11 @@ const data = {
       "notes": ""
     },
     "1912": {
-      "city": "East_Sussex",
-      "external": "",
+      "city": "London",
+      "external": "1031506",
       "latlng": {
-        "lat": 50.971271904216756,
-        "lng": 0.2501696879407318
+        "lat": 51.4858548662263,
+        "lng": -0.17595556945053117
       },
       "notes": ""
     },
