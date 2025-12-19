@@ -201,7 +201,7 @@ const data = {
         "lat": 51.02041946772488,
         "lng": 0.2615640207035947
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1576": {
       "city": "Somerset",
@@ -219,7 +219,7 @@ const data = {
         "lat": 50.872205861038275,
         "lng": 0.004118697306039961
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1578": {
       "city": "Somerset",
@@ -312,13 +312,13 @@ const data = {
       "notes": ""
     },
     "1593": {
-      "city": "Northamptonshire",
-      "external": "1040321",
+      "city": "Kent",
+      "external": "1243345",
       "latlng": {
-        "lat": 52.378580748499324,
-        "lng": -0.5433007067175213
+        "lat": 51.1550392524119,
+        "lng": 0.20072145725250426
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1594": {
       "city": "Northamptonshire",
@@ -465,13 +465,13 @@ const data = {
       "notes": "TODO"
     },
     "1610": {
-      "city": "Oxfordshire",
-      "external": "1047840",
+      "city": "Kent",
+      "external": "1243221",
       "latlng": {
-        "lat": 51.645101759970224,
-        "lng": -1.1666801597252294
+        "lat": 51.17100497780554,
+        "lng": 0.18012364391604188
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1611": {
       "city": "West_Yorkshire",
@@ -2625,11 +2625,11 @@ const data = {
       "notes": ""
     },
     "1850": {
-      "city": "London",
-      "external": "1376633",
+      "city": "Kent",
+      "external": "1243049",
       "latlng": {
-        "lat": 51.50683089044675,
-        "lng": -0.08835894613279457
+        "lat": 51.17312381543779,
+        "lng": 0.18389102574501215
       },
       "notes": ""
     },
@@ -2679,29 +2679,29 @@ const data = {
       "notes": ""
     },
     "1856": {
-      "city": "North_Yorkshire",
-      "external": "1316285",
-      "latlng": {
-        "lat": 53.94602536795454,
-        "lng": -1.0434694198175227
-      },
-      "notes": "TODO"
-    },
-    "1857": {
-      "city": "Hertfordshire",
+      "city": "Kent",
       "external": "",
       "latlng": {
-        "lat": 51.800746247287755,
-        "lng": 0.1120756162216123
+        "lat": 51.165376058220424,
+        "lng": 0.10902874825173096
+      },
+      "notes": ""
+    },
+    "1857": {
+      "city": "East_Sussex",
+      "external": "",
+      "latlng": {
+        "lat": 51.114911471789235,
+        "lng": 0.18549982752530797
       },
       "notes": ""
     },
     "1858": {
-      "city": "Manchester",
-      "external": "1254687",
+      "city": "East_Sussex",
+      "external": "",
       "latlng": {
-        "lat": 53.485412338495806,
-        "lng": -2.2350337069524175
+        "lat": 51.04511905260352,
+        "lng": 0.21936234101964042
       },
       "notes": ""
     },
@@ -2788,10 +2788,10 @@ const data = {
     },
     "1868": {
       "city": "East_Sussex",
-      "external": "",
+      "external": "1191537",
       "latlng": {
-        "lat": 50.82728137001251,
-        "lng": -0.1409624150127564
+        "lat": 50.872023956154436,
+        "lng": 0.006549200139550026
       },
       "notes": ""
     },
@@ -2823,11 +2823,11 @@ const data = {
       "notes": ""
     },
     "1872": {
-      "city": "London",
-      "external": "1207639",
+      "city": "Surrey",
+      "external": "",
       "latlng": {
-        "lat": 51.533805611907304,
-        "lng": -0.10502787664664018
+        "lat": 51.17247611233195,
+        "lng": 0.04068158262497076
       },
       "notes": ""
     },
@@ -2904,11 +2904,11 @@ const data = {
       "notes": ""
     },
     "1881": {
-      "city": "Manchester",
+      "city": "West_Sussex",
       "external": "",
       "latlng": {
-        "lat": 53.48481315792378,
-        "lng": -2.2379415645379126
+        "lat": 51.118732725775686,
+        "lng": -0.1572428017233331
       },
       "notes": ""
     },
@@ -2940,20 +2940,20 @@ const data = {
       "notes": ""
     },
     "1885": {
-      "city": "Berkshire",
+      "city": "East_Sussex",
       "external": "",
       "latlng": {
-        "lat": 51.48273067881295,
-        "lng": -0.6198019131887323
+        "lat": 51.05305140523682,
+        "lng": 0.2185426070191003
       },
       "notes": ""
     },
     "1886": {
-      "city": "Cambridgeshire",
+      "city": "East_Sussex",
       "external": "",
       "latlng": {
-        "lat": 52.19838701939176,
-        "lng": 0.1447122607388116
+        "lat": 51.09503936069076,
+        "lng": 0.20336131311071015
       },
       "notes": ""
     },
@@ -2976,11 +2976,11 @@ const data = {
       "notes": ""
     },
     "1889": {
-      "city": "Berkshire",
-      "external": "",
+      "city": "East_Sussex",
+      "external": "1194105",
       "latlng": {
-        "lat": 51.47791521236458,
-        "lng": -0.6100061130294592
+        "lat": 51.04515762001534,
+        "lng": 0.21958487587173098
       },
       "notes": ""
     },
@@ -3111,11 +3111,11 @@ const data = {
       "notes": ""
     },
     "1904": {
-      "city": "Surrey",
+      "city": "East_Sussex",
       "external": "",
       "latlng": {
-        "lat": 51.37301145270482,
-        "lng": -0.3599360081707331
+        "lat": 50.97327756810273,
+        "lng": 0.2207271211217026
       },
       "notes": ""
     },
@@ -3183,11 +3183,11 @@ const data = {
       "notes": ""
     },
     "1912": {
-      "city": "London",
-      "external": "1031506",
+      "city": "East_Sussex",
+      "external": "",
       "latlng": {
-        "lat": 51.4858548662263,
-        "lng": -0.17595556945053117
+        "lat": 50.971271904216756,
+        "lng": 0.2501696879407318
       },
       "notes": ""
     },
@@ -3201,11 +3201,11 @@ const data = {
       "notes": ""
     },
     "1914": {
-      "city": "East_Sussex",
+      "city": "Buckinghamshire",
       "external": "",
       "latlng": {
-        "lat": 50.82096548106133,
-        "lng": -0.13455930638858804
+        "lat": 51.61398113337143,
+        "lng": -0.644554923326663
       },
       "notes": ""
     },
@@ -3513,7 +3513,7 @@ const data = {
         "lat": 51.103874057070755,
         "lng": -0.0855517119923174
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1957": {
       "city": "London",
