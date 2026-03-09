@@ -51,11 +51,12 @@ h1 {
 
 .row {
   background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   width: 100%;
-  height: 35px;
-  line-height: 35px;
+  height: 42px; /* Increased from 35px for better mobile tap target */
+  line-height: 42px; /* Match the new height */
   margin-bottom: 2px;
+  cursor: pointer; /* Indicates it's clickable */
 }
 
 .row a:first-child {

@@ -59,9 +59,11 @@ function sortList(sortFunction = sortByCount) {
       const row = document.createElement('div')
       row.classList.add('row')
 
-      const statsLink = `<a href="${window.location.href
+      const statsUrl = `${window.location.href
         .replace(/\?.+/, '')
-        .replace(/(year-on-facade[^//]*)/, '$1/stats')}?city=${city}">${title}</a>`
+        .replace(/(year-on-facade[^//]*)/, '$1/stats')}?city=${city}`
+      
+      const statsLink = `<a href="${statsUrl}">${title}</a>`
       const citiesLink =
         !country && e.country == 'null'
           ? ` (<a href="${window.location.href}${window.location.href.includes("?") ? "&" : "?"}country=${e.name}">cities</a>)`
@@ -69,6 +71,15 @@ function sortList(sortFunction = sortByCount) {
       row.innerHTML = `${statsLink}${citiesLink} - ${score}`
 
       row.style.backgroundImage = `url("img/_generated/${(!country || country == 'World') ? city : 'country_' + city}.svg")`
+      
+      // Make the entire row clickable for mobile ease
+      row.onclick = (event) => {
+        // Prevent interference if the user clicked the separate 'cities' link
+        if (event.target.tagName.toLowerCase() !== 'a') {
+          window.location.href = statsUrl
+        }
+      }
+
       parent.appendChild(row)
     })
 }
