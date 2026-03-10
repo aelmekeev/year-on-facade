@@ -1,5 +1,6 @@
 const country = new URL(window.location.href).searchParams.get('country')
-const minYear = data.find(c => c.name == (country ? country : 'World')).minYear
+const parentData = data.find(c => c.name == (country ? country : 'World'))
+const minYear = parentData.minYear
 
 const sortByCount = (a, b) => {
   if (a.country == 'null' && b.country != 'null') {
@@ -56,6 +57,10 @@ function sortList(sortFunction = sortByCount) {
       const city = e.name.split(',')[0]
       const score = e.count
 
+      // Calculate localized progress metrics
+      const localRange = e.maxYear - e.minYear + 1
+      const localCoverage = Math.floor((score * 100) / localRange) || 0
+
       const row = document.createElement('div')
       row.classList.add('row')
 
@@ -68,13 +73,12 @@ function sortList(sortFunction = sortByCount) {
         !country && e.country == 'null'
           ? ` (<a href="${window.location.href}${window.location.href.includes("?") ? "&" : "?"}country=${e.name}">cities</a>)`
           : ''
-      row.innerHTML = `${statsLink}${citiesLink} - ${score}`
+          
+      row.innerHTML = `${statsLink}${citiesLink} - ${score} year${ score !== 1 ? `s (<span title="Local coverage">${localCoverage}%</span>)` : ''}`
 
       row.style.backgroundImage = `url("img/_generated/${(!country || country == 'World') ? city : 'country_' + city}.svg")`
       
-      // Make the entire row clickable for mobile ease
       row.onclick = (event) => {
-        // Prevent interference if the user clicked the separate 'cities' link
         if (event.target.tagName.toLowerCase() !== 'a') {
           window.location.href = statsUrl
         }

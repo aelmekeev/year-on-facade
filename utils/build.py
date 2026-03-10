@@ -222,12 +222,13 @@ def generate_list_js_file():
             country = data.get("config", {}).get("country", "null")
             years = list(data.get("points", {}).keys())
 
-            # Extract minimum year and count of valid entries
-            min_year = min([year[:4] for year in years]) if years else None
+            # Extract minimum year, maximum year and count of valid entries
+            min_year = min([int(year[:4]) for year in years if len(year) == 4]) if years else None
+            max_year = max([int(year[:4]) for year in years if len(year) == 4]) if years else None
             count = sum(1 for year in years if len(year) == 4)
 
             # Write the data to the list.js file
-            f.write(f'  {{name: "{name}", country: "{country}", count: {count}, minYear: {min_year}}},\n')
+            f.write(f'  {{name: "{name}", country: "{country}", count: {count}, minYear: {min_year}, maxYear: {max_year}}},\n')
 
         # End the data array
         f.write("]\n")
