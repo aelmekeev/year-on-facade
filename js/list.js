@@ -48,7 +48,7 @@ function sortList(sortFunction = sortByCount) {
       e =>
         (!country && e.country == 'null') ||
         (country != 'World' && (e.country == country || e.name == country)) ||
-        (country == 'World' && e.country != 'null')
+        (country == 'World' && e.country != 'null'),
     )
     .sort(sortFunction)
     .forEach(e => {
@@ -59,18 +59,25 @@ function sortList(sortFunction = sortByCount) {
       const row = document.createElement('div')
       row.classList.add('row')
 
-      const statsLink = `<a href="${window.location.href
+      const statsUrl = `${window.location.href
         .replace(/\?.+/, '')
-        .replace(/(year-on-facade[^//]*)/, '$1/stats')}?city=${city}">${title}</a>`
-      const citiesLink =
-        !country && e.country == 'null'
-          ? ` (<a href="${window.location.href}${window.location.href.includes("?") ? "&" : "?"}country=${e.name}">cities</a>)`
-          : ''
-          
-      // Wraps the text in a span to apply the background pill styling
-      row.innerHTML = `<span class="row-label">${statsLink}${citiesLink} - ${score}</span>`
+        .replace(/(year-on-facade[^//]*)/, '$1/stats')}?city=${city}`
+      const listUrl = `${window.location.href}${window.location.href.includes('?') ? '&' : '?'}country=${e.name}`
 
-      row.style.backgroundImage = `url("img/_generated/${(!country || country == 'World') ? city : 'country_' + city}.svg")`
+      console.log(country)
+      const rowUrl = country || title == 'World' ? statsUrl : listUrl
+
+      // Wraps the text in a span to apply the background pill styling
+      row.innerHTML = `<span class="row-label"><a href="${rowUrl}">${title}</a> - ${score}</span>`
+
+      row.style.backgroundImage = `url("img/_generated/${!country || country == 'World' ? city : 'country_' + city}.svg")`
+
+      row.onclick = event => {
+        if (event.target.tagName.toLowerCase() !== 'a') {
+          window.location.href = rowUrl
+        }
+      }
+
       parent.appendChild(row)
     })
 }
