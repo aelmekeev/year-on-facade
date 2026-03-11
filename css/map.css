@@ -31,14 +31,13 @@ body {
 }
 
 .year-marker {
-  background-color: #ec4242;
+  background-color: var(--marker-color, #ec4242);
   border-radius: 25px 25px 25px 25px;
   color: #FFFFFF;
   font-size: 9px;
   padding: 10px 5px;
   position: relative;
 }
-
 .year-marker::after {
   content: "";
   position: absolute;
@@ -49,5 +48,6 @@ body {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 8px solid #ec4242;
+  /* Tell the border to use the dynamic variable injected by JS */
+  border-top: 8px solid var(--marker-color, #ec4242); 
 }

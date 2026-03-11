@@ -4,6 +4,21 @@ body {
 
 h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 15px 10px;    
+  border-radius: 3px;    
+  margin-top: 10px;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+}
+
+/* High-contrast text pill for the header */
+.header-label {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 4px 12px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  line-height: 1.4;
 }
 
 .row, .stat {
@@ -22,22 +37,28 @@ h1 {
   margin-left: 10px;
 }
 
+#table {
+  margin-bottom: 40px;
+}
+
 .year {
-  width: 34px;
-  height: 34px;
-  background-color: #a3bff4;
+  width: 40px;
+  height: 40px;
+  background-color: #e5e5e5; /* Neutral grey for missing years to match SVG track */
   border: 0.5px solid white;
-  line-height: 34px;
+  line-height: 40px;
   text-align: center;
   font-size: 13px;
-  color: #37383a
+  color: #888; /* Dim text for empty slots */
+  box-sizing: border-box; /* Ensures our inset shadows below don't change square size */
 }
 
 .found {
-  background-color: #d5e5da;
+  /* background-color dynamically assigned via JS */
   cursor: pointer;
 }
 
 .external {
-  background-color: #b3d9b8;
+  /* Creates a subtle but unmissable "plaque border" without touching the background */
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5), inset 0 0 0 3px rgba(0, 0, 0, 0.4);
 }
