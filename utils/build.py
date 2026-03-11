@@ -19,8 +19,44 @@ js_file_prefix = "const data = "
 current_year = datetime.now().year
 default_min_year = 2000
 csv_height = 35
-csv_bg_color = "#a3bff4"
-csv_color = "#c8e3c2"
+csv_bg_color = "#e5e5e5" # Neutral light grey for the track
+
+
+# --- Architectural Color Gradient Logic (V2 - Bright & High Contrast) ---
+# Sequential colors to prevent muddy gradients and ensure centuries are distinct
+CENTURY_COLORS = {
+    1500: (194, 89, 83),   # Tudor Brick (Red)
+    1600: (224, 130, 75),  # Amber Terracotta (Orange)
+    1700: (232, 196, 79),  # Sandstone Gold (Yellow)
+    1800: (152, 201, 87),  # Victorian Garden (Bright Green)
+    1900: (75, 179, 169),  # Industrial Patina (Teal)
+    2000: (78, 140, 230),  # Modern Glass (Blue)
+    2100: (155, 93, 230)   # Future Steel (Violet)
+}
+
+def rgb_to_hex(rgb):
+    return '#{:02x}{:02x}{:02x}'.format(int(rgb[0]), int(rgb[1]), int(rgb[2]))
+
+def get_year_color(year):
+    # Clamp the year between 1500 and 2100 for safety
+    year = max(1500, min(2100, year))
+    century_start = (year // 100) * 100
+    century_end = century_start + 100
+    
+    if century_start >= 2100:
+        return rgb_to_hex(CENTURY_COLORS[2100])
+        
+    c1 = CENTURY_COLORS[century_start]
+    c2 = CENTURY_COLORS[century_end]
+    
+    # Linear interpolation between the two century anchor colors
+    factor = (year - century_start) / 100.0
+    r = c1[0] + (c2[0] - c1[0]) * factor
+    g = c1[1] + (c2[1] - c1[1]) * factor
+    b = c1[2] + (c2[2] - c1[2]) * factor
+    
+    return rgb_to_hex((r, g, b))
+# ------------------------------------------
 
 
 # Generate js files for each city
@@ -222,13 +258,12 @@ def generate_list_js_file():
             country = data.get("config", {}).get("country", "null")
             years = list(data.get("points", {}).keys())
 
-            # Extract minimum year, maximum year and count of valid entries
-            min_year = min([int(year[:4]) for year in years if len(year) == 4]) if years else None
-            max_year = max([int(year[:4]) for year in years if len(year) == 4]) if years else None
+            # Extract minimum year and count of valid entries
+            min_year = min([year[:4] for year in years]) if years else None
             count = sum(1 for year in years if len(year) == 4)
 
             # Write the data to the list.js file
-            f.write(f'  {{name: "{name}", country: "{country}", count: {count}, minYear: {min_year}, maxYear: {max_year}}},\n')
+            f.write(f'  {{name: "{name}", country: "{country}", count: {count}, minYear: {min_year}}},\n')
 
         # End the data array
         f.write("]\n")
@@ -265,11 +300,12 @@ def generate_svg(filename, world_view):
 
         f.write(f'  <rect y="0" x="{background_start}" width="{background_width}" height="{csv_height}" fill="{csv_bg_color}" />\n')
 
-        # Draw each year's rectangle
+        # Draw each year's rectangle with the new calculated bright color
         for year in years:
             if len(year) == 4:
                 rect_start = int(year) - min_year
-                f.write(f'  <rect y="0" x="{rect_start}" width="1" height="{csv_height}" fill="{csv_color}" />\n')
+                fill_color = get_year_color(int(year))
+                f.write(f'  <rect y="0" x="{rect_start}" width="1" height="{csv_height}" fill="{fill_color}" />\n')
 
         f.write("</svg>\n")
 

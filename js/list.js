@@ -1,6 +1,5 @@
 const country = new URL(window.location.href).searchParams.get('country')
-const parentData = data.find(c => c.name == (country ? country : 'World'))
-const minYear = parentData.minYear
+const minYear = data.find(c => c.name == (country ? country : 'World')).minYear
 
 const sortByCount = (a, b) => {
   if (a.country == 'null' && b.country != 'null') {
@@ -57,33 +56,21 @@ function sortList(sortFunction = sortByCount) {
       const city = e.name.split(',')[0]
       const score = e.count
 
-      // Calculate localized progress metrics
-      const localRange = e.maxYear - e.minYear + 1
-      const localCoverage = Math.floor((score * 100) / localRange) || 0
-
       const row = document.createElement('div')
       row.classList.add('row')
 
-      const statsUrl = `${window.location.href
+      const statsLink = `<a href="${window.location.href
         .replace(/\?.+/, '')
-        .replace(/(year-on-facade[^//]*)/, '$1/stats')}?city=${city}`
-      
-      const statsLink = `<a href="${statsUrl}">${title}</a>`
+        .replace(/(year-on-facade[^//]*)/, '$1/stats')}?city=${city}">${title}</a>`
       const citiesLink =
         !country && e.country == 'null'
           ? ` (<a href="${window.location.href}${window.location.href.includes("?") ? "&" : "?"}country=${e.name}">cities</a>)`
           : ''
           
-      row.innerHTML = `${statsLink}${citiesLink} - ${score} year${ score !== 1 ? `s (<span title="Local coverage">${localCoverage}%</span>)` : ''}`
+      // Wraps the text in a span to apply the background pill styling
+      row.innerHTML = `<span class="row-label">${statsLink}${citiesLink} - ${score}</span>`
 
       row.style.backgroundImage = `url("img/_generated/${(!country || country == 'World') ? city : 'country_' + city}.svg")`
-      
-      row.onclick = (event) => {
-        if (event.target.tagName.toLowerCase() !== 'a') {
-          window.location.href = statsUrl
-        }
-      }
-
       parent.appendChild(row)
     })
 }

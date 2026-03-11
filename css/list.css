@@ -56,20 +56,19 @@ h1 {
   height: 42px; /* Increased from 35px for better mobile tap target */
   line-height: 42px; /* Match the new height */
   margin-bottom: 2px;
-  cursor: pointer; /* Indicates it's clickable */
 }
 
-.row a {
-  display: inline-block; /* Allows the element to accept padding/height */
-  padding: 5px 15px;    /* Increases the hit area: 5px top/bottom, 15px left/right */
-  margin: -5px -15px;   /* Offsets the padding so the visual layout doesn't shift */
-  text-decoration: none; 
+/* New high-contrast text pill */
+.row-label {
+  background-color: rgba(255, 255, 255, 0.85); /* 85% opaque white */
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-left: 10px;
+  font-weight: 600; /* Makes it slightly bolder for readability */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  line-height: 1.4;
   vertical-align: middle;
-}
-
-.row a:first-child {
-  padding-left: 10px;
-  margin-left: 0px;
 }
 
 label {

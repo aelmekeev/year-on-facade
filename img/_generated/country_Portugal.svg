@@ -1,10 +1,10 @@
 <svg viewBox="0 0 269 35" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
-  <rect y="0" x="0" width="172" height="35" fill="#a3bff4" />
-  <rect y="0" x="0" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="108" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="126" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="135" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="155" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="160" width="1" height="35" fill="#c8e3c2" />
-  <rect y="0" x="171" width="1" height="35" fill="#c8e3c2" />
+  <rect y="0" x="0" width="172" height="35" fill="#e5e5e5" />
+  <rect y="0" x="0" width="1" height="35" fill="#bac653" />
+  <rect y="0" x="108" width="1" height="35" fill="#65ba8c" />
+  <rect y="0" x="126" width="1" height="35" fill="#58b69b" />
+  <rect y="0" x="135" width="1" height="35" fill="#51b4a2" />
+  <rect y="0" x="155" width="1" height="35" fill="#4baeb0" />
+  <rect y="0" x="160" width="1" height="35" fill="#4bacb3" />
+  <rect y="0" x="171" width="1" height="35" fill="#4ba8ba" />
 </svg>
