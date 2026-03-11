@@ -6,9 +6,19 @@ body {
   display: flex;
 }
 
+#logo {
+  width: 100%;
+}
+
+#logo p {
+  margin-top: 0;
+  font-style: italic;
+  font-size: smaller;
+}
+
 h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  width: 100%;
+  margin: 5px 0;
 }
 
 #links {
@@ -56,6 +66,12 @@ h1 {
   height: 42px; /* Increased from 35px for better mobile tap target */
   line-height: 42px; /* Match the new height */
   margin-bottom: 2px;
+  cursor: pointer; /* Indicates it's clickable */
+}
+
+.row a {
+  color: black;
+  text-decoration: none;
 }
 
 /* New high-contrast text pill */
@@ -64,7 +80,6 @@ h1 {
   padding: 4px 8px;
   border-radius: 4px;
   margin-left: 10px;
-  font-weight: 600; /* Makes it slightly bolder for readability */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   display: inline-block;
   line-height: 1.4;
