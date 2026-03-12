@@ -11,16 +11,29 @@ body {
 
 .control {
   margin-left: 10px;
+  margin-right: 10px;
+  /* Added right margin for the newly placed right-side button */
   user-select: none;
 }
 
 .control-ui {
   background-color: #fff;
-  border: 2px solid #fff;
-  border-radius: 3px;
-  box-shadow: 0 2px 6px rgba(0,0,0,.3);
+  border: 0px;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
   cursor: pointer;
   margin-bottom: 10px;
+  /* Ensuring mobile fat-finger touch target */
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.round {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
 }
 
 .control-text {
@@ -38,6 +51,7 @@ body {
   padding: 10px 5px;
   position: relative;
 }
+
 .year-marker::after {
   content: "";
   position: absolute;
@@ -49,5 +63,5 @@ body {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   /* Tell the border to use the dynamic variable injected by JS */
-  border-top: 8px solid var(--marker-color, #ec4242); 
+  border-top: 8px solid var(--marker-color, #ec4242);
 }

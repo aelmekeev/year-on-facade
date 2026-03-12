@@ -1,36 +1,36 @@
 // --- Architectural Color Gradient Logic ---
 const CENTURY_COLORS = {
-    1500: [194, 89, 83],   // Tudor Brick
-    1600: [224, 130, 75],  // Amber Terracotta
-    1700: [232, 196, 79],  // Sandstone Gold
-    1800: [152, 201, 87],  // Victorian Garden
-    1900: [75, 179, 169],  // Industrial Patina
-    2000: [78, 140, 230],  // Modern Glass
-    2100: [155, 93, 230]   // Future Steel
-};
+  1500: [194, 89, 83], // Tudor Brick
+  1600: [224, 130, 75], // Amber Terracotta
+  1700: [232, 196, 79], // Sandstone Gold
+  1800: [152, 201, 87], // Victorian Garden
+  1900: [75, 179, 169], // Industrial Patina
+  2000: [78, 140, 230], // Modern Glass
+  2100: [155, 93, 230], // Future Steel
+}
 
 function rgbToHex(r, g, b) {
-    return "#" + (1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1);
+  return '#' + ((1 << 24) | (r << 16) | (g << 8) | b).toString(16).slice(1)
 }
 
 function getYearColor(year) {
-    year = Math.max(1500, Math.min(2100, year));
-    const centuryStart = Math.floor(year / 100) * 100;
-    const centuryEnd = centuryStart + 100;
+  year = Math.max(1500, Math.min(2100, year))
+  const centuryStart = Math.floor(year / 100) * 100
+  const centuryEnd = centuryStart + 100
 
-    if (centuryStart >= 2100) {
-        return rgbToHex(...CENTURY_COLORS[2100]);
-    }
+  if (centuryStart >= 2100) {
+    return rgbToHex(...CENTURY_COLORS[2100])
+  }
 
-    const c1 = CENTURY_COLORS[centuryStart];
-    const c2 = CENTURY_COLORS[centuryEnd];
+  const c1 = CENTURY_COLORS[centuryStart]
+  const c2 = CENTURY_COLORS[centuryEnd]
 
-    const factor = (year - centuryStart) / 100.0;
-    const r = Math.round(c1[0] + (c2[0] - c1[0]) * factor);
-    const g = Math.round(c1[1] + (c2[1] - c1[1]) * factor);
-    const b = Math.round(c1[2] + (c2[2] - c1[2]) * factor);
+  const factor = (year - centuryStart) / 100.0
+  const r = Math.round(c1[0] + (c2[0] - c1[0]) * factor)
+  const g = Math.round(c1[1] + (c2[1] - c1[1]) * factor)
+  const b = Math.round(c1[2] + (c2[2] - c1[2]) * factor)
 
-    return rgbToHex(r, g, b);
+  return rgbToHex(r, g, b)
 }
 // ------------------------------------------
 
@@ -74,11 +74,53 @@ function TodoFilterControl(controlDiv) {
   })
 }
 
+// NEW: Mobile-first Geolocation Control
+function CurrentLocationControl(controlDiv, map) {
+  controlDiv.classList.add('control')
+
+  const controlUI = document.createElement('div')
+  controlUI.classList.add('control-ui')
+  controlUI.classList.add('round')
+  controlUI.title = 'Click to find your current location'
+  controlDiv.appendChild(controlUI)
+
+  const controlText = document.createElement('div')
+  controlText.classList.add('control-text')
+  // Using an emoji as a lightweight icon instead of loading an image asset
+  controlText.innerHTML = '📍'
+  controlUI.appendChild(controlText)
+
+  controlUI.addEventListener('click', () => {
+    if (navigator.geolocation) {
+      controlText.innerHTML = '⏳'
+      navigator.geolocation.getCurrentPosition(
+        position => {
+          const pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          }
+          map.setCenter(pos)
+          map.setZoom(16) // Zoom in close enough to see the street level
+          controlText.innerHTML = '📍'
+        },
+        () => {
+          alert('Error: The Geolocation service failed or permission was denied.')
+          controlText.innerHTML = '📍'
+        },
+        // enableHighAccuracy is essential for cycling and precise hunting
+        { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 },
+      )
+    } else {
+      alert("Error: Your browser doesn't support geolocation.")
+    }
+  })
+}
+
 var start, end, lastClicked
 let map
 let markers = {}
 
-function toggleTODOMarkers(showOnlyTODO) {  
+function toggleTODOMarkers(showOnlyTODO) {
   for (const year in markers) {
     const marker = markers[year]
     whenOnlyTODO = showOnlyTODO && (marker.todo || marker.replacement)
@@ -115,18 +157,22 @@ async function initMap() {
   const year = url.searchParams.get('year')
   const points = data.points
 
-  const { Map } = await google.maps.importLibrary("maps");
-  const {AdvancedMarkerElement} = await google.maps.importLibrary("marker")
+  const { Map } = await google.maps.importLibrary('maps')
+  const { AdvancedMarkerElement } = await google.maps.importLibrary('marker')
 
   map = new Map(document.getElementById('map'), {
     clickableIcons: false,
+    fullscreenControl: false,
+    cameraControl: false,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
     },
-    restriction: data.config.borders ? {
-      latLngBounds: data.config.borders,
-    } : null,
-    mapId: '58733f12c8d8eb66' // https://console.cloud.google.com/google/maps-apis/studio/maps?project=year-on-facade
+    restriction: data.config.borders
+      ? {
+          latLngBounds: data.config.borders,
+        }
+      : null,
+    mapId: '58733f12c8d8eb66', // https://console.cloud.google.com/google/maps-apis/studio/maps?project=year-on-facade
   })
 
   setCenter(map, year)
@@ -142,24 +188,30 @@ async function initMap() {
     map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(todoFilterControlDiv)
   }
 
+  // Inject the new Geolocation Control
+  const locationControlDiv = document.createElement('div')
+  CurrentLocationControl(locationControlDiv, map)
+  // Placing on RIGHT_BOTTOM for easier thumb access on mobile
+  map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(locationControlDiv)
+
   for (const year in points) {
     const title = year.slice(0, 4)
 
     const yearMarker = document.createElement('div')
     yearMarker.className = 'year-marker'
     yearMarker.textContent = title
-    
-    // 1. Calculate the dynamic color once
-    const dynamicColor = getYearColor(parseInt(title, 10));
-    
-    // 2. Apply it to the main background
-    yearMarker.style.backgroundColor = dynamicColor;
-    
-    // 3. Set the CSS custom property for the ::after pseudo-element to pick up!
-    yearMarker.style.setProperty('--marker-color', dynamicColor);
 
-    yearMarker.style.color = '#ffffff';
-    yearMarker.style.textShadow = '0px 1px 2px rgba(0,0,0,0.5)';
+    // 1. Calculate the dynamic color once
+    const dynamicColor = getYearColor(parseInt(title, 10))
+
+    // 2. Apply it to the main background
+    yearMarker.style.backgroundColor = dynamicColor
+
+    // 3. Set the CSS custom property for the ::after pseudo-element to pick up!
+    yearMarker.style.setProperty('--marker-color', dynamicColor)
+
+    yearMarker.style.color = '#ffffff'
+    yearMarker.style.textShadow = '0px 1px 2px rgba(0,0,0,0.5)'
 
     const marker = new AdvancedMarkerElement({
       position: points[year].latlng,
@@ -170,9 +222,9 @@ async function initMap() {
     marker.addListener('click', () => {
       if (lastClicked == year) {
         const currentUrl = window.location.href
-        window.location.assign(`${currentUrl
-          .replace('/map', '/item')
-          .replace(/[\?&]year=\d+_?/, '')}&year=${marker.title}`)
+        window.location.assign(
+          `${currentUrl.replace('/map', '/item').replace(/[\?&]year=\d+_?/, '')}&year=${marker.title}`,
+        )
       } else {
         map.setZoom(15)
         map.setCenter(marker.position)
