@@ -100,7 +100,7 @@ function CurrentLocationControl(controlDiv, map) {
             lng: position.coords.longitude,
           }
           map.setCenter(pos)
-          map.setZoom(16) // Zoom in close enough to see the street level
+          map.setZoom(15) // Zoom in close enough to see the street level
           controlText.innerHTML = '📍'
         },
         () => {
