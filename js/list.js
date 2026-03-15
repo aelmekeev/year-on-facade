@@ -1,4 +1,5 @@
 const country = new URL(window.location.href).searchParams.get('country')
+const year = new URL(window.location.href).searchParams.get('year')
 const minYear = data.find(c => c.name == (country ? country : 'World')).minYear
 
 const sortByCount = (a, b) => {
@@ -64,13 +65,44 @@ function sortList(sortFunction = sortByCount) {
         .replace(/(year-on-facade[^//]*)/, '$1/stats')}?city=${city}`
       const listUrl = `${window.location.href}${window.location.href.includes('?') ? '&' : '?'}country=${e.name}`
 
-      console.log(country)
       const rowUrl = country || title == 'World' ? statsUrl : listUrl
-
       // Wraps the text in a span to apply the background pill styling
       row.innerHTML = `<span class="row-label"><a href="${rowUrl}">${title}</a> - ${score}</span>`
-
       row.style.backgroundImage = `url("img/_generated/${!country || country == 'World' ? city : 'country_' + city}.svg")`
+
+      row.onclick = event => {
+        if (event.target.tagName.toLowerCase() !== 'a') {
+          window.location.href = rowUrl
+        }
+      }
+
+      parent.appendChild(row)
+    })
+}
+
+function sortListByYear() {
+  const parent = document.querySelector('#list')
+  parent.innerHTML = ''
+
+  document.querySelector('#sort').style.display = 'none'
+  document.querySelector('#marks').style.display = 'none'
+
+  const cities = yearsData[year] || []
+  cities
+    .sort((a, b) => a.localeCompare(b))
+    .forEach(city => {
+      const title = city.replaceAll('_', ' ')
+
+      const row = document.createElement('div')
+      row.classList.add('row')
+
+      const rowUrl = `${window.location.href
+        .replace(/\?.+/, '')
+        .replace(/(year-on-facade[^//]*)/, '$1/item')}?city=${city}&year=${year}`
+
+      // Wraps the text in a span to apply the background pill styling
+      row.innerHTML = `<span class="row-label"><a href="${rowUrl}">${title}</a></span>`
+      row.style.backgroundImage = `url("img/_generated/${city}.svg")`
 
       row.onclick = event => {
         if (event.target.tagName.toLowerCase() !== 'a') {
@@ -95,20 +127,59 @@ function updateMarks() {
   document.querySelector('#end').innerText = new Date().getFullYear()
 }
 
+function setupYearSearch() {
+  const searchInput = document.querySelector('#year-search')
+  const searchBtn = document.querySelector('#year-search-btn')
+
+  const performSearch = () => {
+    const searchYear = searchInput.value
+    if (searchYear && yearsData && yearsData[searchYear]) {
+      const url = new URL(window.location.href)
+      url.searchParams.delete('country') // Prevent combining filters
+      url.searchParams.set('year', searchYear)
+      window.location.href = url.toString()
+    } else if (searchYear) {
+      alert(`Year ${searchYear} not found in collection.`)
+    }
+  }
+
+  searchBtn.addEventListener('click', performSearch)
+  searchInput.addEventListener('keypress', e => {
+    if (e.key === 'Enter') performSearch()
+  })
+}
+
 function updateList() {
-  sortList()
-  document.querySelectorAll('[name=sort]').forEach(r => (r.onclick = sortListListener(r.value)))
-  updateMarks()
+  if (year) {
+    sortListByYear()
+  } else {
+    sortList()
+    document.querySelectorAll('[name=sort]').forEach(r => (r.onclick = sortListListener(r.value)))
+    updateMarks()
+  }
 }
 
 function addOtherCountriesLink() {
   const container = document.createElement('p')
   container.innerHTML = `<a href="${window.location.href.replace(/\?.+/, '')}">Checkout all countries</a>`
-  document.body.insertBefore(container, document.querySelector('div#sort'))
+  document.body.insertBefore(container, document.querySelector('#controls'))
+}
+
+function hideSearchControls() {
+  document.querySelector('#search-container').style.display = 'none'
 }
 
 window.onload = () => {
-  if (country && country != 'World') document.querySelector('h1').innerHTML = `Year on Facade (${country})`
-  if (country) addOtherCountriesLink()
+  if (year) {
+    document.querySelector('h1').innerHTML = `Year on Facade (${year})`
+  } else if (country && country != 'World') {
+    document.querySelector('h1').innerHTML = `Year on Facade (${country})`
+  }
+
+  if (country || year) {
+    addOtherCountriesLink()
+    hideSearchControls()
+  }
+  setupYearSearch()
   updateList()
 }

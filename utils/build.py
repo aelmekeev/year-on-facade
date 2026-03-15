@@ -268,6 +268,27 @@ def generate_list_js_file():
         # End the data array
         f.write("]\n")
 
+# Generate mappings from year to all associated cities
+def generate_years_js_file():
+    logging.info("Generating years.js...")
+    years_dict = {}
+    for filepath in glob.glob(os.path.join(csv_dir, "**", "*.csv")):
+        city = os.path.basename(filepath).replace(".csv", "")
+        with open(filepath, newline='', encoding='utf-8') as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                year = row.get("year", "")
+                if year and year != "year":
+                    if year not in years_dict:
+                        years_dict[year] = []
+                    if city not in years_dict[year]:
+                        years_dict[year].append(city)
+
+    for year in years_dict:
+        years_dict[year].sort()
+
+    with open(os.path.join(js_output_dir, "years.js"), "w") as f:
+        f.write(f"const yearsData = {json.dumps(years_dict, indent=2, ensure_ascii=False)};\n")
 
 # Generate SVG files for each city or country
 def generate_svg(filename, world_view):
@@ -360,6 +381,7 @@ def main():
         generate_svg(filename, False)  # Country view
 
     generate_list_js_file()
+    generate_years_js_file()
 
     generate_geoguessr_json("World")
     generate_geoguessr_json("UK")

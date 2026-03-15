@@ -64,6 +64,10 @@ function updateLinks(city, year) {
   const statsUrl = `${currentLocation.origin}${currentLocation.pathname.replace('/item', '/stats')}`
   more.href = `${statsUrl}?city=${city}`
 
+  const moreYear = document.querySelector('#more-year a')
+  const indexUrl = `${currentLocation.origin}${currentLocation.pathname.replace('/item', '')}`
+  moreYear.href = `${indexUrl}?year=${year}`
+
   // handle Back to World view link
   const url = new URL(currentLocation.href)
   if (url.searchParams.get('city') == 'World') {

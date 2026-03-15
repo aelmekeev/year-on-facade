@@ -52,7 +52,7 @@ def main():
     # Step 2: Validate coordinates within borders
     for filename in glob.glob("./js/_generated/*.js"):
         city = os.path.basename(filename).replace(".js", "")
-        if city not in ["list", "World", "routes"]:
+        if city not in ["list", "years", "World", "routes"]:
             validate_coordinates_within_borders(filename, errors)
 
     if errors:
