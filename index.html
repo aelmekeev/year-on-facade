@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width" />
   <meta charset="UTF-16">
   <script src="js/_generated/list.js"></script>
+  <script src="js/_generated/years.js"></script>
   <script src="js/list.js"></script>
 </head>
 
@@ -26,12 +27,19 @@
     </div>
   </div>
 
-  <div id="sort">
-    <span>Sort</span>
-    <input type="radio" id="by_count" name="sort" value="by_count" checked />
-    <label for="by_count">by count</label>
-    <input type="radio" id="alphabetically" name="sort" value="alphabetically" />
-    <label for="alphabetically">alphabetically</label>
+  <div id="controls">
+    <div id="search-container" style="margin-bottom: 15px;">
+      <input type="number" id="year-search" placeholder="Enter year..." min="1000" max="2100" style="padding: 5px; font-size: 16px; width: 120px;" />
+      <button id="year-search-btn" style="padding: 6px 12px; font-size: 16px;">Search</button>
+    </div>
+
+    <div id="sort">
+      <span>Sort</span>
+      <input type="radio" id="by_count" name="sort" value="by_count" checked />
+      <label for="by_count">by count</label>
+      <input type="radio" id="alphabetically" name="sort" value="alphabetically" />
+      <label for="alphabetically">alphabetically</label>
+    </div>
   </div>
 
   <div id="marks">
