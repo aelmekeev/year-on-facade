@@ -19,43 +19,47 @@ js_file_prefix = "const data = "
 current_year = datetime.now().year
 default_min_year = 2000
 csv_height = 35
-csv_bg_color = "#e5e5e5" # Neutral light grey for the track
+csv_bg_color = "#e5e5e5"  # Neutral light grey for the track
 
 
 # --- Architectural Color Gradient Logic (V2 - Bright & High Contrast) ---
 # Sequential colors to prevent muddy gradients and ensure centuries are distinct
 CENTURY_COLORS = {
-    1500: (194, 89, 83),   # Tudor Brick (Red)
+    1500: (194, 89, 83),  # Tudor Brick (Red)
     1600: (224, 130, 75),  # Amber Terracotta (Orange)
     1700: (232, 196, 79),  # Sandstone Gold (Yellow)
     1800: (152, 201, 87),  # Victorian Garden (Bright Green)
     1900: (75, 179, 169),  # Industrial Patina (Teal)
     2000: (78, 140, 230),  # Modern Glass (Blue)
-    2100: (155, 93, 230)   # Future Steel (Violet)
+    2100: (155, 93, 230),  # Future Steel (Violet)
 }
 
+
 def rgb_to_hex(rgb):
-    return '#{:02x}{:02x}{:02x}'.format(int(rgb[0]), int(rgb[1]), int(rgb[2]))
+    return "#{:02x}{:02x}{:02x}".format(int(rgb[0]), int(rgb[1]), int(rgb[2]))
+
 
 def get_year_color(year):
     # Clamp the year between 1500 and 2100 for safety
     year = max(1500, min(2100, year))
     century_start = (year // 100) * 100
     century_end = century_start + 100
-    
+
     if century_start >= 2100:
         return rgb_to_hex(CENTURY_COLORS[2100])
-        
+
     c1 = CENTURY_COLORS[century_start]
     c2 = CENTURY_COLORS[century_end]
-    
+
     # Linear interpolation between the two century anchor colors
     factor = (year - century_start) / 100.0
     r = c1[0] + (c2[0] - c1[0]) * factor
     g = c1[1] + (c2[1] - c1[1]) * factor
     b = c1[2] + (c2[2] - c1[2]) * factor
-    
+
     return rgb_to_hex((r, g, b))
+
+
 # ------------------------------------------
 
 
@@ -77,7 +81,7 @@ def generate_cities_js_files(site_configs):
 
         # Read CSV file using built-in csv module
         data_list = []
-        with open(filepath, newline='', encoding='utf-8') as csvfile:
+        with open(filepath, newline="", encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
             rows = list(reader)
             # Remove header row if present
@@ -92,7 +96,7 @@ def generate_cities_js_files(site_configs):
             data_list.sort(key=lambda x: int(x["year"]))
 
         # Overwrite CSV file with sorted data (no trailing newline)
-        with open(filepath, "w", newline='', encoding='utf-8') as csvfile:
+        with open(filepath, "w", newline="", encoding="utf-8") as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
             for i, row in enumerate(data_list):
@@ -108,11 +112,8 @@ def generate_cities_js_files(site_configs):
         points = {}
         for record in data_list:
             point_data = {
-                "latlng": {
-                    "lat": float(record["latitude"]),
-                    "lng": float(record["longitude"])
-                },
-                "notes": record.get("notes", "")
+                "latlng": {"lat": float(record["latitude"]), "lng": float(record["longitude"])},
+                "notes": record.get("notes", ""),
             }
             if "external" in record:
                 point_data["external"] = str(record["external"])
@@ -208,7 +209,9 @@ def generate_js_file(site_configs, name, points):
                 del city_config["citiesConfig"][key]["config"]["borders"]
             if "country" in city_config["citiesConfig"][key]["config"]:
                 country = city_config["citiesConfig"][key]["config"]["country"]
-                city_config["citiesConfig"][key]["config"]["external"] = global_configs[country]["config"].get("external", None)
+                city_config["citiesConfig"][key]["config"]["external"] = global_configs[country]["config"].get(
+                    "external", None
+                )
 
     # Write the final JavaScript file
     with open(os.path.join(js_output_dir, f"{name}.js"), "w") as f:
@@ -268,13 +271,15 @@ def generate_list_js_file():
         # End the data array
         f.write("]\n")
 
+
 # Generate mappings from year to all associated cities
 def generate_years_js_file():
     logging.info("Generating years.js...")
     years_dict = {}
-    for filepath in glob.glob(os.path.join(csv_dir, "**", "*.csv")):
+
+    for filepath in sorted(glob.glob(os.path.join(csv_dir, "**", "*.csv"))):
         city = os.path.basename(filepath).replace(".csv", "")
-        with open(filepath, newline='', encoding='utf-8') as csvfile:
+        with open(filepath, newline="", encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 year = row.get("year", "")
@@ -288,7 +293,8 @@ def generate_years_js_file():
         years_dict[year].sort()
 
     with open(os.path.join(js_output_dir, "years.js"), "w") as f:
-        f.write(f"const yearsData = {json.dumps(years_dict, indent=2, ensure_ascii=False)};\n")
+        f.write(f"const yearsData = {json.dumps(years_dict, indent=2, ensure_ascii=False, sort_keys=True)};\n")
+
 
 # Generate SVG files for each city or country
 def generate_svg(filename, world_view):
@@ -310,7 +316,9 @@ def generate_svg(filename, world_view):
 
     svg_file = os.path.join(img_output_dir, f"{svg_name}.svg")
     with open(svg_file, "w") as f:
-        f.write(f'<svg viewBox="0 0 {width} {csv_height}" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">\n')
+        f.write(
+            f'<svg viewBox="0 0 {width} {csv_height}" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">\n'
+        )
 
         # Draw the background
         years = list(data.get("points", {}).keys())
@@ -319,7 +327,9 @@ def generate_svg(filename, world_view):
         background_width = last_year - first_year + 1
         background_start = first_year - min_year
 
-        f.write(f'  <rect y="0" x="{background_start}" width="{background_width}" height="{csv_height}" fill="{csv_bg_color}" />\n')
+        f.write(
+            f'  <rect y="0" x="{background_start}" width="{background_width}" height="{csv_height}" fill="{csv_bg_color}" />\n'
+        )
 
         # Draw each year's rectangle with the new calculated bright color
         for year in years:
@@ -333,12 +343,14 @@ def generate_svg(filename, world_view):
 
 # build geoguessr json
 def generate_geoguessr_json(name):
-    logging.info(f'Generating {name}_geoguessr.json...')
+    logging.info(f"Generating {name}_geoguessr.json...")
 
-    data = read_js_file(os.path.join(js_output_dir, f'{name}.js'))
-    geoguessr_data = [{**point["latlng"], "heading": 0, "pitch": 0, "zoom": 1} for point in data.get("points", {}).values()]
+    data = read_js_file(os.path.join(js_output_dir, f"{name}.js"))
+    geoguessr_data = [
+        {**point["latlng"], "heading": 0, "pitch": 0, "zoom": 1} for point in data.get("points", {}).values()
+    ]
 
-    with open(os.path.join(js_output_dir, f'{name}_geoguessr.json'), "w") as f:
+    with open(os.path.join(js_output_dir, f"{name}_geoguessr.json"), "w") as f:
         json.dump(geoguessr_data, f, indent=2)
 
 
