@@ -1,7 +1,86 @@
 const yearsData = {
-  "2010": [
+  "1757": [
+    "Sintra",
+    "West_Yorkshire"
+  ],
+  "1892": [
+    "Cambridgeshire",
     "London",
-    "Perm"
+    "Porto",
+    "Surrey"
+  ],
+  "1928": [
+    "Essex",
+    "Hertfordshire",
+    "Istanbul",
+    "London",
+    "Porto",
+    "Rome"
+  ],
+  "1865": [
+    "Lisbon",
+    "London"
+  ],
+  "1883": [
+    "Cambridgeshire",
+    "Lisbon",
+    "London"
+  ],
+  "1912": [
+    "Lisbon",
+    "London",
+    "Zurich"
+  ],
+  "1917": [
+    "Berkshire",
+    "Lisbon"
+  ],
+  "1923": [
+    "London",
+    "Schaan",
+    "Surrey"
+  ],
+  "1858": [
+    "East_Sussex",
+    "Istanbul",
+    "London",
+    "Manchester"
+  ],
+  "1867": [
+    "Berkshire",
+    "Cambridgeshire",
+    "Istanbul",
+    "London"
+  ],
+  "1876": [
+    "Istanbul",
+    "London"
+  ],
+  "1905": [
+    "Buckinghamshire",
+    "East_Sussex",
+    "Hertfordshire",
+    "Istanbul",
+    "Kent",
+    "London",
+    "Oxfordshire",
+    "Surrey"
+  ],
+  "1907": [
+    "Bedfordshire",
+    "Essex",
+    "Hertfordshire",
+    "Istanbul",
+    "Kent",
+    "London",
+    "Oxfordshire"
+  ],
+  "1968": [
+    "Istanbul"
+  ],
+  "1969": [
+    "Istanbul",
+    "London"
   ],
   "1648": [
     "Manchester",
@@ -53,265 +132,78 @@ const yearsData = {
     "London",
     "Oxfordshire"
   ],
-  "1858": [
-    "East_Sussex",
-    "Istanbul",
+  "2010": [
     "London",
-    "Manchester"
+    "Perm"
   ],
-  "1867": [
-    "Berkshire",
+  "1886": [
     "Cambridgeshire",
-    "Istanbul",
-    "London"
-  ],
-  "1876": [
-    "Istanbul",
-    "London"
-  ],
-  "1905": [
-    "Buckinghamshire",
     "East_Sussex",
-    "Hertfordshire",
-    "Istanbul",
-    "Kent",
     "London",
-    "Oxfordshire",
-    "Surrey"
-  ],
-  "1907": [
-    "Bedfordshire",
-    "Essex",
-    "Hertfordshire",
-    "Istanbul",
-    "Kent",
-    "London",
-    "Oxfordshire"
-  ],
-  "1928": [
-    "Essex",
-    "Hertfordshire",
-    "Istanbul",
-    "London",
-    "Porto",
     "Rome"
   ],
-  "1968": [
-    "Istanbul"
-  ],
-  "1969": [
-    "Istanbul",
+  "1924": [
+    "Billund",
     "London"
   ],
-  "1900": [
-    "Buckinghamshire",
-    "Hertfordshire",
-    "Kent",
-    "London",
-    "Monaco"
-  ],
-  "1757": [
-    "Sintra",
-    "West_Yorkshire"
-  ],
-  "1865": [
-    "Lisbon",
-    "London"
-  ],
-  "1883": [
-    "Cambridgeshire",
-    "Lisbon",
-    "London"
-  ],
-  "1912": [
-    "Lisbon",
-    "London",
-    "Zurich"
-  ],
-  "1917": [
-    "Berkshire",
-    "Lisbon"
-  ],
-  "1892": [
-    "Cambridgeshire",
-    "London",
-    "Porto",
-    "Surrey"
-  ],
-  "1566": [
-    "Zurich"
-  ],
-  "1593": [
-    "Kent",
-    "Northamptonshire",
-    "Zurich"
-  ],
-  "1689": [
-    "Lincolnshire",
-    "Zurich"
-  ],
-  "1915": [
-    "Cambridgeshire",
-    "London",
-    "Zurich"
-  ],
-  "1923": [
-    "London",
-    "Schaan",
-    "Surrey"
-  ],
-  "1674": [
-    "Worcestershire"
-  ],
-  "1712": [
-    "East_Sussex",
-    "West_Midlands"
-  ],
-  "1804": [
-    "West_Midlands"
-  ],
-  "1954": [
-    "London",
-    "West_Midlands",
-    "West_Sussex"
-  ],
-  "1560": [
-    "Staffordshire"
-  ],
-  "1673": [
-    "Staffordshire"
-  ],
-  "1679": [
-    "Staffordshire"
-  ],
-  "1707": [
-    "Staffordshire"
-  ],
-  "1929": [
-    "London",
-    "Oxfordshire",
-    "Staffordshire"
-  ],
-  "1624": [
-    "Buckinghamshire",
-    "Somerset"
-  ],
-  "1732": [
-    "Buckinghamshire",
-    "London"
-  ],
-  "1845": [
-    "Buckinghamshire",
-    "Kent",
-    "London",
+  "1756": [
+    "Copenhagen",
     "Manchester"
-  ],
-  "1866": [
-    "Berkshire",
-    "Buckinghamshire",
-    "Hertfordshire",
-    "London"
-  ],
-  "1890": [
-    "Bedfordshire",
-    "Berkshire",
-    "Buckinghamshire",
-    "London"
-  ],
-  "1898": [
-    "Berkshire",
-    "Buckinghamshire",
-    "Cambridgeshire",
-    "Kent",
-    "London",
-    "Manchester",
-    "Surrey",
-    "West_Sussex"
   ],
   "1899": [
     "Buckinghamshire",
     "Copenhagen",
     "London"
   ],
-  "1910": [
-    "Buckinghamshire",
+  "1906": [
+    "Copenhagen",
+    "Hertfordshire",
     "London",
+    "Surrey"
+  ],
+  "1701": [
+    "Bristol"
+  ],
+  "1670": [
+    "Merseyside"
+  ],
+  "1733": [
+    "Cheshire",
+    "Kent",
+    "Merseyside"
+  ],
+  "1740": [
+    "Merseyside",
     "Oxfordshire"
   ],
-  "1914": [
-    "Buckinghamshire",
+  "1583": [
+    "Leicestershire"
+  ],
+  "1629": [
+    "Leicestershire",
+    "London"
+  ],
+  "1643": [
+    "Leicestershire"
+  ],
+  "1750": [
     "East_Sussex",
     "Kent",
+    "Leicestershire"
+  ],
+  "1769": [
+    "Leicestershire"
+  ],
+  "1774": [
+    "Leicestershire"
+  ],
+  "1827": [
+    "Leicestershire",
     "London"
   ],
-  "1922": [
-    "Buckinghamshire",
+  "1932": [
+    "Leicestershire",
     "London"
-  ],
-  "2004": [
-    "Buckinghamshire",
-    "London"
-  ],
-  "2022": [
-    "Buckinghamshire"
-  ],
-  "2024": [
-    "Buckinghamshire"
-  ],
-  "1510": [
-    "Essex"
-  ],
-  "1540": [
-    "Essex"
-  ],
-  "1565": [
-    "Essex"
-  ],
-  "1590": [
-    "Essex"
-  ],
-  "1596": [
-    "Essex",
-    "Warwickshire"
-  ],
-  "1621": [
-    "Essex"
-  ],
-  "1649": [
-    "Essex"
-  ],
-  "1672": [
-    "Essex"
-  ],
-  "1802": [
-    "Essex",
-    "London",
-    "South_Yorkshire"
-  ],
-  "1810": [
-    "Essex"
-  ],
-  "1884": [
-    "Essex",
-    "London"
-  ],
-  "1541": [
-    "Suffolk"
-  ],
-  "1586": [
-    "Suffolk"
-  ],
-  "1614": [
-    "Suffolk"
-  ],
-  "1619": [
-    "Suffolk"
-  ],
-  "1639": [
-    "Suffolk"
-  ],
-  "1977": [
-    "Suffolk"
   ],
   "1520": [
     "Kent"
@@ -327,6 +219,11 @@ const yearsData = {
   ],
   "1592": [
     "Kent"
+  ],
+  "1593": [
+    "Kent",
+    "Northamptonshire",
+    "Zurich"
   ],
   "1610": [
     "Kent",
@@ -348,16 +245,6 @@ const yearsData = {
     "London",
     "Surrey"
   ],
-  "1733": [
-    "Cheshire",
-    "Kent",
-    "Merseyside"
-  ],
-  "1750": [
-    "East_Sussex",
-    "Kent",
-    "Leicestershire"
-  ],
   "1758": [
     "Kent",
     "West_Sussex"
@@ -365,6 +252,12 @@ const yearsData = {
   "1784": [
     "Kent",
     "London"
+  ],
+  "1845": [
+    "Buckinghamshire",
+    "Kent",
+    "London",
+    "Manchester"
   ],
   "1850": [
     "Kent",
@@ -389,6 +282,29 @@ const yearsData = {
     "London",
     "Oxfordshire"
   ],
+  "1898": [
+    "Berkshire",
+    "Buckinghamshire",
+    "Cambridgeshire",
+    "Kent",
+    "London",
+    "Manchester",
+    "Surrey",
+    "West_Sussex"
+  ],
+  "1900": [
+    "Buckinghamshire",
+    "Hertfordshire",
+    "Kent",
+    "London",
+    "Monaco"
+  ],
+  "1914": [
+    "Buckinghamshire",
+    "East_Sussex",
+    "Kent",
+    "London"
+  ],
   "1939": [
     "Kent",
     "London",
@@ -398,71 +314,25 @@ const yearsData = {
     "Kent",
     "London"
   ],
-  "1701": [
-    "Bristol"
+  "1521": [
+    "Surrey"
   ],
-  "1583": [
-    "Leicestershire"
-  ],
-  "1629": [
-    "Leicestershire",
-    "London"
-  ],
-  "1643": [
-    "Leicestershire"
-  ],
-  "1769": [
-    "Leicestershire"
-  ],
-  "1774": [
-    "Leicestershire"
-  ],
-  "1827": [
-    "Leicestershire",
-    "London"
-  ],
-  "1932": [
-    "Leicestershire",
-    "London"
-  ],
-  "1812": [
-    "Berkshire",
-    "London"
-  ],
-  "1831": [
-    "Berkshire"
-  ],
-  "1839": [
-    "Berkshire",
-    "London"
-  ],
-  "1851": [
-    "Berkshire",
-    "Hertfordshire",
-    "London"
-  ],
-  "1853": [
-    "Berkshire",
-    "London"
-  ],
-  "1870": [
-    "Berkshire",
-    "London"
-  ],
-  "1871": [
-    "Berkshire",
-    "London"
-  ],
-  "1875": [
-    "Berkshire",
-    "London"
-  ],
-  "1885": [
-    "Berkshire",
-    "Cambridgeshire",
-    "East_Sussex",
+  "1755": [
     "London",
-    "Oxfordshire"
+    "Surrey"
+  ],
+  "1872": [
+    "London",
+    "Surrey"
+  ],
+  "1879": [
+    "London",
+    "Oxfordshire",
+    "Surrey"
+  ],
+  "1880": [
+    "London",
+    "Surrey"
   ],
   "1887": [
     "Berkshire",
@@ -472,94 +342,60 @@ const yearsData = {
     "Oxfordshire",
     "Surrey"
   ],
-  "1889": [
-    "Berkshire",
-    "East_Sussex",
-    "London",
-    "Oxfordshire"
-  ],
   "1896": [
     "Berkshire",
     "East_Sussex",
     "London",
     "Surrey"
   ],
-  "1931": [
-    "Berkshire",
-    "Hertfordshire",
-    "London"
-  ],
-  "1933": [
-    "Berkshire",
-    "Cambridgeshire",
-    "London"
-  ],
-  "1936": [
-    "Berkshire",
-    "Durham",
-    "London"
-  ],
-  "1503": [
-    "Devon"
-  ],
-  "1531": [
-    "Devon"
-  ],
-  "1574": [
-    "Devon"
-  ],
-  "1603": [
-    "Devon"
-  ],
-  "1612": [
-    "Cumbria",
-    "Devon"
-  ],
-  "1809": [
-    "Devon"
-  ],
-  "1607": [
+  "1904": [
+    "East_Sussex",
     "London",
-    "West_Sussex"
+    "Surrey"
   ],
-  "1720": [
-    "London",
-    "West_Sussex"
-  ],
-  "1754": [
-    "West_Sussex"
-  ],
-  "1881": [
-    "Hertfordshire",
-    "London",
-    "Manchester",
-    "West_Sussex"
-  ],
-  "1901": [
+  "1908": [
     "Hertfordshire",
     "London",
     "Oxfordshire",
-    "West_Sussex"
+    "Surrey"
   ],
-  "1956": [
-    "West_Sussex"
-  ],
-  "1525": [
-    "Norfolk"
-  ],
-  "1581": [
-    "Norfolk"
-  ],
-  "1609": [
-    "Norfolk"
-  ],
-  "1958": [
+  "1927": [
     "London",
-    "Norfolk"
+    "Oxfordshire",
+    "Surrey"
   ],
-  "1963": [
+  "1996": [
     "London",
-    "Norfolk"
+    "Surrey"
+  ],
+  "1999": [
+    "London",
+    "Surrey"
+  ],
+  "2001": [
+    "London",
+    "Surrey"
+  ],
+  "2002": [
+    "London",
+    "Surrey"
+  ],
+  "2006": [
+    "London",
+    "Oxfordshire",
+    "Surrey"
+  ],
+  "1600": [
+    "Herefordshire"
+  ],
+  "1661": [
+    "Nottinghamshire"
+  ],
+  "1700": [
+    "Nottinghamshire"
+  ],
+  "1742": [
+    "Nottinghamshire"
   ],
   "1622": [
     "Manchester"
@@ -586,10 +422,6 @@ const yearsData = {
     "Manchester"
   ],
   "1752": [
-    "Manchester"
-  ],
-  "1756": [
-    "Copenhagen",
     "Manchester"
   ],
   "1759": [
@@ -619,10 +451,53 @@ const yearsData = {
     "London",
     "Manchester"
   ],
-  "1926": [
+  "1881": [
     "Hertfordshire",
     "London",
-    "Shropshire"
+    "Manchester",
+    "West_Sussex"
+  ],
+  "1607": [
+    "London",
+    "West_Sussex"
+  ],
+  "1720": [
+    "London",
+    "West_Sussex"
+  ],
+  "1754": [
+    "West_Sussex"
+  ],
+  "1901": [
+    "Hertfordshire",
+    "London",
+    "Oxfordshire",
+    "West_Sussex"
+  ],
+  "1954": [
+    "London",
+    "West_Midlands",
+    "West_Sussex"
+  ],
+  "1956": [
+    "West_Sussex"
+  ],
+  "1525": [
+    "Norfolk"
+  ],
+  "1581": [
+    "Norfolk"
+  ],
+  "1609": [
+    "Norfolk"
+  ],
+  "1958": [
+    "London",
+    "Norfolk"
+  ],
+  "1963": [
+    "London",
+    "Norfolk"
   ],
   "1571": [
     "Hampshire"
@@ -641,138 +516,127 @@ const yearsData = {
     "Hampshire",
     "London"
   ],
-  "1517": [
-    "Hertfordshire"
-  ],
-  "1605": [
-    "Hertfordshire"
-  ],
-  "1615": [
-    "Hertfordshire"
-  ],
-  "1628": [
-    "Cumbria",
-    "Hertfordshire"
-  ],
-  "1665": [
-    "Hertfordshire",
+  "1936": [
+    "Berkshire",
+    "Durham",
     "London"
   ],
-  "1728": [
-    "Cheshire",
-    "Hertfordshire"
-  ],
-  "1857": [
-    "East_Sussex",
-    "Hertfordshire",
-    "London"
-  ],
-  "1863": [
-    "Hertfordshire",
-    "London"
-  ],
-  "1893": [
-    "Hertfordshire",
-    "London"
-  ],
-  "1895": [
-    "Hertfordshire",
-    "London"
-  ],
-  "1902": [
-    "Hertfordshire",
-    "London"
-  ],
-  "1906": [
-    "Copenhagen",
+  "1926": [
     "Hertfordshire",
     "London",
-    "Surrey"
+    "Shropshire"
   ],
-  "1908": [
-    "Hertfordshire",
+  "1537": [
+    "Oxfordshire"
+  ],
+  "1582": [
+    "Oxfordshire"
+  ],
+  "1587": [
+    "Oxfordshire"
+  ],
+  "1645": [
+    "Oxfordshire"
+  ],
+  "1654": [
+    "Oxfordshire"
+  ],
+  "1671": [
+    "Oxfordshire"
+  ],
+  "1676": [
+    "Oxfordshire"
+  ],
+  "1681": [
+    "Oxfordshire"
+  ],
+  "1682": [
+    "Oxfordshire"
+  ],
+  "1708": [
+    "Oxfordshire"
+  ],
+  "1737": [
+    "Oxfordshire",
+    "West_Yorkshire"
+  ],
+  "1751": [
+    "Oxfordshire"
+  ],
+  "1778": [
+    "Lancashire",
+    "Oxfordshire"
+  ],
+  "1780": [
+    "Oxfordshire"
+  ],
+  "1783": [
+    "Oxfordshire"
+  ],
+  "1794": [
+    "London",
+    "Oxfordshire"
+  ],
+  "1813": [
+    "London",
+    "Oxfordshire"
+  ],
+  "1885": [
+    "Berkshire",
+    "Cambridgeshire",
+    "East_Sussex",
+    "London",
+    "Oxfordshire"
+  ],
+  "1889": [
+    "Berkshire",
+    "East_Sussex",
+    "London",
+    "Oxfordshire"
+  ],
+  "1894": [
+    "London",
+    "Oxfordshire"
+  ],
+  "1910": [
+    "Buckinghamshire",
+    "London",
+    "Oxfordshire"
+  ],
+  "1929": [
     "London",
     "Oxfordshire",
-    "Surrey"
+    "Staffordshire"
   ],
-  "1920": [
-    "Hertfordshire",
-    "London"
+  "1938": [
+    "London",
+    "Oxfordshire",
+    "Somerset"
   ],
-  "1925": [
-    "Hertfordshire",
-    "London"
+  "1946": [
+    "Oxfordshire"
   ],
-  "1934": [
+  "1982": [
+    "London",
+    "Oxfordshire"
+  ],
+  "1994": [
+    "London",
+    "Oxfordshire"
+  ],
+  "1995": [
     "Cambridgeshire",
-    "Hertfordshire",
-    "London"
+    "London",
+    "Oxfordshire"
   ],
-  "1985": [
-    "Hertfordshire",
-    "London"
-  ],
-  "1988": [
-    "Hertfordshire",
-    "London"
+  "2000": [
+    "London",
+    "Oxfordshire"
   ],
   "2012": [
     "Hertfordshire",
     "London",
     "Oxfordshire"
-  ],
-  "1606": [
-    "Bedfordshire"
-  ],
-  "1919": [
-    "Bedfordshire",
-    "London"
-  ],
-  "2014": [
-    "Bedfordshire",
-    "London"
-  ],
-  "1616": [
-    "Rutland"
-  ],
-  "1640": [
-    "Rutland"
-  ],
-  "1670": [
-    "Merseyside"
-  ],
-  "1740": [
-    "Merseyside",
-    "Oxfordshire"
-  ],
-  "1573": [
-    "Dorset"
-  ],
-  "1580": [
-    "Dorset",
-    "London"
-  ],
-  "1599": [
-    "Dorset"
-  ],
-  "1626": [
-    "Dorset"
-  ],
-  "1765": [
-    "Dorset",
-    "North_Yorkshire"
-  ],
-  "1539": [
-    "Warwickshire"
-  ],
-  "1604": [
-    "Warwickshire"
-  ],
-  "1663": [
-    "Warwickshire"
-  ],
-  "1753": [
-    "Warwickshire"
   ],
   "1613": [
     "Cambridgeshire"
@@ -807,16 +671,45 @@ const yearsData = {
     "Cambridgeshire",
     "East_Sussex"
   ],
-  "1886": [
+  "1915": [
     "Cambridgeshire",
-    "East_Sussex",
     "London",
-    "Rome"
+    "Zurich"
   ],
-  "1995": [
+  "1933": [
+    "Berkshire",
     "Cambridgeshire",
-    "London",
-    "Oxfordshire"
+    "London"
+  ],
+  "1934": [
+    "Cambridgeshire",
+    "Hertfordshire",
+    "London"
+  ],
+  "1595": [
+    "Cornwall"
+  ],
+  "1539": [
+    "Warwickshire"
+  ],
+  "1596": [
+    "Essex",
+    "Warwickshire"
+  ],
+  "1604": [
+    "Warwickshire"
+  ],
+  "1663": [
+    "Warwickshire"
+  ],
+  "1753": [
+    "Warwickshire"
+  ],
+  "1660": [
+    "Northumberland"
+  ],
+  "1718": [
+    "Northumberland"
   ],
   "1563": [
     "Somerset"
@@ -828,6 +721,10 @@ const yearsData = {
     "Somerset"
   ],
   "1598": [
+    "Somerset"
+  ],
+  "1624": [
+    "Buckinghamshire",
     "Somerset"
   ],
   "1693": [
@@ -871,97 +768,41 @@ const yearsData = {
     "London",
     "Somerset"
   ],
-  "1938": [
-    "London",
-    "Oxfordshire",
-    "Somerset"
+  "1594": [
+    "Northamptonshire"
   ],
-  "1641": [
-    "South_Yorkshire"
+  "1608": [
+    "Northamptonshire"
   ],
-  "1655": [
-    "South_Yorkshire"
+  "1680": [
+    "Northamptonshire"
   ],
-  "1772": [
-    "South_Yorkshire"
+  "1779": [
+    "Northamptonshire"
   ],
-  "1843": [
-    "South_Yorkshire"
+  "1541": [
+    "Suffolk"
   ],
-  "1585": [
-    "Cheshire"
+  "1586": [
+    "Suffolk"
   ],
-  "1597": [
-    "Cheshire"
+  "1614": [
+    "Suffolk"
   ],
-  "1601": [
-    "Cheshire"
+  "1619": [
+    "Suffolk"
   ],
-  "1664": [
-    "Cheshire"
+  "1639": [
+    "Suffolk"
   ],
-  "1746": [
-    "Cheshire"
+  "1977": [
+    "Suffolk"
   ],
-  "1770": [
-    "Cheshire",
-    "Lancashire"
+  "1616": [
+    "Rutland"
   ],
-  "1775": [
-    "Cheshire"
-  ],
-  "1807": [
-    "Cheshire"
-  ],
-  "1633": [
-    "Lancashire"
-  ],
-  "1647": [
-    "Lancashire"
-  ],
-  "1650": [
-    "Lancashire"
-  ],
-  "1653": [
-    "Lancashire"
-  ],
-  "1659": [
-    "Lancashire"
-  ],
-  "1667": [
-    "Lancashire"
-  ],
-  "1768": [
-    "Lancashire"
-  ],
-  "1778": [
-    "Lancashire",
-    "Oxfordshire"
-  ],
-  "1781": [
-    "Lancashire"
-  ],
-  "1793": [
-    "Lancashire"
-  ],
-  "1796": [
-    "Lancashire"
-  ],
-  "1798": [
-    "Lancashire"
-  ],
-  "1777": [
-    "Gloucestershire"
-  ],
-  "1848": [
-    "Gloucestershire",
-    "London"
-  ],
-  "1805": [
-    "Lincolnshire"
-  ],
-  "1617": [
-    "Cumbria"
+  "1640": [
+    "Rutland"
   ],
   "1611": [
     "West_Yorkshire"
@@ -990,10 +831,6 @@ const yearsData = {
   "1710": [
     "West_Yorkshire"
   ],
-  "1737": [
-    "Oxfordshire",
-    "West_Yorkshire"
-  ],
   "1771": [
     "West_Yorkshire"
   ],
@@ -1001,9 +838,332 @@ const yearsData = {
     "London",
     "West_Yorkshire"
   ],
-  "1940": [
+  "1573": [
+    "Dorset"
+  ],
+  "1580": [
+    "Dorset",
+    "London"
+  ],
+  "1599": [
+    "Dorset"
+  ],
+  "1626": [
+    "Dorset"
+  ],
+  "1765": [
+    "Dorset",
+    "North_Yorkshire"
+  ],
+  "1641": [
+    "South_Yorkshire"
+  ],
+  "1655": [
+    "South_Yorkshire"
+  ],
+  "1772": [
+    "South_Yorkshire"
+  ],
+  "1802": [
+    "Essex",
     "London",
-    "Tyne_and_Wear"
+    "South_Yorkshire"
+  ],
+  "1843": [
+    "South_Yorkshire"
+  ],
+  "1689": [
+    "Lincolnshire",
+    "Zurich"
+  ],
+  "1805": [
+    "Lincolnshire"
+  ],
+  "1674": [
+    "Worcestershire"
+  ],
+  "1585": [
+    "Cheshire"
+  ],
+  "1597": [
+    "Cheshire"
+  ],
+  "1601": [
+    "Cheshire"
+  ],
+  "1664": [
+    "Cheshire"
+  ],
+  "1728": [
+    "Cheshire",
+    "Hertfordshire"
+  ],
+  "1746": [
+    "Cheshire"
+  ],
+  "1770": [
+    "Cheshire",
+    "Lancashire"
+  ],
+  "1775": [
+    "Cheshire"
+  ],
+  "1807": [
+    "Cheshire"
+  ],
+  "1560": [
+    "Staffordshire"
+  ],
+  "1673": [
+    "Staffordshire"
+  ],
+  "1679": [
+    "Staffordshire"
+  ],
+  "1707": [
+    "Staffordshire"
+  ],
+  "1517": [
+    "Hertfordshire"
+  ],
+  "1605": [
+    "Hertfordshire"
+  ],
+  "1615": [
+    "Hertfordshire"
+  ],
+  "1628": [
+    "Cumbria",
+    "Hertfordshire"
+  ],
+  "1665": [
+    "Hertfordshire",
+    "London"
+  ],
+  "1851": [
+    "Berkshire",
+    "Hertfordshire",
+    "London"
+  ],
+  "1857": [
+    "East_Sussex",
+    "Hertfordshire",
+    "London"
+  ],
+  "1863": [
+    "Hertfordshire",
+    "London"
+  ],
+  "1866": [
+    "Berkshire",
+    "Buckinghamshire",
+    "Hertfordshire",
+    "London"
+  ],
+  "1893": [
+    "Hertfordshire",
+    "London"
+  ],
+  "1895": [
+    "Hertfordshire",
+    "London"
+  ],
+  "1902": [
+    "Hertfordshire",
+    "London"
+  ],
+  "1920": [
+    "Hertfordshire",
+    "London"
+  ],
+  "1925": [
+    "Hertfordshire",
+    "London"
+  ],
+  "1931": [
+    "Berkshire",
+    "Hertfordshire",
+    "London"
+  ],
+  "1985": [
+    "Hertfordshire",
+    "London"
+  ],
+  "1988": [
+    "Hertfordshire",
+    "London"
+  ],
+  "1732": [
+    "Buckinghamshire",
+    "London"
+  ],
+  "1890": [
+    "Bedfordshire",
+    "Berkshire",
+    "Buckinghamshire",
+    "London"
+  ],
+  "1922": [
+    "Buckinghamshire",
+    "London"
+  ],
+  "2004": [
+    "Buckinghamshire",
+    "London"
+  ],
+  "2022": [
+    "Buckinghamshire"
+  ],
+  "2024": [
+    "Buckinghamshire"
+  ],
+  "1503": [
+    "Devon"
+  ],
+  "1531": [
+    "Devon"
+  ],
+  "1574": [
+    "Devon"
+  ],
+  "1603": [
+    "Devon"
+  ],
+  "1612": [
+    "Cumbria",
+    "Devon"
+  ],
+  "1809": [
+    "Devon"
+  ],
+  "1777": [
+    "Gloucestershire"
+  ],
+  "1848": [
+    "Gloucestershire",
+    "London"
+  ],
+  "1602": [
+    "Wiltshire"
+  ],
+  "1635": [
+    "Wiltshire"
+  ],
+  "1636": [
+    "Wiltshire"
+  ],
+  "1642": [
+    "Wiltshire"
+  ],
+  "1644": [
+    "Wiltshire"
+  ],
+  "1656": [
+    "Wiltshire"
+  ],
+  "1666": [
+    "Wiltshire"
+  ],
+  "1694": [
+    "Wiltshire"
+  ],
+  "1711": [
+    "Wiltshire"
+  ],
+  "1714": [
+    "Wiltshire"
+  ],
+  "1730": [
+    "Wiltshire"
+  ],
+  "1738": [
+    "Wiltshire"
+  ],
+  "1651": [
+    "North_Yorkshire"
+  ],
+  "1633": [
+    "Lancashire"
+  ],
+  "1647": [
+    "Lancashire"
+  ],
+  "1650": [
+    "Lancashire"
+  ],
+  "1653": [
+    "Lancashire"
+  ],
+  "1659": [
+    "Lancashire"
+  ],
+  "1667": [
+    "Lancashire"
+  ],
+  "1768": [
+    "Lancashire"
+  ],
+  "1781": [
+    "Lancashire"
+  ],
+  "1793": [
+    "Lancashire"
+  ],
+  "1796": [
+    "Lancashire"
+  ],
+  "1798": [
+    "Lancashire"
+  ],
+  "1638": [
+    "Derbyshire"
+  ],
+  "1646": [
+    "Derbyshire"
+  ],
+  "1652": [
+    "Derbyshire"
+  ],
+  "1690": [
+    "Derbyshire"
+  ],
+  "1727": [
+    "Derbyshire"
+  ],
+  "1712": [
+    "East_Sussex",
+    "West_Midlands"
+  ],
+  "1804": [
+    "West_Midlands"
+  ],
+  "1510": [
+    "Essex"
+  ],
+  "1540": [
+    "Essex"
+  ],
+  "1565": [
+    "Essex"
+  ],
+  "1590": [
+    "Essex"
+  ],
+  "1621": [
+    "Essex"
+  ],
+  "1649": [
+    "Essex"
+  ],
+  "1672": [
+    "Essex"
+  ],
+  "1810": [
+    "Essex"
+  ],
+  "1884": [
+    "Essex",
+    "London"
   ],
   "1575": [
     "East_Sussex"
@@ -1021,170 +1181,50 @@ const yearsData = {
     "East_Sussex",
     "London"
   ],
-  "1904": [
-    "East_Sussex",
+  "1617": [
+    "Cumbria"
+  ],
+  "1606": [
+    "Bedfordshire"
+  ],
+  "1919": [
+    "Bedfordshire",
+    "London"
+  ],
+  "2014": [
+    "Bedfordshire",
+    "London"
+  ],
+  "1812": [
+    "Berkshire",
+    "London"
+  ],
+  "1831": [
+    "Berkshire"
+  ],
+  "1839": [
+    "Berkshire",
+    "London"
+  ],
+  "1853": [
+    "Berkshire",
+    "London"
+  ],
+  "1870": [
+    "Berkshire",
+    "London"
+  ],
+  "1871": [
+    "Berkshire",
+    "London"
+  ],
+  "1875": [
+    "Berkshire",
+    "London"
+  ],
+  "1940": [
     "London",
-    "Surrey"
-  ],
-  "1651": [
-    "North_Yorkshire"
-  ],
-  "1537": [
-    "Oxfordshire"
-  ],
-  "1582": [
-    "Oxfordshire"
-  ],
-  "1587": [
-    "Oxfordshire"
-  ],
-  "1645": [
-    "Oxfordshire"
-  ],
-  "1654": [
-    "Oxfordshire"
-  ],
-  "1671": [
-    "Oxfordshire"
-  ],
-  "1676": [
-    "Oxfordshire"
-  ],
-  "1681": [
-    "Oxfordshire"
-  ],
-  "1682": [
-    "Oxfordshire"
-  ],
-  "1708": [
-    "Oxfordshire"
-  ],
-  "1751": [
-    "Oxfordshire"
-  ],
-  "1780": [
-    "Oxfordshire"
-  ],
-  "1783": [
-    "Oxfordshire"
-  ],
-  "1794": [
-    "London",
-    "Oxfordshire"
-  ],
-  "1813": [
-    "London",
-    "Oxfordshire"
-  ],
-  "1879": [
-    "London",
-    "Oxfordshire",
-    "Surrey"
-  ],
-  "1894": [
-    "London",
-    "Oxfordshire"
-  ],
-  "1927": [
-    "London",
-    "Oxfordshire",
-    "Surrey"
-  ],
-  "1946": [
-    "Oxfordshire"
-  ],
-  "1982": [
-    "London",
-    "Oxfordshire"
-  ],
-  "1994": [
-    "London",
-    "Oxfordshire"
-  ],
-  "2000": [
-    "London",
-    "Oxfordshire"
-  ],
-  "2006": [
-    "London",
-    "Oxfordshire",
-    "Surrey"
-  ],
-  "1521": [
-    "Surrey"
-  ],
-  "1755": [
-    "London",
-    "Surrey"
-  ],
-  "1872": [
-    "London",
-    "Surrey"
-  ],
-  "1880": [
-    "London",
-    "Surrey"
-  ],
-  "1996": [
-    "London",
-    "Surrey"
-  ],
-  "1999": [
-    "London",
-    "Surrey"
-  ],
-  "2001": [
-    "London",
-    "Surrey"
-  ],
-  "2002": [
-    "London",
-    "Surrey"
-  ],
-  "1661": [
-    "Nottinghamshire"
-  ],
-  "1700": [
-    "Nottinghamshire"
-  ],
-  "1742": [
-    "Nottinghamshire"
-  ],
-  "1660": [
-    "Northumberland"
-  ],
-  "1718": [
-    "Northumberland"
-  ],
-  "1594": [
-    "Northamptonshire"
-  ],
-  "1608": [
-    "Northamptonshire"
-  ],
-  "1680": [
-    "Northamptonshire"
-  ],
-  "1779": [
-    "Northamptonshire"
-  ],
-  "1638": [
-    "Derbyshire"
-  ],
-  "1646": [
-    "Derbyshire"
-  ],
-  "1652": [
-    "Derbyshire"
-  ],
-  "1690": [
-    "Derbyshire"
-  ],
-  "1727": [
-    "Derbyshire"
-  ],
-  "1600": [
-    "Herefordshire"
+    "Tyne_and_Wear"
   ],
   "1631": [
     "London"
@@ -1423,10 +1463,6 @@ const yearsData = {
   "1916": [
     "London"
   ],
-  "1924": [
-    "Billund",
-    "London"
-  ],
   "1937": [
     "London"
   ],
@@ -1523,49 +1559,13 @@ const yearsData = {
   "2020": [
     "London"
   ],
-  "1595": [
-    "Cornwall"
-  ],
-  "1602": [
-    "Wiltshire"
-  ],
-  "1635": [
-    "Wiltshire"
-  ],
-  "1636": [
-    "Wiltshire"
-  ],
-  "1642": [
-    "Wiltshire"
-  ],
-  "1644": [
-    "Wiltshire"
-  ],
-  "1656": [
-    "Wiltshire"
-  ],
-  "1666": [
-    "Wiltshire"
-  ],
-  "1694": [
-    "Wiltshire"
-  ],
-  "1711": [
-    "Wiltshire"
-  ],
-  "1714": [
-    "Wiltshire"
-  ],
-  "1730": [
-    "Wiltshire"
-  ],
-  "1738": [
-    "Wiltshire"
-  ],
   "1787": [
     "East_Yorkshire"
   ],
   "1800": [
     "East_Yorkshire"
+  ],
+  "1566": [
+    "Zurich"
   ]
 };
