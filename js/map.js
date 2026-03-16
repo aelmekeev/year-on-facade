@@ -144,7 +144,7 @@ function setCenter(map, year) {
 
 function setZoom(map, year) {
   if (year) {
-    map.setZoom(18)
+    map.setZoom(16)
   } else if (!data.config.borders) {
     map.setZoom(2)
   } else {
@@ -152,9 +152,19 @@ function setZoom(map, year) {
   }
 }
 
+// Global dismiss handler for closing photo previews cleanly
+function closePreviews() {
+  lastClicked = null;
+  Object.values(markers).forEach(m => {
+    m.mapMarker.zIndex = null;
+    m.mapMarker.content.classList.remove('active');
+  });
+}
+
 async function initMap() {
   const url = new URL(window.location.href)
   const year = url.searchParams.get('year')
+  const mapCity = url.searchParams.get('city')
   const points = data.points
 
   const { Map } = await google.maps.importLibrary('maps')
@@ -174,6 +184,10 @@ async function initMap() {
       : null,
     mapId: '58733f12c8d8eb66', // https://console.cloud.google.com/google/maps-apis/studio/maps?project=year-on-facade
   })
+
+  // Dismiss previews when touching the map canvas
+  map.addListener('click', closePreviews);
+  map.addListener('dragstart', closePreviews);
 
   setCenter(map, year)
   setZoom(map, year)
@@ -199,7 +213,16 @@ async function initMap() {
 
     const yearMarker = document.createElement('div')
     yearMarker.className = 'year-marker'
-    yearMarker.textContent = title
+    
+    // Create text span to hold text (avoids overriding the DOM structure when rendering the preview)
+    const titleSpan = document.createElement('span')
+    titleSpan.textContent = title
+    yearMarker.appendChild(titleSpan)
+
+    // Hidden by default via CSS until marker is clicked
+    const previewContainer = document.createElement('div')
+    previewContainer.className = 'preview-container'
+    yearMarker.appendChild(previewContainer)
 
     // 1. Calculate the dynamic color once
     const dynamicColor = getYearColor(parseInt(title, 10))
@@ -219,8 +242,10 @@ async function initMap() {
       title,
       content: yearMarker,
     })
+    
     marker.addListener('click', () => {
       if (lastClicked == year) {
+        // Navigation triggers if already active (tapped marker or image)
         const currentUrl = window.location.href
         window.location.assign(
           `${currentUrl.replace('/map', '/item').replace(/[\?&]year=\d+_?/, '')}&year=${marker.title}`,
@@ -228,9 +253,31 @@ async function initMap() {
       } else {
         map.setZoom(15)
         map.setCenter(marker.position)
+        map.panBy(0, -120)
+        
+        // Close previously opened previews
+        closePreviews()
+        
         lastClicked = year
+        marker.zIndex = 1000 // Force active marker to the front
+        yearMarker.classList.add('active')
+
+        const pointCity = data.points[year].city || mapCity
+        const isTodo = points[year].notes.startsWith('TODO')
+
+        // Lazy load the photo into the container if it meets the criteria
+        if (!isTodo && data.config.photosBaseUrl && pointCity != 'Replacements') {
+          if (!previewContainer.hasChildNodes()) {
+            const photoUrl = `${data.config.photosBaseUrl}/${pointCity}/${year}.jpg`
+            const img = document.createElement('img')
+            img.src = photoUrl
+            img.alt = `Year ${year}`
+            previewContainer.appendChild(img)
+          }
+        }
       }
     })
+    
     markers[year] = {
       mapMarker: marker,
       todo: points[year].notes.startsWith('TODO'),
