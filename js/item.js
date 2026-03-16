@@ -48,6 +48,49 @@ function updateHeader(city, year) {
   titleContainer.style.backgroundColor = getYearColor(parseInt(year))
 }
 
+function updateNavigation(city, currentYearStr) {
+  const currentYear = parseInt(currentYearStr);
+  
+  // Extract all valid years, sort chronologically
+  const availableYears = Object.keys(data.points)
+    .map(Number)
+    .filter(y => !isNaN(y))
+    .sort((a, b) => a - b);
+
+  const currentIndex = availableYears.indexOf(currentYear);
+  
+  const prevLink = document.getElementById('prev-link');
+  const nextLink = document.getElementById('next-link');
+
+  const currentLocation = window.location;
+  const baseUrl = `${currentLocation.origin}${currentLocation.pathname}`;
+
+  console.log('Available years:', availableYears);
+  console.log('Current year:', currentYear, 'at index:', currentIndex);
+
+  // Process Previous Button
+  if (currentIndex > 0) {
+    const prevYear = availableYears[currentIndex - 1];
+    prevLink.href = `${baseUrl}?city=${city}&year=${prevYear}`;
+    prevLink.innerHTML = `&larr; Previous (${prevYear})`;
+    prevLink.style.visibility = 'visible';
+    prevLink.style.backgroundColor = getYearColor(prevYear);
+  } else {
+    prevLink.style.visibility = 'hidden'; // Hidden keeps layout structure intact
+  }
+
+  // Process Next Button
+  if (currentIndex !== -1 && currentIndex < availableYears.length - 1) {
+    const nextYear = availableYears[currentIndex + 1];
+    nextLink.href = `${baseUrl}?city=${city}&year=${nextYear}`;
+    nextLink.innerHTML = `Next (${nextYear}) &rarr;`;
+    nextLink.style.visibility = 'visible';
+    nextLink.style.backgroundColor = getYearColor(nextYear);
+  } else {
+    nextLink.style.visibility = 'hidden';
+  }
+}
+
 function updateLinks(city, year) {
   const currentLocation = window.location
 
@@ -73,7 +116,7 @@ function updateLinks(city, year) {
   if (url.searchParams.get('city') == 'World') {
     document.querySelector('#back a').href = `${statsUrl}?city=World`
   } else {
-    document.querySelector('#back')?.remove()
+    document.querySelector('#back').remove()
   }
 }
 
@@ -144,6 +187,7 @@ function updateItem() {
   const city = data.points[year].city || paramCity
 
   updateHeader(city, year)
+  updateNavigation(city, year)
   updateLinks(city, year)
   updateExternalLink(city, year)
   updateNotes(year)

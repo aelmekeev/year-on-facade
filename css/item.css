@@ -22,12 +22,36 @@ h1 {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 10px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.nav-container a {
+  text-decoration: none;
+  padding: 12px 20px; /* Fat-finger friendly */
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  min-width: 44px;
+  text-align: center;
+  /* Prevent text selection when double tapping quickly */
+  user-select: none;
+  -webkit-user-select: none; 
+}
+
 .line {
   margin: 10px;
 }
 
 #photoContainer {
-  padding: 10px;
+  padding: 10px
 }
 
 #photoContainer object {
