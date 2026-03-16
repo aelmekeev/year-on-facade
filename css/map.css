@@ -29,11 +29,18 @@ body {
   align-items: center;
 }
 
-.round {
+.control-ui.round {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+.control-ui.round .control-text {
+  padding: 0; /* remove default padding for round button */
+  line-height: initial;
 }
 
 .control-text {
@@ -44,9 +51,9 @@ body {
 }
 
 .year-marker {
-  background-color: var(--marker-color, #ec4242);
-  border-radius: 25px 25px 25px 25px;
-  color: #FFFFFF;
+  /* background-color: dynamic inline from JS */
+  border-radius: 25px;
+  /* color: dynamic inline from JS */
   font-size: 9px;
   padding: 10px 5px;
   position: relative;
@@ -62,6 +69,46 @@ body {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  /* Tell the border to use the dynamic variable injected by JS */
-  border-top: 8px solid var(--marker-color, #ec4242);
+  /* Picks up the custom var set in JS, defaults to red if missing */
+  border-top: 8px solid var(--marker-color, #ec4242); 
+}
+
+/* Custom Image Preview Container Styles */
+.preview-container {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 12px); /* Lift slightly above the marker */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 4px; /* Small border like a polaroid */
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* Only show if active AND an image has been appended */
+.year-marker.active .preview-container:not(:empty) {
+  display: block;
+}
+
+.preview-container img {
+  display: block;
+  max-width: 250px;
+  max-height: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* Small down-pointing arrow for the white box */
+.preview-container::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
 }
