@@ -8,7 +8,7 @@ const data = {
       "east": -0.865515
     },
     "external": {
-      "label": "Check out Historic England",
+      "label": "Historic England",
       "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
     },
     "useInternalMap": true,

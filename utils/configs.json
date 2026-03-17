@@ -11,7 +11,7 @@
         "east": 12.794192
       },
       "external": {
-        "label": "Check out Fredede og Bevaringsværdige Bygninger",
+        "label": "Fredede og Bevaringsværdige Bygninger",
         "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
       }
     }
@@ -25,7 +25,7 @@
         "east": 9.567461
       },
       "external": {
-        "label": "Check out Base Mérimée",
+        "label": "Base Mérimée",
         "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
       }
     }
@@ -69,7 +69,7 @@
         "east": -6.189091
       },
       "external": {
-        "label": "Check out Direção-Geral do Património Cultural",
+        "label": "Direção-Geral do Património Cultural",
         "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
       }
     }
@@ -103,7 +103,7 @@
         "east": 10.492168
       },
       "external": {
-        "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+        "label": "Swiss Inventory of Cultural Property of National and Regional Significance",
         "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
       }
     }
@@ -127,7 +127,7 @@
         "east": 1.7622613
       },
       "external": {
-        "label": "Check out Historic England",
+        "label": "Historic England",
         "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
       }
     }

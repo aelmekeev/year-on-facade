@@ -7,7 +7,7 @@ const data = {
       "east": -6.189091
     },
     "external": {
-      "label": "Check out Direção-Geral do Património Cultural",
+      "label": "Direção-Geral do Património Cultural",
       "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
     },
     "useInternalMap": true,

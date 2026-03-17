@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div id="header">
+  <header>
     <div id="logo">
       <h1>Year on Facade</h1>
       <p>
@@ -25,28 +25,31 @@
       </a><br />
       <a id="wit" href="./what-is-this">What is this?</a>
     </div>
-  </div>
+  </header>
 
-  <div id="controls">
-    <div id="search-container" style="margin-bottom: 15px;">
-      <input type="number" id="year-search" placeholder="Enter year..." min="1000" max="2100" style="padding: 5px; font-size: 16px; width: 120px;" />
-      <button id="year-search-btn" style="padding: 6px 12px; font-size: 16px;">Search</button>
+  <main>
+    <div id="controls">
+      <div id="search-container" style="margin-bottom: 15px;">
+        <input type="number" id="year-search" placeholder="Enter year..." min="1000" max="2100"
+          style="padding: 5px; font-size: 16px; width: 120px;" />
+        <button id="year-search-btn" style="padding: 6px 12px; font-size: 16px;">Search</button>
+      </div>
+
+      <div id="sort">
+        <span>Sort</span>
+        <input type="radio" id="by_count" name="sort" value="by_count" checked />
+        <label for="by_count">by count</label>
+        <input type="radio" id="alphabetically" name="sort" value="alphabetically" />
+        <label for="alphabetically">alphabetically</label>
+      </div>
     </div>
 
-    <div id="sort">
-      <span>Sort</span>
-      <input type="radio" id="by_count" name="sort" value="by_count" checked />
-      <label for="by_count">by count</label>
-      <input type="radio" id="alphabetically" name="sort" value="alphabetically" />
-      <label for="alphabetically">alphabetically</label>
+    <div id="marks">
+      <div id="start"></div>
+      <div id="end"></div>
     </div>
-  </div>
-
-  <div id="marks">
-    <div id="start"></div>
-    <div id="end"></div>
-  </div>
-  <div id="list" />
+    <div id="list" />
+  </main>
 </body>
 
 </html>
