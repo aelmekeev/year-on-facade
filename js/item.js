@@ -89,25 +89,30 @@ function updateNavigation(city, currentYearStr) {
   } else {
     nextLink.style.visibility = 'hidden';
   }
+
+  if (availableYears.length === 1) {
+    prevLink.style.display = 'none';
+    nextLink.style.display = 'none';
+  }
 }
 
 function updateLinks(city, year) {
   const currentLocation = window.location
 
   const coordinates = `${data.points[year].latlng.lat},${data.points[year].latlng.lng}`
-  const map = document.querySelector('#map a')
+  const map = document.querySelector('#map')
   map.href = data.config.useInternalMap
     ? currentLocation.href.replace('/item', '/map')
     : `https://www.google.com/maps/search/${coordinates}`
 
-  const streetview = document.querySelector('#streetview a')
+  const streetview = document.querySelector('#streetview')
   streetview.href = `https://www.google.com/maps?q=&layer=c&cbll=${coordinates}&cbp=12,0,0,0,-15`
 
-  const more = document.querySelector('#more a')
+  const more = document.querySelector('#more')
   const statsUrl = `${currentLocation.origin}${currentLocation.pathname.replace('/item', '/stats')}`
   more.href = `${statsUrl}?city=${city}`
 
-  const moreYear = document.querySelector('#more-year a')
+  const moreYear = document.querySelector('#more-year')
   const indexUrl = `${currentLocation.origin}${currentLocation.pathname.replace('/item', '')}`
   moreYear.href = `${indexUrl}?year=${year}`
 

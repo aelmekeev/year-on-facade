@@ -21,6 +21,21 @@ h1 {
   line-height: 1.4;
 }
 
+a {
+  color: #0159b6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover, 
+a:active {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #6B4C9A;
+}
+
 .row, .stat {
   display: flex;
 }

@@ -8,7 +8,7 @@ const data = {
       "east": 8.624871
     },
     "external": {
-      "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+      "label": "Swiss Inventory of Cultural Property of National and Regional Significance",
       "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
     },
     "useInternalMap": true,

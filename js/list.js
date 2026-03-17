@@ -84,8 +84,9 @@ function sortListByYear() {
   const parent = document.querySelector('#list')
   parent.innerHTML = ''
 
+  addTimeline(parent)
+
   document.querySelector('#sort').style.display = 'none'
-  document.querySelector('#marks').style.display = 'none'
 
   const cities = yearsData[year] || []
   cities
@@ -155,14 +156,14 @@ function updateList() {
   } else {
     sortList()
     document.querySelectorAll('[name=sort]').forEach(r => (r.onclick = sortListListener(r.value)))
-    updateMarks()
   }
+  updateMarks()
 }
 
 function addOtherCountriesLink() {
   const container = document.createElement('p')
   container.innerHTML = `<a href="${window.location.href.replace(/\?.+/, '')}">Checkout all countries</a>`
-  document.body.insertBefore(container, document.querySelector('#controls'))
+  document.body.querySelector('main').insertBefore(container, document.querySelector('#controls'))
 }
 
 function hideSearchControls() {

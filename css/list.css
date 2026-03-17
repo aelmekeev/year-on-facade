@@ -2,8 +2,23 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#header {
+header {
   display: flex;
+}
+
+a {
+  color: #0159b6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover, 
+a:active {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #6B4C9A;
 }
 
 #logo {

@@ -26,40 +26,36 @@
 </head>
 
 <body>
-  <h1></h1>
+  <header>
+    <h1></h1>
+  </header>
 
-  <div id="navigation" class="nav-container">
-    <a id="prev-link" href="#" style="visibility: hidden;">&larr; Previous</a>
-    <a id="next-link" href="#" style="visibility: hidden;">Next &rarr;</a>
-  </div>
+  <main>
+    <div id="navigation" class="nav-container">
+      <a id="prev-link" href="#" style="visibility: hidden;">&larr; Previous</a>
+      <a id="next-link" href="#" style="visibility: hidden;">Next &rarr;</a>
+    </div>
 
-  <div class="line" id="map">
-    <a href="#">Show on map</a>
-  </div>
+    <div class="line">
+      Show on <a href="#" id="map">map</a> / <a href="#" target="_blank" id="streetview">Google Street View</a>
+    </div>
 
-  <div class="line" id="streetview">
-    <a href="#" target="_blank">Show on Google Street View</a> <span style='font-size: smaller'>(rotation/fine positioning may be required)</span>
-  </div>
+    <div class="line" id="back">
+      <a href="#">Go back to World collection</a>
+    </div>
 
-  <div class="line" id="back">
-    <a href="#">Go back to World collection</a>
-  </div>
+    <div class="line" id="external">
+      Open on <a href="#"></a>
+    </div>
 
-  <div class="line" id="more">
-    <a href="#">All items in this city</a>
-  </div>
+    <div class="line">
+      All items in this <a href="#" id="more">city</a> / <a href="#" id="more-year">year</a>
+    </div>
 
-  <div class="line" id="more-year">
-    <a href="#">All items with this year</a>
-  </div>
+    <div class="line" id="notes"></div>
 
-  <div class="line" id="external">
-    <a href="#"></a>
-  </div>
-
-  <div class="line" id="notes"></div>
-
-  <div id="photoContainer"></div>
+    <div id="photoContainer"></div>
+  </main>
 
 </body>
 

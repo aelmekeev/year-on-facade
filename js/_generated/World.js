@@ -3941,7 +3941,7 @@ const data = {
     "Denmark": {
       "config": {
         "external": {
-          "label": "Check out Fredede og Bevaringsværdige Bygninger",
+          "label": "Fredede og Bevaringsværdige Bygninger",
           "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
         }
       }
@@ -3949,7 +3949,7 @@ const data = {
     "France": {
       "config": {
         "external": {
-          "label": "Check out Base Mérimée",
+          "label": "Base Mérimée",
           "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
         }
       }
@@ -3966,7 +3966,7 @@ const data = {
     "Portugal": {
       "config": {
         "external": {
-          "label": "Check out Direção-Geral do Património Cultural",
+          "label": "Direção-Geral do Património Cultural",
           "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
         }
       }
@@ -3980,7 +3980,7 @@ const data = {
     "Switzerland": {
       "config": {
         "external": {
-          "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+          "label": "Swiss Inventory of Cultural Property of National and Regional Significance",
           "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
         }
       }
@@ -3991,7 +3991,7 @@ const data = {
     "UK": {
       "config": {
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4000,7 +4000,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4009,7 +4009,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4018,7 +4018,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4027,7 +4027,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4036,7 +4036,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4045,7 +4045,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4054,7 +4054,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4063,7 +4063,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4072,7 +4072,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4081,7 +4081,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4090,7 +4090,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4099,7 +4099,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4108,7 +4108,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4117,7 +4117,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4126,7 +4126,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4135,7 +4135,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4144,7 +4144,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4153,7 +4153,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4162,7 +4162,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4171,7 +4171,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4180,7 +4180,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4189,7 +4189,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4198,7 +4198,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4207,7 +4207,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4216,7 +4216,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4225,7 +4225,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4234,7 +4234,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4243,7 +4243,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4252,7 +4252,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4261,7 +4261,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4270,7 +4270,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4279,7 +4279,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4288,7 +4288,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4297,7 +4297,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4306,7 +4306,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4315,7 +4315,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4324,7 +4324,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4333,7 +4333,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4342,7 +4342,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4351,7 +4351,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4360,7 +4360,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4369,7 +4369,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4378,7 +4378,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4387,7 +4387,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4396,7 +4396,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4405,7 +4405,7 @@ const data = {
       "config": {
         "country": "UK",
         "external": {
-          "label": "Check out Historic England",
+          "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
       }
@@ -4414,7 +4414,7 @@ const data = {
       "config": {
         "country": "Denmark",
         "external": {
-          "label": "Check out Fredede og Bevaringsværdige Bygninger",
+          "label": "Fredede og Bevaringsværdige Bygninger",
           "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
         }
       }
@@ -4423,7 +4423,7 @@ const data = {
       "config": {
         "country": "Denmark",
         "external": {
-          "label": "Check out Fredede og Bevaringsværdige Bygninger",
+          "label": "Fredede og Bevaringsværdige Bygninger",
           "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
         }
       }
@@ -4432,7 +4432,7 @@ const data = {
       "config": {
         "country": "France",
         "external": {
-          "label": "Check out Base Mérimée",
+          "label": "Base Mérimée",
           "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
         }
       }
@@ -4441,7 +4441,7 @@ const data = {
       "config": {
         "country": "France",
         "external": {
-          "label": "Check out Base Mérimée",
+          "label": "Base Mérimée",
           "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
         }
       }
@@ -4480,7 +4480,7 @@ const data = {
       "config": {
         "country": "Switzerland",
         "external": {
-          "label": "Check out Swiss Inventory of Cultural Property of National and Regional Significance",
+          "label": "Swiss Inventory of Cultural Property of National and Regional Significance",
           "template": "https://api3.geo.admin.ch/rest/services/kgs/MapServer/ch.babs.kulturgueter/EXTERNAL_ID/extendedHtmlPopup?lang=en"
         }
       }
@@ -4495,7 +4495,7 @@ const data = {
       "config": {
         "country": "Portugal",
         "external": {
-          "label": "Check out Direção-Geral do Património Cultural",
+          "label": "Direção-Geral do Património Cultural",
           "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
         }
       }
@@ -4504,7 +4504,7 @@ const data = {
       "config": {
         "country": "Portugal",
         "external": {
-          "label": "Check out Direção-Geral do Património Cultural",
+          "label": "Direção-Geral do Património Cultural",
           "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
         }
       }
@@ -4513,7 +4513,7 @@ const data = {
       "config": {
         "country": "Portugal",
         "external": {
-          "label": "Check out Direção-Geral do Património Cultural",
+          "label": "Direção-Geral do Património Cultural",
           "template": "https://www.patrimoniocultural.gov.pt/pt/patrimonio/patrimonio-imovel/pesquisa-do-patrimonio/classificado-ou-em-vias-de-classificacao/geral/view/EXTERNAL_ID"
         }
       }

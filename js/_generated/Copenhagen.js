@@ -8,7 +8,7 @@ const data = {
       "east": 12.6514573
     },
     "external": {
-      "label": "Check out Fredede og Bevaringsværdige Bygninger",
+      "label": "Fredede og Bevaringsværdige Bygninger",
       "template": "https://www.kulturarv.dk/fbb/bygningvis.pub?bygning=EXTERNAL_ID"
     },
     "useInternalMap": true,

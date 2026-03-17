@@ -8,7 +8,7 @@ const data = {
       "east": 7.3233539
     },
     "external": {
-      "label": "Check out Base Mérimée",
+      "label": "Base Mérimée",
       "template": "https://www.pop.culture.gouv.fr/notice/merimee/EXTERNAL_ID"
     },
     "useInternalMap": true,
