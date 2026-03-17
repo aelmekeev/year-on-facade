@@ -2,6 +2,16 @@ const country = new URL(window.location.href).searchParams.get('country')
 const year = new URL(window.location.href).searchParams.get('year')
 const minYear = data.find(c => c.name == (country ? country : 'World')).minYear
 
+const updateHeader = () => {
+  const h1 = document.querySelector('h1')
+
+  // on click go to home page
+  h1.style.cursor = 'pointer'
+  h1.onclick = () => {
+    window.location.href = `${window.location.origin}${window.location.pathname.replace('/stats', '').replace('/item', '')}`
+  }
+}
+
 const sortByCount = (a, b) => {
   if (a.country == 'null' && b.country != 'null') {
     return -1
@@ -181,6 +191,7 @@ window.onload = () => {
     addOtherCountriesLink()
     hideSearchControls()
   }
+  updateHeader()
   setupYearSearch()
   updateList()
 }

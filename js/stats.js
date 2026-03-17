@@ -53,6 +53,14 @@ function updateHeader() {
   
   // Use the generated SVG for this specific city/country as the background
   h1.style.backgroundImage = `url("../img/_generated/country_${city}.svg")`
+
+  // on click go to list page for the country
+  titleContainer = document.querySelector('.header-label')
+  const currentLocation = window.location
+  titleContainer.style.cursor = 'pointer'
+  titleContainer.onclick = () => {
+    window.location.href = `${currentLocation.origin}${currentLocation.pathname.replace('/stats', '')}${data.config.country ? `?country=${data.config.country}` : ''}`
+  }
 }
 
 const maybePluralize = (count, noun = 'year', suffix = 's') => `${count} ${noun}${count !== 1 ? suffix : ''}`
