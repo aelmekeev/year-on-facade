@@ -46,6 +46,13 @@ function updateHeader(city, year) {
 
   titleContainer = document.querySelector('.header-label')
   titleContainer.style.backgroundColor = getYearColor(parseInt(year))
+
+  // on click go to stats page for the city
+  const currentLocation = window.location
+  titleContainer.style.cursor = 'pointer'
+  titleContainer.onclick = () => {
+    window.location.href = `${currentLocation.origin}${currentLocation.pathname.replace('/item', '/stats')}?city=${city}`
+  }
 }
 
 function updateNavigation(city, currentYearStr) {
@@ -133,6 +140,8 @@ function updateExternalLink(city, year) {
     link.innerHTML = externalConfig.label
     const template = externalConfig.template
     link.href = template.replace('EXTERNAL_ID', externalId)
+  } else {
+    document.querySelector('#external').style.display = 'none'
   }
 }
 
@@ -192,7 +201,7 @@ function updateItem() {
   const city = data.points[year].city || paramCity
 
   updateHeader(city, year)
-  updateNavigation(city, year)
+  updateNavigation(paramCity, year)
   updateLinks(city, year)
   updateExternalLink(city, year)
   updateNotes(year)
