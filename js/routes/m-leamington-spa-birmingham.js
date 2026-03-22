@@ -1,4 +1,5 @@
 const data = {
+  "name": "Midlands: Leamington Spa & Birmingham",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 52.1917554293496,
         "lng": -1.7070671383375624
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1674": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 52.33356421292537,
         "lng": -2.0641450233458913
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1954": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 52.49446753823745,
         "lng": -1.7760354486308194
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

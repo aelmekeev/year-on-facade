@@ -154,11 +154,11 @@ function setZoom(map, year) {
 
 // Global dismiss handler for closing photo previews cleanly
 function closePreviews() {
-  lastClicked = null;
+  lastClicked = null
   Object.values(markers).forEach(m => {
-    m.mapMarker.zIndex = null;
-    m.mapMarker.content.classList.remove('active');
-  });
+    m.mapMarker.zIndex = null
+    m.mapMarker.content.classList.remove('active')
+  })
 }
 
 async function initMap() {
@@ -186,8 +186,8 @@ async function initMap() {
   })
 
   // Dismiss previews when touching the map canvas
-  map.addListener('click', closePreviews);
-  map.addListener('dragstart', closePreviews);
+  map.addListener('click', closePreviews)
+  map.addListener('dragstart', closePreviews)
 
   setCenter(map, year)
   setZoom(map, year)
@@ -213,7 +213,7 @@ async function initMap() {
 
     const yearMarker = document.createElement('div')
     yearMarker.className = 'year-marker'
-    
+
     // Create text span to hold text (avoids overriding the DOM structure when rendering the preview)
     const titleSpan = document.createElement('span')
     titleSpan.textContent = title
@@ -242,7 +242,7 @@ async function initMap() {
       title,
       content: yearMarker,
     })
-    
+
     marker.addListener('click', () => {
       if (lastClicked == year) {
         // Navigation triggers if already active (tapped marker or image)
@@ -253,17 +253,21 @@ async function initMap() {
       } else {
         map.setZoom(15)
         map.setCenter(marker.position)
-        map.panBy(0, -120)
-        
+
+        const isTodo = points[year].notes.startsWith('TODO')
+
+        if (!isTodo) {
+          map.panBy(0, -120)
+        }
+
         // Close previously opened previews
         closePreviews()
-        
+
         lastClicked = year
         marker.zIndex = 1000 // Force active marker to the front
         yearMarker.classList.add('active')
 
         const pointCity = data.points[year].city || mapCity
-        const isTodo = points[year].notes.startsWith('TODO')
 
         // Lazy load the photo into the container if it meets the criteria
         if (!isTodo && data.config.photosBaseUrl && pointCity != 'Replacements') {
@@ -277,7 +281,7 @@ async function initMap() {
         }
       }
     })
-    
+
     markers[year] = {
       mapMarker: marker,
       todo: points[year].notes.startsWith('TODO'),

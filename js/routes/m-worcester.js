@@ -1,4 +1,5 @@
 const data = {
+  "name": "Midlands: Worcester",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 52.22841065700945,
         "lng": -2.7389034078873453
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

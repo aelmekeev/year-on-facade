@@ -1,4 +1,5 @@
 const data = {
+  "name": "South West: Stroud & Didcot",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 51.67731580892972,
         "lng": -2.3498886051809165
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1694": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 51.647547576791425,
         "lng": -1.9333551950709624
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1656": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 51.63056419488898,
         "lng": -1.7088562481118332
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1645": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 51.658281136216,
         "lng": -1.5840588203940438
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1708": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 51.58314472478802,
         "lng": -1.480300907942031
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

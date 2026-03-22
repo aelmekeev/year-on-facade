@@ -1,4 +1,5 @@
 const data = {
+  "name": "Midlands: Northampton & Coventry",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 52.33125619087968,
         "lng": -0.9014001643015509
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1779": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 52.30401162297456,
         "lng": -1.0841587372623327
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1753": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 52.3369138790917,
         "lng": -1.2895538128953048
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1604": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 52.390973234769675,
         "lng": -1.3122406763009749
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1827": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 52.52301946101648,
         "lng": -1.2909057665159183
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1712": {
@@ -60,7 +61,7 @@ const data = {
         "lat": 52.42286605677296,
         "lng": -1.5587983887534522
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

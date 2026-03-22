@@ -1,4 +1,5 @@
 const data = {
+  "name": "North East: Newcastle upon Tyne",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 54.996012973114794,
         "lng": -1.5298320431936003
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1718": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 54.988246795552676,
         "lng": -1.8549601436234688
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1660": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 54.947774615790856,
         "lng": -1.9730906532402974
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1657": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 54.97376724018444,
         "lng": -2.1054898443407786
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1936": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 54.84545046498526,
         "lng": -1.9737555319038076
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

@@ -1,4 +1,5 @@
 const data = {
+  "name": "North: Leeds (north)",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 54.06797388767207,
         "lng": -2.0170503402260085
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1710": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 53.89478170228302,
         "lng": -1.9505595531350155
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

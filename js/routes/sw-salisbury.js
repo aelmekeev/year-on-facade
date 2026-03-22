@@ -1,4 +1,5 @@
 const data = {
+  "name": "South West: Salisbury",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 51.196128751423295,
         "lng": -1.9027197213948768
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1635": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 51.13549581540776,
         "lng": -1.9481054332653198
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1636": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 51.08035286315714,
         "lng": -1.881133594123886
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1666": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 51.22310145978299,
         "lng": -1.782644852023817
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1921": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 51.17625403371545,
         "lng": -1.517646680607853
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

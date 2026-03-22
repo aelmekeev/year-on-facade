@@ -1,4 +1,5 @@
 const data = {
+  "name": "Midlands: Wolverhampton & Stafford",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 52.707911464799835,
         "lng": -2.754870981925603
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

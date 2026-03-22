@@ -1,4 +1,5 @@
 const data = {
+  "name": "South West: Portsmouth",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 50.784882300518056,
         "lng": -0.7903458886897798
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1720": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 50.83928536449385,
         "lng": -0.7420157996039726
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1758": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 50.86157638530915,
         "lng": -0.9263605847550551
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1814": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 50.78452750803067,
         "lng": -1.1487380085479326
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

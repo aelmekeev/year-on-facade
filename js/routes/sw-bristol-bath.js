@@ -1,4 +1,5 @@
 const data = {
+  "name": "South West: Bristol & Bath",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 51.45700690467244,
         "lng": -2.5889531045893106
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1818": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 51.43616669440828,
         "lng": -2.645057649719757
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1745": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 51.36134230253197,
         "lng": -2.4813207002229523
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1747": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 51.40480704238451,
         "lng": -2.4529482934846696
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1706": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 51.39509031382486,
         "lng": -2.3882225033684494
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1739": {
@@ -60,7 +61,7 @@ const data = {
         "lat": 51.38252489885143,
         "lng": -2.360744459509861
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1815": {
@@ -68,7 +69,7 @@ const data = {
         "lat": 51.38966196777405,
         "lng": -2.3578359473798733
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1837": {
@@ -76,7 +77,7 @@ const data = {
         "lat": 51.39061686984914,
         "lng": -2.3553570223670324
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

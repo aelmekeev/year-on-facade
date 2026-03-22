@@ -1,4 +1,5 @@
 const data = {
+  "name": "North East: Liverpool",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 53.390041578814895,
         "lng": -3.123707745854714
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1740": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 53.37219895556583,
         "lng": -3.135980665917508
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1746": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 53.2922827126374,
         "lng": -2.9528827437141265
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1807": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 53.275983934015265,
         "lng": -2.768036612224138
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1691": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 53.33366969188379,
         "lng": -2.7394753793029225
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

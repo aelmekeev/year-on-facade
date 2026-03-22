@@ -1,4 +1,5 @@
 const data = {
+  "name": "North East: Hull & York",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 53.78024216779533,
         "lng": -0.30458472173026957
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1787": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 53.81899841205874,
         "lng": -0.6160765678122649
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1856": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 53.94602536795454,
         "lng": -1.0434694198175227
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

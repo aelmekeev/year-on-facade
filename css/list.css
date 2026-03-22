@@ -43,9 +43,8 @@ h1 {
   padding-top: 10px;
 }
 
-#github img {
-  width: 60px;
-  margin-bottom: 5px;
+#back-nav {
+  margin-top: 10px;
 }
 
 #wit {
@@ -114,4 +113,8 @@ label {
 
 #start {
   width: 100%;
+}
+
+li {
+  margin-bottom: 5px; /* Spacing out list items for easier reading on the go */
 }

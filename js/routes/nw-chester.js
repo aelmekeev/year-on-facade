@@ -1,4 +1,5 @@
 const data = {
+  "name": "North West: Chester",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 53.12070812656435,
         "lng": -2.7685557940928
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1585": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 53.1577047926537,
         "lng": -2.667955313296604
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1935": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 53.19165000623848,
         "lng": -2.8914709877746447
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1597": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 53.191312221896,
         "lng": -2.8867228191968706
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1664": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 53.18638558372502,
         "lng": -2.88953377052421
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

@@ -1,4 +1,5 @@
 const data = {
+  "name": "North: Sheffield & Stockport",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 53.18911982328791,
         "lng": -1.6183171130114937
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1727": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 53.33385241249635,
         "lng": -1.8883171033817328
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1733": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 53.28629458376312,
         "lng": -2.0257668833218268
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1728": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 53.2620820688136,
         "lng": -2.1255742383950382
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1770": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 53.28817837478813,
         "lng": -2.151465118056369
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1764": {
@@ -60,7 +61,7 @@ const data = {
         "lat": 53.38053234945709,
         "lng": -2.185443271942082
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

@@ -1,4 +1,5 @@
 const data = {
+  "name": "Midlands: Oxford & Banbury",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 51.74851702700113,
         "lng": -1.4062517320836578
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1946": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 51.80806901072555,
         "lng": -1.6390568265814398
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1587": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 51.87462679019858,
         "lng": -1.4846783761227722
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1663": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 51.99048050575821,
         "lng": -1.5798743711541918
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1539": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 52.12585910465733,
         "lng": -1.4029011426447802
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1537": {
@@ -60,7 +61,7 @@ const data = {
         "lat": 52.060608576817415,
         "lng": -1.3377319989857461
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1582": {
@@ -68,7 +69,7 @@ const data = {
         "lat": 51.806950807120295,
         "lng": -1.6368248434842494
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

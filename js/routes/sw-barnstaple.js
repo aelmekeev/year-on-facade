@@ -1,4 +1,5 @@
 const data = {
+  "name": "South West: Barnstaple",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 51.04971225999911,
         "lng": -4.0590649514359045
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

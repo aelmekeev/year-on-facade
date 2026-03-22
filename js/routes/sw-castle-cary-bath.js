@@ -1,4 +1,5 @@
 const data = {
+  "name": "South West: Castle Cary & Bath",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 51.1479708440992,
         "lng": -2.7148973669062975
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1803": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 51.17288629157772,
         "lng": -2.6206041803941744
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1801": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 51.189968166314664,
         "lng": -2.548022776909854
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1693": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 51.19271138927652,
         "lng": -2.3614975391439326
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1598": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 51.24046232706327,
         "lng": -2.3940850197640775
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1763": {
@@ -60,7 +61,7 @@ const data = {
         "lat": 51.266788874561385,
         "lng": -2.2848270237031842
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1697": {
@@ -68,7 +69,7 @@ const data = {
         "lat": 51.30063273837568,
         "lng":  -2.324309880298963
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1698": {
@@ -76,7 +77,7 @@ const data = {
         "lat": 51.26684408486354,
         "lng": -2.2846394940262833
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

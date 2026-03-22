@@ -1,4 +1,5 @@
 const data = {
+  "name": "Midlands: Peterborough & Leicester",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 52.620900697162014,
         "lng": -0.6239370819479623
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1616": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 52.588309290561774,
         "lng": -0.7193404721722413
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1643": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 52.59607178881066,
         "lng": -0.8434230733174165
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1769": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 52.658995973904986,
         "lng": -0.9806737059030777
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1932": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 52.629345757252096,
         "lng": -1.1253195403151692
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

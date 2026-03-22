@@ -1,4 +1,5 @@
 const data = {
+  "name": "South West: Bath & Swindon",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 51.46201794672384,
         "lng": -2.3243703208447006
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1738": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 51.43845430006178,
         "lng": -2.262736200910375
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1711": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 51.438055585516224,
         "lng": -2.2607471922356797
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1730": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 51.46081204018757,
         "lng": -2.1966465097776218
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1714": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 51.43380413393238,
         "lng": -2.183923601656115
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1644": {
@@ -60,7 +61,7 @@ const data = {
         "lat": 51.411549406060885,
         "lng": -2.1993673249390113
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1642": {
@@ -68,7 +69,7 @@ const data = {
         "lat": 51.44848292714915,
         "lng": -1.947150190091244
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

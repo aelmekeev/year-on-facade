@@ -1,4 +1,5 @@
 const data = {
+  "name": "South West: Bournemouth",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 50.720659318237225,
         "lng": -2.304162254229089
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1573": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 50.74881805389649,
         "lng": -2.3447937235387237
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1580": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 50.8584617976,
         "lng": -2.0173174688941473
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

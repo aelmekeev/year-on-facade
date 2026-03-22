@@ -1,25 +1,57 @@
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 50px;
 }
 
-#header {
-  display: flex;
+#logo {
+  width: 100%;
+}
+
+#logo p {
+  margin-top: 0;
+  font-style: italic;
+  font-size: smaller;
 }
 
 h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  width: 100%;
+  margin: 5px 0;
+  display: inline-block;
 }
 
-p, ul, hr {
-  max-width: 600px;
+#back-nav {
+  margin-top: 10px;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 30px;
+}
+
+p, ul, hr, figure {
+  max-width: 900px;
   margin-left: 0px;
+  line-height: 1.5;
 }
 
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px; /* Spacing out list items for easier reading on the go */
+}
+
+/* Base link styling with fat-finger vertical padding */
+a {
+  display: inline-block;
+}
+
+/* Ensure images don't break the layout on small phones */
 img {
-  width: 600px;
-}
-
-body {
-  margin-bottom: 50px;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 15px 0;
 }
