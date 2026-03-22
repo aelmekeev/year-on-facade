@@ -1,4 +1,5 @@
 const data = {
+  "name": "East Midlands: Norwich (north)",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 52.7592692610407,
         "lng": 1.3282515776979635
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1581": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 52.85845610515891,
         "lng": 1.4477057420786485
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

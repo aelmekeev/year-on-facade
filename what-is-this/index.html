@@ -1,79 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>What is this?</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Year on Facade</title>
   <link rel="stylesheet" type="text/css" href="../css/what-is-this.css" />
-  <meta name="viewport" content="width=device-width" />
-  <meta charset="UTF-16">
+  <script src="../js/what-is-this.js"></script>
 </head>
 
 <body>
-  <div id="header">
-    <h1>What is this?</h1>
-  </div>
+  <header>
+    <div id="logo">
+      <h1>Year on Facade: What is this? </h1>
+      <p>
+        A collection of buildings with the year on their facade.
+      </p>
+    </div>
+  </header>
 
-  <p>
-    <a href="https://year-on-facade.uk/">Back to the the collection</a>
-  </p>
+  <main>
+    <a href="https://year-on-facade.uk/" id="back-nav">
+      &larr; Back to the collection
+    </a>
 
-  <p>
-    Well, it's a collection of buildings with the year of (re-)construction on their facade.
-    Or, more precisely, it's a collection of years on the dated buildings.
-  </p>
+    <h2>Idea</h2>
 
-  <p>
-    The main page is the timeline from the first year in the collection until the current year.
-    Green - found. Blue and White - not found. The main purpose of the Blue is to quickly grasp/compare
-    the range of years for a single country/city.
-  </p>
+    <p>
+      Back in 2022, I came up with the idea for a perfect collection. A collection of buildings that feature the
+      year of their (re)construction visible on their facades.
+    </p>
 
-  <img src="../img/timeline.png" />
+    <ul>
+      <li>It's digital, so there is no need to worry about physical storage.</li>
+      <li>The total number of possible items in the collection grows by exactly 1 each year.</li>
+      <li>One can find items for the collection almost anywhere in the world.</li>
+      <li>I can build the collection from home thanks to Google Street View and heritage registers like Historic
+        England.</li>
+      <li>It also serves as a fantastic extra motivation for travelling (on both a macro and micro scale).</li>
+    </ul>
 
-  <p>
-    Click on any of the "cities" links, and you will see a similar view for cities.
-  </p>
+    <p>
+      So, this is my perfect collection.
+    </p>
 
-  <p>
-    Statistics will be available when you click on any of the country/city links:
-  </p>
+    <hr />
 
-  <ul>
-    <li>years in the collection broken by decades</li>
-    <li>link to the map with all the items tagged</li>
-    <li>total number of years in the collection</li>
-    <li>buildings listed in the heritage registries (dark green in the table)</li>
-    <li>number of places visited</li>
-  </ul>
+    <h2>Navigation</h2>
 
-  <img src="../img/detailed.png" />
+    <p>
+      Top-level pages provide an overview of the collection's items in specific countries, administrative regions, or
+      cities. Each region is represented by a timeline that starts with the earliest year-item in the collection and
+      ends with the latest.
+    </p>
 
-  <p>
-    On the last point. Even though, according to <a href="https://github.com/aelmekeev/year-on-facade#rules">the rules</a>
-    every item should be verifiable with Google Street View, I do use this collection as one of the main drivers for cycling/traveling.
-  </p>
+    <img src="../img/timeline.png" alt="Timeline visualization of years" />
 
-  <p>
-    This is why if you click on any of the green squares, you will see a couple of photos,
-    map, and Google Street View links, as well as (if available) a link to a heritage registry entry
-    (e.g. <a href="https://historicengland.org.uk/">Historic England</a>)
-  </p>
+    <p>
+      Detailed statistics are available when you click on any of the rows. These include:
+    </p>
 
-  <hr>
+    <ul>
+      <li>Years in the region's collection, broken down by decades.</li>
+      <li>A link to a map with all regional items tagged.</li>
+      <li>The total number of years in the region's collection.</li>
+      <li>Buildings listed in heritage registries (indicated by a dark border in the table).</li>
+      <li>The number of places physically visited (those not yet visited appear hazy).</li>
+    </ul>
 
-  <p>
-    That's it! Will it ever be complete? No idea. I feel that there are not so many items left in London,
-    but I'm sure the UK should get me to 300+.
-  </p>
+    <img src="../img/detailed.png" alt="Detailed statistics interface" />
 
-  <p>
-    Want to help or start your collection? Check out code on the <a href="https://github.com/aelmekeev/year-on-facade">GitHub</a>.
-  </p>
+    <p>
+      If you click on any specific year square, you will see links to the map and Google Street View, a couple of photos
+      (if visited), and a link to its heritage registry entry (e.g., <a href="https://historicengland.org.uk/">Historic
+        England</a>).
+    </p>
 
-  <p>
-    Otherwise, just enjoy <a href="https://year-on-facade.uk/">browsing the collection</a>!
-  </p>
+    <hr />
 
+    <h2>Current state</h2>
+
+    <p>
+      The collection has grown significantly since 2022. Incorporating data from Historic England gave a massive boost
+      to the number of items in England from the 16th to the 19th centuries. However, there are still quite a few gaps
+      in the 20th century, as well as the most recent decade. I would greatly appreciate any help filling these - feel
+      free to reach out to me on <a href="https://www.instagram.com/year_on_facade" target="_blank"
+        rel="noopener noreferrer">Instagram</a>!
+    </p>
+
+    <p>
+      My other main focus right now is visiting every item I've found through research. Here is the <a
+        href="../routes/">list of routes for my bike trips</a> to give you an idea. It might take a couple dozen years
+      with my current pace, though.
+    </p>
+
+  </main>
 </body>
 
 </html>

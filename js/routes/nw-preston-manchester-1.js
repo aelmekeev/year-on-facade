@@ -1,4 +1,5 @@
 const data = {
+  "name": "North West: Preston & Manchester (west)",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 53.68564328081307,
         "lng": -2.637654624279735
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1716": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 53.516009926357974,
         "lng": -2.583862015404694
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1717": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 53.40168159684792,
         "lng": -2.4500830044850073
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1752": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 53.38835793999124,
         "lng": -2.4149138932333063
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1759": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 53.38948622293105,
         "lng": -2.3923261595725243
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1775": {
@@ -60,7 +61,7 @@ const data = {
         "lat": 53.3130806604761,
         "lng": -2.3225711126567985
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

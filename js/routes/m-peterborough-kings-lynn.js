@@ -1,4 +1,5 @@
 const data = {
+  "name": "Midlands: Peterborough & Kings Lynn",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 52.798277891573655,
         "lng": -0.06332362177545843
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

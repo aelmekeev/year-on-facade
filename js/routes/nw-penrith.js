@@ -1,4 +1,5 @@
 const data = {
+  "name": "North West: Penrith",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 54.51369338855166,
         "lng": -3.168101145191791
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1612": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 54.670679066320695,
         "lng": -2.7599614409846263
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1617": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 54.74925794890673,
         "lng": -2.706113987628956
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

@@ -1,4 +1,5 @@
 const data = {
+  "name": "East Midlands: Ipswich & Cambridge",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 52.235015446632794,
         "lng": 0.9020795833204278
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1977": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 52.24281898771393,
         "lng": 0.7165934228786192
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1619": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 52.279100177003784,
         "lng": 0.893768133179074
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1741": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 52.194936604492064,
         "lng": 0.26696295812908866
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1688": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 52.20543738481224,
         "lng": 0.11951113503586944
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

@@ -1,4 +1,5 @@
 const data = {
+  "name": "South West: Exeter",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 50.693654432727264,
         "lng": -3.1505720360967397
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1603": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 50.85736818650454,
         "lng": -3.392964445344265
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1531": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 50.69328321351558,
         "lng": -3.149796389209845
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1612": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 50.741020809711934,
         "lng": -3.0703958937329277
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

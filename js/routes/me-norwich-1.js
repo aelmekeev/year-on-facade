@@ -1,4 +1,5 @@
 const data = {
+  "name": "East Midlands: Norwich (east)",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 52.53101020788694,
         "lng": 1.4825872454240747
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1958": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 52.4702464347488,
         "lng": 1.4440876943310568
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1609": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 52.60749180154992,
         "lng": 1.7234838671162727
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1586": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 52.48082967346413,
         "lng": 1.755801162411629
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

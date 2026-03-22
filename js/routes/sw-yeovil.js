@@ -1,4 +1,5 @@
 const data = {
+  "name": "South West: Yeovil",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 50.92924650719932,
         "lng": -2.7555190684889355
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1599": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 50.95547779972133,
         "lng": -2.574051982631976
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1626": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 50.871388813029434,
         "lng": -2.60981050253407
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

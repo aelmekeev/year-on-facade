@@ -1,4 +1,5 @@
 const data = {
+  "name": "North East: Middlesbrough",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 54.453728940022,
         "lng": -0.6646983268463321
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

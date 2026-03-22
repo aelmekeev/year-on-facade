@@ -1,4 +1,5 @@
 const data = {
+  "name": "South West: Taunton",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 51.01437018265468,
         "lng": -3.102983458200296
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1624": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 51.16221703050698,
         "lng": -3.319925405688671
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1563": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 51.12775178127788,
         "lng": -3.0072828029592094
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

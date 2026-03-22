@@ -1,4 +1,5 @@
 const data = {
+  "name": "East Midlands: Colchester & Ipswich",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 51.825569236223785,
         "lng": 1.1429451357107274
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1639": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 52.05318044842419,
         "lng": 1.161563583338096
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1541": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 52.147414174076104,
         "lng": 1.3194223748410667
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

@@ -1,4 +1,5 @@
 const data = {
+  "name": "South West: Plymouth",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 50.40775890105725,
         "lng": -4.20620590890077
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1809": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 50.36689965842479,
         "lng": -4.1351563982025095
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

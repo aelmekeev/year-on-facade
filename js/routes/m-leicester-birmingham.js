@@ -1,4 +1,5 @@
 const data = {
+  "name": "Midlands: Leicester & Birmingham",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 52.70976784110385,
         "lng": -1.3703654962794223
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1629": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 52.599447959669945,
         "lng": -1.4298587899693478
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1929": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 52.6253010392238,
         "lng": -1.8193727715174102
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

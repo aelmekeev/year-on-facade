@@ -1,4 +1,5 @@
 const data = {
+  "name": "North East: York",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 54.26965406245301,
         "lng": -0.9315680138099055
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

@@ -1,4 +1,5 @@
 const data = {
+  "name": "North: Sheffield",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 53.374469295432846,
         "lng": -1.3179392912512415
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1655": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 53.39036804940533,
         "lng": -1.3467884639428296
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1772": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 53.39515336392582,
         "lng": -1.4295216408243951
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1802": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 53.407659897336806,
         "lng": -1.5124574939158622
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1641": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 53.54276603420719,
         "lng": -1.52601230868117
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

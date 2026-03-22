@@ -105,11 +105,13 @@ function updateTable() {
         
         // Inject gradient logic for collected years in the grid
         year.style.backgroundColor = getYearColor(currentYear)
-        year.style.color = '#ffffff'
-        year.style.textShadow = '0px 1px 2px rgba(0,0,0,0.5)'
 
         if (points[currentYear].external) {
           year.classList.add('external')
+        }
+
+        if (points[currentYear].notes.includes('TODO')) {
+          year.classList.add('todo')
         }
       }
       if (c == 0 || c % 5 == 0) {

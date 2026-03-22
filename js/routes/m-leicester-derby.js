@@ -1,4 +1,5 @@
 const data = {
+  "name": "Midlands: Leicester & Derby",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 52.76555688732329,
         "lng": -0.8876054928122231
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1774": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 52.852865508314466,
         "lng": -0.8155303263061423
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1700": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 52.8607916686074,
         "lng": -1.134976239035637
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1661": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 52.82569417070036,
         "lng": -1.2552402299391499
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1690": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 52.861730526239626,
         "lng": -1.3842129517190591
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

@@ -1,4 +1,5 @@
 const data = {
+  "name": "East Midlands: Colchester & Braintree",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 51.87269479032295,
         "lng": 0.6887281513049
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1590": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 51.87922004189187,
         "lng": 0.5517011000440238
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1672": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 51.97819769862175,
         "lng": 0.6297121235781475
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1540": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 51.892951133924825,
         "lng": 0.4122926085286375
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1596": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 51.85654244827137,
         "lng": 0.4334736633516801
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

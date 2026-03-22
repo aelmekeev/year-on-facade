@@ -4,8 +4,8 @@ body {
 
 h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 15px 10px;    
-  border-radius: 3px;    
+  padding: 15px 10px;
+  border-radius: 3px;
   margin-top: 10px;
   background-size: 100% auto;
   background-repeat: repeat-y;
@@ -27,7 +27,7 @@ a {
   font-weight: 500;
 }
 
-a:hover, 
+a:hover,
 a:active {
   text-decoration: underline;
 }
@@ -59,21 +59,32 @@ a:visited {
 .year {
   width: 40px;
   height: 40px;
-  background-color: #e5e5e5; /* Neutral grey for missing years to match SVG track */
+  background-color: #e5e5e5;
+  /* Neutral grey for missing years to match SVG track */
   border: 0.5px solid white;
   line-height: 40px;
   text-align: center;
   font-size: 13px;
-  color: #888; /* Dim text for empty slots */
-  box-sizing: border-box; /* Ensures our inset shadows below don't change square size */
+  color: #888;
+  /* Dim text for empty slots */
+  box-sizing: border-box;
+  /* Ensures our inset shadows below don't change square size */
 }
 
 .found {
   /* background-color dynamically assigned via JS */
   cursor: pointer;
+  color: #ffffff;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .external {
   /* Creates a subtle but unmissable "plaque border" without touching the background */
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5), inset 0 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.todo {
+  /* add 50% opacity */
+  opacity: 0.7;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0);
 }

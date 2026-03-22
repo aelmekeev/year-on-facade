@@ -1,4 +1,5 @@
 const data = {
+  "name": "North West: Manchester",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 53.435704902915504,
         "lng": -1.9464921898728553
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1646": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 53.46213698490441,
         "lng": -1.9699848741147892
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1648": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 53.533293277552445,
         "lng": -2.0503086306140212
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1699": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 53.551042021870686,
         "lng": -1.996095236194317
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1735": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 53.44225628181594,
         "lng": -2.0971366304246106
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1749": {
@@ -60,7 +61,7 @@ const data = {
         "lat": 53.533746404323004,
         "lng": -2.050034939397119
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1756": {
@@ -68,7 +69,7 @@ const data = {
         "lat": 53.556032259558975,
         "lng": -2.0145926764063646
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1773": {
@@ -76,7 +77,7 @@ const data = {
         "lat": 53.58899915601493,
         "lng": -2.3589555795260893
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1868": {
@@ -84,7 +85,7 @@ const data = {
         "lat": 53.479802560206814,
         "lng": -2.2425819597005794
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

@@ -360,13 +360,22 @@ def generate_list_of_routes():
 
     routes = []
     for filename in glob.glob(os.path.join("js", "routes", "*.js")):
-        name = os.path.basename(filename).replace(".js", "")
-        routes.append(name)
+        count = 0
+        route_id = os.path.basename(filename).replace(".js", "")
+        # extract route name from the file content from the line that starts with '  "name": "'
+        # also extra number of points by counting number of lines with "latlng" in the file
+        with open(filename) as f:
+            for line in f:
+                if line.strip().startswith('"name":'):
+                    name = line.strip().split('"name":')[1].strip().strip('",')
+                if '"latlng"' in line:
+                    count += 1
+        routes.append({"id": route_id, "name": name, "count": count})
 
     with open("./js/_generated/routes.js", "w") as f:
         f.write(f"{js_file_prefix}[\n")
-        for route in sorted(routes):
-            f.write(f'  "{route}",\n')
+        for route in sorted(routes, key=lambda x: x["id"]):
+            f.write(f'  {{ "id": "{route["id"]}", "name": "{route["name"]}", "count": {route["count"]} }},\n')
         f.write("]\n")
 
 

@@ -1,4 +1,5 @@
 const data = {
+  "name": "South West: Southampton",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 51.19770289458321,
         "lng": -1.0566829731793117
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1571": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 51.05809618232594,
         "lng": -1.3151056291137102
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1808": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 50.87096458842436,
         "lng": -1.3999133497329983
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }

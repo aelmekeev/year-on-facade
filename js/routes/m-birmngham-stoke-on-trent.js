@@ -1,4 +1,5 @@
 const data = {
+  "name": "Midlands: Birmingham & Stoke-on-Trent",
   "config": {
     "country": "TODO",
     "borders": {
@@ -20,7 +21,7 @@ const data = {
         "lat": 52.80710542894757,
         "lng": -2.1151230207741025
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1673": {
@@ -28,7 +29,7 @@ const data = {
         "lat": 52.72619554770106,
         "lng": -2.1136317491135674
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1679": {
@@ -36,7 +37,7 @@ const data = {
         "lat": 52.6581443806343,
         "lng": -2.1358344504547597
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1707": {
@@ -44,7 +45,7 @@ const data = {
         "lat": 52.54540779396713,
         "lng": -2.2195727034654142
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
     "1804": {
@@ -52,7 +53,7 @@ const data = {
         "lat": 52.541343130162936,
         "lng": -2.102271185129068
       },
-      "notes": "",
+      "notes": "TODO",
       "external": "",
     },
   }
