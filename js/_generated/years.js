@@ -1153,6 +1153,7 @@ const yearsData = {
     "West_Sussex"
   ],
   "1898": [
+    "Barcelona",
     "Berkshire",
     "Buckinghamshire",
     "Cambridgeshire",
@@ -1191,6 +1192,7 @@ const yearsData = {
     "Oxfordshire"
   ],
   "1904": [
+    "Barcelona",
     "East_Sussex",
     "London",
     "Surrey"
@@ -1206,6 +1208,7 @@ const yearsData = {
     "Surrey"
   ],
   "1906": [
+    "Barcelona",
     "Copenhagen",
     "Hertfordshire",
     "London",
@@ -1308,6 +1311,7 @@ const yearsData = {
     "Surrey"
   ],
   "1928": [
+    "Barcelona",
     "Essex",
     "Hertfordshire",
     "Istanbul",
@@ -1471,6 +1475,9 @@ const yearsData = {
   ],
   "1990": [
     "London"
+  ],
+  "1991": [
+    "Barcelona"
   ],
   "1993": [
     "London"
