@@ -1,4 +1,5 @@
 const data = [
+  {name: "Barcelona", country: "Spain", count: 5, minYear: 1898},
   {name: "Bedfordshire", country: "UK", count: 6, minYear: 1606},
   {name: "Berkshire", country: "UK", count: 23, minYear: 1812},
   {name: "Billund", country: "Denmark", count: 1, minYear: 1924},
@@ -56,6 +57,7 @@ const data = [
   {name: "Sintra", country: "Portugal", count: 1, minYear: 1757},
   {name: "Somerset", country: "UK", count: 19, minYear: 1563},
   {name: "South_Yorkshire", country: "UK", count: 6, minYear: 1641},
+  {name: "Spain", country: "null", count: 5, minYear: 1898},
   {name: "Staffordshire", country: "UK", count: 5, minYear: 1560},
   {name: "Suffolk", country: "UK", count: 6, minYear: 1541},
   {name: "Surrey", country: "UK", count: 23, minYear: 1521},
@@ -69,6 +71,6 @@ const data = [
   {name: "West_Yorkshire", country: "UK", count: 13, minYear: 1611},
   {name: "Wiltshire", country: "UK", count: 12, minYear: 1602},
   {name: "Worcestershire", country: "UK", count: 1, minYear: 1674},
-  {name: "World", country: "null", count: 438, minYear: 1503},
+  {name: "World", country: "null", count: 439, minYear: 1503},
   {name: "Zurich", country: "Switzerland", count: 5, minYear: 1566},
 ]

@@ -94,6 +94,16 @@
       }
     }
   },
+  "Spain": {
+    "config": {
+      "borders": {
+        "south": 35.998889,
+        "north": 43.779932,
+        "west": -9.299452,
+        "east": 3.326528
+      }
+    }
+  },
   "Switzerland": {
     "config": {
       "borders": {
@@ -734,6 +744,17 @@
         "north": 43.940424,
         "west": 12.438273,
         "east": 12.453036
+      }
+    }
+  },
+  "Barcelona": {
+    "config": {
+      "country": "Spain",
+      "borders": {
+        "south": 41.320108,
+        "north": 41.468931,
+        "west": 2.052374,
+        "east": 2.228129
       }
     }
   },

@@ -3052,11 +3052,10 @@ const data = {
       "notes": ""
     },
     "1898": {
-      "city": "West_Sussex",
-      "external": "",
+      "city": "Barcelona",
       "latlng": {
-        "lat": 50.9958191036349,
-        "lng": -0.06681543318895576
+        "lat": 41.39803049437455,
+        "lng": 2.1710287053181423
       },
       "notes": ""
     },
@@ -3105,11 +3104,10 @@ const data = {
       "notes": ""
     },
     "1904": {
-      "city": "East_Sussex",
-      "external": "",
+      "city": "Barcelona",
       "latlng": {
-        "lat": 50.97327756810273,
-        "lng": 0.2207271211217026
+        "lat": 41.39834346657306,
+        "lng": 2.1689193165819343
       },
       "notes": ""
     },
@@ -3691,6 +3689,14 @@ const data = {
       },
       "notes": ""
     },
+    "1991": {
+      "city": "Barcelona",
+      "latlng": {
+        "lat": 41.3822311625747,
+        "lng": 2.181221107074102
+      },
+      "notes": ""
+    },
     "1993": {
       "city": "London",
       "external": "",
@@ -3975,6 +3981,9 @@ const data = {
       "config": {}
     },
     "San_Marino": {
+      "config": {}
+    },
+    "Spain": {
       "config": {}
     },
     "Switzerland": {
@@ -4473,6 +4482,12 @@ const data = {
     "City_of_San_Marino": {
       "config": {
         "country": "San_Marino",
+        "external": null
+      }
+    },
+    "Barcelona": {
+      "config": {
+        "country": "Spain",
         "external": null
       }
     },
