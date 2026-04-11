@@ -2,6 +2,16 @@
   "World": {
     "config": {}
   },
+  "Andorra": {
+    "config": {
+      "borders": {
+        "south": 42.427661,
+        "north": 42.656382,
+        "west": 1.412661,
+        "east": 1.787409
+      }
+    }
+  },
   "Denmark": {
     "config": {
       "borders": {
@@ -645,6 +655,50 @@
         "north": 52.454672,
         "west": -2.663538,
         "east": -1.758539
+      }
+    }
+  },
+  "Canillo": {
+    "config": {
+      "country": "Andorra",
+      "borders": {
+        "south": 42.565041,
+        "north": 42.567981,
+        "west": 1.596199,
+        "east": 1.603714
+      }
+    }
+  },
+  "Encamp": {
+    "config": {
+      "country": "Andorra",
+      "borders": {
+        "south": 42.529205,
+        "north": 42.539609,
+        "west": 1.571012,
+        "east": 1.590195
+      }
+    }
+  },
+  "Les_Escaldes": {
+    "config": {
+      "country": "Andorra",
+      "borders": {
+        "south": 42.506982,
+        "north": 42.516933,
+        "west": 1.529627,
+        "east": 1.553286
+      }
+    }
+  },
+  "Ordino": {
+    "config": {
+      "country": "Andorra",
+      "borders": {
+        "south": 42.552369,
+        "north": 42.559705,
+        "west": 1.531372,
+        "east": 1.537529
       }
     }
   },

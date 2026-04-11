@@ -2615,11 +2615,10 @@ const data = {
       "notes": ""
     },
     "1849": {
-      "city": "London",
-      "external": "1193310",
+      "city": "Ordino",
       "latlng": {
-        "lat": 51.55955252340366,
-        "lng": -0.33485619160659685
+        "lat": 42.55657356048789,
+        "lng": 1.533891429463631
       },
       "notes": ""
     },
@@ -3104,10 +3103,10 @@ const data = {
       "notes": ""
     },
     "1904": {
-      "city": "Barcelona",
+      "city": "Les_Escaldes",
       "latlng": {
-        "lat": 41.39834346657306,
-        "lng": 2.1689193165819343
+        "lat": 42.508987035342926,
+        "lng": 1.543317701190457
       },
       "notes": ""
     },
@@ -3635,6 +3634,14 @@ const data = {
       },
       "notes": ""
     },
+    "1984": {
+      "city": "Canillo",
+      "latlng": {
+        "lat": 42.56689857936701,
+        "lng": 1.596883999715369
+      },
+      "notes": ""
+    },
     "1985": {
       "city": "Hertfordshire",
       "external": "",
@@ -3725,11 +3732,10 @@ const data = {
       "notes": ""
     },
     "1996": {
-      "city": "Surrey",
-      "external": "",
+      "city": "Ordino",
       "latlng": {
-        "lat": 51.38880892438484,
-        "lng": -0.48780196732587594
+        "lat": 42.55685672179672,
+        "lng": 1.5334013161924698
       },
       "notes": ""
     },
@@ -3743,11 +3749,10 @@ const data = {
       "notes": ""
     },
     "1998": {
-      "city": "London",
-      "external": "",
+      "city": "Ordino",
       "latlng": {
-        "lat": 51.54738208852357,
-        "lng": -0.20556370412225855
+        "lat": 42.55661167828672,
+        "lng": 1.5327900168887778
       },
       "notes": ""
     },
@@ -3806,11 +3811,10 @@ const data = {
       "notes": ""
     },
     "2005": {
-      "city": "London",
-      "external": "",
+      "city": "Encamp",
       "latlng": {
-        "lat": 51.53232164438765,
-        "lng": -0.37400852892292
+        "lat": 42.5375456894631,
+        "lng": 1.5873919421171296
       },
       "notes": ""
     },
@@ -3942,6 +3946,9 @@ const data = {
   },
   "citiesConfig": {
     "World": {
+      "config": {}
+    },
+    "Andorra": {
       "config": {}
     },
     "Denmark": {
@@ -4417,6 +4424,30 @@ const data = {
           "label": "Historic England",
           "template": "https://historicengland.org.uk/listing/the-list/list-entry/EXTERNAL_ID?section=official-list-entry"
         }
+      }
+    },
+    "Canillo": {
+      "config": {
+        "country": "Andorra",
+        "external": null
+      }
+    },
+    "Encamp": {
+      "config": {
+        "country": "Andorra",
+        "external": null
+      }
+    },
+    "Les_Escaldes": {
+      "config": {
+        "country": "Andorra",
+        "external": null
+      }
+    },
+    "Ordino": {
+      "config": {
+        "country": "Andorra",
+        "external": null
       }
     },
     "Billund": {

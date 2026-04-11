@@ -923,7 +923,8 @@ const yearsData = {
     "London"
   ],
   "1849": [
-    "London"
+    "London",
+    "Ordino"
   ],
   "1850": [
     "Kent",
@@ -1194,6 +1195,7 @@ const yearsData = {
   "1904": [
     "Barcelona",
     "East_Sussex",
+    "Les_Escaldes",
     "London",
     "Surrey"
   ],
@@ -1352,6 +1354,7 @@ const yearsData = {
     "City_of_San_Marino",
     "Essex",
     "Hertfordshire",
+    "Les_Escaldes",
     "London",
     "Oxfordshire"
   ],
@@ -1456,6 +1459,9 @@ const yearsData = {
     "London",
     "Oxfordshire"
   ],
+  "1984": [
+    "Canillo"
+  ],
   "1985": [
     "Hertfordshire",
     "London"
@@ -1493,13 +1499,15 @@ const yearsData = {
   ],
   "1996": [
     "London",
+    "Ordino",
     "Surrey"
   ],
   "1997": [
     "London"
   ],
   "1998": [
-    "London"
+    "London",
+    "Ordino"
   ],
   "1999": [
     "London",
@@ -1525,6 +1533,7 @@ const yearsData = {
     "London"
   ],
   "2005": [
+    "Encamp",
     "London"
   ],
   "2006": [
