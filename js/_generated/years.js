@@ -1058,6 +1058,7 @@ const yearsData = {
     "Hertfordshire",
     "London",
     "Manchester",
+    "Sliema",
     "West_Sussex"
   ],
   "1882": [
@@ -1084,6 +1085,7 @@ const yearsData = {
     "Cambridgeshire",
     "East_Sussex",
     "London",
+    "Rabat",
     "Rome"
   ],
   "1887": [
@@ -1275,7 +1277,8 @@ const yearsData = {
   ],
   "1919": [
     "Bedfordshire",
-    "London"
+    "London",
+    "Sliema"
   ],
   "1920": [
     "Hertfordshire",
@@ -1456,6 +1459,7 @@ const yearsData = {
     "London"
   ],
   "1982": [
+    "Dingli",
     "London",
     "Oxfordshire"
   ],
@@ -1470,6 +1474,7 @@ const yearsData = {
     "London"
   ],
   "1987": [
+    "Dingli",
     "London"
   ],
   "1988": [
@@ -1480,7 +1485,8 @@ const yearsData = {
     "London"
   ],
   "1990": [
-    "London"
+    "London",
+    "Rabat"
   ],
   "1991": [
     "Barcelona"
