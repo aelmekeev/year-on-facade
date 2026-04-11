@@ -7,6 +7,10 @@ const data = {
       "west": 1.596199,
       "east": 1.603714
     },
+    "external": {
+      "label": "Bé d'interès cultural",
+      "template": "https://www.govern.ad/ca/l/EXTERNAL_ID"
+    },
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "city": "Canillo"
@@ -17,7 +21,8 @@ const data = {
         "lat": 42.56689857936701,
         "lng": 1.596883999715369
       },
-      "notes": ""
+      "notes": "",
+      "external": ""
     }
   }
 }

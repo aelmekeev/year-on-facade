@@ -9,6 +9,10 @@
         "north": 42.656382,
         "west": 1.412661,
         "east": 1.787409
+      },
+      "external": {
+        "label": "Bé d'interès cultural",
+        "template": "https://www.govern.ad/ca/l/EXTERNAL_ID"
       }
     }
   },
