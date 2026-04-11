@@ -60,6 +60,16 @@
       }
     }
   },
+  "Malta": {
+    "config": {
+      "borders": {
+        "south": 35.805793,
+        "north": 36.082374,
+        "west": 14.183051,
+        "east": 14.576772
+      }
+    }
+  },
   "Monaco_": {
     "config": {
       "borders": {
@@ -776,6 +786,39 @@
         "north": 43.751923,
         "west": 7.409104,
         "east": 7.439848
+      }
+    }
+  },
+  "Dingli": {
+    "config": {
+      "country": "Malta",
+      "borders": {
+        "south": 35.846093,
+        "north": 35.872812,
+        "west": 14.359971,
+        "east": 14.397892
+      }
+    }
+  },
+  "Rabat": {
+    "config": {
+      "country": "Malta",
+      "borders": {
+        "south": 35.863489,
+        "north": 35.907799,
+        "west": 14.328163,
+        "east": 14.416709
+      }
+    }
+  },
+  "Sliema": {
+    "config": {
+      "country": "Malta",
+      "borders": {
+        "south": 35.905377,
+        "north": 35.918872,
+        "west": 14.492838,
+        "east": 14.515073
       }
     }
   },

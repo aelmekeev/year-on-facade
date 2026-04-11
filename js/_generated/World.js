@@ -2899,11 +2899,10 @@ const data = {
       "notes": ""
     },
     "1881": {
-      "city": "West_Sussex",
-      "external": "",
+      "city": "Sliema",
       "latlng": {
-        "lat": 51.118732725775686,
-        "lng": -0.1572428017233331
+        "lat": 35.90715337876406,
+        "lng": 14.508272492908793
       },
       "notes": ""
     },
@@ -2944,10 +2943,10 @@ const data = {
       "notes": ""
     },
     "1886": {
-      "city": "Rome",
+      "city": "Rabat",
       "latlng": {
-        "lat": 41.909225315095036,
-        "lng": 12.46705382862787
+        "lat": 35.88342041655981,
+        "lng": 14.403184183634517
       },
       "notes": ""
     },
@@ -3226,11 +3225,10 @@ const data = {
       "notes": ""
     },
     "1919": {
-      "city": "Bedfordshire",
-      "external": "1114566",
+      "city": "Sliema",
       "latlng": {
-        "lat": 51.91650722381577,
-        "lng": -0.6612180563189494
+        "lat": 35.90933723654053,
+        "lng": 14.504529326228802
       },
       "notes": ""
     },
@@ -3626,11 +3624,10 @@ const data = {
       "notes": ""
     },
     "1982": {
-      "city": "Oxfordshire",
-      "external": "",
+      "city": "Dingli",
       "latlng": {
-        "lat": 51.753571532323136,
-        "lng": -1.2610141024671608
+        "lat": 35.85888007285423,
+        "lng": 14.381764866624142
       },
       "notes": ""
     },
@@ -3661,11 +3658,10 @@ const data = {
       "notes": ""
     },
     "1987": {
-      "city": "London",
-      "external": "",
+      "city": "Dingli",
       "latlng": {
-        "lat": 51.533040650381615,
-        "lng": -0.10630392881939463
+        "lat": 35.86000827783712,
+        "lng": 14.381844934183604
       },
       "notes": ""
     },
@@ -3688,11 +3684,10 @@ const data = {
       "notes": ""
     },
     "1990": {
-      "city": "London",
-      "external": "",
+      "city": "Rabat",
       "latlng": {
-        "lat": 51.63575218890959,
-        "lng": -0.10292473619647749
+        "lat": 35.88124695417971,
+        "lng": 14.401150933378618
       },
       "notes": ""
     },
@@ -3971,6 +3966,9 @@ const data = {
       "config": {}
     },
     "Liechtenstein": {
+      "config": {}
+    },
+    "Malta": {
       "config": {}
     },
     "Monaco_": {
@@ -4501,6 +4499,24 @@ const data = {
     "Monaco": {
       "config": {
         "country": "Monaco_",
+        "external": null
+      }
+    },
+    "Dingli": {
+      "config": {
+        "country": "Malta",
+        "external": null
+      }
+    },
+    "Rabat": {
+      "config": {
+        "country": "Malta",
+        "external": null
+      }
+    },
+    "Sliema": {
+      "config": {
+        "country": "Malta",
         "external": null
       }
     },
