@@ -7,6 +7,10 @@ const data = {
       "west": 1.531372,
       "east": 1.537529
     },
+    "external": {
+      "label": "Bé d'interès cultural",
+      "template": "https://www.govern.ad/ca/l/EXTERNAL_ID"
+    },
     "useInternalMap": true,
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web",
     "city": "Ordino"
@@ -17,21 +21,24 @@ const data = {
         "lat": 42.55657356048789,
         "lng": 1.533891429463631
       },
-      "notes": ""
+      "notes": "",
+      "external": "4668969"
     },
     "1996": {
       "latlng": {
         "lat": 42.55685672179672,
         "lng": 1.5334013161924698
       },
-      "notes": ""
+      "notes": "",
+      "external": ""
     },
     "1998": {
       "latlng": {
         "lat": 42.55661167828672,
         "lng": 1.5327900168887778
       },
-      "notes": ""
+      "notes": "",
+      "external": ""
     }
   }
 }

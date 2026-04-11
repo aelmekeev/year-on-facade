@@ -2616,6 +2616,7 @@ const data = {
     },
     "1849": {
       "city": "Ordino",
+      "external": "4668969",
       "latlng": {
         "lat": 42.55657356048789,
         "lng": 1.533891429463631
@@ -3103,6 +3104,7 @@ const data = {
     },
     "1904": {
       "city": "Les_Escaldes",
+      "external": "",
       "latlng": {
         "lat": 42.508987035342926,
         "lng": 1.543317701190457
@@ -3633,6 +3635,7 @@ const data = {
     },
     "1984": {
       "city": "Canillo",
+      "external": "",
       "latlng": {
         "lat": 42.56689857936701,
         "lng": 1.596883999715369
@@ -3728,6 +3731,7 @@ const data = {
     },
     "1996": {
       "city": "Ordino",
+      "external": "",
       "latlng": {
         "lat": 42.55685672179672,
         "lng": 1.5334013161924698
@@ -3745,6 +3749,7 @@ const data = {
     },
     "1998": {
       "city": "Ordino",
+      "external": "",
       "latlng": {
         "lat": 42.55661167828672,
         "lng": 1.5327900168887778
@@ -3807,6 +3812,7 @@ const data = {
     },
     "2005": {
       "city": "Encamp",
+      "external": "",
       "latlng": {
         "lat": 42.5375456894631,
         "lng": 1.5873919421171296
@@ -3944,7 +3950,12 @@ const data = {
       "config": {}
     },
     "Andorra": {
-      "config": {}
+      "config": {
+        "external": {
+          "label": "Bé d'interès cultural",
+          "template": "https://www.govern.ad/ca/l/EXTERNAL_ID"
+        }
+      }
     },
     "Denmark": {
       "config": {
@@ -4427,25 +4438,37 @@ const data = {
     "Canillo": {
       "config": {
         "country": "Andorra",
-        "external": null
+        "external": {
+          "label": "Bé d'interès cultural",
+          "template": "https://www.govern.ad/ca/l/EXTERNAL_ID"
+        }
       }
     },
     "Encamp": {
       "config": {
         "country": "Andorra",
-        "external": null
+        "external": {
+          "label": "Bé d'interès cultural",
+          "template": "https://www.govern.ad/ca/l/EXTERNAL_ID"
+        }
       }
     },
     "Les_Escaldes": {
       "config": {
         "country": "Andorra",
-        "external": null
+        "external": {
+          "label": "Bé d'interès cultural",
+          "template": "https://www.govern.ad/ca/l/EXTERNAL_ID"
+        }
       }
     },
     "Ordino": {
       "config": {
         "country": "Andorra",
-        "external": null
+        "external": {
+          "label": "Bé d'interès cultural",
+          "template": "https://www.govern.ad/ca/l/EXTERNAL_ID"
+        }
       }
     },
     "Billund": {
