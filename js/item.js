@@ -146,18 +146,26 @@ function updateExternalLink(city, year) {
 }
 
 function updateNotes(year) {
+  const todoNotes = 'This location is not yet visited.' + (data.config.external.label === 'Historic England' ? ' Here are some photos from the area provided by <a href="https://www.geograph.org.uk/" target="_blank">Geograph Project Limited</a> under <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC BY-SA 2.0</a>.' : '')
   const notes = data.points[year].notes
   if (notes) {
     const notesContainer = document.querySelector('#notes')
-    notesContainer.innerHTML = data.points[year].notes
+    notesContainer.innerHTML = notes !== 'TODO' ? notes : todoNotes
   }
 }
 
-function addPhoto(container, url) {
+function addPhoto(container, url, title) {
   const photo = document.createElement('object')
   photo.data = url
   photo.type = 'image/jpeg'
   container.appendChild(photo)
+
+  if (title) {
+    const caption = document.createElement('div')
+    caption.classList.add('caption')
+    caption.innerHTML = title
+    container.appendChild(caption)
+  }
 }
 
 function addPhotos(city, year) {
@@ -166,6 +174,37 @@ function addPhotos(city, year) {
     addPhoto(photoContainer, `${data.config.photosBaseUrl}/${city}/${year}_close.jpg`)
     addPhoto(photoContainer, `${data.config.photosBaseUrl}/${city}/${year}.jpg`)
   }
+}
+
+function addPhotosFromGeograph(year) {
+  const GEOGRAPH_URL = 'https://www.geograph.org.uk'
+  const GEOGRAPH_KEY = 'b2cccd379e'
+  const DISTANCE = 300
+  const coordinates = `${data.points[year].latlng.lat},${data.points[year].latlng.lng},${DISTANCE}`
+  const TOTAL_PHOTOS = 3
+
+  fetch(`https://api.geograph.org.uk/api-facet.php?geo=${coordinates}`)
+    .then(response => response.json())
+    .then(data => {
+      const photoIds = Object.keys(data.matches)
+      const photoContainer = document.querySelector('#photoContainer')
+
+      photoIds.slice(0, TOTAL_PHOTOS).forEach(photoId => {
+        fetch(`https://api.geograph.org.uk/api/photo/${photoId}/info?output=json&key=${GEOGRAPH_KEY}`)
+          .then(response => response.json())
+          .then(photoData => {
+            const url = `${photoData.imgserver}${photoData.image}`
+            const caption = `<a href="${GEOGRAPH_URL}/photo/${photoId}" target="_blank">${photoData.title}</a> by <a href="${GEOGRAPH_URL}${photoData.profile_link}" target="_blank">${photoData.realname}</a>`
+            addPhoto(photoContainer, url, caption)
+          })
+          .catch(error => {
+            console.error(`Error fetching photo ${photoId} from Geograph:`, error)
+          })
+      })
+    })
+    .catch(error => {
+      console.error('Error fetching photos from Geograph:', error)
+    })
 }
 
 function generateNotFoundPage(year, city) {
@@ -207,6 +246,8 @@ function updateItem() {
   updateNotes(year)
   if (!data.points[year].notes.startsWith('TODO')) {
     addPhotos(city, year)
+  } else if (data.config.external.label === 'Historic England') {
+    addPhotosFromGeograph(year)
   }
 }
 
