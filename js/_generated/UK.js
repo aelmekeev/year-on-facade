@@ -111,7 +111,7 @@ const data = {
         "lat": 51.892951133924825,
         "lng": 0.4122926085286375
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1541": {
       "city": "Suffolk",
@@ -132,13 +132,13 @@ const data = {
       "notes": ""
     },
     "1560": {
-      "city": "Staffordshire",
-      "external": "1195380",
+      "city": "Essex",
+      "external": "1234276",
       "latlng": {
-        "lat": 52.80710542894757,
-        "lng": -2.1151230207741025
+        "lat": 51.870808718615,
+        "lng": 0.6840467366549525
       },
-      "notes": "TODO"
+      "notes": "Built early C17"
     },
     "1563": {
       "city": "Somerset",
@@ -165,7 +165,7 @@ const data = {
         "lat": 51.87269479032295,
         "lng": 0.6887281513049
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1571": {
       "city": "Hampshire",
@@ -300,7 +300,7 @@ const data = {
         "lat": 51.87922004189187,
         "lng": 0.5517011000440238
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1592": {
       "city": "Kent",
@@ -339,13 +339,13 @@ const data = {
       "notes": "TODO"
     },
     "1596": {
-      "city": "Warwickshire",
-      "external": "1298524",
+      "city": "Essex",
+      "external": "1308644",
       "latlng": {
-        "lat": 52.1917554293496,
-        "lng": -1.7070671383375624
+        "lat": 51.85654244827137,
+        "lng": 0.4334736633516801
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1597": {
       "city": "Cheshire",
@@ -438,11 +438,11 @@ const data = {
       "notes": "TODO"
     },
     "1607": {
-      "city": "London",
-      "external": "1218593",
+      "city": "Essex",
+      "external": "1168311",
       "latlng": {
-        "lat": 51.48068758027714,
-        "lng": 0.037021553277171264
+        "lat": 51.97925319388015,
+        "lng": 0.6296700141321365
       },
       "notes": ""
     },
@@ -1029,7 +1029,7 @@ const data = {
         "lat": 51.97819769862175,
         "lng": 0.6297121235781475
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1673": {
       "city": "Staffordshire",
@@ -1041,13 +1041,13 @@ const data = {
       "notes": "TODO"
     },
     "1674": {
-      "city": "Worcestershire",
-      "external": "1100364",
+      "city": "Essex",
+      "external": "1123233",
       "latlng": {
-        "lat": 52.33356421292537,
-        "lng": -2.0641450233458913
+        "lat": 51.926998495583916,
+        "lng": 0.7034291666727827
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1675": {
       "city": "London",
@@ -2553,11 +2553,11 @@ const data = {
       "notes": ""
     },
     "1842": {
-      "city": "London",
-      "external": "1079064",
+      "city": "Essex",
+      "external": "1122952",
       "latlng": {
-        "lat": 51.490713568647855,
-        "lng": 0.06430737577769526
+        "lat": 51.98825735013566,
+        "lng": 0.5969541600109428
       },
       "notes": ""
     },
@@ -3021,20 +3021,20 @@ const data = {
       "notes": ""
     },
     "1894": {
-      "city": "Oxfordshire",
-      "external": "1392911",
+      "city": "Essex",
+      "external": "",
       "latlng": {
-        "lat": 51.763446678492414,
-        "lng": -1.260304583458615
+        "lat": 51.87146983738762,
+        "lng": 0.686501829050494
       },
       "notes": ""
     },
     "1895": {
-      "city": "Hertfordshire",
+      "city": "Essex",
       "external": "",
       "latlng": {
-        "lat": 51.738275522232314,
-        "lng": -0.4707765546617377
+        "lat": 51.87895874246645,
+        "lng": 0.5431456549937951
       },
       "notes": ""
     },
@@ -3093,11 +3093,11 @@ const data = {
       "notes": ""
     },
     "1902": {
-      "city": "Hertfordshire",
+      "city": "Essex",
       "external": "",
       "latlng": {
-        "lat": 51.672103287901045,
-        "lng": -0.3946751697115194
+        "lat": 51.87053600695286,
+        "lng": 0.6843029866454217
       },
       "notes": ""
     },
@@ -3327,20 +3327,20 @@ const data = {
       "notes": ""
     },
     "1929": {
-      "city": "Oxfordshire",
-      "external": "",
+      "city": "Essex",
+      "external": "1409745",
       "latlng": {
-        "lat": 51.75344818939161,
-        "lng": -1.262513516110906
+        "lat": 51.8778773122846,
+        "lng": 0.5530977871982283
       },
       "notes": ""
     },
     "1930": {
-      "city": "London",
+      "city": "Essex",
       "external": "",
       "latlng": {
-        "lat": 51.586162171475856,
-        "lng": -0.086943198028045
+        "lat": 51.8756981587123,
+        "lng": 0.5663598115287052
       },
       "notes": ""
     },
@@ -3695,6 +3695,15 @@ const data = {
       },
       "notes": ""
     },
+    "1992": {
+      "city": "Essex",
+      "external": "",
+      "latlng": {
+        "lat": 51.9243755709003,
+        "lng": 0.5041429500610484
+      },
+      "notes": ""
+    },
     "1993": {
       "city": "London",
       "external": "",
@@ -3935,6 +3944,15 @@ const data = {
       "latlng": {
         "lat": 51.630069224440284,
         "lng": -0.5764845847960431
+      },
+      "notes": ""
+    },
+    "2025": {
+      "city": "Essex",
+      "external": "",
+      "latlng": {
+        "lat": 51.879884486359,
+        "lng": 0.5499971057664291
       },
       "notes": ""
     }
