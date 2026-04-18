@@ -39,6 +39,7 @@ const yearsData = {
     "Kent"
   ],
   "1560": [
+    "Essex",
     "Staffordshire"
   ],
   "1563": [
@@ -63,7 +64,8 @@ const yearsData = {
     "Devon"
   ],
   "1575": [
-    "East_Sussex"
+    "East_Sussex",
+    "Essex"
   ],
   "1576": [
     "Somerset"
@@ -148,6 +150,7 @@ const yearsData = {
     "Bedfordshire"
   ],
   "1607": [
+    "Essex",
     "London",
     "West_Sussex"
   ],
@@ -190,6 +193,7 @@ const yearsData = {
     "Suffolk"
   ],
   "1620": [
+    "Essex",
     "Kent"
   ],
   "1621": [
@@ -359,6 +363,7 @@ const yearsData = {
     "Staffordshire"
   ],
   "1674": [
+    "Essex",
     "Worcestershire"
   ],
   "1675": [
@@ -897,6 +902,7 @@ const yearsData = {
     "East_Sussex"
   ],
   "1842": [
+    "Essex",
     "London"
   ],
   "1843": [
@@ -1084,6 +1090,7 @@ const yearsData = {
   "1886": [
     "Cambridgeshire",
     "East_Sussex",
+    "Essex",
     "London",
     "Rabat",
     "Rome"
@@ -1118,6 +1125,7 @@ const yearsData = {
   "1891": [
     "Berkshire",
     "East_Sussex",
+    "Essex",
     "Hertfordshire",
     "Kent",
     "London",
@@ -1134,10 +1142,12 @@ const yearsData = {
     "London"
   ],
   "1894": [
+    "Essex",
     "London",
     "Oxfordshire"
   ],
   "1895": [
+    "Essex",
     "Hertfordshire",
     "London"
   ],
@@ -1150,6 +1160,7 @@ const yearsData = {
   "1897": [
     "Berkshire",
     "Cambridgeshire",
+    "Essex",
     "London",
     "Nice",
     "Oxfordshire",
@@ -1185,6 +1196,7 @@ const yearsData = {
     "West_Sussex"
   ],
   "1902": [
+    "Essex",
     "Hertfordshire",
     "London"
   ],
@@ -1204,6 +1216,7 @@ const yearsData = {
   "1905": [
     "Buckinghamshire",
     "East_Sussex",
+    "Essex",
     "Hertfordshire",
     "Istanbul",
     "Kent",
@@ -1265,6 +1278,7 @@ const yearsData = {
   ],
   "1915": [
     "Cambridgeshire",
+    "Essex",
     "London",
     "Zurich"
   ],
@@ -1325,11 +1339,13 @@ const yearsData = {
     "Rome"
   ],
   "1929": [
+    "Essex",
     "London",
     "Oxfordshire",
     "Staffordshire"
   ],
   "1930": [
+    "Essex",
     "London",
     "West_Yorkshire"
   ],
@@ -1345,6 +1361,7 @@ const yearsData = {
   "1933": [
     "Berkshire",
     "Cambridgeshire",
+    "Essex",
     "London"
   ],
   "1934": [
@@ -1491,6 +1508,9 @@ const yearsData = {
   "1991": [
     "Barcelona"
   ],
+  "1992": [
+    "Essex"
+  ],
   "1993": [
     "London"
   ],
@@ -1589,5 +1609,8 @@ const yearsData = {
   ],
   "2024": [
     "Buckinghamshire"
+  ],
+  "2025": [
+    "Essex"
   ]
 };
