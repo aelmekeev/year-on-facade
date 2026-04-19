@@ -2768,7 +2768,7 @@ const data = {
     },
     "1866": {
       "city": "Buckinghamshire",
-      "external": "1117911",
+      "external": "",
       "latlng": {
         "lat": 51.83640794933766,
         "lng": -0.5615422488230704

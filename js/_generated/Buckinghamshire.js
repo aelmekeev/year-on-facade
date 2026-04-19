@@ -46,7 +46,7 @@ const data = {
         "lng": -0.5615422488230704
       },
       "notes": "",
-      "external": "1117911"
+      "external": ""
     },
     "1890": {
       "latlng": {

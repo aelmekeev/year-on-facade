@@ -5,6 +5,8 @@
 # python dependencies
 /iaac/lambda-resize/*/*
 
+node_modules
+
 # photos
 photos/original
 
@@ -19,5 +21,6 @@ utils/historic-england/prepare/*.csv
 utils/historic-england/crawl
 utils/historic-england/analysis
 utils/historic-england/db/pgdata
+utils/historic-england/find_missing_photos/*.csv
 
 data.csv
