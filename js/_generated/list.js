@@ -22,7 +22,7 @@ const data = [
   {name: "East_Sussex", country: "UK", count: 19, minYear: 1575},
   {name: "East_Yorkshire", country: "UK", count: 2, minYear: 1787},
   {name: "Encamp", country: "Andorra", count: 1, minYear: 2005},
-  {name: "Essex", country: "UK", count: 33, minYear: 1510},
+  {name: "Essex", country: "UK", count: 32, minYear: 1510},
   {name: "France", country: "null", count: 8, minYear: 1648},
   {name: "Gloucestershire", country: "UK", count: 2, minYear: 1777},
   {name: "Hampshire", country: "UK", count: 5, minYear: 1571},

@@ -1,0 +1,17 @@
+{
+  "name": "find_missing_photos",
+  "version": "1.0.0",
+  "description": "Script to scrape Historic England to find missing photos.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.0",
+    "playwright": "^1.42.0",
+    "prompt-sync": "^4.2.0",
+    "puppeteer": "^24.41.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}

@@ -11,7 +11,6 @@ const data = [
   { "id": "m-wolverhampton-stafford", "name": "Midlands: Wolverhampton & Stafford", "count": 1 },
   { "id": "m-worcester", "name": "Midlands: Worcester", "count": 1 },
   { "id": "me-audley-end-huntingdon", "name": "East Midlands: Audley End & Huntingdon", "count": 6 },
-  { "id": "me-colchester-braintree", "name": "East Midlands: Colchester & Braintree", "count": 5 },
   { "id": "me-colchester-ipswich", "name": "East Midlands: Colchester & Ipswich", "count": 3 },
   { "id": "me-ipswich-cambdridge", "name": "East Midlands: Ipswich & Cambridge", "count": 5 },
   { "id": "me-norwich-1", "name": "East Midlands: Norwich (east)", "count": 4 },

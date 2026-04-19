@@ -64,8 +64,7 @@ const yearsData = {
     "Devon"
   ],
   "1575": [
-    "East_Sussex",
-    "Essex"
+    "East_Sussex"
   ],
   "1576": [
     "Somerset"
