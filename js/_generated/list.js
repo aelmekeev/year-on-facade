@@ -25,7 +25,7 @@ const data = [
   {name: "Essex", country: "UK", count: 32, minYear: 1510},
   {name: "France", country: "null", count: 8, minYear: 1648},
   {name: "Gloucestershire", country: "UK", count: 2, minYear: 1777},
-  {name: "Hampshire", country: "UK", count: 5, minYear: 1571},
+  {name: "Hampshire", country: "UK", count: 9, minYear: 1571},
   {name: "Herefordshire", country: "UK", count: 1, minYear: 1600},
   {name: "Hertfordshire", country: "UK", count: 34, minYear: 1517},
   {name: "Istanbul", country: "Turkey", count: 8, minYear: 1858},
