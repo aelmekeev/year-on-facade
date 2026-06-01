@@ -836,6 +836,7 @@ const yearsData = {
     "London"
   ],
   "1822": [
+    "Hampshire",
     "London"
   ],
   "1823": [
@@ -1142,11 +1143,13 @@ const yearsData = {
   ],
   "1894": [
     "Essex",
+    "Hampshire",
     "London",
     "Oxfordshire"
   ],
   "1895": [
     "Essex",
+    "Hampshire",
     "Hertfordshire",
     "London"
   ],
@@ -1354,6 +1357,7 @@ const yearsData = {
     "London"
   ],
   "1932": [
+    "Hampshire",
     "Leicestershire",
     "London"
   ],
