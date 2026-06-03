@@ -2940,11 +2940,11 @@ const data = {
       "notes": ""
     },
     "1885": {
-      "city": "East_Sussex",
+      "city": "Hampshire",
       "external": "",
       "latlng": {
-        "lat": 51.05305140523682,
-        "lng": 0.2185426070191003
+        "lat": 50.89936603233146,
+        "lng": -1.4039211048775608
       },
       "notes": ""
     },
@@ -3030,11 +3030,11 @@ const data = {
       "notes": ""
     },
     "1895": {
-      "city": "Hampshire",
+      "city": "Essex",
       "external": "",
       "latlng": {
-        "lat": 50.89936603233146,
-        "lng": -1.4039211048775608
+        "lat": 51.87895874246645,
+        "lng": 0.5431456549937951
       },
       "notes": ""
     },
