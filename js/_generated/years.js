@@ -1084,6 +1084,7 @@ const yearsData = {
     "Berkshire",
     "Cambridgeshire",
     "East_Sussex",
+    "Hampshire",
     "London",
     "Oxfordshire"
   ],
@@ -1149,7 +1150,6 @@ const yearsData = {
   ],
   "1895": [
     "Essex",
-    "Hampshire",
     "Hertfordshire",
     "London"
   ],
