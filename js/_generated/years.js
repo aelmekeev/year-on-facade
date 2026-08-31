@@ -452,8 +452,7 @@ const yearsData = {
     "London"
   ],
   "1703": [
-    "London",
-    "Madeira"
+    "London"
   ],
   "1704": [
     "West_Yorkshire"
@@ -872,8 +871,7 @@ const yearsData = {
     "Manchester"
   ],
   "1833": [
-    "London",
-    "Madeira"
+    "London"
   ],
   "1834": [
     "London"
@@ -1370,7 +1368,8 @@ const yearsData = {
     "Berkshire",
     "Cambridgeshire",
     "Essex",
-    "London"
+    "London",
+    "Madeira"
   ],
   "1934": [
     "Cambridgeshire",

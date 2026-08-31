@@ -15,11 +15,13 @@ branch_name="add-buildings-$(date +%s)"
 echo "Creating branch $branch_name..."
 git checkout -b "$branch_name"
 
+echo "Staging changes..."
+git add csv/ js/ img/
+
 echo "Generating PR description..."
 make pr
 
 echo "Committing changes..."
-git add csv/ js/ img/
 git commit -m "Add new buildings"
 
 echo "Pushing branch..."

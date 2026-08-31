@@ -14,30 +14,12 @@ const data = {
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web"
   },
   "points": {
-    "1703": {
-      "city": "Madeira",
-      "external": "",
-      "latlng": {
-        "lat": 32.66992231054788,
-        "lng": -17.064854062880038
-      },
-      "notes": ""
-    },
     "1757": {
       "city": "Sintra",
       "external": "69881",
       "latlng": {
         "lat": 38.793788900993555,
         "lng": -9.38493235169018
-      },
-      "notes": ""
-    },
-    "1833": {
-      "city": "Madeira",
-      "external": "",
-      "latlng": {
-        "lat": 32.68039086880069,
-        "lng": -17.105364163498482
       },
       "notes": ""
     },
@@ -119,6 +101,15 @@ const data = {
       "latlng": {
         "lat": 32.676755441452386,
         "lng": -17.060315602618292
+      },
+      "notes": ""
+    },
+    "1933": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.68039086880069,
+        "lng": -17.105364163498482
       },
       "notes": ""
     },
