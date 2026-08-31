@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Year on Facade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="glass-panel">
+        <h1>Year on Facade Admin</h1>
+        <div class="actions">
+            <button id="btn-refresh" class="btn secondary">Refresh Inbox</button>
+            <button id="btn-publish" class="btn primary">Publish Batch</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inbox-panel" class="glass-panel">
+            <h2>Inbox (<span id="inbox-count">0</span> groups)</h2>
+            <div id="gallery">
+                <!-- Gallery items will be injected here -->
+            </div>
+        </section>
+
+        <section id="editor-panel" class="glass-panel">
+            <h2>Process Building</h2>
+            <div id="selected-photos">
+                <div class="photo-slot" id="wide-slot">
+                    <span>Wide Photo</span>
+                    <img id="img-wide" src="" style="display: none;">
+                </div>
+                <div class="photo-slot" id="close-slot">
+                    <span>Close-up</span>
+                    <img id="img-close" src="" style="display: none;">
+                </div>
+            </div>
+
+            <form id="building-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="input-year">Year</label>
+                        <input type="number" id="input-year" required placeholder="YYYY">
+                        <div id="duplicate-warning" class="warning" style="display: none;">
+                            Warning: This year already exists for this city!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="input-lat">Latitude</label>
+                        <input type="number" step="any" id="input-lat" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-lng">Longitude</label>
+                        <input type="number" step="any" id="input-lng" required>
+                    </div>
+                </div>
+                
+                <div id="map-container"></div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="input-city">City/County</label>
+                        <input type="text" id="input-city" required readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-country">Country</label>
+                        <input type="text" id="input-country" required readonly>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-external">External ID (Optional)</label>
+                    <input type="text" id="input-external" placeholder="e.g. 1293320">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-notes">Notes (Optional)</label>
+                    <input type="text" id="input-notes">
+                </div>
+
+                <button type="submit" class="btn primary full-width" id="btn-save" disabled>Save Building</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="toast" class="toast"></div>
+
+    <div id="loading-overlay" class="glass-panel" style="display:none;">
+        <div class="spinner"></div>
+        <p id="loading-text">Processing...</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

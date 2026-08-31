@@ -9,6 +9,7 @@ node_modules
 
 # photos
 photos/original
+photos/inbox
 
 *.tmp
 
@@ -23,4 +24,4 @@ utils/historic-england/analysis
 utils/historic-england/db/pgdata
 utils/historic-england/find_missing_photos/*.csv
 
-data.csv
+admin/.env

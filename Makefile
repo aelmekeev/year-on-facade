@@ -20,3 +20,6 @@ photos-upload:
 
 show-stats:
 	python ./utils/show-stats.py $(country) $(city)
+
+pr:
+	node admin/create-pr.js
