@@ -4,8 +4,8 @@ const path = require('path');
 
 function generatePrDescription() {
     try {
-        // Get diff of csv directory
-        const diffOutput = execSync('git diff --no-color csv/').toString();
+        // Get diff of csv directory (staged to include newly added/untracked files)
+        const diffOutput = execSync('git diff --staged --no-color csv/').toString();
         
         const addedLines = [];
         const deletedYears = new Set();

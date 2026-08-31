@@ -41,6 +41,24 @@ const data = {
       },
       "notes": ""
     },
+    "1887": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.6482398435138,
+        "lng": -16.907732431164188
+      },
+      "notes": ""
+    },
+    "1891": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.648648938088954,
+        "lng": -16.90112938016465
+      },
+      "notes": ""
+    },
     "1892": {
       "city": "Porto",
       "external": "",
@@ -74,6 +92,60 @@ const data = {
       "latlng": {
         "lat": 41.142735476630456,
         "lng": -8.615384379773117
+      },
+      "notes": ""
+    },
+    "1929": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.676755441452386,
+        "lng": -17.060315602618292
+      },
+      "notes": ""
+    },
+    "1933": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.68039086880069,
+        "lng": -17.105364163498482
+      },
+      "notes": ""
+    },
+    "1935": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.81973660509119,
+        "lng": -17.249021582567746
+      },
+      "notes": ""
+    },
+    "1956": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.824495927127295,
+        "lng": -17.10609100563988
+      },
+      "notes": ""
+    },
+    "1961": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.67730551390981,
+        "lng": -17.05980711386083
+      },
+      "notes": ""
+    },
+    "2001": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.80532554547053,
+        "lng": -16.882180610133513
       },
       "notes": ""
     }

@@ -1101,6 +1101,7 @@ const yearsData = {
     "Cambridgeshire",
     "Hertfordshire",
     "London",
+    "Madeira",
     "Oxfordshire",
     "Surrey"
   ],
@@ -1130,6 +1131,7 @@ const yearsData = {
     "Hertfordshire",
     "Kent",
     "London",
+    "Madeira",
     "Oxfordshire"
   ],
   "1892": [
@@ -1343,6 +1345,7 @@ const yearsData = {
   "1929": [
     "Essex",
     "London",
+    "Madeira",
     "Oxfordshire",
     "Staffordshire"
   ],
@@ -1365,7 +1368,8 @@ const yearsData = {
     "Berkshire",
     "Cambridgeshire",
     "Essex",
-    "London"
+    "London",
+    "Madeira"
   ],
   "1934": [
     "Cambridgeshire",
@@ -1379,6 +1383,7 @@ const yearsData = {
     "Hertfordshire",
     "Les_Escaldes",
     "London",
+    "Madeira",
     "Oxfordshire"
   ],
   "1936": [
@@ -1431,6 +1436,7 @@ const yearsData = {
     "London"
   ],
   "1956": [
+    "Madeira",
     "West_Sussex"
   ],
   "1957": [
@@ -1447,7 +1453,8 @@ const yearsData = {
     "London"
   ],
   "1961": [
-    "London"
+    "London",
+    "Madeira"
   ],
   "1962": [
     "London"
@@ -1548,6 +1555,7 @@ const yearsData = {
   ],
   "2001": [
     "London",
+    "Madeira",
     "Surrey"
   ],
   "2002": [
