@@ -1,9 +1,9 @@
 const data = {
   "config": {
     "borders": {
-      "south": 36.957042,
+      "south": 32.402991,
       "north": 42.151348,
-      "west": -9.500594,
+      "west": -17.266439,
       "east": -6.189091
     },
     "external": {
