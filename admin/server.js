@@ -84,12 +84,18 @@ app.get('/api/inbox', async (req, res) => {
                 if (photo.datetime && lastPhoto.datetime && Math.abs(photo.datetime - lastPhoto.datetime) <= 60000) {
                     currentGroup.push(photo);
                 } else {
-                    groups.push([...currentGroup]);
+                    if (currentGroup.length > 2) {
+                        currentGroup.forEach(p => groups.push([p]));
+                    } else {
+                        groups.push([...currentGroup]);
+                    }
                     currentGroup = [photo];
                 }
             }
         }
-        if (currentGroup.length > 0) {
+        if (currentGroup.length > 2) {
+            currentGroup.forEach(p => groups.push([p]));
+        } else if (currentGroup.length > 0) {
             groups.push(currentGroup);
         }
         

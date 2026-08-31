@@ -10,6 +10,7 @@
     <header class="glass-panel">
         <h1>Year on Facade Admin</h1>
         <div class="actions">
+            <button id="btn-reset" class="btn secondary">Reset State</button>
             <button id="btn-refresh" class="btn secondary">Refresh Inbox</button>
             <button id="btn-publish" class="btn primary">Publish Batch</button>
         </div>
@@ -27,11 +28,11 @@
             <h2>Process Building</h2>
             <div id="selected-photos">
                 <div class="photo-slot" id="wide-slot">
-                    <span>Wide Photo</span>
+                    <div class="slot-badge">WIDE</div>
                     <img id="img-wide" src="" style="display: none;">
                 </div>
                 <div class="photo-slot" id="close-slot">
-                    <span>Close-up</span>
+                    <div class="slot-badge">CLOSE UP</div>
                     <img id="img-close" src="" style="display: none;">
                 </div>
             </div>
@@ -91,6 +92,12 @@
     <div id="loading-overlay" class="glass-panel" style="display:none;">
         <div class="spinner"></div>
         <p id="loading-text">Processing...</p>
+    </div>
+
+    <!-- Full size photo modal -->
+    <div id="photo-modal" class="modal" style="display: none;">
+        <span class="modal-close">&times;</span>
+        <img id="modal-img" src="">
     </div>
 
     <script src="app.js"></script>

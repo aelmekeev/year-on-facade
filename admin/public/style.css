@@ -82,6 +82,7 @@ main {
     border-radius: 8px;
     padding: 10px;
     cursor: pointer;
+    position: relative;
     transition: transform 0.2s, border-color 0.2s;
 }
 
@@ -93,6 +94,27 @@ main {
 .gallery-group.selected {
     border-color: var(--accent);
     box-shadow: 0 0 10px rgba(187, 134, 252, 0.3);
+}
+
+.gallery-group.drag-over {
+    border-color: var(--success);
+    background: rgba(3, 218, 198, 0.1);
+}
+
+.btn-ungroup {
+    position: absolute;
+    top: 5px; right: 5px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: 1px solid var(--panel-border);
+    border-radius: 4px;
+    width: 24px; height: 24px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-ungroup:hover {
+    background: var(--danger);
 }
 
 .gallery-group img {
@@ -132,13 +154,26 @@ main {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
 }
 
-.photo-slot span {
-    color: var(--text-muted);
-    font-size: 0.9rem;
+.photo-slot.drag-over {
+    border-color: var(--success);
+    background: rgba(3, 218, 198, 0.1);
+}
+
+.slot-badge {
     position: absolute;
-    z-index: 1;
+    top: 8px; left: 8px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    z-index: 10;
+    pointer-events: none;
 }
 
 .photo-slot img {
@@ -293,4 +328,37 @@ input[readonly] {
 
 @keyframes spin {
     to { transform: rotate(360deg); }
+}
+
+/* Modal for full size photos */
+.modal {
+    position: fixed; 
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 10000;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.modal-close {
+    position: absolute; 
+    top: 20px; 
+    right: 30px;
+    font-size: 40px; 
+    color: white; 
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.modal-close:hover {
+    color: var(--danger);
+}
+
+#modal-img {
+    max-width: 95%; 
+    max-height: 95%;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
