@@ -14,12 +14,30 @@ const data = {
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web"
   },
   "points": {
+    "1703": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.66992231054788,
+        "lng": -17.064854062880038
+      },
+      "notes": ""
+    },
     "1757": {
       "city": "Sintra",
       "external": "69881",
       "latlng": {
         "lat": 38.793788900993555,
         "lng": -9.38493235169018
+      },
+      "notes": ""
+    },
+    "1833": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.68039086880069,
+        "lng": -17.105364163498482
       },
       "notes": ""
     },
@@ -38,6 +56,24 @@ const data = {
       "latlng": {
         "lat": 38.714662991711116,
         "lng": -9.130844043080163
+      },
+      "notes": ""
+    },
+    "1887": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.6482398435138,
+        "lng": -16.907732431164188
+      },
+      "notes": ""
+    },
+    "1891": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.648648938088954,
+        "lng": -16.90112938016465
       },
       "notes": ""
     },
@@ -74,6 +110,51 @@ const data = {
       "latlng": {
         "lat": 41.142735476630456,
         "lng": -8.615384379773117
+      },
+      "notes": ""
+    },
+    "1929": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.676755441452386,
+        "lng": -17.060315602618292
+      },
+      "notes": ""
+    },
+    "1935": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.81973660509119,
+        "lng": -17.249021582567746
+      },
+      "notes": ""
+    },
+    "1956": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.824495927127295,
+        "lng": -17.10609100563988
+      },
+      "notes": ""
+    },
+    "1961": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.67730551390981,
+        "lng": -17.05980711386083
+      },
+      "notes": ""
+    },
+    "2001": {
+      "city": "Madeira",
+      "external": "",
+      "latlng": {
+        "lat": 32.80532554547053,
+        "lng": -16.882180610133513
       },
       "notes": ""
     }
