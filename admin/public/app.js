@@ -23,6 +23,7 @@ const els = {
     inputNotes: document.getElementById('input-notes'),
     btnSave: document.getElementById('btn-save'),
     dupWarning: document.getElementById('duplicate-warning'),
+    linkStreetview: document.getElementById('link-streetview'),
     toast: document.getElementById('toast'),
     overlay: document.getElementById('loading-overlay'),
     overlayText: document.getElementById('loading-text'),
@@ -239,6 +240,18 @@ function saveState() {
         closePhoto: currentClosePhoto
     };
     localStorage.setItem('state_' + currentGroupId, JSON.stringify(state));
+    updateStreetViewLink();
+}
+
+function updateStreetViewLink() {
+    const lat = els.inputLat.value;
+    const lng = els.inputLng.value;
+    if (lat && lng) {
+        els.linkStreetview.href = `https://www.google.com/maps?q=&layer=c&cbll=${lat},${lng}&cbp=12,0,0,0,-15`;
+        els.linkStreetview.style.display = 'inline-block';
+    } else {
+        els.linkStreetview.style.display = 'none';
+    }
 }
 
 function loadState() {
@@ -328,6 +341,7 @@ function selectGroup(group, element) {
         }
     }
     
+    updateStreetViewLink();
     els.btnSave.disabled = false;
 }
 
@@ -398,6 +412,7 @@ els.form.addEventListener('submit', async (e) => {
             showToast('Building saved!');
             localStorage.removeItem('state_' + currentGroupId);
             els.form.reset();
+            updateStreetViewLink();
             els.imgWide.style.display = 'none';
             els.imgClose.style.display = 'none';
             els.btnSave.disabled = true;
@@ -504,6 +519,12 @@ function openModal(src) {
 
 els.modal.addEventListener('click', () => {
     els.modal.style.display = 'none';
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && els.modal.style.display === 'flex') {
+        els.modal.style.display = 'none';
+    }
 });
 
 els.wideSlot.addEventListener('click', (e) => {

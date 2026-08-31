@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Year on Facade</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="glass-panel">
         <h1>Year on Facade Admin</h1>
@@ -58,7 +60,12 @@
                         <input type="number" step="any" id="input-lng" required>
                     </div>
                 </div>
-                
+                <div style="text-align: right; margin-bottom: 10px;">
+                    <a id="link-streetview" href="#" target="_blank"
+                        style="color: var(--accent); font-size: 0.85rem; text-decoration: none; display: none;">&#128205;
+                        Open in Street View</a>
+                </div>
+
                 <div id="map-container"></div>
 
                 <div class="form-row">
@@ -102,4 +109,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>

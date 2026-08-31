@@ -19,7 +19,7 @@ echo "Generating PR description..."
 make pr
 
 echo "Committing changes..."
-git add csv/ photos/original/ js/ img/
+git add csv/ js/ img/
 git commit -m "Add new buildings"
 
 echo "Pushing branch..."
