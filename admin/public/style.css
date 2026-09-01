@@ -213,6 +213,8 @@ input {
     font-family: inherit;
     font-size: 0.95rem;
     transition: border-color 0.2s;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input:focus {

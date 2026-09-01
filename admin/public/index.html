@@ -43,9 +43,10 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="input-year">Year</label>
-                        <input type="number" id="input-year" required placeholder="YYYY">
-                        <div id="duplicate-warning" class="warning" style="display: none;">
-                            Warning: This year already exists for this city!
+                        <input type="text" id="input-year" required placeholder="YYYY" style="max-width: 120px;" inputmode="numeric" pattern="[0-9]*">
+                        <div id="duplicate-warning" class="warning" style="display: none; margin-bottom: 1rem;">
+                            Warning: This year <a id="dup-link" href="#" target="_blank"
+                                style="color: #ff9999; text-decoration: underline;">already exists</a> for this city!
                         </div>
                     </div>
                 </div>
@@ -53,11 +54,11 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="input-lat">Latitude</label>
-                        <input type="number" step="any" id="input-lat" required>
+                        <input type="text" id="input-lat" required style="max-width: 200px;">
                     </div>
                     <div class="form-group">
                         <label for="input-lng">Longitude</label>
-                        <input type="number" step="any" id="input-lng" required>
+                        <input type="text" id="input-lng" required style="max-width: 200px;">
                     </div>
                 </div>
                 <div style="text-align: right; margin-bottom: 10px;">
@@ -69,9 +70,11 @@
                 <div id="map-container"></div>
 
                 <div class="form-row">
-                    <div class="form-group">
+                    <div class="form-group" id="city-group">
                         <label for="input-city">City/County</label>
                         <input type="text" id="input-city" required readonly>
+                        <select id="select-city"
+                            style="display: none; width: 100%; padding: 0.5rem; background: var(--panel-bg); color: var(--text-color); border: 1px solid var(--panel-border); border-radius: 4px; font-size: 1rem; margin-top: 0.25rem;"></select>
                     </div>
                     <div class="form-group">
                         <label for="input-country">Country</label>
