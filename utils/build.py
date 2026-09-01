@@ -12,8 +12,8 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s - %(message)s")
 csv_dir = "csv"
 site_config_file = "site-config.json"
 config_file = os.path.join("utils", "configs.json")
-img_output_dir = os.path.join("img", "_generated")
-js_output_dir = os.path.join("js", "_generated")
+img_output_dir = os.path.join("public", "img", "_generated")
+js_output_dir = os.path.join("public", "js", "_generated")
 
 js_file_prefix = "const data = "
 current_year = datetime.now().year
@@ -248,7 +248,7 @@ def generate_world_js_file(site_configs):
 def generate_list_js_file():
     logging.info("Generating list.js...")
 
-    with open("./js/_generated/list.js", "w") as f:
+    with open("./public/js/_generated/list.js", "w") as f:
         f.write(f"{js_file_prefix}[\n")
 
         for filename in sorted(glob.glob(os.path.join(js_output_dir, "*js"))):
@@ -359,7 +359,7 @@ def generate_list_of_routes():
     logging.info("Generating routes.js...")
 
     routes = []
-    for filename in glob.glob(os.path.join("js", "routes", "*.js")):
+    for filename in glob.glob(os.path.join("public", "js", "routes", "*.js")):
         count = 0
         route_id = os.path.basename(filename).replace(".js", "")
         # extract route name from the file content from the line that starts with '  "name": "'
@@ -372,7 +372,7 @@ def generate_list_of_routes():
                     count += 1
         routes.append({"id": route_id, "name": name, "count": count})
 
-    with open("./js/_generated/routes.js", "w") as f:
+    with open("./public/js/_generated/routes.js", "w") as f:
         f.write(f"{js_file_prefix}[\n")
         for route in sorted(routes, key=lambda x: x["id"]):
             f.write(f'  {{ "id": "{route["id"]}", "name": "{route["name"]}", "count": {route["count"]} }},\n')

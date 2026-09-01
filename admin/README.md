@@ -32,3 +32,10 @@ This is a local, internal web-based admin interface designed for maintainers of 
    - Add any **Notes** or **External ID** (e.g., if listed in a heritage registry).
 5. **Save**: Click **Save & Next** (or press Enter). The tool will move the photos to `photos/original/`, rename them to the `City/Year` convention, and append the record directly to the respective CSV file.
 6. **Publish**: Once the inbox is empty, click the **Publish Batch** button. This will automatically upload the photos to your S3 bucket (using `make photos-upload`), stage all CSV changes in git, and create a GitHub pull request with all the changes ready for your review.
+
+## Local Website Testing
+
+To test the generated public website locally without needing a local web server, you can simply open the files inside the `public/` folder directly in your browser. Because relative paths are used throughout the HTML, the local experience will perfectly mirror the live deployed version.
+
+For example, to test the stats page for a specific city locally, enter a file URL like this in your browser (adjust the path to match your local setup):
+`file:///Users/alex/git/year-on-facade/public/stats/index.html?city=Oxfordshire`
