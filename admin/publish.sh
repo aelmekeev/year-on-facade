@@ -16,7 +16,7 @@ echo "Creating branch $branch_name..."
 git checkout -b "$branch_name"
 
 echo "Staging changes..."
-git add csv/ js/ img/
+git add csv/ public/js/ public/img/
 
 echo "Generating PR description..."
 make pr
