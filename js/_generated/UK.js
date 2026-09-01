@@ -255,7 +255,7 @@ const data = {
         "lat": 51.806950807120295,
         "lng": -1.6368248434842494
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1583": {
       "city": "Leicestershire",
@@ -291,7 +291,7 @@ const data = {
         "lat": 51.87462679019858,
         "lng": -1.4846783761227722
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1590": {
       "city": "Essex",
@@ -867,7 +867,7 @@ const data = {
         "lat": 51.74851702700113,
         "lng": -1.4062517320836578
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1655": {
       "city": "South_Yorkshire",
@@ -942,13 +942,13 @@ const data = {
       "notes": "TODO"
     },
     "1663": {
-      "city": "Warwickshire",
+      "city": "Oxfordshire",
       "external": "1024298",
       "latlng": {
-        "lat": 51.99048050575821,
-        "lng": -1.5798743711541918
+        "lat": 51.99046984222357,
+        "lng": -1.579942394149949
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1664": {
       "city": "Cheshire",
@@ -1473,11 +1473,11 @@ const data = {
       "notes": ""
     },
     "1722": {
-      "city": "London",
-      "external": "1213357",
+      "city": "Oxfordshire",
+      "external": "1319949",
       "latlng": {
-        "lat": 51.49768930392938,
-        "lng": -0.12771203320425797
+        "lat": 51.990383578662495,
+        "lng": -1.5798391580302362
       },
       "notes": ""
     },
@@ -1707,11 +1707,11 @@ const data = {
       "notes": "TODO"
     },
     "1748": {
-      "city": "London",
-      "external": "1064693",
+      "city": "Oxfordshire",
+      "external": "1355493",
       "latlng": {
-        "lat": 51.51377886299489,
-        "lng": -0.11091931686837486
+        "lat": 51.98893725620685,
+        "lng": -1.5802050223377462
       },
       "notes": ""
     },
@@ -2535,11 +2535,11 @@ const data = {
       "notes": ""
     },
     "1840": {
-      "city": "London",
-      "external": "1209479",
+      "city": "Oxfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.52519061371282,
-        "lng": -0.10455769143410383
+        "lat": 51.89499507872902,
+        "lng": -1.5214478930065756
       },
       "notes": ""
     },
@@ -2751,20 +2751,20 @@ const data = {
       "notes": ""
     },
     "1864": {
-      "city": "London",
-      "external": "1184637",
+      "city": "Oxfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.41074957336541,
-        "lng": -0.30021478961622816
+        "lat": 51.93971303824868,
+        "lng": -1.545476576331788
       },
       "notes": ""
     },
     "1865": {
-      "city": "London",
-      "external": "1358631",
+      "city": "Oxfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.572851327795014,
-        "lng": -0.3374499163463232
+        "lat": 51.99312469960187,
+        "lng": -1.5824090054564954
       },
       "notes": ""
     },
@@ -2859,11 +2859,11 @@ const data = {
       "notes": ""
     },
     "1876": {
-      "city": "London",
-      "external": "1297994",
+      "city": "Oxfordshire",
+      "external": "",
       "latlng": {
-        "lat": 51.52938511067449,
-        "lng": -0.10289051268348608
+        "lat": 51.76010903345077,
+        "lng": -1.439369342592025
       },
       "notes": ""
     },
@@ -3156,11 +3156,11 @@ const data = {
       "notes": ""
     },
     "1909": {
-      "city": "Surrey",
+      "city": "Gloucestershire",
       "external": "",
       "latlng": {
-        "lat": 51.43349884925415,
-        "lng": -0.5446411221659896
+        "lat": 51.99060558198604,
+        "lng": -1.6957381707852313
       },
       "notes": ""
     },
@@ -3441,7 +3441,7 @@ const data = {
         "lat": 51.80806901072555,
         "lng": -1.6390568265814398
       },
-      "notes": "TODO"
+      "notes": ""
     },
     "1947": {
       "city": "London",
@@ -3705,11 +3705,11 @@ const data = {
       "notes": ""
     },
     "1993": {
-      "city": "London",
+      "city": "Oxfordshire",
       "external": "",
       "latlng": {
-        "lat": 51.45585041218763,
-        "lng": -0.18936111257358426
+        "lat": 51.78487522764403,
+        "lng": -1.4962625885613234
       },
       "notes": ""
     },
