@@ -26,7 +26,7 @@ To contribute to this collection simply raise a pull request with a change in th
 
 If you want to you can also run `make build` locally if you have `python` installed, otherwise they will be executed as part of pull request pipelines.
 
-Photos are managed locally by the maintainer of the collection with the help of `make photos`.
+Photos and metadata additions are managed locally by the maintainer using the internal web UI (`make admin`), which automatically handles coordinates, CSV files, and photo uploads. See [`admin/README.md`](../admin/README.md) for a detailed guide on the maintainer workflow.
 
 ## Adding new city
 
@@ -41,7 +41,7 @@ Photos are managed locally by the maintainer of the collection with the help of 
 
 ## Configuration
 
-`config.json` contains the following:
+`site-config.json` contains the following:
 
 * `useInternalMap` controls wether links on the Stats page will lead to a "builtin" map with all the markers, or to google maps website / application
 * `photosBaseUrl` contains base URL for the photos shown on the item page, the url would look like `${photosBaseUrl}/${city}/${year}_close.jpg` and  `${photosBaseUrl}/${city}/${year}.jpg`. If not specified, photo won't be shown.
@@ -59,7 +59,7 @@ Local testing is required only when you are contributing to the collection tooli
 Don't forget to run `make build` if you modify any of the following:
 * `csv/*.csv`
 * `utils/configs.json`
-* `config.json`
+* `site-config.json`
 
 ## Updating geoguessr map
 
