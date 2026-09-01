@@ -23,3 +23,7 @@ show-stats:
 
 pr:
 	node admin/create-pr.js
+
+.PHONY: admin
+admin:
+	cd admin && node server.js
