@@ -18,6 +18,7 @@ const els = {
     inputLat: document.getElementById('input-lat'),
     inputLng: document.getElementById('input-lng'),
     inputCity: document.getElementById('input-city'),
+    selectCity: document.getElementById('select-city'),
     inputCountry: document.getElementById('input-country'),
     inputExternal: document.getElementById('input-external'),
     inputNotes: document.getElementById('input-notes'),
@@ -82,6 +83,7 @@ async function initGoogleMaps() {
                 els.inputLng.value = lng;
                 updateMapMarker(lat, lng);
                 geocode(lat, lng);
+                saveState();
             });
         };
         
@@ -103,7 +105,7 @@ function updateMapMarker(lat, lng) {
     }
     if (map) {
         map.setCenter(position);
-        map.setZoom(16);
+        map.setZoom(19);
     }
 }
 
@@ -349,13 +351,48 @@ async function geocode(lat, lng) {
     try {
         const res = await fetch(`/api/geocode?lat=${lat}&lng=${lng}`);
         const data = await res.json();
-        if (data.city && data.country) {
-            els.inputCity.value = data.city;
-            els.inputCountry.value = data.country;
+        
+        els.inputCity.style.display = 'block';
+        els.selectCity.style.display = 'none';
+        els.selectCity.innerHTML = '';
+        els.selectCity.onchange = null;
+        
+        if (data.matches && data.matches.length === 1) {
+            els.inputCity.value = data.matches[0].city;
+            els.inputCountry.value = data.matches[0].country;
             checkYear();
-        } else {
+        } else if (data.matches && data.matches.length > 1) {
+            showToast('Multiple matching regions found. Please select one.', 'warning');
+            els.inputCity.style.display = 'none';
             els.inputCity.value = '';
             els.inputCountry.value = '';
+            
+            els.selectCity.style.display = 'block';
+            els.selectCity.innerHTML = '<option value="" disabled selected>Select region...</option>';
+            data.matches.forEach(m => {
+                const opt = document.createElement('option');
+                opt.value = JSON.stringify(m);
+                opt.textContent = `${m.city}, ${m.country}`;
+                els.selectCity.appendChild(opt);
+            });
+            
+            els.selectCity.onchange = (e) => {
+                const selected = JSON.parse(e.target.value);
+                els.inputCity.value = selected.city;
+                els.inputCountry.value = selected.country;
+                checkYear();
+                saveState();
+            };
+        } else {
+            if (els.selectCity.style.display !== 'none' && els.selectCity.value) {
+                // If they already selected one, keep it
+            } else {
+                els.inputCity.value = '';
+                els.inputCountry.value = '';
+                els.selectCity.style.display = 'none';
+                els.inputCity.style.display = 'block';
+                checkYear();
+            }
             showToast('No configured city found for these coordinates', 'error');
         }
     } catch (e) {
@@ -363,7 +400,18 @@ async function geocode(lat, lng) {
     }
 }
 
-async function checkYear() {
+function getDistanceFromLatLonInM(lat1, lon1, lat2, lon2) {
+    const R = 6371e3;
+    const dLat = (lat2-lat1) * Math.PI/180;
+    const dLon = (lon2-lon1) * Math.PI/180;
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) *
+              Math.sin(dLon/2) * Math.sin(dLon/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    return R * c;
+}
+
+async function checkYear(options = {}) {
     const year = els.inputYear.value;
     const city = els.inputCity.value;
     const country = els.inputCountry.value;
@@ -371,12 +419,53 @@ async function checkYear() {
     if (year && city && country && year.length >= 4) {
         const res = await fetch(`/api/check-year?country=${country}&city=${city}&year=${year}`);
         const data = await res.json();
-        els.dupWarning.style.display = data.exists ? 'block' : 'none';
+        
+        if (data.exists && data.data && data.data.notes === 'TODO') {
+            const currentLat = parseFloat(els.inputLat.value);
+            const currentLng = parseFloat(els.inputLng.value);
+            const todoLat = parseFloat(data.data.latitude);
+            const todoLng = parseFloat(data.data.longitude);
+            
+            if (!isNaN(currentLat) && !isNaN(currentLng) && !isNaN(todoLat) && !isNaN(todoLng)) {
+                const dist = getDistanceFromLatLonInM(currentLat, currentLng, todoLat, todoLng);
+                if (dist <= 500) {
+                    els.dupWarning.style.display = 'none';
+                    
+                    if (options.autoFill) {
+                        els.inputExternal.value = data.data.external || '';
+                        els.inputLat.value = data.data.latitude;
+                        els.inputLng.value = data.data.longitude;
+                        
+                        if (els.inputNotes.value === '' || els.inputNotes.value === 'TODO') {
+                            els.inputNotes.value = '';
+                        }
+                        
+                        updateMapMarker(todoLat, todoLng);
+                        updateStreetViewLink();
+                        saveState();
+                        showToast(`Loaded TODO data for ${year}`);
+                    }
+                    return;
+                }
+            }
+        }
+        
+        if (data.exists) {
+            els.dupWarning.style.display = 'block';
+            const dupLink = document.getElementById('dup-link');
+            if (dupLink) {
+                dupLink.href = `https://year-on-facade.uk/item/?city=${encodeURIComponent(city)}&year=${encodeURIComponent(year)}`;
+            }
+        } else {
+            els.dupWarning.style.display = 'none';
+        }
+    } else {
+        els.dupWarning.style.display = 'none';
     }
 }
 
 els.inputYear.addEventListener('input', () => {
-    checkYear();
+    checkYear({ autoFill: true });
     saveState();
 });
 ['inputLat', 'inputLng', 'inputCity', 'inputCountry', 'inputExternal', 'inputNotes'].forEach(key => {
@@ -539,3 +628,4 @@ els.closeSlot.addEventListener('click', (e) => {
 // Init
 initGoogleMaps();
 loadInbox();
+

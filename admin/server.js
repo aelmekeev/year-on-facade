@@ -106,6 +106,18 @@ app.get('/api/inbox', async (req, res) => {
     }
 });
 
+// Helper for distance
+function getDistanceFromLatLonInM(lat1, lon1, lat2, lon2) {
+    const R = 6371e3;
+    const dLat = (lat2-lat1) * Math.PI/180;
+    const dLon = (lon2-lon1) * Math.PI/180;
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) *
+              Math.sin(dLon/2) * Math.sin(dLon/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    return R * c;
+}
+
 // GET /api/geocode?lat=X&lng=Y
 app.get('/api/geocode', (req, res) => {
     const lat = parseFloat(req.query.lat);
@@ -115,22 +127,51 @@ app.get('/api/geocode', (req, res) => {
     
     try {
         const configs = JSON.parse(fs.readFileSync(CONFIGS_PATH, 'utf8'));
-        let matchedCity = null;
-        let matchedCountry = null;
-        
+        let matches = [];
         for (const [key, value] of Object.entries(configs)) {
             const config = value.config;
             if (config.borders && config.country) {
                 const { south, north, west, east } = config.borders;
                 if (lat >= south && lat <= north && lng >= west && lng <= east) {
-                    matchedCity = key;
-                    matchedCountry = config.country;
-                    break;
+                    matches.push({ city: key, country: config.country });
                 }
             }
         }
+        if (matches.length > 1) {
+            let bestMatch = null;
+            for (const match of matches) {
+                const csvPath = path.join(CSV_DIR, match.country, `${match.city}.csv`);
+                if (fs.existsSync(csvPath)) {
+                    const content = fs.readFileSync(csvPath, 'utf-8');
+                    const lines = content.split('\n');
+                    for (const line of lines) {
+                        if (!line.trim() || line.startsWith('year,')) continue;
+                        const parts = line.split(',');
+                        if (parts[3] === 'TODO') {
+                            const rowLat = parseFloat(parts[1]);
+                            const rowLng = parseFloat(parts[2]);
+                            if (!isNaN(rowLat) && !isNaN(rowLng)) {
+                                const dist = getDistanceFromLatLonInM(lat, lng, rowLat, rowLng);
+                                if (dist <= 500) {
+                                    bestMatch = match;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+                if (bestMatch) break;
+            }
+            if (bestMatch) {
+                matches = [bestMatch];
+            }
+        }
         
-        res.json({ city: matchedCity, country: matchedCountry });
+        if (matches.length > 0) {
+            res.json({ matches, city: matches[0].city, country: matches[0].country });
+        } else {
+            res.json({ matches: [] });
+        }
     } catch (e) {
         console.error(e);
         res.status(500).json({ error: e.message });
@@ -146,13 +187,17 @@ app.get('/api/check-year', (req, res) => {
     if (!fs.existsSync(csvPath)) return res.json({ exists: false });
     
     let exists = false;
+    let matchedRow = null;
     fs.createReadStream(csvPath)
         .pipe(csvParser())
         .on('data', (row) => {
-            if (row.year === year) exists = true;
+            if (row.year === year) {
+                exists = true;
+                matchedRow = row;
+            }
         })
         .on('end', () => {
-            res.json({ exists });
+            res.json({ exists, data: matchedRow });
         });
 });
 
