@@ -328,6 +328,7 @@ const yearsData = {
     "Cambridgeshire"
   ],
   "1663": [
+    "Oxfordshire",
     "Warwickshire"
   ],
   "1664": [
@@ -356,7 +357,8 @@ const yearsData = {
     "Oxfordshire"
   ],
   "1672": [
-    "Essex"
+    "Essex",
+    "Oxfordshire"
   ],
   "1673": [
     "Staffordshire"
@@ -511,7 +513,8 @@ const yearsData = {
     "London"
   ],
   "1722": [
-    "London"
+    "London",
+    "Oxfordshire"
   ],
   "1723": [
     "London"
@@ -597,7 +600,8 @@ const yearsData = {
     "Somerset"
   ],
   "1748": [
-    "London"
+    "London",
+    "Oxfordshire"
   ],
   "1749": [
     "Manchester"
@@ -888,14 +892,16 @@ const yearsData = {
   ],
   "1838": [
     "Cambridgeshire",
-    "London"
+    "London",
+    "Oxfordshire"
   ],
   "1839": [
     "Berkshire",
     "London"
   ],
   "1840": [
-    "London"
+    "London",
+    "Oxfordshire"
   ],
   "1841": [
     "Cambridgeshire",
@@ -985,14 +991,17 @@ const yearsData = {
   ],
   "1863": [
     "Hertfordshire",
-    "London"
+    "London",
+    "Oxfordshire"
   ],
   "1864": [
-    "London"
+    "London",
+    "Oxfordshire"
   ],
   "1865": [
     "Lisbon",
-    "London"
+    "London",
+    "Oxfordshire"
   ],
   "1866": [
     "Berkshire",
@@ -1040,7 +1049,8 @@ const yearsData = {
   ],
   "1876": [
     "Istanbul",
-    "London"
+    "London",
+    "Oxfordshire"
   ],
   "1877": [
     "London",
@@ -1122,7 +1132,8 @@ const yearsData = {
     "Bedfordshire",
     "Berkshire",
     "Buckinghamshire",
-    "London"
+    "London",
+    "Oxfordshire"
   ],
   "1891": [
     "Berkshire",
@@ -1184,7 +1195,8 @@ const yearsData = {
   "1899": [
     "Buckinghamshire",
     "Copenhagen",
-    "London"
+    "London",
+    "Oxfordshire"
   ],
   "1900": [
     "Buckinghamshire",
@@ -1251,6 +1263,7 @@ const yearsData = {
     "Surrey"
   ],
   "1909": [
+    "Gloucestershire",
     "London",
     "Menton",
     "Surrey"
@@ -1433,10 +1446,12 @@ const yearsData = {
   ],
   "1955": [
     "Kent",
-    "London"
+    "London",
+    "Oxfordshire"
   ],
   "1956": [
     "Madeira",
+    "Oxfordshire",
     "West_Sussex"
   ],
   "1957": [
@@ -1522,7 +1537,8 @@ const yearsData = {
     "Essex"
   ],
   "1993": [
-    "London"
+    "London",
+    "Oxfordshire"
   ],
   "1994": [
     "London",
