@@ -4,7 +4,7 @@ const data = [
   { "id": "m-leamington-spa-birmingham", "name": "Midlands: Leamington Spa & Birmingham", "count": 3 },
   { "id": "m-leicester-birmingham", "name": "Midlands: Leicester & Birmingham", "count": 3 },
   { "id": "m-leicester-derby", "name": "Midlands: Leicester & Derby", "count": 5 },
-  { "id": "m-northampton", "name": "Midlands: Milton Keynes & Northampton", "count": 4 },
+  { "id": "m-northampton", "name": "Midlands: Northampton Circle", "count": 4 },
   { "id": "m-northampton-coventry", "name": "Midlands: Northampton & Coventry", "count": 6 },
   { "id": "m-peterborough-kings-lynn", "name": "Midlands: Peterborough & Kings Lynn", "count": 1 },
   { "id": "m-peterborough-leicester", "name": "Midlands: Peterborough & Leicester", "count": 5 },
