@@ -1,5 +1,5 @@
 const data = [
-  { "id": "m-banbury-milton-keynes", "name": "Midlands: Oxford & Banbury", "count": 3 },
+  { "id": "m-banbury-milton-keynes", "name": "Midlands: Banbury & Milton Keynes", "count": 3 },
   { "id": "m-birmngham-stoke-on-trent", "name": "Midlands: Birmingham & Stoke-on-Trent", "count": 5 },
   { "id": "m-leamington-spa-birmingham", "name": "Midlands: Leamington Spa & Birmingham", "count": 3 },
   { "id": "m-leicester-birmingham", "name": "Midlands: Leicester & Birmingham", "count": 3 },

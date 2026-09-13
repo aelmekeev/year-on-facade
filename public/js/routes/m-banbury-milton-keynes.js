@@ -1,5 +1,5 @@
 const data = {
-  "name": "Midlands: Oxford & Banbury",
+  "name": "Midlands: Banbury & Milton Keynes",
   "config": {
     "country": "TODO",
     "borders": {
