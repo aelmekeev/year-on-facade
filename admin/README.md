@@ -22,7 +22,7 @@ This is a local, internal web-based admin interface designed for maintainers of 
 
 ## Workflow: Adding New Items
 
-1. **Add Photos**: Drop your new original photos into `photos/inbox/`.
+1. **Add Photos**: Drop your new original photos into `photos/inbox/`. (Note: The `photos/` folder is effectively not tracked in the git repository and is solely used locally by the maintainer to manage `inbox` and `original` photos).
 2. **Start Server**: Run `make admin` from the root of the repository. This will start the local admin server (usually `http://localhost:3000`).
 3. **Process Inbox**: Open the URL in your browser. Select a group of photos from the sidebar to begin processing.
 4. **Verify Details**:
