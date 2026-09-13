@@ -1,11 +1,11 @@
 const data = [
+  { "id": "m-banbury-milton-keynes", "name": "Midlands: Oxford & Banbury", "count": 3 },
   { "id": "m-birmngham-stoke-on-trent", "name": "Midlands: Birmingham & Stoke-on-Trent", "count": 5 },
   { "id": "m-leamington-spa-birmingham", "name": "Midlands: Leamington Spa & Birmingham", "count": 3 },
   { "id": "m-leicester-birmingham", "name": "Midlands: Leicester & Birmingham", "count": 3 },
   { "id": "m-leicester-derby", "name": "Midlands: Leicester & Derby", "count": 5 },
-  { "id": "m-milton-keynes-northampton", "name": "Midlands: Milton Keynes & Northampton", "count": 5 },
+  { "id": "m-northampton", "name": "Midlands: Milton Keynes & Northampton", "count": 4 },
   { "id": "m-northampton-coventry", "name": "Midlands: Northampton & Coventry", "count": 6 },
-  { "id": "m-oxford-banbury", "name": "Midlands: Oxford & Banbury", "count": 7 },
   { "id": "m-peterborough-kings-lynn", "name": "Midlands: Peterborough & Kings Lynn", "count": 1 },
   { "id": "m-peterborough-leicester", "name": "Midlands: Peterborough & Leicester", "count": 5 },
   { "id": "m-wolverhampton-stafford", "name": "Midlands: Wolverhampton & Stafford", "count": 1 },

@@ -1,5 +1,5 @@
 const data = {
-  "name": "Midlands: Milton Keynes & Northampton",
+  "name": "Midlands: Oxford & Banbury",
   "config": {
     "country": "TODO",
     "borders": {
@@ -16,6 +16,14 @@ const data = {
     "photosBaseUrl": "https://year-on-facade.s3.eu-west-2.amazonaws.com/web"
   },
   "points": {
+    "1537": {
+      "latlng": {
+        "lat": 52.060608576817415,
+        "lng": -1.3377319989857461
+      },
+      "notes": "TODO",
+      "external": "",
+    },
     "1624": {
       "latlng": {
         "lat": 52.11345563318507,
@@ -24,37 +32,13 @@ const data = {
       "notes": "TODO",
       "external": "",
     },
-    "1606": {
+    "1539": {
       "latlng": {
-        "lat": 52.20697961018959,
-        "lng": -0.6007400853734841
+        "lat": 52.12585910465733,
+        "lng": -1.4029011426447802
       },
       "notes": "TODO",
       "external": "",
-    },
-    "1593": {
-      "latlng": {
-        "lat": 52.378580748499324,
-        "lng": -0.5433007067175213
-      },
-      "notes": "TODO",
-      "external": "",
-    },
-    "1608": {
-      "latlng": {
-        "lat": 52.30258913459104,
-        "lng": -0.6946373134716637
-      },
-      "notes": "TODO",
-      "external": "",
-    },
-    "1680": {
-      "latlng": {
-        "lat": 52.2903560430592,
-        "lng": -0.851179318759054
-      },
-      "notes": "TODO",
-      "external": "",
-    },
+    }
   }
 }

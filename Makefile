@@ -15,8 +15,8 @@ t-apply:
 	terraform-docs --config iaac/.terraform-docs-aws.yml iaac/
 
 photos-upload:
-	./photos/find_missing.sh
-	./photos/upload.sh
+	./utils/photos_find_missing.sh
+	./utils/photos_upload.sh
 
 show-stats:
 	python ./utils/show-stats.py $(country) $(city)
