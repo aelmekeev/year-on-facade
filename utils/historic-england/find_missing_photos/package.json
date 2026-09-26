@@ -7,7 +7,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "csv-parse": "^5.5.0",
+    "csv-parse": "^7.0.3",
     "playwright": "^1.42.0",
     "prompt-sync": "^4.2.0",
     "puppeteer": "^25.1.0",
