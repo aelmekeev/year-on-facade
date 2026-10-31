@@ -129,6 +129,19 @@ function toggleTODOMarkers(showOnlyTODO) {
   }
 }
 
+function getBorders() {
+  if (!data.config.borders) return null
+  const { north, south, east, west } = data.config.borders
+  const latMargin = (north - south) * 0.1
+  const lngMargin = (east - west) * 0.1
+  return {
+    north: north + latMargin,
+    south: south - latMargin,
+    east: east + lngMargin,
+    west: west - lngMargin,
+  }
+}
+
 function setCenter(map, year) {
   var center = { lat: 0, lng: 0 }
   if (year && data.points[year]) {
@@ -148,7 +161,7 @@ function setZoom(map, year) {
   } else if (!data.config.borders) {
     map.setZoom(2)
   } else {
-    map.fitBounds(data.config.borders)
+    map.fitBounds(getBorders())
   }
 }
 
@@ -179,7 +192,7 @@ async function initMap() {
     },
     restriction: data.config.borders
       ? {
-          latLngBounds: data.config.borders,
+          latLngBounds: getBorders(),
         }
       : null,
     mapId: '58733f12c8d8eb66', // https://console.cloud.google.com/google/maps-apis/studio/maps?project=year-on-facade
