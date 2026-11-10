@@ -992,6 +992,7 @@ const yearsData = {
   "1863": [
     "Hertfordshire",
     "London",
+    "Norfolk",
     "Oxfordshire"
   ],
   "1864": [
@@ -1153,7 +1154,8 @@ const yearsData = {
   ],
   "1893": [
     "Hertfordshire",
-    "London"
+    "London",
+    "Norfolk"
   ],
   "1894": [
     "Essex",
@@ -1164,7 +1166,8 @@ const yearsData = {
   "1895": [
     "Essex",
     "Hertfordshire",
-    "London"
+    "London",
+    "Norfolk"
   ],
   "1896": [
     "Berkshire",
@@ -1196,14 +1199,16 @@ const yearsData = {
     "Buckinghamshire",
     "Copenhagen",
     "London",
-    "Oxfordshire"
+    "Oxfordshire",
+    "Suffolk"
   ],
   "1900": [
     "Buckinghamshire",
     "Hertfordshire",
     "Kent",
     "London",
-    "Monaco"
+    "Monaco",
+    "Norfolk"
   ],
   "1901": [
     "Hertfordshire",
@@ -1254,6 +1259,7 @@ const yearsData = {
     "Istanbul",
     "Kent",
     "London",
+    "Norfolk",
     "Oxfordshire"
   ],
   "1908": [
@@ -1334,7 +1340,8 @@ const yearsData = {
   ],
   "1925": [
     "Hertfordshire",
-    "London"
+    "London",
+    "Norfolk"
   ],
   "1926": [
     "Hertfordshire",
@@ -1365,17 +1372,20 @@ const yearsData = {
   "1930": [
     "Essex",
     "London",
+    "Norfolk",
     "West_Yorkshire"
   ],
   "1931": [
     "Berkshire",
     "Hertfordshire",
-    "London"
+    "London",
+    "Norfolk"
   ],
   "1932": [
     "Hampshire",
     "Leicestershire",
-    "London"
+    "London",
+    "Suffolk"
   ],
   "1933": [
     "Berkshire",
@@ -1405,7 +1415,8 @@ const yearsData = {
     "London"
   ],
   "1937": [
-    "London"
+    "London",
+    "Norfolk"
   ],
   "1938": [
     "London",
@@ -1498,7 +1509,8 @@ const yearsData = {
     "London"
   ],
   "1981": [
-    "London"
+    "London",
+    "Suffolk"
   ],
   "1982": [
     "Dingli",
